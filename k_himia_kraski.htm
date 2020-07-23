@@ -1,0 +1,402 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="Цветная разметка для спортзала Forbo Eurocol">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/glue-collections.css">
+    <link rel="stylesheet" href="./css/collection.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <link rel="stylesheet" href="./plugins/highslide/highslide.css">
+    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <title>Разметка для спортзала Forbo</title>
+</head>
+
+<body>
+    <section class="preloader">
+        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+    </section>
+    <header>
+        <? include('./included_files/header.htm'); ?>
+    </header>
+    <section class="section-menu">
+        <div class="menu animated__menu">
+            <p class="menu-title">другие коллекции</p>
+            <div class="menu-arrow animated__menu-arrow"></div>
+        </div>
+        <div class="active-menu animated__active-menu">
+            <div class="header-side-menu">
+                <span class="close-menu" id="close-menu" onclick="anotherCloseCross()"></span>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia.htm">Каталог</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Подготовительная химия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_gryntovka.htm" class="out-list_a">Грунтовка для пола</a>
+                </li>
+                <li class="out-list">
+                    <a href="remontnue_smesi.htm" class="out-list_a">Ремонтные смеси</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_viravn_smesi.htm" class="out-list_a">Выравнивающие смеси</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Клей для покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_plitka.htm" class="out-list_a">Клей для плитки и керамогранита</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_moroz.htm" class="out-list_a">Морозоустойчивый клей для ПВХ</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Средства по уходу</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_mastika.htm" class="out-list_a">Мастика</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4 class="chosen">Краска для разметки</h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_grass-ukladka.htm">Средства для укладки искусственных газонов</a>
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="section-menu_mobile">
+        <div class="background-section-hamburger" id="background-section-hamburger">
+            <a class="section-hamburger"><span></span></a>
+        </div>
+        <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia.htm">Каталог</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Подготовительная химия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_gryntovka.htm" class="out-list_a">Грунтовка для пола</a>
+                </li>
+                <li class="out-list">
+                    <a href="remontnue_smesi.htm" class="out-list_a">Ремонтные смеси</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_viravn_smesi.htm" class="out-list_a">Выравнивающие смеси</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Клей для покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_plitka.htm" class="out-list_a">Клей для плитки и керамогранита</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_moroz.htm" class="out-list_a">Морозоустойчивый клей для ПВХ</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Средства по уходу</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_mastika.htm" class="out-list_a">Мастика</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4 class="chosen">Краска для разметки</h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_grass-ukladka.htm">Средства для укладки искусственных газонов</a>
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="main-wrapper">
+        <div class="container">
+            <div class="page-header">
+                <img src="./img/pages-name-imgs/glue/chimia/kraska/catalog-in-chemical-new_03.jpg"
+                    alt="Цветная разметка для спортзала Forbo" class="page-header-img">
+                <div class="page-header-description">
+                    <h1 class="title">
+                        Разметка для спортзала Forbo
+                    </h1>
+                    <div class="text">
+                        <p class="par">
+                            ТЕКСТ !!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="chim-collection">
+                <div class="chim-item">
+                    <div class="chim-item__look">
+                        <h5 class="chim-name">
+                            <span class="number">809A</span><br>Eurocolor Game Line Duo
+                        </h5>
+                        <img src="./img/pages-name-imgs/glue/chimia/kraska/catalog-in-chemical-new_07.jpg"
+                            alt="Двухкомпонентная разметка для спортзала Forbo Eurocolor Game Line Duo 809A"
+                            class="chim-img">
+                    </div>
+                    <div class="chim-item__description">
+                        <p class="dis-title">
+                            Forbo 809A Eurocolor Game Line Duo<br>
+                            <span class="sub-title">двухкомпонентная разметка для спортзала</span>
+                        </p>
+                        <p class="par">
+                            ТЕКСТ !!
+                        </p>
+                    </div>
+                    <div class="chim-item__instruction">
+                        <p class="inst-title">
+                            расход:
+                        </p>
+                        <p class="inst-text">
+                            0,5 кг / 60 пог.м при ширине 5 см
+                        </p>
+                        <p class="inst-title">
+                            упаковка:
+                        </p>
+                        <p class="inst-text">
+                            Комбинированная тара — 0,5 кг, в коробке 9 шт.
+                        </p>
+                        <p class="inst-title">
+                            способ нанесения:
+                        </p>
+                        <p class="inst-text">
+                            Мягкая кисть, поролоновый валик
+                        </p>
+                        <p class="inst-title">
+                            время высыхания от пыли:
+                        </p>
+                        <p class="inst-text">
+                            ~ 2 часа
+                        </p>
+                        <p class="inst-title">
+                            последующее покрытие лаком:
+                        </p>
+                        <p class="inst-text">
+                            через 5 часов
+                        </p>
+                        <a href='./sertificate/glue-sert/SGR_809.jpg' target="_blank" class="sert bottom10">
+                            <img src="./icons/arrow-down.svg" alt="" class="sert-icon">
+                            <p class="download-text">скачать сертификат</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="articles" id="articles">
+                <h5 class="articles-title">
+                    Цветовая палитра красок
+                </h5>
+                <div class="articles-container">
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/1021.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/1021.jpg" class="article-img"
+                                alt="Желтая разметка для спортзала Forbo 1021">
+                            <div class="white-block">
+                                <p class="article-text">1021</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/2004.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/2004.jpg" class="article-img"
+                                alt="Оранжевая разметка для спортзала Forbo 2004">
+                            <div class="white-block">
+                                <p class="article-text">2004</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/3000.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/3000.jpg" class="article-img"
+                                alt="Красная разметка для спортзала Forbo 3000">
+                            <div class="white-block">
+                                <p class="article-text">3000</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/5010.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/5010.jpg" class="article-img"
+                                alt="Синяя разметка для спортзала Forbo 5010">
+                            <div class="white-block">
+                                <p class="article-text">5010</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/5012.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/5012.jpg" class="article-img"
+                                alt="Голубая разметка для спортзала Forbo 5012">
+                            <div class="white-block">
+                                <p class="article-text">5012</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/6018.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/6018.jpg" class="article-img"
+                                alt="Зеленая разметка для спортзала Forbo 6018">
+                            <div class="white-block">
+                                <p class="article-text">6018</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/9016.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/9016.jpg" class="article-img"
+                                alt="Белая разметка для спортзала Forbo 9016">
+                            <div class="white-block">
+                                <p class="article-text">9016</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-item">
+                        <a href="./img/pages-name-imgs/glue/chimia/kraska/articles/9017.jpg"
+                            onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                            <img src="./img/pages-name-imgs/glue/chimia/kraska/articles/9017.jpg" class="article-img"
+                                alt="Черная разметка для спортзала Forbo 9017">
+                            <div class="white-block">
+                                <p class="article-text">9017</p>
+                            </div>
+                            <div class="article-zoom">
+                                <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <? include('./included_files/footer.htm'); ?>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./preloader/preloader.js"></script>
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
+    </script>
+    <script src="./included_files/header-style/hamburger.js"></script>
+    <script src="./plugins/highslide/highslide-full.js"></script>
+    <script src="./js/collection.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,786 @@
+@import './variables/variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PTSans';
+}
+
+.main-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    .container {
+        width: 1200px;
+
+        @media screen and (max-width: 1200px) {
+            width: 100vw;
+        }
+
+        .first-block {
+            display: grid;
+            grid-template-columns: 3fr 2fr 6fr;
+            grid-column-gap: 15px;
+
+            @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+                display: -ms-grid;
+                grid-columns: 3fr 2fr 6fr;
+            }
+
+            @media screen and (max-width: 800px) {
+                grid-template-columns: 3fr 9fr;
+            }
+
+            @media screen and (max-width: 800px) {
+                grid-template-columns: 12fr;
+            }
+
+            .two-row_img {
+                background-image: url(../img/pages-name-imgs/biblioteka/commer_lin/Article_gomogen-geterogen_03.jpg);
+                background-size: 100% 100%;
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    grid-column: 1;
+                }
+
+                @media screen and (max-width: 800px) {
+                    display: none;
+                }
+            }
+
+            .rows_img {
+                display: grid;
+                grid-template-rows: 60% 40%;
+
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    grid-column: 2;
+                    display: -ms-grid;
+                    grid-rows: 60% 40%;
+                }
+
+                @media screen and (max-width: 800px) {
+                    display: none;
+                }
+
+                .first-row_img {
+                    background-image: url(../img/pages-name-imgs/biblioteka/commer_lin/Article_gomogen-geterogen_05.jpg);
+                    background-size: 100% 100%;
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-row: 1;
+                    }
+                }
+
+                .second-row_img {
+                    background-image: url(../img/pages-name-imgs/biblioteka/commer_lin/Article_gomogen-geterogen_08.jpg);
+                    background-size: 100% 100%;
+                    margin-top: 15px;
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-row: 2;
+                    }
+                }
+            }
+
+            .text-block {
+                padding: 34px 50px;
+                background-color: $darkGreenColor;
+                color: white;
+                text-align: justify;
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    grid-column: 3;
+                }
+
+                @media screen and (max-width: 800px) {
+                    padding: 10px 20px;
+                    text-align: left;
+                }
+
+                .title {
+                    font-size: 30px;
+                    font-weight: normal;
+                    line-height: 36px;
+
+                    @media screen and (max-width: 800px) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+
+                .text {
+                    font-family: $myPTSerif;
+                    font-style: italic;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 24px;
+
+                    @media screen and (max-width: 800px) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        .second-block {
+            position: relative;
+            margin: 15px 0 15px 0;
+            width: 100%;
+
+            .navigation-block {
+                width: 100%;
+
+                .nav-menu {
+                    .nav-menu-list {
+                        display: flex;
+                        list-style: none;
+                        display: -ms-flexbox;
+
+                        @media screen and (max-width: 850px) {
+                            flex-wrap: wrap;
+                        }
+
+                        .nav-list-item {
+                            height: 40px;
+                            display: -ms-flexbox;
+                            display: flex;
+                            align-items: center;
+                            border-left: 3px solid $orangeColor;
+                            transition: .3s;
+
+                            @media screen and (max-width: 850px) {
+                                flex-wrap: wrap;
+                                margin-top: 5px;
+                            }
+
+                            .href-item {
+                                color: $darkGreenColor;
+                                font-size: 16px;
+                                text-decoration: none;
+                                margin-left: 10px;
+                                transition: .3s;
+                            }
+
+                            &:hover {
+                                background-color: $orangeColor;
+
+                                .href-item {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-block {
+            border-bottom: 1px solid $darkGreenColor;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+
+            .kinds-linol {
+                display: grid;
+                grid-template-columns: 8fr 4fr;
+                grid-column-gap: 15px;
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    display: -ms-grid;
+                    grid-columns: 8fr 4fr;
+                }
+
+                @media screen and (max-width: 1100px) {
+                    grid-template-columns: 12fr;
+                }
+
+                .text-block {
+                    background-color: #f7f7f7;
+                    padding: 50px;
+
+                    @media screen and (max-width: 800px) {
+                        padding: 10px 20px;
+                        text-align: left;
+                    }
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-column: 1;
+                    }
+
+                    .title {
+                        color: $orangeColor;
+                        font-size: 24px;
+                        font-weight: normal;
+                        text-transform: uppercase;
+
+                        @media screen and (max-width: 800px) {
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+                    }
+
+                    .text {
+                        font-size: 16px;
+                        color: $darkGreenColor;
+                        text-align: justify;
+                        line-height: 24px;
+
+
+                        .par {
+                            margin-top: 20px;
+
+                            @media screen and (max-width: 800px) {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .img-block {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-column: 2;
+                    }
+
+                    .img-title {
+                        width: 100%;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        background-color: $darkGreenColor;
+                        text-transform: uppercase;
+                        color: white;
+
+                        .lowercase-text {
+                            text-transform: lowercase;
+                        }
+                    }
+
+                    .pic {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .fourth-block {
+            width: 100%;
+            border-bottom: 1px solid $darkGreenColor;
+
+            .block-title {
+                color: $orangeColor;
+                font-size: 24px;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            .block-table {
+                margin-top: 20px;
+                display: grid;
+                grid-column-gap: 20px;
+                grid-template-columns: 3fr 3fr 3fr 3fr;
+
+                @media screen and (max-width: 1200px) {
+                    grid-template-columns: 4fr 4fr 4fr;
+                    grid-row-gap: 15px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    grid-template-columns: 6fr 6fr;
+                }
+
+                @media screen and (max-width: 500px) {
+                    grid-template-columns: 12fr;
+                }
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    grid-columns: 3fr 3fr 3fr 3fr;
+                }
+
+                .table-col {
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        &:nth-child(1) {
+                            grid-column: 1;
+                        }
+
+                        &:nth-child(2) {
+                            grid-column: 2;
+                        }
+
+                        &:nth-child(3) {
+                            grid-column: 3;
+                        }
+
+                        &:nth-child(4) {
+                            grid-column: 4;
+                        }
+                    }
+
+                    .table-row {
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .table-row_title {
+                        height: 50px;
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        background-color: #92a9a3;
+                        padding: 0 10px;
+                        text-align: center;
+                    }
+
+                    .table-row_char {
+                        background-color: #f7f7f7;
+                        width: 100%;
+                        justify-content: center;
+                        height: 45px;
+                        color: $darkGreenColor;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 5px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .attention {
+                margin-top: 20px;
+                color: $darkGreenColor;
+                margin-bottom: 20px;
+            }
+        }
+
+        .fivth-block {
+            margin-top: 20px;
+            overflow: hidden;
+
+            .fivth-block-container {
+                display: grid;
+                grid-template-columns: 5fr 7fr;
+                grid-column-gap: 15px;
+
+                @media screen and (max-width: 750px) {
+                    grid-template-columns: 12fr;
+                }
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    grid-columns: 5fr 7fr;
+                }
+
+                .uhod-side {
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-column: 1;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .uhod-text {
+                        height: 100%;
+                        margin-top: 5px;
+                        background-color: $darkGreenColor;
+                        color: white;
+                        padding: 35px 40px;
+
+                        @media screen and (max-width: 800px) {
+                            padding: 10px 20px;
+                            text-align: left;
+                        }
+
+                        .title {
+                            font-size: 24px;
+                            text-transform: uppercase;
+                            font-weight: normal;
+                        }
+
+                        .text {
+                            .par {
+                                margin-top: 22px;
+                                line-height: 24px;
+                                font-size: 16px;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+
+                .instruction-side {
+                    @media screen and (max-width: 750px) {
+                        margin-top: 10px;
+                    }
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-column: 2;
+                    }
+
+                    .instruction-title {
+                        width: 100%;
+                        background-color: #91a9a3;
+                        padding: 10px 110px;
+                        text-align: center;
+                        font-size: 24px;
+                        color: white;
+                        font-weight: normal;
+                        text-transform: uppercase;
+
+                        @media screen and (max-width: 500px) {
+                            font-size: 18px;
+                            padding: 10px 10px;
+                        }
+                    }
+
+                    .instruction-steps {
+
+                        .step-item {
+                            display: grid;
+                            grid-template-columns: 3fr 9fr;
+                            grid-column-gap: 15px;
+                            margin-top: 15px;
+
+                            @media screen and (max-width: 500px) {
+                                grid-template-columns: 12fr;
+                            }
+
+                            @media screen and (-ms-high-contrast: active),
+                            (-ms-high-contrast: none) {
+                                grid-columns: 3fr 9fr;
+                            }
+
+                            .step-img {
+                                background-color: #f7f7f7;
+
+                                @media screen and (-ms-high-contrast: active),
+                                (-ms-high-contrast: none) {
+                                    grid-column: 1;
+                                }
+
+                                .chimia-img {
+                                    @media screen and (max-width: 500px) {
+                                        margin-left: 50%;
+                                        transform: translateX(-50%);
+                                    }
+                                }
+
+                                .chimia-title {
+                                    background-color: #91a9a3;
+                                    color: white;
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                    height: 50px;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+
+                                .chimia-name {
+                                    font-size: 18px;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 10px 0 20px 0;
+                                    text-align: center;
+                                    color: $orangeColor;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            .step-description {
+                                padding: 25px 50px;
+                                background-color: #f7f7f7;
+
+                                @media screen and (max-width: 800px) {
+                                    padding: 10px 20px 10px 10px;
+                                }
+
+                                @media screen and (-ms-high-contrast: active),
+                                (-ms-high-contrast: none) {
+                                    grid-column: 2;
+                                }
+
+                                .description-title {
+                                    color: $orangeColor;
+                                    font-size: 16px;
+                                    text-transform: uppercase;
+                                }
+
+                                .description-text {
+                                    margin: 15px 0;
+                                    color: $darkGreenColor;
+                                    line-height: 24px;
+
+                                    @media screen and (max-width: 800px) {
+                                        padding: 10px 20px 10px 10px;
+                                    }
+                                }
+
+                                .description-dose {
+                                    color: $darkGreenColor;
+
+                                    .dose {
+                                        color: $orangeColor;
+                                        font-size: 16px;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sixth-block {
+            margin-top: 20px;
+            border-top: 1px solid $darkGreenColor;
+            padding-top: 20px;
+            overflow: hidden;
+
+            .expensive-uhod {
+                display: grid;
+                grid-template-columns: 5fr 7fr;
+                grid-column-gap: 15px;
+
+                @media screen and (max-width: 1000px) {
+                    grid-template-columns: 12fr;
+                }
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    grid-columns: 5fr 7fr;
+                }
+
+                .text-block {
+                    height: 100%;
+                    background-color: #f7f7f7;
+                    padding: 35px 40px;
+
+                    @media screen and (max-width: 800px) {
+                        padding: 10px 20px;
+                        text-align: left;
+                    }
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-column: 1;
+                    }
+
+                    .title {
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        font-weight: normal;
+                        color: $orangeColor;
+
+                        @media screen and (max-width: 800px) {
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+                    }
+
+                    .text {
+                        .par {
+                            margin-top: 22px;
+                            line-height: 24px;
+                            font-size: 16px;
+                            text-align: justify;
+                            color: $darkGreenColor;
+
+                            @media screen and (max-width: 800px) {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .img-block {
+                    img {
+                        width: 100%;
+                    }
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-column: 2;
+                    }
+
+                    .linol-img {
+                        background-color: #f7f7f7;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .linol-title {
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            width: 100%;
+                            justify-content: center;
+                            color: $darkGreenColor;
+                            display: flex;
+                            margin-top: 20px;
+                            padding-bottom: 40px;
+                        }
+                    }
+                }
+
+
+                .step-item {
+                    display: grid;
+                    grid-template-columns: 3fr 9fr;
+                    grid-column-gap: 15px;
+                    margin-top: 15px;
+
+                    @media screen and (max-width: 500px) {
+                        grid-template-columns: 12fr;
+                    }
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        grid-columns: 3fr 9fr;
+                    }
+
+                    .step-img {
+                        background-color: #f7f7f7;
+
+                        @media screen and (-ms-high-contrast: active),
+                        (-ms-high-contrast: none) {
+                            grid-column: 1;
+                        }
+
+                        .chimia-img {
+                            transform: scale(0.8);
+
+                            @media screen and (max-width: 500px) {
+                                height: 300px;
+                                width: 200px;
+                                margin-left: 50%;
+                                transform: translateX(-50%)
+                            }
+                        }
+
+                        .chimia-title {
+                            background-color: #91a9a3;
+                            color: white;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            height: 50px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .chimia-name {
+                            font-size: 18px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin: 10px 0 20px 0;
+                            text-align: center;
+                            color: $orangeColor;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .step-description {
+                        padding: 25px 50px;
+                        background-color: #f7f7f7;
+
+                        @media screen and (max-width: 800px) {
+                            padding: 10px 20px 10px 10px;
+                        }
+
+                        @media screen and (-ms-high-contrast: active),
+                        (-ms-high-contrast: none) {
+                            grid-column: 2;
+                        }
+
+                        .description-title {
+                            color: $orangeColor;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                        }
+
+                        .description-text {
+                            margin: 15px 0;
+                            color: $darkGreenColor;
+                            line-height: 24px;
+
+                            @media screen and (max-width: 800px) {
+                                padding: 10px 20px 10px 10px;
+                            }
+                        }
+
+                        .description-dose {
+                            color: $darkGreenColor;
+
+                            .dose {
+                                color: $orangeColor;
+                                font-size: 16px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.mt5 {
+    margin-top: 5px !important;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.big {
+    height: 105px !important;
+}
+
+.orange {
+    background-color: #e2a459 !important;
+    text-transform: uppercase !important;
+}
+
+.light-orange {
+    background-color: #fdeedb !important;
+    padding-left: 35px !important;
+    justify-content: flex-start !important;
+}

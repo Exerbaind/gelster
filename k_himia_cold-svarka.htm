@@ -1,0 +1,234 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="Жидкость для холодной сварки швов Forbo">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/glue-collections.css">
+    <link rel="stylesheet" href="./css/collection.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <title>Жидкость для холодной сварки швов Forbo</title>
+</head>
+
+<body>
+    <section class="preloader">
+        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+    </section>
+    <header>
+        <? include('./included_files/header.htm'); ?>
+    </header>
+    <section class="section-menu">
+        <div class="menu animated__menu">
+            <p class="menu-title">другие коллекции</p>
+            <div class="menu-arrow animated__menu-arrow"></div>
+        </div>
+        <div class="active-menu animated__active-menu">
+            <div class="header-side-menu">
+                <span class="close-menu" id="close-menu" onclick="anotherCloseCross()"></span>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="klei.htm">Каталог</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Клей для покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_522.htm" class="out-list_a">Клей Forbo 522</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор для ковровой плитки</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей 523 для напольных
+                        покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_himia_grass-ukladka.htm" class="out-list_a">Клей для искусственной травы</a>
+                </li>
+                <li class="out-list chosen-collection">Клей холодная сварка</li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="ukladka.htm">Укладка</a>
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="section-menu_mobile">
+        <div class="background-section-hamburger" id="background-section-hamburger">
+            <a class="section-hamburger"><span></span></a>
+        </div>
+        <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="klei.htm">Каталог</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Клей для покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_522.htm" class="out-list_a">Клей Forbo 522</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор для ковровой плитки</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей 523 для напольных
+                        покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_himia_grass-ukladka.htm" class="out-list_a">Клей для искусственной травы</a>
+                </li>
+                <li class="out-list chosen-collection">Клей холодная сварка</li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="ukladka.htm">Укладка</a>
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="main-wrapper">
+        <div class="container">
+            <div class="page-header">
+                <img src="./img/pages-name-imgs/glue/chimia/cold/catalog-in-chemical-new_03.jpg"
+                    alt="Холодная сварка швов Forbo" class="page-header-img">
+                <div class="page-header-description">
+                    <h1 class="title">
+                        Жидкость для холодной сварки швов Forbo
+                    </h1>
+                    <div class="text">
+                        <p class="par">
+                            Жидкость для холодной сварки швов Forbo 671 Noviweld используется для сварки фрагментов
+                            покрытий различного вида: коммерческих или бытовых. Она образует аккуратный и незаметный
+                            шов. Он не деформируется с течением времени, а остается эластичным и водоустойчивым.
+                        </p>
+                        <p class="par">
+                            Жидкость для холодной сварки швов Forbo 671 Noviweld устойчива к тяжелым нагрузкам на
+                            шов. Время на затвердевание после нанесения приблизительно 60 минут.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="chim-collection">
+                <div class="chim-item">
+                    <div class="chim-item__look">
+                        <h5 class="chim-name">
+                            <span class="number">671</span><br>Noviweld
+                        </h5>
+                        <img src="./img/pages-name-imgs/glue/chimia/cold/catalog-in-chemical-new_07.jpg"
+                            alt="Жидкость для холодной сварки швов 671 Noviweld" class="chim-img">
+                    </div>
+                    <div class="chim-item__description">
+                        <p class="dis-title">
+                            671 Noviweld<br>
+                            <span class="sub-title">Жидкость для холодной сварки швов</span>
+                        </p>
+                        <p class="par">
+                            Жидкость для холодной сварки швов Forbo Eurocol 671 Noviweld поможет Вам с легкостью
+                            скрепить два фрагмента, образуя незаметный шов, который во время своей эксплуатации не
+                            сломается и не изменит свою первоначальную форму.
+                        </p>
+                        <p class="par">
+                            Жидкость для холодной сварки швов Forbo 671 Noviweld делает внешнюю часть соединяющих
+                            материалов достаточно гладкими и визуально эстетичными.
+                        </p>
+                    </div>
+                    <div class="chim-item__instruction">
+                        <p class="inst-title">
+                            расход:
+                        </p>
+                        <p class="inst-text">
+                            42 г на 20 пог.м.
+                        </p>
+                        <p class="inst-title">
+                            упаковка:
+                        </p>
+                        <p class="inst-text">
+                            Тюбик 42 г,<br>
+                            На поддоне 2880 шт.,<br>
+                            В коробке — 60 шт.
+                        </p>
+                        <p class="inst-title">
+                            способ нанесения:
+                        </p>
+                        <p class="inst-text">
+                            С помощью колпачка-насадки (в комплекте)
+                        </p>
+                        <p class="inst-title">
+                            время затвердевания:
+                        </p>
+                        <p class="inst-text">
+                            20 минут
+                        </p>
+                        <a href='./sertificate/glue-sert/617.jpg' target="_blank" class="sert">
+                            <img src="./icons/arrow-down.svg" alt="" class="sert-icon">
+                            <p class="download-text">скачать сертификат</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <? include('./included_files/footer.htm'); ?>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./preloader/preloader.js"></script>
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
+    </script>
+    <script src="./included_files/header-style/hamburger.js"></script>
+    <script src="./js/collection.js"></script>
+</body>
+
+</html>

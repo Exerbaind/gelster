@@ -1,0 +1,305 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Мастика для напольных покрытий Forbo - это защитное средство для красоты и долгого срока службы Вашего пола. Среди продуктов фабрики Вы найдете мастики для самых разных напольных покрытий - линолеума ПВХ, натурального линолеума, паркета, пробки, спортивных покрытий.">
+    <meta name="keywords" content="Мастика для напольных покрытий Forbo">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/glue-collections.css">
+    <link rel="stylesheet" href="./css/collection.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <title>Мастика для напольных покрытий Forbo</title>
+</head>
+
+<body>
+    <section class="preloader">
+        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+    </section>
+    <header>
+        <? include('./included_files/header.htm'); ?>
+    </header>
+    <section class="section-menu">
+        <div class="menu animated__menu">
+            <p class="menu-title">другие коллекции</p>
+            <div class="menu-arrow animated__menu-arrow"></div>
+        </div>
+        <div class="active-menu animated__active-menu">
+            <div class="header-side-menu">
+                <span class="close-menu" id="close-menu" onclick="anotherCloseCross()"></span>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia.htm">Каталог</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Подготовительная химия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_gryntovka.htm" class="out-list_a">Грунтовка для пола</a>
+                </li>
+                <li class="out-list">
+                    <a href="remontnue_smesi.htm" class="out-list_a">Ремонтные смеси</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_viravn_smesi.htm" class="out-list_a">Выравнивающие смеси</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Клей для покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_plitka.htm" class="out-list_a">Клей для плитки и керамогранита</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_moroz.htm" class="out-list_a">Морозоустойчивый клей для ПВХ</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Средства по уходу</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
+                </li>
+                <li class="out-list chosen-collection">Мастика</li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_kraski.htm">Краска для разметки</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_grass-ukladka.htm">Средства для укладки искусственных газонов</a>
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="section-menu_mobile">
+        <div class="background-section-hamburger" id="background-section-hamburger">
+            <a class="section-hamburger"><span></span></a>
+        </div>
+        <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia.htm">Каталог</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Подготовительная химия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_gryntovka.htm" class="out-list_a">Грунтовка для пола</a>
+                </li>
+                <li class="out-list">
+                    <a href="remontnue_smesi.htm" class="out-list_a">Ремонтные смеси</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_viravn_smesi.htm" class="out-list_a">Выравнивающие смеси</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Клей для покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_plitka.htm" class="out-list_a">Клей для плитки и керамогранита</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей</a>
+                </li>
+                <li class="out-list">
+                    <a href="himia_moroz.htm" class="out-list_a">Морозоустойчивый клей для ПВХ</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Средства по уходу</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
+                </li>
+                <li class="out-list chosen-collection">Мастика</li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_kraski.htm">Краска для разметки</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="k_himia_grass-ukladka.htm">Средства для укладки искусственных газонов</a>
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="main-wrapper">
+        <div class="container">
+            <div class="page-header">
+                <img src="./img/pages-name-imgs/glue/chimia/mastika/catalog-in-chemical-new_03.jpg"
+                    alt="Виды мастик для напольных покрытий Forbo" class="page-header-img">
+                <div class="page-header-description">
+                    <h1 class="title">
+                        Мастика Forbo
+                    </h1>
+                    <div class="text">
+                        <p class="par">
+                            Мастика для напольных покрытий Forbo - это защитное средство для красоты и долгого срока
+                            службы Вашего пола. Среди продуктов фабрики Вы найдете мастики для самых разных напольных
+                            покрытий - линолеума ПВХ, натурального линолеума, паркета, пробки, спортивных покрытий.
+                        </p>
+                        <p class="par">
+                            Также у компании Forbo Eurocol есть средство для защиты от влаги стыков ламината и паркета,
+                            что предотвращает их расхождение.
+                        </p>
+                        <p class="par">
+                            Мастика для ПВХ и мармолеума может быть отлично дополнена очистителями Forbo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="chim-collection">
+                <div class="chim-item">
+                    <div class="chim-item__look">
+                        <h5 class="chim-name">
+                            <span class="number">898</span><br>Euroclean Longlife
+                        </h5>
+                        <img src="./img/pages-name-imgs/glue/chimia/mastika/898-m_07.jpg"
+                            alt="Полимерная мастика Forbo Euroclean Longlife 898" class="chim-img">
+                    </div>
+                    <div class="chim-item__description">
+                        <p class="dis-title">
+                            Forbo 898 Euroclean Longlife<br>
+                            <span class="sub-title">полимерная мастика</span>
+                        </p>
+                        <p class="par">
+                            Мастика Forbo (Форбо) 898 – очень износостойкая мастика на основе металлполиакрилатов.
+                        </p>
+                        <p class="par">
+                            Мастика предназначена для первичного ухода за водонепроницаемыми покрытиями, такими как
+                            покрытые лаком паркет или пробка, виниловые покрытия, ПВХ покрытия, натуральный линолеум.
+                        </p>
+                        <p class="par">
+                            Мастика так же может использоваться в качестве освежителя старых напольных покрытий.
+                        </p>
+                        <p class="par">
+                            Мастика Forbo 898 препятствует скольжению по напольному покрытию, устойчива к загрязнениям и
+                            образованию черных полос. Выпускается в двух вариантах: глянцевая и матовая.
+                        </p>
+                    </div>
+                    <div class="chim-item__instruction">
+                        <p class="inst-title">
+                            расход:
+                        </p>
+                        <p class="inst-text">
+                            Первичный уход:~ 1 л / 40 м <sup><small>2</small></sup> (1 слой)
+                        </p>
+                        <p class="inst-title">
+                            упаковка:
+                        </p>
+                        <p class="inst-text">
+                            Бутыль пластиковая — 0,7 л<br>
+                            Поддон — 432 шт.<br>
+                            Коробка — 12 шт.
+                        </p>
+                        <p class="inst-title">
+                            способ нанесения:
+                        </p>
+                        <p class="inst-text">
+                            Швабра или ткань без ворса
+                        </p>
+                        <p class="inst-title">
+                            время подсушки:
+                        </p>
+                        <p class="inst-text">
+                            1 час
+                        </p>
+                        <a href='./sertificate/glue-sert/898.pdf' target="_blank" class="sert">
+                            <img src="./icons/arrow-down.svg" alt="" class="sert-icon">
+                            <p class="download-text">скачать сертификат</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <? include('./included_files/footer.htm'); ?>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./preloader/preloader.js"></script>
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
+    </script>
+    <script src="./included_files/header-style/hamburger.js"></script>
+    <script src="./js/collection.js"></script>
+</body>
+
+</html>

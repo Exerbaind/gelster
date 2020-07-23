@@ -1,0 +1,2526 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Распродажа напольных покрытий мармолеума ковровой плитки">
+    <meta name="description" content="Мы устанавливаем невероятно низкие цены на товары со склада специально, чтобы ремонт стал для Вас
+        приятнее. Акция действует, пока товар есть в наличии. Товары, отмеченные *, продаются только кратно
+        рулонам.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./plugins/highslide/highslide.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <link rel="stylesheet" href="./css/sale.css">
+    <title>Распродажа от Гельстер</title>
+</head>
+
+<body>
+    <header>
+        <? include('./included_files/header.htm'); ?>
+    </header>
+    <section class="main-section">
+        <div class="first-block">
+            <div class="first-block__content">
+                <h1 class="content_orange-title">Распродажа</h1>
+            </div>
+        </div>
+        <div class="second-block">
+            <div class="content__text">
+                <h2 class="title">Распродажа напольных покрытий до -50&#37;</h2>
+                <p class="text">
+                    Мы устанавливаем невероятно низкие цены на товары со склада специально, чтобы ремонт стал для Вас
+                    приятнее. Акция действует, пока товар есть в наличии.
+                </p>
+                <p class="text">Цены зависят от курса евро. Уточняйте у менеджера</p>
+                <p class="text">Скидка на линолеум ПВХ действует при покупке покрытий от 500 м².</p>
+                <p class="text">Цена привязана к курсу евро и может меняться в течение дня.</p>
+
+                <p class="euro-value"><?php
+                        function CBR_XML_Daily_Ru() {
+                            $json_daily_file = __DIR__.'/daily.json';
+                            if (!is_file($json_daily_file) || filemtime($json_daily_file) < time() - 86400) {
+                                if ($json_daily = file_get_contents('https://www.cbr-xml-daily.ru/daily_json.js')) {
+                                    file_put_contents($json_daily_file, $json_daily);
+                                }
+                            }
+
+                            return json_decode(file_get_contents($json_daily_file));
+                        }
+
+                        $data = CBR_XML_Daily_Ru();
+
+                        echo "{$data->Valute->EUR->Value}";
+                    ?></p>
+            </div>
+        </div>
+        <div class="third-block" id="back">
+            <div class="third-scroll__container">
+                <div class="third-block__content">
+                    <div class="th-content__item content__item_act">
+                        <img src="./img/pages-name-imgs/sale/icon-1-marm.svg"
+                            alt="Распродажа натуральный мармолеум Гельстер" class="item-icon">
+                        <p class="item-title">натуральный линолеум</p>
+                        <p class="item-price">от 690 руб/м<sup><small>2</small></sup></p>
+                    </div>
+                    <div class="th-content__item">
+                        <img src="./img/pages-name-imgs/sale/icon-2-vinyl.svg" alt="Распродажа линолеум пвх Гельстер"
+                            class="item-icon">
+                        <p class="item-title">линолеум пвх</p>
+                        <p class="item-price">от <span class="from-price_pvh"></span> руб/м<sup><small>2</small></sup>
+                        </p>
+                    </div>
+                    <div class="th-content__item">
+                        <img src="./img/pages-name-imgs/sale/icon-3-covr.plitk.svg"
+                            alt="Распродажа ковровая плитка Гельстер" class="item-icon">
+                        <p class="item-title">ковровая плитка</p>
+                        <p class="item-price">от <span class="from-price_kovr-plitka"></span>
+                            руб/м<sup><small>2</small></sup>
+                        </p>
+                    </div>
+                    <div class="th-content__item">
+                        <img src="./img/pages-name-imgs/sale/icon-4-gr.svg"
+                            alt="Распродажа грязезащитные ковры Гельстер" class="item-icon">
+                        <p class="item-title">грязезащитные ковры</p>
+                        <p class="item-price">от <span class="from-price_gryaz"></span> руб/м<sup><small>2</small></sup>
+                        </p>
+                    </div>
+                    <div class="th-content__item">
+                        <img src="./img/pages-name-imgs/sale/icon-6-kovrolin.svg" alt="Распродажа ковролина Гельстер"
+                            class="item-icon">
+                        <p class="item-title">Ковролин</p>
+                        <p class="item-price">от <span class="from-price_kovr"></span> руб/м<sup><small>2</small></sup>
+                        </p>
+                    </div>
+                    <div class="th-content__item">
+                        <img src="./img/pages-name-imgs/sale/icon-8-sport-linoleum.svg"
+                            alt="Распродажа спортивного линолеума Гельстер" class="item-icon">
+                        <p class="item-title">Спортивный линолеум</p>
+                        <p class="item-price">от <span class="from-price_sport"></span> руб/м<sup><small>2</small></sup>
+                        </p>
+                    </div>
+                    <!-- <div class="th-content__item">
+                        <img src="./img/pages-name-imgs/sale/icon-7-pvx.svg" alt="Распродажа плитки ПВХ Гельстер"
+                            class="item-icon">
+                        <p class="item-title">Плитка ПВХ</p>
+                        <p class="item-price">от 257 руб/м<sup><small>2</small></sup></p>
+                    </div> -->
+                    <div class="th-content__item">
+                        <img src="./img/pages-name-imgs/sale/icon-5-other.svg"
+                            alt="Распродажа натуральный мармолеум Гельстер" class="item-icon">
+                        <p class="item-title">Прочее</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href = "#back" class="arrow-up">
+                <span></span>
+            </a> -->
+            <div class="mobile-categories">
+                <menu class="cat__list">
+                    <li class="cat__item cat__item_act">
+                        <img src="./img/pages-name-imgs/sale/icon-1-marm.svg" alt="" class="cat__icon hide__icon">
+                        <img src="./img/pages-name-imgs/sale/icon-1-marm-act.svg" alt=""
+                            class="cat__icon-act show__icon">
+                    </li>
+                    <li class="cat__item">
+                        <img src="./img/pages-name-imgs/sale/icon-2-vinyl.svg" alt="" class="cat__icon"
+                            style="padding-top: 7px;">
+                        <img src="./img/pages-name-imgs/sale/icon-2-vinyl-act.svg" alt="" class="cat__icon-act"
+                            style="padding-top: 7px;">
+                    </li>
+                    <li class="cat__item">
+                        <img src="./img/pages-name-imgs/sale/icon-3-covr.plitk.svg" alt="" class="cat__icon">
+                        <img src="./img/pages-name-imgs/sale/icon-3-covr.plitk-act.svg" alt="" class="cat__icon-act">
+                    </li>
+                    <li class="cat__item">
+                        <img src="./img/pages-name-imgs/sale/icon-4-gr.svg" alt="" class="cat__icon">
+                        <img src="./img/pages-name-imgs/sale/icon-4-gr-act.svg" alt="" class="cat__icon-act">
+                    </li>
+                    <li class="cat__item">
+                        <img src="./img/pages-name-imgs/sale/icon-6-kovrolin.svg" alt="" class="cat__icon">
+                        <img src="./img/pages-name-imgs/sale/icon-6-kovrolin-act.svg" alt="" class="cat__icon-act">
+                    </li>
+                    <li class="cat__item">
+                        <img src="./img/pages-name-imgs/sale/icon-8-sport-linoleum.svg" alt="" class="cat__icon">
+                        <img src="./img/pages-name-imgs/sale/icon-8-sport-linoleum-act.svg" alt=""
+                            class="cat__icon-act">
+                    </li>
+                    <!-- <li class="cat__item">
+                        <img src="./img/pages-name-imgs/sale/icon-7-pvx.svg" alt="" class="cat__icon">
+                        <img src="./img/pages-name-imgs/sale/icon-7-pvx-act.svg" alt="" class="cat__icon-act">
+                    </li> -->
+                    <li class="cat__item">
+                        <img src="./img/pages-name-imgs/sale/icon-5-other.svg" alt="" class="cat__icon">
+                        <img src="./img/pages-name-imgs/sale/icon-5-other-act.svg" alt="" class="cat__icon-act">
+                    </li>
+                </menu>
+            </div>
+        </div>
+        <div class="fourth-block">
+            <!-- <p class="instruction">*Скидка действует при покупке покрытий от 500 м²</p> -->
+            <div class="fourth-block__content fourth-block__content_hide">
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3032</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3032.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3032.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3032 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">690 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 7 кв.м* (С)</p>
+                </div> -->
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3146</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3146.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3146.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3146 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">690 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 11,4 кв.м* (С)</p>
+                </div> -->
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3203</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3203.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3203.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3203 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">690 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 10 кв.м* (С)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3204</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3204.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3204.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3204 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">690 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 120 кв.м - 2,5 мм(С)</p>
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3077</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3077.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3077.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3077 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 5 кв.м* (С)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3224</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3224.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3224.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3224 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 530,7 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3240</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3240.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3240.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3240 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 506,1 кв.м(М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3055</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3055.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3055.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3055 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <!-- <p class="rest-s">остаток 11,2 кв.м*(С)</p> -->
+                    <p class="rest-m">565,2 кв.м (М)</p>
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3075</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3075.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3075.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3075 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 25,2 кв.м*(С)</p>
+                    <p class="rest-m">65,0 кв.м (М)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3030</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3030.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3030.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3030 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <!-- <p class="rest-s">остаток 11,2 кв.м*(С)</p> -->
+                    <p class="rest-m">64,7 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3173</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3173.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3173.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3173 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 63,8 кв.м (М)</p>
+                    <!-- <p class="rest-s">остаток 60,8 кв.м (С)</p> -->
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3182</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3182.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3182.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3182 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">690 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 34 кв.м *(С)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3174</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3174.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3174.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3174 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">129 кв.м - 2,5 мм (М)</p>
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3233</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3233.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3233.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3233 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 48,8 кв.м* (С);</p>
+                    <p class="rest-m">129,4 кв.м (М)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Real,<br>арт. 3239</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3239.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3239.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3239 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 5,3 кв.м* - 2,5 мм (С);</p>
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Fresco,<br>арт. 3860</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3860.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3860.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3860 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 11,5 кв.м* (С);</p>
+                </div> -->
+                <!-- <div class="content__item">
+                    <p class="item__name">Marmoleum Fresco,<br>арт. 3866</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3866.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3866.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3866 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 8 кв.м* (С);</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Marmoleum Fresco,<br>арт. 3882</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/marmoleum/3882.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/marmoleum/3882.jpg"
+                                alt="Натуральный линолеум Marmoleum Real 3882 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1380 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">966 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 389,8 кв.м (М);</p>
+                </div>
+            </div>
+            <div class="fourth-block__content show-alert">
+                <!-- <p class="instruction">*Скидка действует при покупке покрытий от 500 м²</p> -->
+                <div class="content__item">
+                    <p class="item__name">Smaragd Classic,<br>арт. 6151</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/linol_pvx/100082_6151.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/linol_pvx/100082_6151.jpg"
+                                alt="Линолеум ПВХ Smaragd Classic 6151 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="old-smaragd"></span>
+                                        руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="smaragd"></span><span>руб/м<sup><small>2</small></sup></span>
+                        </p>
+                    </div>
+                    <p class="rest-s">остаток 34 кв.м (С)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Smaragd Classic<br>арт. 6110</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/Smaragd_classic/article/6110.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/Smaragd_classic/article/6110.jpg"
+                                alt="плитка ПВХ Smaragd Classic 6110 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="old-smaragd"></span>
+                                        руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="smaragd"></span><span>руб/м<sup><small>2</small></sup></span>
+                        </p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Smaragd Classic<br>арт. 6113</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/Smaragd_classic/article/6113.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/Smaragd_classic/article/6113.jpg"
+                                alt="плитка ПВХ Smaragd Classic 6113 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="old-smaragd"></span>
+                                        руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="smaragd"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 47 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Smaragd Classic<br>арт. 6125</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/Smaragd_classic/article/6125.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/Smaragd_classic/article/6125.jpg"
+                                alt="плитка ПВХ Smaragd Classic 6125 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="old-smaragd"></span>
+                                        руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="smaragd"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 142 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Smaragd Classic<br>арт. 6176</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/Smaragd_classic/article/6176.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/Smaragd_classic/article/6176.jpg"
+                                alt="плитка ПВХ Smaragd Classic 6176 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="old-smaragd"></span>
+                                        руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="smaragd"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 49 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Smaragd Classic<br>арт. 6186</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/Smaragd_classic/article/6186.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/Smaragd_classic/article/6186.jpg"
+                                alt="плитка ПВХ Smaragd Classic 6186 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="old-smaragd"></span>
+                                        руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="smaragd"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 63 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Smaragd Classic<br>арт. 6198</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/Smaragd_classic/article/6198.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/Smaragd_classic/article/6198.jpg"
+                                alt="плитка ПВХ Smaragd Classic 6198 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-smaragd"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="smaragd"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Emerald Wood<br>арт. 8301</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_wood/article/8301.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_wood/article/8301.jpg"
+                                alt="Проектный винил Emerald Wood 8301 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">?<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 1834 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Wood<br>арт. 8302</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_wood/article/8302.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_wood/article/8302.jpg"
+                                alt="Проектный винил Emerald Wood 8302 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">?<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 145 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Wood<br>арт. 8602</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_wood/article/8602.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_wood/article/8602.jpg"
+                                alt="Проектный винил Emerald Wood 8602 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">?<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 138 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Wood<br>арт. 8603</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_wood/article/8603.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_wood/article/8603.jpg"
+                                alt="Проектный винил Emerald Wood 8603 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">?<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 900 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Wood<br>арт. 8503</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_wood/article/8503.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_wood/article/8503.jpg"
+                                alt="Проектный винил Emerald Wood 8503 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">?<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 181 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Wood<br>арт. 8701</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_wood/article/8701.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_wood/article/8701.jpg"
+                                alt="Проектный винил Emerald Wood 8701 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">?<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 650 кв.м (М)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Emerald Spectra<br>арт. 5525</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_spectra/article/5525.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_spectra/article/5525.jpg"
+                                alt="Проектный винил Emerald Spectra 5525 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-spectra"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="spectra"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 1277 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Spectra<br>арт. 5530</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_spectra/article/5530.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_spectra/article/5530.jpg"
+                                alt="Проектный винил Emerald Spectra 5530 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-spectra"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="spectra"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 2648 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Spectra<br>арт. 5531</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_spectra/article/5531.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_spectra/article/5531.jpg"
+                                alt="Проектный винил Emerald Spectra 5531 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-spectra"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="spectra"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 60 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Spectra<br>арт. 5534</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_spectra/article/5534.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_spectra/article/5534.jpg"
+                                alt="Проектный винил Emerald Spectra 5534 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-spectra"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="spectra"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 67 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Spectra<br>арт. 5555</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_spectra/article/5555.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_spectra/article/5555.jpg"
+                                alt="Проектный винил Emerald Spectra 5555 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-spectra"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="spectra"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 947 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Spectra<br>арт. 5596</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_spectra/article/5596.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_spectra/article/5596.jpg"
+                                alt="Проектный винил Emerald Spectra 5596 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-spectra"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="spectra"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 48 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Spectra<br>арт. 5598</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_spectra/article/5598.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_spectra/article/5598.jpg"
+                                alt="Проектный винил Emerald Spectra 5598 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-spectra"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="spectra"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 43 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8010</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8010.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8010.jpg"
+                                alt="Проектный винил Emerald Standart 8010 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 98 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8059</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8059.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8059.jpg"
+                                alt="Проектный винил Emerald Standart 8059 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 48 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8063</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8063.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8063.jpg"
+                                alt="Проектный винил Emerald Standart 8063 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 47 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8077</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8077.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8077.jpg"
+                                alt="Проектный винил Emerald Standart 8077 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8135</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8135.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8135.jpg"
+                                alt="Проектный винил Emerald Standart 8135 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 100 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8224</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8224.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8224.jpg"
+                                alt="Проектный винил Emerald Standart 8224 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 97 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8232</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8232.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8232.jpg"
+                                alt="Проектный винил Emerald Standart 8232 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 450 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Emerald Standart<br>арт. 8337</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/emerald_standart/article/8337.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/emerald_standart/article/8337.jpg"
+                                alt="Проектный винил Emerald Standart 8337 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="standart"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 246 кв.м (М)</p>
+                </div>
+            </div>
+            <div class="fourth-block__content ">
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Apex,<br>арт. 266</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/266_smoke.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/266_smoke.jpg"
+                                alt="Ковровая плитка Forbo Tessera Apex 266 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-apex"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="apex"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 20 кв.м (С)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Apex,<br>арт. 275</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/275_ginger.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/275_ginger.jpg"
+                                alt="Ковровая плитка Forbo Tessera Apex 275 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-apex"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="apex"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 745 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Apex,<br>арт. 261</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/261_solway.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/261_solway.jpg"
+                                alt="Ковровая плитка Forbo Tessera Apex 261 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-apex"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="apex"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 15 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Apex,<br>арт. 270</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/270apex.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/270apex.jpg"
+                                alt="Ковровая плитка Forbo Tessera Apex 270 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-apex"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="apex"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 10 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Basis,<br>арт. 367</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/367.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/367.jpg"
+                                alt="Ковровая плитка Forbo Tessera Basis 367 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-basis"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="basis"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 205 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Basis,<br>арт. 352</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/352.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/352.jpg"
+                                alt="Ковровая плитка Forbo Tessera Basis 352 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-basis"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="basis"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 40 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Format,<br>арт. 614</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/614_mocha_choca.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/614_mocha_choca.jpg"
+                                alt="Ковровая плитка Forbo Tessera Format 614 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-basis"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="basis"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 15 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Tessera Space 1,<br>арт. 1808</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/1808_bistre.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/1808_bistre.jpg"
+                                alt="Ковровая плитка Tessera Space 1 1808 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-space"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="space-one"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 40 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Tessera Space 1,<br>арт. 1807</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/1807.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/1807.jpg"
+                                alt="Ковровая плитка Tessera Space 1 1807 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-space"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="space-one"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 90 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Tessera Space 1,<br>арт. 1801</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/1801.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/1801.jpg"
+                                alt="Ковровая плитка Tessera Space 1 1801 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-space"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="space-one"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 15 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Tessera Inline,<br>арт. 860</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/860.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/860.jpg"
+                                alt="Ковровая плитка Tessera Inline 860 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-apex"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="apex"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 280 кв.м (М)</p>
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Tessera Inline,<br>арт. 857</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/857.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/857.jpg"
+                                alt="Ковровая плитка Tessera Inline 857 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">1500 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">1100<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 124 кв.м (М)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Tessera Layout,<br>арт. 2122</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/2122.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/2122.jpg"
+                                alt="Ковровая плитка Tessera Layout 2122 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-20&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-layout"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="layout"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 65 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Tessera Layout,<br>арт. 2103</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/2103.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/2103.jpg"
+                                alt="Ковровая плитка Tessera Layout 2103 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-20&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-layout"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="layout"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 55 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Forbo Tessera Apex,<br>арт. 269</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/269_ash.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/269_ash.jpg"
+                                alt="Ковровая плитка Forbo Tessera Apex 269 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-apex"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="apex"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 15 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Tessera Mix,<br>арт. 960</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovr-plitka/960.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovr-plitka/960.jpg"
+                                alt="Ковровая плитка Tessera Mix 960 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-mix"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="mix"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 5 кв.м (М)</p>
+                </div>
+            </div>
+            <div class="fourth-block__content ">
+                <div class="content__item">
+                    <p class="item__name">Coral Brush,<br>арт. 5834</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/gryaz/5834.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/gryaz/5834.jpg"
+                                alt="Грязезащитный ковёр Coral Brush 5834 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <!-- <div class="sale-block">
+                                <p class="sale-percent">-48&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">4350 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div> -->
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="brush"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 19,9 кв.м* (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Coral Classic,<br>арт. 4721</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/gryaz/4721.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/gryaz/4721.jpg"
+                                alt="Грязезащитный ковёр Coral Classic 4721 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <!-- <div class="sale-block">
+                                <p class="sale-percent">-48&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">3999 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div> -->
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="classic"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 30,4 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Coral Duo,<br>арт. 9807</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/gryaz/9807.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/gryaz/9807.jpg"
+                                alt="Грязезащитный ковёр Coral Duo 9807 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <!-- <div class="sale-block">
+                                <p class="sale-percent">-37&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">4300 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div> -->
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="duo"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 22 кв.м (М)</p>
+                </div>
+            </div>
+
+            <div class="fourth-block__content">
+                <!-- <div class="content__item">
+                    <p class="item__name">Akzent<br>арт. 10700</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovrolin/10700.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovrolin/10700.jpg"
+                                alt="Ковролин Akzent 10700 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">880 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">675<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 60 кв.м (М)</p>
+                </div> -->
+                <div class="content__item">
+                    <p class="item__name">Akzent,<br>арт. 10715</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/kovrolin/10715.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/kovrolin/10715.jpg"
+                                alt="Ковролин Akzent 10715 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="old-akzent"></span>
+                                        руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="akzent"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 780 кв.м (М)</p>
+                </div>
+            </div>
+            <div class="fourth-block__content show-alert">
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 00570</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/00570.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/00570.jpg"
+                                alt="Спортивный линолеум Sporline Classic 00570 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 36 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 01070</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/01070.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/01070.jpg"
+                                alt="Спортивный линолеум Sporline Classic 01070 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 143 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 02040</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/02040.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/02040.jpg"
+                                alt="Спортивный линолеум Sporline Classic 02040 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 36 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 02070</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/02070.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/02070.jpg"
+                                alt="Спортивный линолеум Sporline Classic 02070 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 31 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 03040</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/03040.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/03040.jpg"
+                                alt="Спортивный линолеум Sporline Classic 03040 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 72 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 05040</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/05040.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/05040.jpg"
+                                alt="Спортивный линолеум Sporline Classic 05040 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 36 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 07601</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/07601.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/07601.jpg"
+                                alt="Спортивный линолеум Sporline Classic 07601 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 158 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 07603</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/07603.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/07603.jpg"
+                                alt="Спортивный линолеум Sporline Classic 07603 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 62 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 07701</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/07701.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/07701.jpg"
+                                alt="Спортивный линолеум Sporline Classic 07701 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 92 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Classic<br>арт. 07702</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/07702.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/07702.jpg"
+                                alt="Спортивный линолеум Sporline Classic 07702 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-classic"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport6-0"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 72 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Standart<br>арт. 02070</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/02070.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/02070.jpg"
+                                alt="Спортивный линолеум Sporline Standart 02070 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-sport-standart"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport4-3"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 100 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Standart<br>арт. 03040</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/03040.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/03040.jpg"
+                                alt="Спортивный линолеум Sporline Standart 03040 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-sport-standart"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport4-3"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Standart<br>арт. 04502</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/04502.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/04502.jpg"
+                                alt="Спортивный линолеум Sporline Standart 04502 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-sport-standart"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport4-3"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Standart<br>арт. 05030</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/05030.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/05030.jpg"
+                                alt="Спортивный линолеум Sporline Standart 05030 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-sport-standart"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport4-3"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Standart<br>арт. 07601</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/07601.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/07601.jpg"
+                                alt="Спортивный линолеум Sporline Standart 07601 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-sport-standart"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport4-3"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 44 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Standart<br>арт. 07603</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/07603.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/07603.jpg"
+                                alt="Спортивный линолеум Sporline Standart 07603 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-sport-standart"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport4-3"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Sportline Standart<br>арт. 07701</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/sportline/article/07701.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/sportline/article/07701.jpg"
+                                alt="Спортивный линолеум Sporline Standart 07701 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-sport-standart"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="sport4-3"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 50 кв.м (М)</p>
+                </div>
+            </div>
+
+            <!-- <div class="fourth-block__content">
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4022P</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4022P.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4022P.jpg"
+                                alt="плитка ПВХ Effekta Pro 4022 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 21,21 (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4023P</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4023P.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4023P.jpg"
+                                alt="плитка ПВХ Effekta Pro 4022 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 21,21 (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4031P</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4031P.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4031P.jpg"
+                                alt="плитка ПВХ Effekta Pro 4031P распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 24,24 (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4041T</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4041T.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4041T.jpg"
+                                alt="плитка ПВХ Effekta Pro 4041T распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 66,88 (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4051T</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4051T.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4051T.jpg"
+                                alt="плитка ПВХ Effekta Pro 4051T распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 76,0 (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4053P</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4053P.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4053P.jpg"
+                                alt="плитка ПВХ Effekta Pro 4053P распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 27,27 (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4054P</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4054P.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4054P.jpg"
+                                alt="плитка ПВХ Effekta Pro 4054P распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 42,42 (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Effekta Pro<br>арт. 4055P</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/forbo/effekta_pro/article/4055P.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/forbo/effekta_pro/article/4055P.jpg"
+                                alt="плитка ПВХ Effekta Pro 4055P распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">?&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">?</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">358<span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 30,3 (М)</p>
+                </div>
+            </div> -->
+
+            <div class="fourth-block__content">
+                <div class="content__item">
+                    <p class="item__name">Керамогранит,<br>арт. PW 60885</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/else/pw.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/else/pw.jpg"
+                                alt="Керамогранит Pw 60885 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">4300 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">2700 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 14,4 кв.м (С)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Подвесной потолок,<br>Armstrong Prima Plain</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/else/prima-plain-microlook.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/else/prima-plain-microlook.jpg"
+                                alt="Подвесной потолок Armstrong Prima Plain распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <!-- <div class="sale-block">
+                                <p class="sale-percent">-37&#37;</p>
+                                <p class="sale-old-price">4300 руб/м<sup><small>2</small></sup></p>
+                            </div> -->
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">400 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 135 кв.м</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Линолюкс, коллекция Реал,<br>арт. С20615</p>
+                    <div class="item__article-block">
+                        <a href="./img/pages-name-imgs/sale/sale-article/else/С20615.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/pages-name-imgs/sale/sale-article/else/С20615.jpg"
+                                alt="Бытовой линолеум ПВХ Линолюкс, коллекция Реал С20615 распродажа"
+                                class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom">440 руб/м</span><span
+                                        class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price">370 <span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 1464 кв.м (М)</p>
+                </div>
+            </div>
+        </div>
+        <div class="instruction-block">
+            <p class="instruction">*Скидка действует при покупке покрытий от 500 м²</p>
+        </div>
+    </section>
+    <section class="preloader">
+        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+    </section>
+    <footer>
+        <? include('./included_files/footer.htm'); ?>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://www.cbr-xml-daily.ru/daily_json.js" async type="text/javascript"></script> -->
+    <script src="./js/sale.js"></script>
+    <script src="./plugins/highslide/highslide-full.js"></script>
+    <script src="Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <script src="./preloader/preloader.js"></script>
+    <script src="./included_files/header-style/hamburger.js"></script>
+</body>
+
+</html>

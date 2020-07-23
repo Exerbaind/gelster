@@ -1,0 +1,488 @@
+@import "./variables/variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section-main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    font-family: $myPTSans;
+    @include headerBg('../img/vacancy/catalog-forbo_02.jpg'); // header-block
+
+    @media screen and (max-width: 425px) {
+        margin-top: -20px;
+    }
+
+    .container {
+        width: 1200px;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+
+        .page-title-block {
+            display: flex;
+
+            @media screen and (max-width: 850px) {
+                flex-direction: column;
+            }
+
+            .page-title-block__content {
+                width: 65%;
+                margin-top: 30px;
+                padding-right: 25px;
+
+                @media screen and (max-width: 850px) {
+                    width: 100%;
+                    padding-right: 10px;
+                }
+
+                .page-title-block__title {
+                    font-size: 24px;
+                    color: $orangeColor;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    line-height: 24px;
+
+                    @media screen and (max-width: 1200px) {
+                        padding-left: 10px;
+                    }
+                }
+
+                .page-title-block__text {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $darkGreenColor;
+                    margin-top: 12px;
+                    text-align: justify;
+                    padding-right: 35px;
+
+                    @media screen and (max-width: 1200px) {
+                        padding-left: 10px;
+                    }
+
+                    @media screen and (max-width: 850px) {
+                        padding-right: 0;
+                    }
+                }
+
+                .navigation {
+                    width: 100%;
+                    margin-top: 25px;
+
+                    @media screen and (max-width: 1000px) {
+                        width: 100%;
+                    }
+
+
+                    .navigation__menu {
+                        display: flex;
+                        width: 100%;
+                        list-style: none;
+                        justify-content: baseline;
+
+                        @media screen and (max-width: 500px) {
+                            flex-wrap: wrap;
+                        }
+
+                        .navigation__item {
+                            border-left: 5px solid $orangeColor;
+                            padding-left: 10px;
+                            height: 40px;
+                            padding-right: 30px;
+                            display: flex;
+                            align-items: center;
+                            color: $darkGreenColor;
+                            transition: .3s;
+                            cursor: pointer;
+
+                            @media screen and (max-width: 500px) {
+                                width: 50%;
+                                margin-top: 5px;
+                            }
+
+                            &:hover {
+                                color: white;
+                                background-color: $orangeColor;
+                                opacity: 0.7;
+                            }
+                        }
+
+                        .active-page {
+                            padding-left: 25px;
+                            color: white;
+                            background-color: $orangeColor;
+
+                            @media screen and (max-width: 500px) {
+                                padding-left: 20px;
+                            }
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .send-resume {
+                width: 35%;
+                text-align: center;
+                padding: 25px 35px 15px 35px;
+                border-left: 1px solid $orangeColor;
+                border-right: 1px solid $orangeColor;
+
+                @media screen and (max-width: 850px) {
+                    width: 100%;
+                }
+
+                .email-icon {
+                    height: 67px;
+                    width: 67px;
+                }
+
+                .par {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $darkGreenColor;
+                    margin-top: 22px;
+                }
+
+                .email-to-send {
+                    margin-top: 28px;
+
+                    a {
+                        font-size: 16px;
+                        color: $orangeColor;
+                        line-height: 16px;
+                        text-decoration: none;
+                        transition: .3s;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vacancy-list {
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+
+            .vacancy-item {
+                position: absolute;
+                top: 0;
+                height: 0;
+                opacity: 0;
+                pointer-events: none;
+                transition: .3s;
+
+                .vacancy-description {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media screen and (max-width: 750px) {
+                        flex-direction: column;
+                    }
+
+                    .description {
+                        width: 35%;
+                        background-color: #f7f7f7;
+                        padding: 55px 50px;
+
+                        @media screen and (max-width: 750px) {
+                            width: 100%;
+                            order: 2;
+                            padding: 20px 10px;
+                        }
+
+                        .title {
+                            font-size: 18px;
+                            color: $orangeColor;
+                            text-transform: uppercase;
+                            line-height: 18px;
+                            font-weight: lighter;
+                            margin-bottom: 5px;
+                        }
+
+                        .par {
+                            margin-top: 12px;
+                            color: $darkGreenColor;
+                            font-size: 16px;
+                            line-height: 24px;
+
+                            @media screen and (max-width: 750px) {
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    .description-img {
+                        width: 64.7%;
+                        // background-image: url('../img/vacancy/vacancy_sale.jpg');
+                        background-size: 100% 100%;
+                        height: auto;
+
+                        @media screen and (max-width: 750px) {
+                            width: 100%;
+                            min-height: 300px;
+                            height: auto;
+                            order: 1;
+                        }
+
+                    }
+                }
+
+                .vacancy-cons {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 15px;
+
+                    @media screen and (max-width: 750px) {
+                        flex-direction: column;
+                        margin-top: 5px;
+                    }
+
+                    .vacancy-cons_icon {
+                        background-color: #f7f7f7;
+                        width: 35%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        @media screen and (max-width: 750px) {
+                            width: 100%;
+                            height: auto;
+                            order: 1;
+                        }
+
+                        .icon-advantages {
+                            height: 190px;
+                            width: 260px;
+                        }
+                    }
+
+                    .vacancy-cons_description {
+                        width: 64.7%;
+                        background-color: $darkGreenColor;
+                        color: white;
+                        padding: 45px 75px;
+
+                        @media screen and (max-width: 750px) {
+                            width: 100%;
+                            order: 2;
+                            padding: 20px 10px;
+                        }
+
+                        .title {
+                            font-size: 24px;
+                            text-transform: uppercase;
+                            line-height: 18px;
+                            font-weight: lighter;
+                        }
+
+                        .par {
+                            margin-top: 12px;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: justify;
+                        }
+                    }
+                }
+
+                .we-offer {
+                    margin-top: 55px;
+
+                    @media screen and (max-width: 1200px) {
+                        padding-left: 10px;
+                    }
+
+                    .title {
+                        color: $orangeColor;
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        line-height: 24px;
+                    }
+
+                    .offers-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        margin-top: 15px;
+
+                        @media screen and (max-width: 1200px) {
+                            padding-left: 15px;
+                        }
+
+                        .offer-item {
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            padding-right: 130px;
+                            margin-top: 20px;
+
+                            @media screen and (max-width: 800px) {
+                                padding-right: 30px;
+                            }
+
+                            @media screen and (max-width: 600px) {
+                                width: 100%;
+                            }
+
+                            @media screen and (max-width: 500px) {
+                                padding-right: 10px;
+                            }
+
+                            .check-img {
+                                height: 28px;
+                                width: 28px;
+                            }
+
+                            .offer-par {
+                                padding-left: 45px;
+                                color: $darkGreenColor;
+                                line-height: 24px;
+                                font-size: 16px;
+                                font-family: $myPTSerif;
+                                font-style: italic;
+
+                                @media screen and (max-width: 500px) {
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .claim-duty {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 60px;
+
+                    @media screen and (max-width: 750px) {
+                        margin-top: 20px;
+                        flex-direction: column;
+                    }
+
+                    .claim {
+                        width: 35%;
+                        background-color: #f7f7f7;
+                        padding: 55px 50px;
+
+                        @media screen and (max-width: 750px) {
+                            width: 100%;
+                            order: 2;
+                            padding: 20px 10px;
+                        }
+
+                        .title {
+                            font-size: 24px;
+                            color: $orangeColor;
+                            text-transform: uppercase;
+                            line-height: 18px;
+                            font-weight: lighter;
+                        }
+
+                        .par {
+                            margin-top: 12px;
+                            color: $darkGreenColor;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: left;
+
+                        }
+                    }
+
+                    .duty {
+                        width: 64.7%;
+                        background-color: #f7f7f7;
+                        padding: 55px 50px;
+
+                        @media screen and (max-width: 750px) {
+                            width: 100%;
+                            order: 2;
+                            padding: 20px 10px;
+                            margin-top: 5px;
+                        }
+
+                        .title {
+                            font-size: 24px;
+                            color: $orangeColor;
+                            text-transform: uppercase;
+                            line-height: 18px;
+                            font-weight: lighter;
+                        }
+
+                        .par {
+                            margin-top: 12px;
+                            color: $darkGreenColor;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: justify;
+
+                            @media screen and (max-width: 750px) {
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active {
+    position: relative !important;
+    opacity: 1 !important;
+    pointer-events: all !important;
+    height: auto !important;
+    transition: .3s;
+}
+
+
+::-webkit-scrollbar-button {
+    background-image: url("");
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ecedee;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0;
+    background-color: #edb056;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #edb056;
+}
+
+::-webkit-resizer {
+    background-image: url("");
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}

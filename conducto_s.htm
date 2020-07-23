@@ -1,0 +1,959 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="?">
+    <meta name="keywords" content="?">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./plugins/highslide/highslide.css">
+    <link rel="stylesheet" href="./css/collection.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <title>Токопроводящий линолеум Grabo Conducto S</title>
+</head>
+
+<body>
+    <section class="preloader">
+        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+    </section>
+    <header>
+        <? include('./included_files/header.htm'); ?>
+    </header>
+    <section class="section-menu">
+        <div class="menu animated__menu">
+            <p class="menu-title">другие коллекции</p>
+            <div class="menu-arrow animated__menu-arrow"></div>
+        </div>
+        <div class="active-menu animated__active-menu">
+            <div class="header-side-menu">
+                <!-- <h3>Каталог</h3> -->
+                <span class="close-menu" id="close-menu" onclick="anotherCloseCross()"></span>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="lin-grabo.htm">Все коллекции линолеума Grabo</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Гетерогенный линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_diamond_metal.htm" class="out-list_a">Diamond Standart Metal</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_diamondStandartPlaza.htm" class="out-list_a">Diamond Standart Plaza</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_forte.htm" class="out-list_a">Diamond Standart Forte</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_natural.htm" class="out-list_a">Diamond Standart Natural</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_evolution.htm" class="out-list_a">Diamond Standart Evolution</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_fresh.htm" class="out-list_a">Diamond Standart Fresh</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_soundtex.htm" class="out-list_a">Grabo Soundtex 5.0</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_top_extra.htm" class="out-list_a">Grabo Top Extra</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Гомогенный линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="./k_lin_grabo_expo.htm" class="out-list_a">Grabo Expo</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_fortis_fitt.htm" class="out-list_a">Grabo Fortis Fitt</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_fortis.htm" class="out-list_a">Grabo Fortis</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_fortis_triumph.htm" class="out-list_a">Grabo Triumph</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_polis.htm" class="out-list_a">Grabo Polis</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Токопроводящий линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list chosen-collection">Conducto S</li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Акустический линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic_neo.htm" class="out-list_a">Grabo Acoustic Neo</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic7_silver_knight.htm" class="out-list_a">Grabo Acoustic 7 Silver
+                        Knight</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic7.htm" class="out-list_a">Grabo Acoustic 7 Color</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic43uni.htm" class="out-list_a">Grabo Acoustic 43 Uni</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic_pro.htm" class="out-list_a">Grabo Acoustic Pro</a>
+                </li>
+            </menu>
+           <div class="side-bar-collection-header">
+                <h4>Спортивный линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabosport_stamina.htm" class="out-list_a">Grabo Stamina</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabosport_prima.htm" class="out-list_a">GraboSport Prima</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_start.htm" class="out-list_a">GraboFlex Start</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_gymfit50.htm" class="out-list_a">GraboFlex Gymfit 50</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_gymfit60.htm" class="out-list_a">GraboFlex Gymfit 60</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_elite60.htm" class="out-list_a">GraboSport Elite 60</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_sport_supreme.htm" class="out-list_a">GraboSport Supreme 67</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_sport_extreme80.htm" class="out-list_a">GraboSport Extreme 80</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_sport_roket.htm" class="out-list_a">GraboSport Rocket</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabosport_mega.htm" class="out-list_a">GraboSport Mega</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Сценический линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_broadway.htm" class="out-list_a">Grabo Broadway 20</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_lasVegasLux.htm" class="out-list_a">Grabo Las Vegas Lux</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_unifloor.htm" class="out-list_a">Grabo Unifloor</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_evidance25.htm" class="out-list_a">Grabo Evidance 25</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_evidance60.htm" class="out-list_a">Grabo Evidance 60</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_duett.htm" class="out-list_a">Grabo Duett</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Противоскользящий линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="k_lin_grabo_ecosafe.htm" class="out-list_a">Grabo Ecosafe</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_20jsk.htm" class="out-list_a">Grabo 20 JSK</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_grabosafe_silver_knight.htm" class="out-list_a">GraboSafe Silver Knight</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Бытовой линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_chips_astral.htm" class="out-list_a">Chips Astral</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_astral_color.htm" class="out-list_a">Astral Color</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_aura.htm" class="out-list_a">Grabo Aura</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Настенные покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_muravyl.htm" class="out-list_a">Grabo Muravyl</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Плитка ПВХ</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="pvh_grabo_plankit.htm" class="out-list_a">Grabo PlankIT</a>
+                </li>
+                <li class="out-list">
+                    <a href="pvh_grabo_domino.htm" class="out-list_a">Grabo Domino</a>
+                </li>
+                <li class="out-list">
+                    <a href="pvh_grabo_ideal.htm" class="out-list_a">Grabo Ideal</a>
+                </li>
+                <li class="out-list">
+                    <a href="pvh_grabo_robust.htm" class="out-list_a">Grabo Robust</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header_dop">
+                <h4>Другие производители линолеума</h4>
+            </div>
+            <menu class="side-bar-collection-list_dop">
+                <li class="out-list">
+                    <a href="k_lin_forbo.htm" class="out-list_a">Линолеум Forbo</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_gerflor.htm" class="out-list_a">Линолеум Gerflor</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_tarkett.htm" class="out-list_a">Линолеум Tarkett</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_armstrong.htm" class="out-list_a">Линолеум Armstrong</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_ivc.htm" class="out-list_a">Линолеум IVC</a>
+                </li>
+            </menu>
+        </div>
+    </section>
+    <section class="section-menu_mobile">
+        <div class="background-section-hamburger" id="background-section-hamburger">
+            <a class="section-hamburger"><span></span></a>
+        </div>
+        <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
+            <div class="side-bar-collection-header">
+                <h4>
+                    <a href="lin-grabo.htm">Все коллекции линолеума Grabo</a>
+                </h4>
+            </div>
+            <div class="side-bar-collection-header">
+                <h4>Гетерогенный линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_diamond_metal.htm" class="out-list_a">Diamond Standart Metal</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_diamondStandartPlaza.htm" class="out-list_a">Diamond Standart Plaza</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_forte.htm" class="out-list_a">Diamond Standart Forte</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_natural.htm" class="out-list_a">Diamond Standart Natural</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_evolution.htm" class="out-list_a">Diamond Standart Evolution</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_diamond_fresh.htm" class="out-list_a">Diamond Standart Fresh</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_soundtex.htm" class="out-list_a">Grabo Soundtex 5.0</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_top_extra.htm" class="out-list_a">Grabo Top Extra</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Гомогенный линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="./k_lin_grabo_expo.htm" class="out-list_a">Grabo Expo</a></li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_fortis_fitt.htm" class="out-list_a">Grabo Fortis Fitt</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_fortis.htm" class="out-list_a">Grabo Fortis</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_fortis_triumph.htm" class="out-list_a">Grabo Triumph</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_polis.htm" class="out-list_a">Grabo Polis</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Токопроводящий линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list chosen-collection">Conducto S</li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Акустический линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic_neo.htm" class="out-list_a">Grabo Acoustic Neo</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic7_silver_knight.htm" class="out-list_a">Grabo Acoustic 7 Silver
+                        Knight</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic7.htm" class="out-list_a">Grabo Acoustic 7 Color</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic43uni.htm" class="out-list_a">Grabo Acoustic 43 Uni</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_acoustic_pro.htm" class="out-list_a">Grabo Acoustic Pro</a>
+                </li>
+            </menu>
+           <div class="side-bar-collection-header">
+                <h4>Спортивный линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabosport_stamina.htm" class="out-list_a">Grabo Stamina</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabosport_prima.htm" class="out-list_a">GraboSport Prima</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_start.htm" class="out-list_a">GraboFlex Start</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_gymfit50.htm" class="out-list_a">GraboFlex Gymfit 50</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_gymfit60.htm" class="out-list_a">GraboFlex Gymfit 60</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_flex_elite60.htm" class="out-list_a">GraboSport Elite 60</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_sport_supreme.htm" class="out-list_a">GraboSport Supreme 67</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_sport_extreme80.htm" class="out-list_a">GraboSport Extreme 80</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_sport_roket.htm" class="out-list_a">GraboSport Rocket</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabosport_mega.htm" class="out-list_a">GraboSport Mega</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Сценический линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_broadway.htm" class="out-list_a">Grabo Broadway 20</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_lasVegasLux.htm" class="out-list_a">Grabo Las Vegas Lux</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_unifloor.htm" class="out-list_a">Grabo Unifloor</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_evidance25.htm" class="out-list_a">Grabo Evidance 25</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_evidance60.htm" class="out-list_a">Grabo Evidance 60</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_duett.htm" class="out-list_a">Grabo Duett</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Противоскользящий линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="k_lin_grabo_ecosafe.htm" class="out-list_a">Grabo Ecosafe</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_20jsk.htm" class="out-list_a">Grabo 20 JSK</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_grabo_grabosafe_silver_knight.htm" class="out-list_a">GraboSafe Silver Knight</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Бытовой линолеум</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_chips_astral.htm" class="out-list_a">Chips Astral</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_astral_color.htm" class="out-list_a">Astral Color</a>
+                </li>
+                <li class="out-list">
+                    <a href="grabo_aura.htm" class="out-list_a">Grabo Aura</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Настенные покрытия</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="grabo_muravyl.htm" class="out-list_a">Grabo Muravyl</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header">
+                <h4>Плитка ПВХ</h4>
+            </div>
+            <menu class="side-bar-collection-list">
+                <li class="out-list">
+                    <a href="pvh_grabo_plankit.htm" class="out-list_a">Grabo PlankIT</a>
+                </li>
+                <li class="out-list">
+                    <a href="pvh_grabo_domino.htm" class="out-list_a">Grabo Domino</a>
+                </li>
+                <li class="out-list">
+                    <a href="pvh_grabo_ideal.htm" class="out-list_a">Grabo Ideal</a>
+                </li>
+                <li class="out-list">
+                    <a href="pvh_grabo_robust.htm" class="out-list_a">Grabo Robust</a>
+                </li>
+            </menu>
+            <div class="side-bar-collection-header_dop">
+                <h4>Другие производители линолеума</h4>
+            </div>
+            <menu class="side-bar-collection-list_dop">
+                <li class="out-list">
+                    <a href="k_lin_forbo.htm" class="out-list_a">Линолеум Forbo</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_gerflor.htm" class="out-list_a">Линолеум Gerflor</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_tarkett.htm" class="out-list_a">Линолеум Tarkett</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_armstrong.htm" class="out-list_a">Линолеум Armstrong</a>
+                </li>
+                <li class="out-list">
+                    <a href="k_lin_ivc.htm" class="out-list_a">Линолеум IVC</a>
+                </li>
+            </menu>
+        </div>
+    </section>
+    <section class="main">
+        <div class="section-gallery">
+            <div class="gallery">
+                <div class="big-background"
+                    style="background-image: url(./img/pages-name-imgs/collection-grabo/Conducto/images/catalog-in-gerflor_03.jpg);">
+                </div>
+                <div class="collection-review"
+                    style="background-image: url(./img/pages-name-imgs/collection-grabo/Conducto/images/catalog-in-new_05.jpg); pointer-events: none; cursor: default;">
+                    <!-- <div class="opacity-block">
+                        <div class="background__video-icon">
+                            <img src="./icons/video_icon.svg" alt="" class="video-icon">
+                        </div>
+                        <p class="collection-review__text">
+                            видео-обзор<br>
+                            <span>коллекции</span>
+                        </p>
+                    </div> -->
+                </div>
+                <div class="order-material"
+                    style="background-image: url(./img/pages-name-imgs/collection-grabo/Conducto/images/catalog-in-new_07.jpg);">
+                    <div class="opacity-block">
+                        <div class="block-top-icon">
+                            <span></span>
+                        </div>
+                        <p class="order-material__text">
+                            Заказать<br>этот материал
+                        </p>
+                    </div>
+                </div>
+                <div class="watch-projects"
+                    style="background-image: url(./img/pages-name-imgs/collection-grabo/Conducto/images/catalog-in-new_09.jpg);">
+                    <a href="fotogal.htm" class="fotogal-link"></a>
+                    <div class="opacity-block">
+                        <div class="block-top-icon">
+                            <span></span>
+                        </div>
+                        <p class="watch-projects__text">
+                            смотреть все<br>реализованные<br>проекты
+                        </p>
+                    </div>
+                </div>
+                <div class="collection-name">
+                    <h1 class="name">grabo conducto s</h1>
+                </div>
+            </div>
+        </div>
+        <div class="description-and-table">
+            <div class="description">
+                <div class="upper">
+                    <h2 class="description__title">
+                        Токопроводящий линолеум<br>grabo conducto s
+                    </h2>
+                    <div class="description__watch-article">
+                        <a href="#articles" class="watch-article__href"></a>
+                        <img src="./icons/arrow-side.svg" alt="" class="watch-article__arrow-down">
+                        <p class="watch-article__text">Смотреть<br>артикулы</p>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="description__text">
+                        <p class="par">Токопроводящий линолеум Grabo Conducto S создан для помещений, где используется
+                            высокоточное оборудование. Это могут быть серверные, операционные, компьютерные классы и
+                            опенспейсы.</p>
+                        <p class="par">Покрытие также подойдет для производства электрооборудования. Оно выдерживает
+                            высокие нагрузки, так как у линолеума Grabo Conducto S группа износостойкости Т. Это
+                            означает, что материал не вытаптывается, также он способен выдержать на своей поверхности
+                            тяжелое заводское оборудование.
+                        </p>
+                        <!-- <div class="white-shadow"></div> -->
+                        <div class="description__text-hidden">
+                            <p class="par">Всего в коллекции токопроводящего линолеума Grabo Conducto S три дизайна –
+                                голубой и два светлых оттенка. Обратите внимание, что для работы покрытия в качестве
+                                токопроводящего материала требуются также медная лента, специальный клей и
+                                токопроводящая грунтовка.
+                            </p>
+                        </div>
+                        <div class="description__show" style="opacity: 0;">
+                            <p class="show-text">читать далее</p>
+                            <div class="show__arrow-icon"></div>
+                        </div>
+                    </div>
+                    <div class="description__side-title">
+                        Характеристики
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <table class="attributes">
+                    <thead class="attributes-head">
+                        <tr class="first-row">
+                            <td>Толщина покрытия</td>
+                            <td>Ширина рулона</td>
+                            <td>Намотка стандартного рулона</td>
+                        </tr>
+                        <tr class="second-row">
+                            <td>2,0 мм</td>
+                            <td>2,0 м</td>
+                            <td>20 м.пог.</td>
+                        </tr>
+                    </thead>
+                    <tbody class="attributes-body">
+                        <tr class="body-row">
+                            <td>Класс применения<sup><img src="./icons/information.svg" alt="" class="info-icon"></sup>
+                            </td>
+                            <td>34/43</td>
+                        </tr>
+                        <tr class="body-row">
+                            <td>Вес покрытия</td>
+                            <td>2800 г/м<sup>2</sup></td>
+                        </tr>
+                        <tr class="body-row">
+                            <td>Класс пожарной опасности<sup><img src="./icons/information.svg" alt=""
+                                        class="info-icon"></sup></td>
+                            <td>КМ2</td>
+                        </tr>
+                        <tr class="body-row">
+                            <td>Группа истираемости</td>
+                            <td>Т</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="attributes-hidden">
+                        <tr class="body-row">
+                            <td>Электрическое сопротивление</td>
+                            <td>R&le;1*&le;10<sup><small>9</small></sup> Ом</td>
+                        </tr>
+                        <tr class="body-row">
+                            <td>Сопротивление колесикам мебели</td>
+                            <td>высокое</td>
+                        </tr>
+                        <tr class="body-row">
+                            <td>Цветоусточивость</td>
+                            <td>6</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="table__show">
+                    <p class="table-text">развернуть характеристики</p>
+                    <div class="table__arrow-icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="dlc-materials">
+            <h3 class="dlc-materials__title">
+                к этому материалу вам понадобится
+            </h3>
+            <div class="materials-container">
+                <div class="left-slide">
+                    <img src="./icons/arrow-yellow.svg" alt="" class="left-slide__arrow" onclick="previousSlide()">
+                </div>
+                <div class="materials-container__item show">
+                    <a href="himia_kley_linoleum.htm"></a>
+                    <p class="item-title">Клей</p>
+                    <img src="./icons/desired_items/icon-1.svg" alt="Клей коммерческий линолеум Grabo Conducto S">
+                    <p class="item-name">Клей Форбо 523</p>
+                </div>
+                <div class="materials-container__item">
+                    <a href="#"></a>
+                    <p class="item-title">Грунт</p>
+                    <img src="./icons/desired_items/icon-2.svg" alt="Грунтовка коммерческий линолеум Grabo Conducto S">
+                    <p class="item-name">Грунтовка 041</p>
+                </div>
+                <div class="materials-container__item">
+                    <a href="himia_yhod.htm"></a>
+                    <p class="item-title">Очиститель</p>
+                    <img src="./icons/desired_items/icon-3.svg" alt="Очиститель коммерческий линолеум Grabo Conducto S">
+                    <p class="item-name">Форбо 888</p>
+                </div>
+                <div class="materials-container__item">
+                    <a href="plintus_Dollken.htm"></a>
+                    <p class="item-title">Плинтус</p>
+                    <img src="./icons/desired_items/icon-4.svg" alt="Плинтус коммерческий линолеум Grabo Conducto S">
+                    <p class="item-name">Каталог плинтусов</p>
+                </div>
+                <div class="materials-container__item">
+                    <p class="item-title">Настил</p>
+                    <img src="./icons/desired_items/icon-5.svg" alt="Настил коммерческий линолеум Grabo Conducto S">
+                    <p class="item-name_btn"><i class="font-fix">заказать</i></p>
+                </div>
+                <div class="right-slide" onclick='nextSlide()'>
+                    <img src="./icons/arrow-yellow.svg" alt="" class="right-slide__arrow">
+                </div>
+            </div>
+        </div>
+        <div class="articles" id="articles">
+            <h5 class="articles-title">
+                Цветовая палитра conducto s
+            </h5>
+            <menu class="articles-btns">
+                <ul class="articles-podkatalog">
+                    <li class="articles-podkatalog-name all chosen-article" onclick="all()"><span class="color"></span>
+                    </li>
+                    <li class="articles-podkatalog-name blue" onclick="blue()"><span class="color"></span></li>
+                    <li class="articles-podkatalog-name white" onclick="white()"><span class="color"></span></li>
+                </ul>
+            </menu>
+            <div class="articles-container">
+                <div class="article-item white">
+                    <div class="video-act">
+                        <img src="./icons/video_icon.svg" class="video-article" alt="">
+                    </div>
+                    <a href="./img/collections/grabo/Conducto/Sand.jpg"
+                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                        <img src="./img/collections/grabo/Conducto/Sand.jpg" class="article-img"
+                            alt="Токопроводящий линолеум Grabo Conducto S sand">
+                        <div class="white-block">
+                            <p class="article-text">sand
+                                <!-- <span>orange glow</span></p> -->
+                        </div>
+                        <div class="article-zoom">
+                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                        </div>
+                    </a>
+                    <div class="article-video-block">
+                        <video src="./video-article/grabo/Grabo_Conducto_S/sand.mp4" height="468px" width="700px"
+                            preload="metadata" loop="loop" controls class="article" muted></video>
+                    </div>
+                </div>
+                <div class="article-item blue">
+                    <div class="video-act">
+                        <img src="./icons/video_icon.svg" class="video-article" alt="">
+                    </div>
+                    <a href="./img/collections/grabo/Conducto/Lagoon.jpg"
+                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                        <img src="./img/collections/grabo/Conducto/Lagoon.jpg" class="article-img"
+                            alt="Токопроводящий линолеум Grabo Conducto S Lagoon">
+                        <div class="white-block">
+                            <p class="article-text">lagoon
+                                <!-- <span>orange glow</span></p> -->
+                        </div>
+                        <div class="article-zoom">
+                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                        </div>
+                    </a>
+                    <div class="article-video-block">
+                        <video src="./video-article/grabo/Grabo_Conducto_S/lagoon.mp4" height="468px" width="700px"
+                            preload="metadata" loop="loop" controls class="article" muted></video>
+                    </div>
+                </div>
+                <div class="article-item white">
+                    <div class="video-act">
+                        <img src="./icons/video_icon.svg" class="video-article" alt="">
+                    </div>
+                    <a href="./img/collections/grabo/Conducto/Coast.jpg"
+                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                        <img src="./img/collections/grabo/Conducto/Coast.jpg" class="article-img"
+                            alt="Токопроводящий линолеум Consucto S coast S Coast">
+                        <div class="white-block">
+                            <p class="article-text">coast
+                                <!-- <span>orange glow</span></p> -->
+                        </div>
+                        <div class="article-zoom">
+                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                        </div>
+                    </a>
+                    <div class="article-video-block">
+                        <video src="./video-article/grabo/Grabo_Conducto_S/coast.mp4" height="468px" width="700px"
+                            preload="metadata" loop="loop" controls class="article" muted></video>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all-collections" style="height: 0; opacity: 0; pointer-events: 0;">
+                <p class="text-collections">развернуть коллекцию</p>
+                <img src="./icons/arrow_righ-orange.svg" alt="" class="collections-arrow">
+            </div>
+        </div>
+        <div class="useful-pages">
+            <div class="useful-header">
+                <div class="header-line"></div>
+                <p>полезная информация</p>
+                <div class="header-line"></div>
+            </div>
+            <div class="useful-pages__container">
+                <div class="sale-page"
+                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-sale.jpg);">
+                    <a href='sale.htm' class="href-link"></a>
+                    <div class="opacity-block"></div>
+                    <p class="sale-title">распродажа <br><span>линолеума</span></p>
+                    <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side">
+                </div>
+                <div class="page-text"
+                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-article2.jpg);">
+                    <a href='uhod_gomogen.htm' class="href-link"></a>
+                    <div class="opacity-block"></div>
+                    <p class="page-text__title">как ухаживать <br><span>за гомогенным линолеумом</span></p>
+                    <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side">
+                    <div class="background__file-icon">
+                        <img src="./icons/file_icon.svg" alt="" class="file-icon">
+                    </div>
+                </div>
+                <div class="page-text"
+                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-article1.jpg);">
+                    <a href='difference_and_care.htm' class="href-link"></a>
+                    <div class="opacity-block"></div>
+                    <p class="page-text__title">разница между гомогенным<br><span>и гетерогенным линолеумом</span></p>
+                    <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side">
+                    <div class="background__file-icon">
+                        <img src="./icons/file_icon.svg" alt="" class="file-icon">
+                    </div>
+                </div>
+                <div class="clean-page"
+                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-video.jpg);">
+                    <!-- <a href=""></a> -->
+                    <div class="opacity-block"></div>
+                    <div class="watch-video">
+                        <div class="play-icon"></div>
+                        <p class="text">смотреть видео</p>
+                    </div>
+                    <p class="watch-text">
+                        очистка и восстановление<br><span>натурального линолеума</span>
+                    </p>
+                    <div class="background__file-icon">
+                        <img src="./icons/video_icon.svg" alt="" class="file-icon">
+                    </div>
+                </div>
+                <div class="clean-video__mobile"
+                    style="background-image: url(./img/pages-name-imgs/collection-in/mobile1_02.jpg);">
+                    <a href="https://www.youtube.com/watch?v=9wzbKD6c6eU&t=13s" class="clean-video__link"
+                        target="_blank"></a>
+                    <div class="opacity-block"></div>
+                    <div class="watch-video">
+                        <div class="play-icon"></div>
+                        <p class="text">восстановление<br><span>мармолеума</span></p>
+                    </div>
+                </div>
+                <div class="page-text__mobile"
+                    style="background-image: url(./img/pages-name-imgs/collection-in/mobile1_04.jpg);">
+                    <a href='uhod_gomogen.htm' class="page-text__mobile-link"></a>
+                    <div class="opacity-block"></div>
+                    <p class="page-text__mobile__title">восстановление<br><span class="snoska">линолеума</span><br><span
+                            class="read">читать</span></p>
+                </div>
+                <div class="collection-review__mobile"
+                    style="background-image: url(./img/collections/gerflor/mipolam_classic/images/catalog-in-new_05.jpg);">
+                    <!-- <a href="https://www.youtube.com/watch?v=Dgwarg1bnIc&t" target="_blank"></a>
+                        <div class="opacity-block">
+                            <p class="title">видео-обзор<br><span>коллекции</span></p>
+                        </div>
+                        <div class="background__video-icon">
+                            <img src="./icons/video_icon.svg" alt="" class="video-icon">
+                        </div> -->
+                </div>
+                <div class="sert-sootv">
+                    <img src="./icons/arrow-down.svg" alt="" class="arrow-down">
+                    <a href="./sertificate/fortis_muravyl_plankIT.pdf" target="_blank">скачать
+                        сертификат<br>соответствия</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Youtube API -->
+    <section class="youtube-api">
+        <div id="player"></div>
+    </section>
+    <section class="youtube-api-clean">
+        <div id="player-clean"></div>
+    </section>
+    <script>
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // var player;
+        var playerClean;
+
+        function onYouTubeIframeAPIReady() {
+            // player = new YT.Player('player', {
+            //     height: '400',
+            //     width: '680',
+            //     videoId: 'ti06GUK0tAI',
+            // });
+            playerClean = new YT.Player('player-clean', {
+                height: '400',
+                width: '680',
+                videoId: '9wzbKD6c6eU',
+            });
+        }
+
+        function stopVideo() {
+            // player.stopVideo();
+            playerClean.stopVideo();
+        }
+    </script>
+    <!-- Forms -->
+    <section class="form__order-materials">
+        <div class="form__order-materials__content">
+            <header class="service-head-pay_form">
+                <h2 class="uppercase">бланк заказа работ</h2>
+                <div class="close-form"><img src="./icons/cross.png" alt=""></div>
+            </header>
+            <form class="service-pay_form" action="./php-forms/articles-form_send.php" method="POST" target="_blank">
+                <label for="fio">Введите Ваше имя:*</label>
+                <input type="text" name="fio" placeholder="Имя" title="Введите Ваше имя" required="required"
+                    oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
+                <label for="telephone">Введите телефон для связи:*</label>
+                <input type="tel" name="tel" placeholder="+7 ( ___ ) ___-__-__" title="Введите телефон"
+                    required="required" oninvalid="this.setCustomValidity('Введите телефон')"
+                    oninput="setCustomValidity('')">
+                <label for="city">Укажите город:*</label>
+                <input type="text" name="city" placeholder="Город" title="Укажите город" required="required"
+                    oninvalid="this.setCustomValidity('Укажите ваш город')" oninput="setCustomValidity('')">
+                <label for="need_service">Площадь помещения:</label>
+                <textarea name="need_service" cols="1" rows="1" placeholder="Площадь в м²" title="Площадь помещения"
+                    oninvalid="this.setCustomValidity('Напишите площадь помещения')"
+                    oninput="setCustomValidity('')"></textarea>
+                <label for="need_article">Требуемый артикул:</label>
+                <textarea name="need_article" cols="1" rows="1" placeholder="Номер артикула" title="Номер артикула"
+                    oninvalid="this.setCustomValidity('Напишите номер артикула')"
+                    oninput="setCustomValidity('')"></textarea>
+                <input id="check" name="check" type="hidden" value="" />
+                <div class="g-recaptcha" data-sitekey="6Lc33LgUAAAAAJyG-7MnyrRzuzZ-KJFPhBeC2zCV"></div>
+                <div class="text-danger"></div>
+                <p class="service_buttons">
+                    <input type="submit" name="enter" value="Заказать"
+                        onclick="document.getElementById('check').value = 'secretcode';">
+                    <input type="reset" value="Очистить">
+                </p>
+            </form>
+        </div>
+    </section>
+    <section class="form__favours">
+        <div class="form__favours__content">
+            <header class="service-head-pay_form">
+                <h2 class="uppercase">бланк заказа работ</h2>
+                <div class="close-form_f"><img src="./icons/cross.png" alt=""></div>
+            </header>
+            <form class="service-pay_form" action="./php-forms/send_uslugi.php" method="POST" target="_blank">
+                <label for="fio">Введите Ваше имя:*</label>
+                <input type="text" id="fio" name="fio" placeholder="Имя" title="Введите Ваше имя" required="required"
+                    oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
+                <label for="telephone">Введите телефон для связи:*</label>
+                <input type="tel" id="telephone" name="tel" placeholder="+7 ( ___ ) ___-__-__" title="Введите телефон"
+                    required="required" oninvalid="this.setCustomValidity('Введите телефон')"
+                    oninput="setCustomValidity('')">
+                <label for="city">Укажите город:*</label>
+                <input type="text" id="city" name="city" placeholder="Город" title="Укажите город" required="required"
+                    oninvalid="this.setCustomValidity('Укажите ваш город')" oninput="setCustomValidity('')">
+                <label for="need_article">Какие услуги необходимы:</label>
+                <textarea name="need_article" id="need_article" cols="1" rows="1" placeholder="Список услуг"
+                    title="Услуги" oninvalid="this.setCustomValidity('Укажите список услуг')"
+                    oninput="setCustomValidity('')"></textarea>
+                <input id="check" name="check" type="hidden" value="" />
+                <div class="g-recaptcha" data-sitekey="6Lc33LgUAAAAAJyG-7MnyrRzuzZ-KJFPhBeC2zCV"></div>
+                <div class="text-danger" id="recaptchaError"></div>
+                <p class="service_buttons">
+                    <input type="submit" name="enter" value="Заказать"
+                        onclick="document.getElementById('check').value = 'secretcode';">
+                    <input type="reset" value="Очистить">
+                </p>
+            </form>
+        </div>
+    </section>
+    <section class="modal-attributes">
+        <div class="attr">
+            <div class="block">
+                <div class="title">
+                    <p class="attr-name">Класс применения</p>
+                    <div class="close-modal"><span></span></div>
+                </div>
+                <p class="text">
+                    Каждому напольному покрытию присваивается класс применения, в зависимости от того, какие
+                    нагрузки это покрытие может выдержать. Классы делятся на бытовые (обозначаются цифрами в
+                    диапазоне 21-23), коммерческие (31-34) и промышленные (34-43).<br>
+                </p>
+            </div>
+        </div>
+        <div class="attr">
+            <div class="block">
+                <div class="title">
+                    <p class="attr-name">Класс пожарной опасности</p>
+                    <div class="close-modal"><span></span></div>
+                </div>
+                <img src="./img/attributes/KM.jpeg" alt="" class="km">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <? include('./included_files/footer.htm'); ?>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./preloader/preloader.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="./plugins/highslide/highslide-full.js"></script>
+    <script src="./included_files/header-style/hamburger.js"></script>
+    <script src="./js/collection.js"></script>
+    <script src="js/color-filter/color-filter.js"></script>
+</body>
+
+</html>
