@@ -6,8 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Линолеум на сегодняшний день является одним из самых популярных видов напольных покрытий, такой
+    спрос объясняется его практичностью, высокой прочностью и функциональностью. Большой набор
+    цветовых оттенков и широкий выбор свойств, позволяют подобрать наиболее подходящее решение,
+    соответствующее всем предъявляемым требованиям, что делает линолеум универсальным материалом.
+    Линолеум можно разделить на две большие группы: гомогенный и гетерогенный.">
+    <meta name="keywords" content="Разница между гомогенным и гетерогенным линолеумом">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./plugins/highslide/highslide.css">
     <link rel="stylesheet" href="./css/diff-geterogen_gomogen.css">
@@ -17,6 +21,8 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./plugins/wowjs/animate.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./js/components/arrow-to-top.css">
+    <link rel="stylesheet" href="./js/components/share.css">
     <title>Разница между гетерогенным и гомогенным линолеумом</title>
 </head>
 
@@ -27,8 +33,51 @@
     <header>
         <? include('./included_files/header.htm'); ?>
     </header>
+    <a href="#begin" class="arrow-to-top show-arrow"></a>
+
+    <div class="share">
+        <div class="share__icon-bg" onclick="shareList()">
+            <img src="./img/articles/share_icons/share.svg" alt="" class="share__icon">
+        </div>
+        <menu class="share__list">
+            <li>
+                <button class="button" data-sharer="twitter"
+                    data-title="В чем разница между гетерогенным и гомогенным линолеумом" data-hashtags=""
+                    data-url="https://gelster.ru/diff-geterogen_gomogen.htm"><img
+                        src="./img/articles/share_icons/twitter.svg" alt="" class="share__icon-social"
+                        title="Поделиться статьей в Twitter"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="vk" data-caption=""
+                    data-title="В чем разница между гетерогенным и гомогенным линолеумом"
+                    data-url="https://gelster.ru/diff-geterogen_gomogen.htm"><img
+                        src="./img/articles/share_icons/vk.svg" alt="" class="share__icon-social"
+                        title="Поделиться статьей в VK"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="telegram"
+                    data-title="В чем разница между гетерогенным и гомогенным линолеумом"
+                    data-url="https://gelster.ru/diff-geterogen_gomogen.htm" data-to=""><img
+                        src="./img/articles/share_icons/telegram.svg" alt="" class="share__icon-social"
+                        title="Поделиться статьей в Telegram"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="facebook" data-hashtag=""
+                    data-url="https://gelster.ru/diff-geterogen_gomogen.htm"><img
+                        src="./img/articles/share_icons/facebook.svg" alt="" class="share__icon-social"
+                        title="Поделиться статьей в FaceBook"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="whatsapp"
+                    data-title="В чем разница между гетерогенным и гомогенным линолеумом"
+                    data-url="https://gelster.ru/diff-geterogen_gomogen.htm"><img
+                        src="./img/articles/share_icons/whatsapp.svg" alt="" class="share__icon-social"
+                        title="Поделиться статьей в WhatsApp"></button>
+            </li>
+        </menu>
+    </div>
     <section class="main-wrapper">
-        <div class="container">
+        <div class="container" id="begin">
             <div class="first-block wow fadeIn">
                 <div class="two-row_img"></div>
                 <div class="rows_img">
@@ -530,10 +579,11 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
-    </script>
     <script src="./included_files/header-style/hamburger.js"></script>
     <script src="./plugins/wowjs/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+    <script src="js/components/arrow-to-top.js"></script>
+    <script src="js/components/share.js"></script>
     <script>
         new WOW().init();
     </script>

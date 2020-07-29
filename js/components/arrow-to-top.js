@@ -7,5 +7,4 @@ document.addEventListener('scroll', function () {
     } else {
         arrowToTop.classList.remove('show-arrow');
     }
-
-})
+});

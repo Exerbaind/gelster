@@ -328,13 +328,13 @@ $myPTSerif: "PTSerif";
       }
     }
 
-    .side-bar-collection-list_dop:last-of-type {
+    .side-bar-collection-list_dop {
       max-height: 0;
       overflow: hidden;
       transition: .4s;
       transform: rotateX(90deg);
       transform-origin: top center;
-      padding-bottom: 70px;
+      padding-bottom: 0px;
     }
 
     .side-bar-collection-header_dop {
@@ -390,6 +390,7 @@ $myPTSerif: "PTSerif";
       max-height: 9999px;
       overflow: auto;
       transform: rotateX(0deg);
+      padding-bottom: 70px;
       cursor: pointer;
     }
   }
@@ -652,13 +653,13 @@ $myPTSerif: "PTSerif";
       }
     }
 
-    .side-bar-collection-list_dop:last-of-type {
+    .side-bar-collection-list_dop {
       max-height: 0;
       overflow: hidden;
       transition: .4s;
       transform: rotateX(90deg);
       transform-origin: top center;
-      padding-bottom: 70px;
+      padding-bottom: 0px;
     }
 
     .side-bar-collection-header_dop {
@@ -714,6 +715,7 @@ $myPTSerif: "PTSerif";
       max-height: 9999px;
       overflow: auto;
       transform: rotateX(0deg);
+      padding-bottom: 0px;
       cursor: pointer;
     }
   }

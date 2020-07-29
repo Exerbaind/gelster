@@ -16,8 +16,15 @@
     background-size: cover;
     opacity: 0;
     visibility: hidden;
-    z-index: 0;
+    z-index: -1;
     transition: .3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .arrow-to-top {
+        left: 10px;
+        bottom: 20px;
+    }
 }
 
 .show-arrow {

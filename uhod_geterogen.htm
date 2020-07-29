@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./plugins/wowjs/animate.css">
     <link rel="stylesheet" href="./preloader/preloader.css">
     <link rel="stylesheet" href="./js/components/arrow-to-top.css">
+    <link rel="stylesheet" href="./js/components/share.css">
     <title>Уход за гетерогенным линолеумом</title>
 </head>
 
@@ -29,6 +30,43 @@
     </header>
 
     <a href="#begin" class="arrow-to-top show-arrow"></a>
+    <div class="share">
+        <div class="share__icon-bg" onclick="shareList()">
+            <img src="./img/articles/share_icons/share.svg" alt="" class="share__icon">
+        </div>
+        <menu class="share__list">
+            <li>
+                <button class="button" data-sharer="twitter"
+                    data-title="Как правильно ухаживать за гетерогенным линолеумом" data-hashtags=""
+                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/twitter.svg"
+                        alt="" class="share__icon-social" title="Поделиться статьей в Twitter"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="vk" data-caption=""
+                    data-title="Как правильно ухаживать за гетерогенным линолеумом"
+                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/vk.svg" alt=""
+                        class="share__icon-social" title="Поделиться статьей в VK"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="telegram"
+                    data-title="Как правильно ухаживать за гетерогенным линолеумом"
+                    data-url="https://gelster.ru/uhod_geterogen.htm" data-to=""><img
+                        src="./img/articles/share_icons/telegram.svg" alt="" class="share__icon-social"
+                        title="Поделиться статьей в Telegram"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="facebook" data-hashtag=""
+                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/facebook.svg"
+                        alt="" class="share__icon-social" title="Поделиться статьей в FaceBook"></button>
+            </li>
+            <li>
+                <button class="button" data-sharer="whatsapp"
+                    data-title="Как правильно ухаживать за гетерогенным линолеумом"
+                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/whatsapp.svg"
+                        alt="" class="share__icon-social" title="Поделиться статьей в WhatsApp"></button>
+            </li>
+        </menu>
+    </div>
 
     <section class="main-wrapper">
         <div class="container">
@@ -276,6 +314,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="preloader/preloader.js"></script>
     <script src="./plugins/wowjs/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+    <script src="js/components/arrow-to-top.js"></script>
+    <script src="js/components/share.js"></script>
     <script>
         let fullPage = document.documentElement.clientWidth;
         if (fullPage < 500) {
@@ -299,7 +340,6 @@
             }
         });
     </script>
-    <script src="js/components/arrow-to-top.js"></script>
     <script src="./included_files/header-style/hamburger.js"></script>
 
 </body>
