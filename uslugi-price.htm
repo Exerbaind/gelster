@@ -51,11 +51,11 @@
 				<div class="navigation flex_23-per">
 					<ul class="navigation__menu">
 						<li class="navigation__item flex_100-per"><a href="#prices" class="navigation__link">цены на
-								работы</a></li>
+								работы</a>
 						<li class="navigation__item flex_100-per"><a href="#certificate"
 								class="navigation__link">сертификаты
 								сотрудников</a>
-						</li>
+
 					</ul>
 				</div>
 			</div>
@@ -910,56 +910,29 @@
 						</div>
 					</div>
 				</div>
-				<a class="link-to-photo" href="fotogal.htm">смотреть фото работ наших мастеров<img
-						src="./icons/arrow_righ-orange.svg" alt="К фотогалерее Гельстер" class="arrow-photo"></a>
+				<div class="articles-link">
+					<a class="link-to-photo" href="fotogal.htm">смотреть фото работ наших мастеров<img
+							src="./icons/arrow_righ-orange.svg" alt="К фотогалерее Гельстер" class="arrow-photo"></a>
+					<a class="link-to-photo" href="#">почему у нас такие цены<img src="./icons/arrow_righ-orange.svg"
+							alt="К фотогалерее Гельстер" class="arrow-photo"></a>
+				</div>
+
 			</div>
 			<div class="workers-certificate" id="certificate">
 				<h2 class="workers-certificate_title">
 					Сертификаты наших сотрудников
 				</h2>
 				<div class="certificates">
-					<img src="./img/sertificati-sotrudnikov/forbo_mekhed_vlad.jpg"
-						alt="Сертификат Forbo Михаил Смущенко" class="sertificat-img">
-					<img src="./img/sertificati-sotrudnikov/sert2-mikhail.jpg" alt="Сертификат Litocol Михаил Смущенко"
-						class="sertificat-img">
-					<img src="./img/sertificati-sotrudnikov/tarkett_lukianov.jpg"
-						alt="Сертификат Tarkett Academy Лукьянов Владимир" class="sertificat-img">
-					<img src="./img/sertificati-sotrudnikov/marm-sergey.jpg"
-						alt="Гельстер сертификат Михаила Смущенко marmoleum" class="sertificat-img">
-
+					<img src="./img/sertificati-sotrudnikov/marm-mikhail.jpg" alt="Сертификат Михаила Смущенко Eurocol"
+						class="sertificat-img" onclick="openPopUp()">
+					<img src="./img/sertificati-sotrudnikov/eurocol_aleinicova.jpg"
+						alt="Сертификат Евгении Алейниковой Eurocol" class="sertificat-img" onclick="openPopUp()">
+					<img src="./img/sertificati-sotrudnikov/eurocol_malinin.jpg"
+						alt="Сертификат Максима Малинина Максима Eurocol" class="sertificat-img" onclick="openPopUp()">
+					<img src="./img/sertificati-sotrudnikov/eurocol_prodazhi_pshenichnaya.jpg"
+						alt="Сертификат Татьяны Пшеничной Eurocol" class="sertificat-img" onclick="openPopUp()">
 				</div>
-				<div id="block-for-slider" class="block-for-slider">
-					<div id="viewport">
-						<ul id="slidewrapper">
-							<li class="slide"><img style="margin-top: 50px"
-									src="./img/sertificati-sotrudnikov/forbo_mekhed_vlad.jpg"
-									alt="Сертификат укладчиков и сотрудников" class="slide-img"></li>
-							<li class="slide"><img style="margin-top: 30px"
-									src="./img/sertificati-sotrudnikov/tarkett_lukianov.jpg"
-									alt="Сертификат укладчиков и сотрудников" class="slide-img"></li>
-							<li class="slide"><img style="margin-top: 30px"
-									src="./img/sertificati-sotrudnikov/marm-mikhail.jpg"
-									alt="Гельстер сертификат Михаила Смущенко marmoleum" class="slide-img"></li>
-							<li class="slide"><img style="margin-top: 30px"
-									src="./img/sertificati-sotrudnikov/marm-sergey.jpg"
-									alt="Гельстер сертификат Михаила Смущенко marmoleum" class="slide-img"></li>
-							<li class="slide"><img style="margin-top: 150px"
-									src="./img/sertificati-sotrudnikov/sert1-mikhail.jpg" alt="" class="slide-img"></li>
-							<li class="slide"><img style="margin-top: 30px"
-									src="./img/sertificati-sotrudnikov/sert2-mikhail.jpg" alt="" class="slide-img"></li>
-							<li class="slide"><img style="margin-top: 150px"
-									src="./img/sertificati-sotrudnikov/sert3-mikhail.jpg" alt="" class="slide-img"></li>
-							<li class="slide"><img src="./img/sertificati-sotrudnikov/sert4-mikhail.jpg" alt=""
-									class="slide-img">
-							</li>
-						</ul>
-						<div id="prev-next-btns">
-							<div id="prev-btn"><span></span></div>
-							<div id="next-btn"><span></span></div>
-						</div>
-					</div>
-					<div class="close-button"><span></span></div>
-				</div>
+				<p class="showAll-sertificat" onclick="openPopUp()">смотреть все сертификаты</p>
 			</div>
 		</div>
 	</section>
@@ -989,6 +962,50 @@
 			</form>
 		</div>
 	</section>
+
+	<section class="popUp">
+		<div class="popUp__container">
+			<h5 class="container__title">Все сертификаты сотрудников</h5>
+			<div class="close-form_btn" onclick="closePopUp()">
+				<span></span>
+			</div>
+			<div class="container__list">
+				<img src="./img/sertificati-sotrudnikov/eurocol_prodazhi_aleinicova.jpg"
+					alt="Сертификат Евгении Алейниковой Eurocol" class="container__img">
+				<img src="./img/sertificati-sotrudnikov/eurocol_prodazhi_sokolova.jpg"
+					alt="Сертификат Юлии Соколовой Eurocol" class="container__img">
+				<img src="./img/sertificati-sotrudnikov/eurocol_pshenichnaya.jpg"
+					alt="Сертификат Татьяны Пшеничной Eurocol" class="container__img">
+				<img src="./img/sertificati-sotrudnikov/forbo_aleinikova.jpg" alt="Сертификат Евгении Алейниковой Forbo"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/forbo_loginov-2019.jpg" alt="Сертификат Ивана Логинова Eurocol"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/forbo_loginov.jpg" alt="Сертификат Ивана Логинова Forbo"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/forbo_malinin.jpg" alt="Сертификат Максима Малинина Forbo"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/forbo_pshenichnaya.jpg" alt="Сертификат Татьяны Пшеничной Forbo"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/forbo_stancel.jpg" alt="Сертификат Андрея Станцеля Forbo"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/marm-mikhail.jpg" alt="Сертификат Максима Малинина Marmoleum"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/sert2-mikhail.jpg" alt="Сертификат Михаила Смущенко Litokol"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/sert3-mikhail.jpg"
+					alt="Сертификат Михаила Смущенко Berger-Saidlo" class="container__img">
+				<img src="./img/sertificati-sotrudnikov/sert4-mikhail.jpg" alt="Сертификат Михаила Смущенко Tarkett"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/tarkett_aleinikova.jpg"
+					alt="Сертификат Евгении Алейниковой Tarkett" class="container__img">
+				<img src="./img/sertificati-sotrudnikov/tarkett_ivan.jpg" alt="Сертификат Иван Логинов Tarkett"
+					class="container__img">
+				<img src="./img/sertificati-sotrudnikov/tarkett_sokolova.jpg" alt="Сертификат Юлии Соколовой Tarkett"
+					class="container__img">
+			</div>
+		</div>
+	</section>
+
 	<section class="preloader">
 		<img src="./preloader/tiger.gif" alt="" class="tiger-img">
 	</section>
@@ -1030,88 +1047,19 @@
 			}
 		});
 
-		var slideNow = 1;
-		var slideCount = $('#slidewrapper').children().length;
-		var navBtnId = 0;
-		var translateWidth = 0;
+		const popUp = document.querySelector('.popUp');
 
-		$('.sertificat-img').click(function () {
-			$('.block-for-slider').addClass('block-for-slider_act');
-			document.style.overflowY = 'hidden';
-		})
-
-		$('.close-button').click(function () {
-			$('.block-for-slider').removeClass('block-for-slider_act');
-		})
-
-
-		$('#next-btn').click(function () {
-			nextSlide();
-		});
-
-		$('#prev-btn').click(function () {
-			prevSlide();
-		});
-
-		$('.slide-nav-btn').click(function () {
-			navBtnId = $(this).index();
-
-			if (navBtnId + 1 != slideNow) {
-				translateWidth = -$('#viewport').width() * (navBtnId);
-				$('#slidewrapper').css({
-					'transform': 'translate(' + translateWidth + 'px, 0)',
-					'-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
-					'-ms-transform': 'translate(' + translateWidth + 'px, 0)',
-				});
-				slideNow = navBtnId + 1;
-			}
-		});
-
-
-		function nextSlide() {
-			if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
-				$('#slidewrapper').css('transform', 'translate(0, 0)');
-				slideNow = 1;
-			} else {
-				translateWidth = -$('#viewport').width() * (slideNow);
-				$('#slidewrapper').css({
-					'transform': 'translate(' + translateWidth + 'px, 0)',
-					'-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
-					'-ms-transform': 'translate(' + translateWidth + 'px, 0)',
-				});
-				slideNow++;
-			}
+		function openPopUp() {
+			popUp.classList.toggle('popUp_act');
+			document.querySelector('html').classList.add('overflow-hide');
 		}
 
-		function prevSlide() {
-			if (slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-				translateWidth = -$('#viewport').width() * (slideCount - 1);
-				$('#slidewrapper').css({
-					'transform': 'translate(' + translateWidth + 'px, 0)',
-					'-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
-					'-ms-transform': 'translate(' + translateWidth + 'px, 0)',
-				});
-				slideNow = slideCount;
-			} else {
-				translateWidth = -$('#viewport').width() * (slideNow - 2);
-				$('#slidewrapper').css({
-					'transform': 'translate(' + translateWidth + 'px, 0)',
-					'-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
-					'-ms-transform': 'translate(' + translateWidth + 'px, 0)',
-				});
-				slideNow--;
-			}
+		function closePopUp() {
+			popUp.classList.remove('popUp_act');
+			document.querySelector('html').classList.remove('overflow-hide');
 		}
-
-		// function showOthersPrice() {
-		// 	for (let k = 0; k < citiesTablesPrices.length; k++) {
-		// 		citiesTablesPrices[k].classList.add('hide');
-		// 	}
-		// 	citiesTablesPrices[2].classList.remove('hide');
-		// }
 	</script>
 	<script src="./included_files/header-style/hamburger.js"></script>
-	<!-- <script src="./plugins/highslide/highslide-full.js"></script> -->
 </body>
 
 </html>

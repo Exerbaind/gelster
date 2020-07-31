@@ -67,6 +67,12 @@ body {
   width: 55%;
 }
 
+@media screen and (max-width: 500px) {
+  .main-wrapper .container .about-block .img-block .long-img {
+    width: 100%;
+  }
+}
+
 .main-wrapper .container .about-block .img-block .two-imgs {
   width: 43%;
   display: -webkit-box;
@@ -87,6 +93,12 @@ body {
 
 .main-wrapper .container .about-block .img-block .two-imgs .down {
   height: 25%;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .container .about-block .img-block .two-imgs {
+    display: none;
+  }
 }
 
 .main-wrapper .container .about-block .text-block {

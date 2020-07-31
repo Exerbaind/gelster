@@ -557,7 +557,7 @@
                 </div>
                 <div class="collection-review"
                     style="background-image: url(./img/collections/gerflor/taraflex_sport_m_comfort/m_evolution/images/catalog-in-new_05.jpg); cursor: default; pointer-events: none;">
-                    <!-- <div class="opacity-block">
+                    <div class="opacity-block">
                         <div class="background__video-icon">
                             <img src="./icons/video_icon.svg" alt="" class="video-icon">
                         </div>
@@ -565,7 +565,7 @@
                             видео-обзор<br>
                             <span>коллекции</span>
                         </p>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="order-material"
                     style="background-image: url(./img/collections/gerflor/taraflex_sport_m_comfort/m_evolution/images/catalog-in-new_07.jpg);">
@@ -1381,13 +1381,13 @@
                 </div>
                 <div class="collection-review__mobile"
                     style="background-image: url(./img/collections/gerflor/mipolam_classic/images/catalog-in-new_05.jpg);">
-                    <!-- <a href="https://www.youtube.com/watch?v=Dgwarg1bnIc&t" target="_blank"></a>
+                    <a href="https://www.youtube.com/watch?v=CMHlWDcQ3Bo" target="_blank"></a>
                     <div class="opacity-block">
                         <p class="title">видео-обзор<br><span>коллекции</span></p>
                     </div>
                     <div class="background__video-icon">
                         <img src="./icons/video_icon.svg" alt="" class="video-icon">
-                    </div> -->
+                    </div>
                 </div>
                 <div class="sert-sootv">
                     <img src="./icons/arrow-down.svg" alt="" class="arrow-down">
@@ -1410,15 +1410,15 @@
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        // var player;
+        var player;
         var playerClean;
 
         function onYouTubeIframeAPIReady() {
-            // player = new YT.Player('player', {
-            //     height: '400',
-            //     width: '680',
-            //     videoId: '9tqtt11dHog',
-            // });
+            player = new YT.Player('player', {
+                height: '400',
+                width: '680',
+                videoId: 'CMHlWDcQ3Bo',
+            });
             playerClean = new YT.Player('player-clean', {
                 height: '400',
                 width: '680',
@@ -1427,7 +1427,7 @@
         }
 
         function stopVideo() {
-            // player.stopVideo();
+            player.stopVideo();
             playerClean.stopVideo();
         }
     </script>
@@ -1527,35 +1527,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
-    </script>
-    <script>
-        (function (w, d, c) {
-            var s = d.createElement('script'),
-                h = d.getElementsByTagName('script')[0],
-                e = d.documentElement;
-            if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
-                e.className += ' ya-page_js_yes';
-            }
-            s.type = 'text/javascript';
-            s.async = true;
-            s.charset = 'utf-8';
-            s.src = (
-                d.location.protocol === 'https:' ?
-                'https:' :
-                'http:'
-            ) + '//site.yandex.net/v2.0/js/all.js';
-            h
-                .parentNode
-                .insertBefore(s, h);
-            (w[c] || (w[c] = [])).push(function () {
-                Ya
-                    .Site
-                    .Form
-                    .init()
-            })
-        })(window, document, 'yandex_site_callbacks');
-    </script>
     <script src="./plugins/highslide/highslide-full.js"></script>
     <script src="./included_files/header-style/hamburger.js"></script>
     <script src="./js/collection.js"></script>

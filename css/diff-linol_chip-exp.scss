@@ -78,6 +78,10 @@ $cBackgroundOrange: #f7ece1;
 
                 .long-img {
                     width: 55%;
+
+                    @media screen and (max-width: 500px) {
+                        width: 100%;
+                    }
                 }
 
                 .two-imgs {
@@ -92,6 +96,10 @@ $cBackgroundOrange: #f7ece1;
 
                     .down {
                         height: 25%;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        display: none;
                     }
                 }
             }
