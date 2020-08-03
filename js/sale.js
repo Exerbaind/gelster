@@ -28,11 +28,20 @@ const categoryItems = document.querySelectorAll('.cat__item');
 let currentCategoryItem;
 
 const saleMessageBlock = document.querySelector('.instruction-block');
+const currentURL = window.location.href;
 
 // const instruction = document.querySelector('.instruction');
 
+
+
 for (let i = 0; i < menuBlocks.length; i++) {
+    // if (window.location.href === 'http://gelster.ru/sale.htm#item1') {
+    //     for ()
+    // }
     menuBlocks[i].addEventListener('click', function () {
+
+        window.location = currentURL + `#item${i}`;
+
         currentMaterialBlock = document.querySelector('.fourth-block__content.fourth-block__content_hide');
         activeMenuBlock = document.querySelector('.th-content__item.content__item_act');
         activeMenuBlock.classList.remove('content__item_act');
