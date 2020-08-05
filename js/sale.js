@@ -15,6 +15,27 @@ $(document).ready(function () {
             }
         });
     }
+    if (window.location.href === 'https://gelster.ru/sale.htm#item1') {
+        readURL(1)
+    }
+    if (window.location.href === 'https://gelster.ru/sale.htm#item2') {
+        readURL(2)
+    }
+    if (window.location.href === 'https://gelster.ru/sale.htm#item3') {
+        readURL(3)
+    }
+    if (window.location.href === 'https://gelster.ru/sale.htm#item4') {
+        readURL(4)
+    }
+    if (window.location.href === 'https://gelster.ru/sale.htm#item5') {
+        readURL(5)
+    }
+    if (window.location.href === 'https://gelster.ru/sale.htm#item6') {
+        readURL(6)
+    }
+    if (window.location.href === 'https://gelster.ru/sale.htm#item7') {
+        readURL(7)
+    }
 });
 
 
@@ -28,16 +49,9 @@ const categoryItems = document.querySelectorAll('.cat__item');
 let currentCategoryItem;
 
 const saleMessageBlock = document.querySelector('.instruction-block');
-const currentURL = window.location.href;
-
-// const instruction = document.querySelector('.instruction');
-
-
+const currentURL = window.location.href.split('#')[0];
 
 for (let i = 0; i < menuBlocks.length; i++) {
-    // if (window.location.href === 'http://gelster.ru/sale.htm#item1') {
-    //     for ()
-    // }
     menuBlocks[i].addEventListener('click', function () {
 
         window.location = currentURL + `#item${i}`;
@@ -58,6 +72,24 @@ for (let i = 0; i < menuBlocks.length; i++) {
             saleMessageBlock.classList.remove('instruction-block_act');
         }
     })
+}
+
+function readURL(n) {
+    currentMaterialBlock = document.querySelector('.fourth-block__content.fourth-block__content_hide');
+    activeMenuBlock = document.querySelector('.th-content__item.content__item_act');
+    activeMenuBlock.classList.remove('content__item_act');
+    menuBlocks[n].classList.add('content__item_act');
+    currentMaterialBlock.classList.remove('fourth-block__content_hide');
+    materialBlocks[n].classList.add('fourth-block__content_hide');
+    currentMaterialBlock = materialBlocks[i];
+    currentCategoryItem = document.querySelector('.cat__item.cat__item_act');
+    currentCategoryItem.classList.remove('cat__item_act');
+    categoryItems[n].classList.add('cat__item_act');
+    if (n == 1 || n == 5) {
+        saleMessageBlock.classList.add('instruction-block_act');
+    } else {
+        saleMessageBlock.classList.remove('instruction-block_act');
+    }
 }
 
 
@@ -86,6 +118,7 @@ for (let i = 0; i < categoryItems.length; i++) {
 let smaragd = 7.2,
     spectra = 6.7,
     standart = 7.2,
+    effekta = 12.5,
     apex = 16,
     basis = 14.6,
     spaceOne = 14.6,
@@ -107,6 +140,7 @@ const priceSmaragd = document.querySelectorAll('.price-now .smaragd'),
     priceStandart = document.querySelectorAll('.price-now .standart'),
     priceApex = document.querySelectorAll('.price-now .apex'),
     priceBasis = document.querySelectorAll('.price-now .basis'),
+    priceEffekta = document.querySelectorAll('.price-now .effekta'),
     priceSpaceOne = document.querySelectorAll('.price-now .space-one'),
     priceLayout = document.querySelectorAll('.price-now .layout'),
     priceMix = document.querySelectorAll('.price-now .mix'),
@@ -122,6 +156,7 @@ const oldPriceSmaragd = document.querySelectorAll('.old-smaragd'),
     oldPriceStandart = document.querySelectorAll('.old-standart'),
     oldPriceApex = document.querySelectorAll('.old-apex'),
     oldPriceBasis = document.querySelectorAll('.old-basis'),
+    oldPriceEffekta = document.querySelectorAll('.old-effekta'),
     oldPriceSpace = document.querySelectorAll('.old-space'),
     oldPriceLayout = document.querySelectorAll('.old-layout'),
     oldPriceMix = document.querySelectorAll('.old-mix'),
@@ -133,7 +168,8 @@ const fromPriceLinolPVH = document.querySelector('.from-price_pvh'),
     fromPriceKovrPlitka = document.querySelector('.from-price_kovr-plitka'),
     fromPriceGryaz = document.querySelector('.from-price_gryaz'),
     fromPriceKovr = document.querySelector('.from-price_kovr'),
-    fromPriceSport = document.querySelector('.from-price_sport');
+    fromPriceSport = document.querySelector('.from-price_sport'),
+    fromPriceVinil = document.querySelector('.from-price_vinil');
 
 const per50 = 50,
     per45 = 55,
@@ -195,6 +231,16 @@ let oldBasis = (basisResult * 100) / per30;
 for (i = 0; i < priceBasis.length; i++) {
     priceBasis[i].innerHTML = Math.ceil(basisResult) + ' ';
     oldPriceBasis[i].innerHTML = Math.ceil(oldBasis) + ' ';
+}
+
+// effekta
+
+let effektaResult = effekta * euroValue;
+let oldEffekta = (effektaResult * 100) / per20;
+
+for (i = 0; i < priceEffekta.length; i++) {
+    priceEffekta[i].innerHTML = Math.ceil(effektaResult) + ' ';
+    oldPriceEffekta[i].innerHTML = Math.ceil(oldEffekta) + ' ';
 }
 
 // space 1
@@ -286,3 +332,4 @@ fromPriceKovrPlitka.innerHTML = Math.ceil(basisResult);
 fromPriceGryaz.innerHTML = Math.ceil(brushResult);
 fromPriceKovr.innerHTML = Math.ceil(akzentResult);
 fromPriceSport.innerHTML = Math.ceil(sportStandartResult);
+fromPriceVinil.innerHTML = Math.ceil(effektaResult);

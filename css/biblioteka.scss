@@ -110,6 +110,7 @@
     .container {
         // контейнер для центровки
         width: 1200px;
+        overflow: hidden;
 
         @media screen and (max-width: 1200px) {
             width: 100vw;
@@ -217,14 +218,29 @@
         .termin-state {
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             @media screen and (max-width: 930px) {
                 flex-direction: column;
             }
 
-            .termin-state__img {
+            .link-to-article_full {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                // z-index: 10;
+            }
+
+            .link-to-article {
                 width: 70%;
 
+                .termin-state__img {
+                    width: 100%;
+                    height: 100%;
+                }
 
                 @media screen and (max-width: 930px) {
                     width: 100%;
@@ -232,9 +248,30 @@
                 }
             }
 
+
             .termin-state__content {
                 width: 70%;
                 background-color: #f7f7f7;
+                transition: .3s;
+                position: relative;
+
+                &:hover {
+                    background-color: $orangeColor;
+
+                    .content__info {
+                        .content__title {
+                            color: white;
+                        }
+
+                        .content__par {
+                            color: white;
+                        }
+
+                        .content__link {
+                            color: white;
+                        }
+                    }
+                }
 
                 @media screen and (max-width: 930px) {
                     order: 2;
@@ -254,6 +291,7 @@
 
                     .content__title {
                         @extend %orange-title;
+                        transition: .3s;
                     }
 
                     .content__par {
@@ -261,6 +299,7 @@
                         margin-top: 10px;
                         text-align: justify;
                         margin-bottom: 10px;
+                        transition: .3s;
                     }
 
                     .content__link {
@@ -274,6 +313,14 @@
                     }
                 }
 
+                .link-to-article {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                }
+
             }
 
             .termin-state__context {
@@ -281,6 +328,15 @@
                 background-color: $darkGreenColor;
                 padding: 55px 45px 55px 45px;
                 position: relative;
+                transition: .3s;
+
+                &:hover {
+                    background-color: $orangeColor;
+
+                    .termin-state__link {
+                        @include par(white, normal);
+                    }
+                }
 
                 @media screen and (max-width: 930px) {
                     width: 100%;
@@ -288,31 +344,46 @@
                     order: 1;
                 }
 
-                .termin-state__title {
-                    @extend %white-title;
-
-                    @media screen and (max-width: 930px) {
-                        font-size: 24px;
-                    }
-                }
-
-                .termin-state__par {
-                    @include par(white, normal);
-                    margin-top: 10px;
-                    text-align: justify;
-                    margin-bottom: 10px;
-                }
-
-                .termin-state__link {
-                    @include par($orangeColor, normal);
-                    transition: .3s;
+                .link-to-article {
                     text-decoration: none;
-                    cursor: pointer;
 
                     &:hover {
-                        color: white;
+                        .termin-state__par {
+                            @include par(white, normal);
+                        }
+
+                        .termin-state__link {
+                            color: white;
+                        }
+                    }
+
+                    .termin-state__title {
+                        @extend %white-title;
+
+                        @media screen and (max-width: 930px) {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .termin-state__par {
+                        @include par(white, normal);
+                        margin-top: 10px;
+                        text-align: justify;
+                        margin-bottom: 10px;
+                    }
+
+                    .termin-state__link {
+                        @include par($orangeColor, normal);
+                        transition: .3s;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
+
 
                 .articles {
                     position: absolute;
@@ -324,6 +395,7 @@
                     transition: .3s;
                     visibility: hidden;
                     overflow-x: hidden;
+                    z-index: 1;
 
                     .articles__block {
                         display: flex;
@@ -333,7 +405,7 @@
                         justify-content: space-between;
 
                         .articles__list {
-                            padding: 55px 50px 20px 30px;
+                            padding: 55px 70px 20px 30px;
                             list-style: none;
                             margin-left: 30px;
                             overflow: auto;
@@ -443,6 +515,11 @@
                     }
                 }
             }
+
+            .side-menu {
+                cursor: pointer;
+
+            }
         }
 
         .mini-articles {
@@ -453,9 +530,60 @@
                 flex-direction: column;
             }
 
+
             .mini-articles__item {
                 width: 50%;
                 display: flex;
+                position: relative;
+                transition: .3s;
+
+                &:nth-child(1) {
+                    &:hover {
+                        background-color: $orangeColor;
+
+                        .item__context {
+                            .item__title {
+                                color: white;
+                            }
+
+                            .item__par {
+                                color: white;
+                            }
+
+                            .item__link {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    &:hover {
+                        .item__context {
+                            .podcast {
+                                .podcast__list {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+
+                                .podcast__hover {
+                                    color: $darkGreenColor;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .link-to-article_full {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    // z-index: 10;
+                }
 
                 @media screen and (max-width: 900px) {
                     width: 100%;
@@ -495,6 +623,7 @@
 
                     .item__title {
                         @extend %orange-title;
+                        transition: .3s;
                     }
 
                     .item__par {
@@ -502,12 +631,14 @@
                         margin-top: 10px;
                         text-align: justify;
                         margin-bottom: 10px;
+                        transition: .3s;
                     }
 
                     .item__link {
                         @include par($orangeColor, normal);
                         transition: .3s;
                         text-decoration: none;
+                        transition: .3s;
 
                         &:hover {
                             color: $darkGreenColor;
@@ -576,10 +707,18 @@
     }
 }
 
+.hover {
+    &:hover {
+        background-color: $orangeColor !important;
+        transition: .3s !important;
+    }
+}
+
 .show {
     width: 136% !important;
     opacity: 1 !important;
     visibility: visible !important;
+    z-index: 10;
 
     @media screen and (max-width: 930px) {
         width: 100% !important;

@@ -288,6 +288,30 @@ $cBackgroundOrange: #f7ece1;
                                 display: flex;
                                 align-items: center;
 
+                                .desktop__text {
+                                    display: block !important;
+
+                                    @media screen and (max-width: 500px) {
+                                        display: none !important;
+                                    }
+                                }
+
+                                .mobile__text {
+                                    display: none !important;
+
+                                    @media screen and (max-width: 500px) {
+                                        display: block !important;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .mobile {
+                            display: none !important;
+
+                            @media screen and (max-width: 500px) {
+                                display: block !important;
                             }
                         }
                     }
@@ -638,6 +662,7 @@ $cBackgroundOrange: #f7ece1;
 
                     @media screen and (max-width: 900px) {
                         border-top: 5px solid white;
+                        padding: 20px 10px;
                     }
 
                     .info__label {
@@ -725,6 +750,22 @@ $cBackgroundOrange: #f7ece1;
                         left: 0;
                         height: 100%;
                         width: 100%;
+
+                        .desktop__text {
+                            display: block !important;
+
+                            @media screen and (max-width: 500px) {
+                                display: none !important;
+                            }
+                        }
+
+                        .mobile__text {
+                            display: none !important;
+
+                            @media screen and (max-width: 500px) {
+                                display: block !important;
+                            }
+                        }
                     }
 
 

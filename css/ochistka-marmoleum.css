@@ -350,6 +350,36 @@ body {
           align-items: center;
 }
 
+.main-wrapper .container .page-block .navigation-block .navigation__menu .navigation__list .navigation__item .item__link .desktop__text {
+  display: block !important;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .container .page-block .navigation-block .navigation__menu .navigation__list .navigation__item .item__link .desktop__text {
+    display: none !important;
+  }
+}
+
+.main-wrapper .container .page-block .navigation-block .navigation__menu .navigation__list .navigation__item .item__link .mobile__text {
+  display: none !important;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .container .page-block .navigation-block .navigation__menu .navigation__list .navigation__item .item__link .mobile__text {
+    display: block !important;
+  }
+}
+
+.main-wrapper .container .page-block .navigation-block .navigation__menu .navigation__list .mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .container .page-block .navigation-block .navigation__menu .navigation__list .mobile {
+    display: block !important;
+  }
+}
+
 .main-wrapper .container .page-block .text-img__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,6 +887,7 @@ body {
 @media screen and (max-width: 900px) {
   .main-wrapper .container .ochistitel .ochistitel__content .ochistitel__info {
     border-top: 5px solid white;
+    padding: 20px 10px;
   }
 }
 
@@ -982,6 +1013,26 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.main-wrapper .container .sredstva .sredstva__list .sredstva__item .item__link .desktop__text {
+  display: block !important;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .container .sredstva .sredstva__list .sredstva__item .item__link .desktop__text {
+    display: none !important;
+  }
+}
+
+.main-wrapper .container .sredstva .sredstva__list .sredstva__item .item__link .mobile__text {
+  display: none !important;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .container .sredstva .sredstva__list .sredstva__item .item__link .mobile__text {
+    display: block !important;
+  }
 }
 
 .main-wrapper .container .sredstva .sredstva__list .sredstva__item .item__img {

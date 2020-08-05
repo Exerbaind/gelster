@@ -8,8 +8,8 @@ sideArticlesHandler.forEach((item, index) => {
     })
 });
 
-closeArticle.forEach((item, index) => {
-    item.addEventListener('click', function () {
-        articlesBlock[index].classList.remove('show');
-    })
-});
+// closeArticle.forEach((item, index) => {
+//     item.addEventListener('click', function () {
+//         articlesBlock[index].classList.remove('show');
+//     })
+// });
