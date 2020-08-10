@@ -1,0 +1,62 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="При покупке линолеума мы часто встаем перед выбором - дорогой или дешевый продукт купить? Влияет ли как-то цена на качество и срок службы линолеума? В каком случаем можно купить дешевый линолеум, а в каком лучше не экономить? ">
+    <meta name="keywords" content="Разница между дорогим и дешевым линолеумом">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <link rel="stylesheet" href="./css/len-zoo.css">
+    <link rel="stylesheet" href="./plugins/wowjs/animate.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <title>Разница между дорогим и дешевым линолеумом</title>
+</head>
+
+<body>
+    <section class="preloader">
+        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+    </section>
+    <header>
+        <? include('./included_files/header.htm'); ?>
+    </header>
+    <section class="section-main">
+        <div class="header-block" style="background: url(./img/blago/zoo/main.jpg);">
+            <div class="header-block__content">
+                <h1 class="header-block__title">
+                    Ленинградский зоопарк
+                </h1>
+            </div>
+        </div>
+        <div class="container">
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <? include('./included_files/footer.htm'); ?>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="preloader/preloader.js"></script>
+    <script src="./plugins/wowjs/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+    <script src="js/components/arrow-to-top.js"></script>
+    <script src="js/components/share.js"></script>
+    <script>
+        let fullPage = document.documentElement.clientWidth;
+        if (fullPage < 500) {
+            new WOW().init();
+        }
+    </script>
+    <script src="./included_files/header-style/hamburger.js"></script>
+
+</body>
+
+</html>

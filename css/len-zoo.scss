@@ -1,0 +1,105 @@
+@import './variables/variables.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 200;
+    position: relative;
+}
+
+.footer {
+    z-index: 200;
+}
+
+.section-main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    font-family: $myPTSans;
+
+    @media screen and (max-width: 425px) {
+        margin-top: -20px;
+    }
+
+    // Блок в самом начале страницы: картинка + название страницы. Фоновое изобрашение задается через инлайновый стиль
+
+    .header-block {
+        // background-image: url($);
+        background-size: 100% 100%;
+        height: 300px;
+        width: 100vw;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        z-index: 150;
+
+
+        @media screen and (max-width: 820px) {
+            background-size: 300% 100%;
+        }
+
+        .header-block__content {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+
+            @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+                left: -170px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                width: 100vw;
+                margin: 0 0 0 0;
+            }
+
+            .header-block__title {
+                height: 75px;
+                background-color: #EDB056;
+                align-items: center;
+                color: white;
+                font-size: 30px;
+                line-height: 24px;
+                letter-spacing: 1.8px;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                padding-left: 40px;
+                padding-right: 40px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                font-family: $myPTSans;
+                font-weight: lighter;
+
+                @media screen and (max-width: 550px) {
+                    font-size: 24px;
+                    width: 100vw;
+                    margin-left: 0;
+                }
+
+                @media screen and (max-width: 410px) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    height: 60px;
+                }
+
+                @media screen and (max-width: 410px) {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
