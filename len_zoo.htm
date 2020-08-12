@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
-        content="При покупке линолеума мы часто встаем перед выбором - дорогой или дешевый продукт купить? Влияет ли как-то цена на качество и срок службы линолеума? В каком случаем можно купить дешевый линолеум, а в каком лучше не экономить? ">
-    <meta name="keywords" content="Разница между дорогим и дешевым линолеумом">
+        content="Ленинградский зоопарк – это один из самых старейших зоопарков на территории России, который был основан в августе 1865 года и является хранителем исторического наследия Санкт-Петербурга. На сегодняшний день Ленинградский зоопарк является настоящим музеем живой природы и стал олицетворением счастливого детства для разных поколений петербуржцев. Мы искренне рады, что вносим свой вклад в жизнь одного из самых северных зоопарков мира и желаем ему дальнейшего процветания и достижения поставленных целей.">
+    <meta name="keywords" content="Ленинградский зоопарк Санкт-Петербург благотворительность">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./included_files/header-style/css/header.css">
     <link rel="stylesheet" href="./included_files/footer-style/footer.css">
@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="./preloader/preloader.css">
     <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick/slick.css" />
-</head>
-<title>Разница между дорогим и дешевым линолеумом</title>
+    <title>Ленинградский зоопарк</title>
 </head>
 
 <body>
@@ -97,9 +96,9 @@
             <div class="block-with-pages">
                 <div class="years">
                     <ul class="years__list">
-                        <li class="years__item active">2017</li>
-                        <li class="years__item">2018</li>
-                        <li class="years__item">2019</li>
+                        <li class="years__item active" onclick="chooseYear()">2017</li>
+                        <li class="years__item" onclick="chooseYear()">2018</li>
+                        <li class="years__item" onclick="chooseYear()">2019</li>
                     </ul>
                 </div>
                 <div class="switch-pages">
@@ -120,7 +119,18 @@
                             </p>
                         </div>
                         <div class="page__photos">
-                            <img src="./img/blago/zoo/slide.jpg" alt="">
+                            <img src="./img/icons/slider.png" alt="" class="slide-prev" onclick="prevPhoto()">
+                            <ul class="dots">
+                                <li class="dots__item filled" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <!-- <li class="dots__item"></li> -->
+                            </ul>
+                            <img src="./img/icons/slider.png" alt="" class="slide-next" onclick="nextPhoto()">
+                            <!-- слайды -->
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img act">
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img">
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img">
                         </div>
                     </div>
                     <div class="page">
@@ -140,7 +150,18 @@
                             </p>
                         </div>
                         <div class="page__photos">
-                            <img src="./img/blago/zoo/slide.jpg" alt="">
+                            <img src="./img/icons/slider.png" alt="" class="slide-prev" onclick="prevPhoto()">
+                            <ul class="dots">
+                                <li class="dots__item filled" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <!-- <li class="dots__item"></li> -->
+                            </ul>
+                            <img src="./img/icons/slider.png" alt="" class="slide-next" onclick="nextPhoto()">
+                            <!-- слайды -->
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img act">
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img">
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img">
                         </div>
                     </div>
                     <div class="page">
@@ -160,7 +181,18 @@
                             </p>
                         </div>
                         <div class="page__photos">
-                            <img src="./img/blago/zoo/slide.jpg" alt="">
+                            <img src="./img/icons/slider.png" alt="" class="slide-prev" onclick="prevPhoto()">
+                            <ul class="dots">
+                                <li class="dots__item filled" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <!-- <li class="dots__item"></li> -->
+                            </ul>
+                            <img src="./img/icons/slider.png" alt="" class="slide-next" onclick="nextPhoto()">
+                            <!-- слайды -->
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img act">
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img">
+                            <img src="./img/blago/zoo/slide.jpg" alt="День опекуна 2017" class="slide__img">
                         </div>
                     </div>
                 </div>
@@ -171,6 +203,7 @@
     <footer class="footer">
         <? include('./included_files/footer.htm'); ?>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/zoo.js"></script>
     <script src="preloader/preloader.js"></script>
     <script src="./included_files/header-style/hamburger.js"></script>
