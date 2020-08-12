@@ -102,4 +102,312 @@ header {
             }
         }
     }
+
+    .container {
+        width: 1200px;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+            }
+
+            .intro__text {
+                padding-top: 25px;
+                width: 76%;
+
+                @media screen and (max-width: 1200px) {
+                    padding: 15px 0 0 10px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    order: 2;
+                    width: 100%;
+                }
+
+                .title {
+                    @include title($orangeColor, 20px)
+                }
+
+                .par {
+                    @include text($darkGreenColor, 16px, 9px, 5px);
+                    text-align: justify;
+                    padding-right: 55px;
+
+                    @media screen and (max-width: 900px) {
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+            .intro__emblem {
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-left: 1px solid #e8e8e8;
+                border-right: 1px solid #e8e8e8;
+                padding: 15px 0 15px 0;
+
+                @media screen and (max-width: 600px) {
+                    order: 1;
+                    width: 100%;
+                }
+
+                .par {
+                    @include text(#586f69, 16px, 15px, 5px);
+                    text-align: center;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .two-columns_block {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .content {
+                width: 76%;
+
+                @media screen and (max-width: 900px) {
+                    width: 100%;
+                    order: 1;
+                }
+
+                .blago__history {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media screen and (max-width: 990px) {
+                        flex-direction: column;
+                    }
+
+                    .blago__history-img {
+                        width: 29%;
+
+                        @media screen and (max-width: 990px) {
+                            width: 100%;
+                        }
+                    }
+
+                    .blago__history-text {
+                        width: 70%;
+                        background-image: url(../img/blago/zoo/bg-text.jpg);
+                        background-size: cover;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 50px;
+                        text-align: justify;
+
+                        @media screen and (max-width: 990px) {
+                            width: 100%;
+                            padding: 20px 10px;
+                        }
+
+                        .par {
+                            @include text(white, 16px, 0px, 0px);
+                        }
+                    }
+                }
+
+                .kangaroo__info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 7px;
+
+                    @media screen and (max-width: 900px) {
+                        flex-direction: column;
+                    }
+
+                    .kangaroo__images {
+                        display: flex;
+                        width: 50%;
+                        flex-wrap: wrap;
+
+                        @media screen and (max-width: 900px) {
+                            width: 100%;
+                            order: 1;
+                        }
+
+                        img {
+                            &:nth-child(1) {
+                                width: 100%;
+                            }
+
+                            &:nth-child(2) {
+                                margin-top: 7px;
+                                width: 50%;
+                            }
+
+                            &:nth-child(3) {
+                                margin-top: 7px;
+                                width: 50%;
+                                padding-left: 7px;
+                            }
+                        }
+                    }
+
+                    .kangaroo__des {
+                        width: 50%;
+                        padding: 60px 60px 60px 80px;
+                        text-align: justify;
+
+                        @media screen and (max-width: 900px) {
+                            width: 100%;
+                            order: 2;
+                            padding: 20px 10px;
+                        }
+
+                        .par {
+                            @include text($darkGreenColor, 16px, 20px, 10px)
+                        }
+                    }
+                }
+            }
+
+            .blago__imgs {
+                width: 23%;
+
+                @media screen and (max-width: 900px) {
+                    width: 100%;
+                    order: 2;
+                }
+
+                img {
+                    width: 100%;
+
+                    &:nth-child(2) {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+
+        hr {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .block-with-pages {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+            }
+
+            .years {
+                width: 5%;
+
+                @media screen and (max-width: 900px) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .years__list {
+                    width: 100%;
+                    list-style: none;
+
+                    .years__item {
+                        height: 40px;
+                        width: 100%;
+                        border-right: 5px solid $darkGreenColor;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 20px;
+                        color: $darkGreenColor;
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover {
+                            background-color: $orangeColor;
+                            color: white;
+                            padding-left: 10px;
+                            border-right: 5px solid $orangeColor;
+                        }
+                    }
+
+                    .active {
+                        color: $orangeColor;
+                        border-right: 5px solid $orangeColor;
+
+                        &:hover {
+                            color: $orangeColor;
+                            border-right: 5px solid $orangeColor;
+                            padding-left: 0px;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .switch-pages {
+                width: 95%;
+                position: relative;
+
+                .page {
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: .3s;
+
+                    .page__info {
+                        width: 55%;
+                        padding: 40px 60px 40px 80px;
+
+                        .title {
+                            @include title($darkGreenColor, 18px)
+                        }
+
+                        .sub-title {
+                            @include text($orangeColor, 16px, 22px, 10px);
+                            font-weight: lighter;
+                        }
+
+                        .par {
+                            @include text($darkGreenColor, 16px, 17px, 10px);
+                            text-align: justify;
+                        }
+                    }
+
+                    .page__photos {
+                        width: 45%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .show {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    height: auto;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
