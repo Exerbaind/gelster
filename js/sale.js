@@ -129,7 +129,25 @@ let smaragd = 7.2,
     duo = 46,
     akzent = 10,
     sport6_0 = 12,
-    sport4_3 = 11;
+    sport4_3 = 11,
+    creation30 = 15,
+    creation55 = 19,
+    creation70 = 19,
+    creation70d = 22,
+    creation70c = 33,
+    esprit = 21,
+    symbioz = 23,
+    elegance = 18,
+    impress = 16,
+    impressE = 18,
+    recreation30 = 15,
+    TXsport = 29,
+    TXevolutionUni = 26,
+    TXevolutionWood = 30,
+    TXtennis = 23,
+    TXsurface = 18,
+    saga2 = 34,
+    GTIuni = 47;
 
 let euroValue = document.querySelector('.euro-value').innerHTML;
 
@@ -149,7 +167,25 @@ const priceSmaragd = document.querySelectorAll('.price-now .smaragd'),
     priceDuo = document.querySelectorAll('.price-now .duo'),
     priceAkzent = document.querySelectorAll('.price-now .akzent'),
     priceSportClassic = document.querySelectorAll('.price-now .sport6-0'),
-    priceSportStandart = document.querySelectorAll('.price-now .sport4-3');
+    priceSportStandart = document.querySelectorAll('.price-now .sport4-3'),
+    priceCreation30 = document.querySelectorAll('.price-now .creation30'),
+    priceCreation55 = document.querySelectorAll('.price-now .creation55'),
+    priceCreation70 = document.querySelectorAll('.price-now .creation70'),
+    priceCreation70d = document.querySelectorAll('.price-now .creation70d'),
+    priceCreation70c = document.querySelectorAll('.price-now .creation70c'),
+    priceEsprit = document.querySelectorAll('.price-now .esprit'),
+    priceSymbioz = document.querySelectorAll('.price-now .symbioz'),
+    priceElegance = document.querySelectorAll('.price-now .elegance'),
+    priceImpress = document.querySelectorAll('.price-now .impress'),
+    priceImpressE = document.querySelectorAll('.price-now .impressE'),
+    priceRecreation30 = document.querySelectorAll('.price-now .recreation30'),
+    priceTXsport = document.querySelectorAll('.price-now .tx-sport'),
+    priceTXevolutionUni = document.querySelectorAll('.price-now .tx-evolution-uni'),
+    priceTXevolutionWood = document.querySelectorAll('.price-now .tx-evolution-wood'),
+    priceTXtennis = document.querySelectorAll('.price-now .tx-tennis'),
+    priceTXsurface = document.querySelectorAll('.price-now .tx-surface'),
+    priceTXsaga = document.querySelectorAll('.price-now .tx-saga'),
+    priceTXGTIUni = document.querySelectorAll('.price-now .tx-gti-uni');
 
 const oldPriceSmaragd = document.querySelectorAll('.old-smaragd'),
     oldPriceSpectra = document.querySelectorAll('.old-spectra'),
@@ -162,14 +198,33 @@ const oldPriceSmaragd = document.querySelectorAll('.old-smaragd'),
     oldPriceMix = document.querySelectorAll('.old-mix'),
     oldPriceAkzent = document.querySelectorAll('.old-akzent'),
     oldPriceSportClassic = document.querySelectorAll('.old-sport-classic'),
-    oldPriceSportStandart = document.querySelectorAll('.old-sport-standart');
+    oldPriceSportStandart = document.querySelectorAll('.old-sport-standart'),
+    oldPriceCreation30 = document.querySelectorAll('.old-creation30'),
+    oldPriceCreation55 = document.querySelectorAll('.old-creation55'),
+    oldPriceCreation70 = document.querySelectorAll('.old-creation70'),
+    oldPriseCreation70d = document.querySelectorAll('.old-creation70d'),
+    oldPriceCreation70c = document.querySelectorAll('.old-creation70c'),
+    oldPriceEsprit = document.querySelectorAll('.old-esprit'),
+    oldPriceSymbioz = document.querySelectorAll('.old-symbioz'),
+    oldPriceElegance = document.querySelectorAll('.old-elegance'),
+    oldPriceImpress = document.querySelectorAll('.old-impress'),
+    oldPriceImpressE = document.querySelectorAll('.old-impressE'),
+    oldPriceRecreation30 = document.querySelectorAll('.old-recreation30'),
+    oldPriceTXSport = document.querySelectorAll('.old-tx-sport'),
+    oldPriceTXEvolutionUni = document.querySelectorAll('.old-tx-evolution-uni'),
+    oldPriceTXEvolutionWood = document.querySelectorAll('.old-tx-evolution-wood'),
+    oldPriceTXTennis = document.querySelectorAll('.old-tx-tennis'),
+    oldPriceTXSurface = document.querySelectorAll('.old-tx-surface'),
+    oldPriceTXSaga = document.querySelectorAll('.old-tx-saga'),
+    oldPriceTXGTIUni = document.querySelectorAll('.old-tx-gti-uni');
 
 const fromPriceLinolPVH = document.querySelector('.from-price_pvh'),
     fromPriceKovrPlitka = document.querySelector('.from-price_kovr-plitka'),
     fromPriceGryaz = document.querySelector('.from-price_gryaz'),
     fromPriceKovr = document.querySelector('.from-price_kovr'),
     fromPriceSport = document.querySelector('.from-price_sport'),
-    fromPriceVinil = document.querySelector('.from-price_vinil');
+    fromPriceVinil = document.querySelector('.from-price_vinil'),
+    fromPriceVinilLam = document.querySelector('.from-price_vinil-lam');
 
 const per50 = 50,
     per45 = 55,
@@ -327,9 +382,190 @@ for (i = 0; i < priceSportStandart.length; i++) {
     oldPriceSportStandart[i].innerHTML = Math.ceil(oldSportStandart) + ' ';
 }
 
+// creation 30
+
+let creation30Result = creation30 * euroValue;
+let oldCreation30 = (creation30Result * 100) / per35;
+
+for (i = 0; i < priceCreation30.length; i++) {
+    priceCreation30[i].innerHTML = Math.ceil(creation30Result) + ' ';
+    oldPriceCreation30[i].innerHTML = Math.ceil(oldCreation30) + ' ';
+}
+
+// creation 55
+
+let creation55Result = creation55 * euroValue;
+let oldCreation55 = (creation55Result * 100) / per35;
+
+for (i = 0; i < priceCreation55.length; i++) {
+    priceCreation55[i].innerHTML = Math.ceil(creation55Result) + ' ';
+    oldPriceCreation55[i].innerHTML = Math.ceil(oldCreation55) + ' ';
+}
+
+// creation 70
+
+let creation70Result = creation70 * euroValue;
+let oldCreation70 = (creation70Result * 100) / per35;
+
+for (i = 0; i < priceCreation70.length; i++) {
+    priceCreation70[i].innerHTML = Math.ceil(creation70Result) + ' ';
+    oldPriceCreation70[i].innerHTML = Math.ceil(oldCreation70) + ' ';
+}
+
+// creation 70d
+
+let creation70dResult = creation70d * euroValue;
+let oldCreation70d = (creation70dResult * 100) / per35;
+
+for (i = 0; i < priceCreation70d.length; i++) {
+    priceCreation70d[i].innerHTML = Math.ceil(creation70dResult) + ' ';
+    oldPriceCreation70d[i].innerHTML = Math.ceil(oldCreation70d) + ' ';
+}
+
+// creation 70c
+
+let creation70cResult = creation70c * euroValue;
+let oldCreation70c = (creation70cResult * 100) / per35;
+
+for (i = 0; i < priceCreation70c.length; i++) {
+    priceCreation70c[i].innerHTML = Math.ceil(creation70cResult) + ' ';
+    oldPriceCreation70c[i].innerHTML = Math.ceil(oldCreation70c) + ' ';
+}
+
+// esprit
+
+let espritResult = esprit * euroValue;
+let oldEsprit = (espritResult * 100) / per35;
+
+for (i = 0; i < priceEsprit.length; i++) {
+    priceCreation70c[i].innerHTML = Math.ceil(espritResult) + ' ';
+    oldPriceEsprit[i].innerHTML = Math.ceil(oldEsprit) + ' ';
+}
+
+// symbioz
+
+let symbiozResult = symbioz * euroValue;
+let oldSymbioz = (symbiozResult * 100) / per50;
+
+for (i = 0; i < priceSymbioz.length; i++) {
+    priceSymbioz[i].innerHTML = Math.ceil(symbiozResult) + ' ';
+    oldPriceSymbioz[i].innerHTML = Math.ceil(oldSymbioz) + ' ';
+}
+
+// elegance
+
+let eleganceResult = elegance * euroValue;
+let oldElegance = (eleganceResult * 100) / per50;
+
+for (i = 0; i < priceElegance.length; i++) {
+    priceElegance[i].innerHTML = Math.ceil(eleganceResult) + ' ';
+    oldPriceElegance[i].innerHTML = Math.ceil(oldElegance) + ' ';
+}
+
+// impress
+
+let impressResult = impress * euroValue;
+let oldImpress = (impressResult * 100) / per50;
+
+for (i = 0; i < priceImpress.length; i++) {
+    priceImpress[i].innerHTML = Math.ceil(impressResult) + ' ';
+    oldPriceImpress[i].innerHTML = Math.ceil(oldImpress) + ' ';
+}
+
+// impressE
+
+let impressEResult = impressE * euroValue;
+let oldImpressE = (impressEResult * 100) / per50;
+
+for (i = 0; i < priceImpressE.length; i++) {
+    priceImpressE[i].innerHTML = Math.ceil(impressEResult) + ' ';
+    oldPriceImpressE[i].innerHTML = Math.ceil(oldImpressE) + ' ';
+}
+
+// recreation 30
+
+let recreation30Result = recreation30 * euroValue;
+let oldRecreation30 = (recreation30Result * 100) / per50;
+
+for (i = 0; i < priceRecreation30.length; i++) {
+    priceRecreation30[i].innerHTML = Math.ceil(recreation30Result) + ' ';
+    oldPriceRecreation30[i].innerHTML = Math.ceil(oldRecreation30) + ' ';
+}
+
+// TX Sport
+
+let TXsportResult = TXsport * euroValue;
+let oldTXsport = (TXsportResult * 100) / per50;
+
+for (i = 0; i < priceTXsport.length; i++) {
+    priceTXsport[i].innerHTML = Math.ceil(TXsportResult) + ' ';
+    oldPriceTXsport[i].innerHTML = Math.ceil(oldTXsport) + ' ';
+}
+
+// evolution uni
+
+let TXevolutionUniResult = TXevolutionUni * euroValue;
+let oldTXevolutionUni = (TXevolutionUniResult * 100) / per45;
+
+for (i = 0; i < priceTXevolutionUni.length; i++) {
+    priceTXevolutionUni[i].innerHTML = Math.ceil(TXevolutionUniResult) + ' ';
+    oldPriceTXevolutionUni[i].innerHTML = Math.ceil(oldTXevolutionUni) + ' ';
+}
+
+// evolution wood
+
+let TXevolutionWoodResult = TXevolutionWood * euroValue;
+let oldTXEvolutionWood = (TXevolutionWoodResult * 100) / per45;
+
+for (i = 0; i < priceTXevolutionWood.length; i++) {
+    priceTXevolutionWood[i].innerHTML = Math.ceil(TXevolutionWoodResult) + ' ';
+    oldPriceTXevolutionWood[i].innerHTML = Math.ceil(oldTXevolutionWood) + ' ';
+}
+
+// tennis
+
+let TXtennisResult = TXtennis * euroValue;
+let oldTXtennis = (TXtennisResult * 100) / per50;
+
+for (i = 0; i < priceTXtennis.length; i++) {
+    priceTXtennis[i].innerHTML = Math.ceil(TXtennisResult) + ' ';
+    oldPriceTXtennis[i].innerHTML = Math.ceil(oldTXtennis) + ' ';
+}
+
+// surface
+
+let TXsurfaceResult = TXsurface * euroValue;
+let oldTXsurface = (TXsurfaceResult * 100) / per30;
+
+for (i = 0; i < oldPriceTXsurface.length; i++) {
+    priceTXsurface[i].innerHTML = Math.ceil(TXsurfaceResult) + ' ';
+    oldPriceTXsurface[i].innerHTML = Math.ceil(oldTXsurface) + ' ';
+}
+
+// saga 2
+
+let saga2Result = saga2 * euroValue;
+let oldSaga2 = (saga2Result * 100) / per30;
+
+for (i = 0; i < oldPriceSaga2.length; i++) {
+    priceSaga2[i].innerHTML = Math.ceil(saga2Result) + ' ';
+    oldPriceSaga2[i].innerHTML = Math.ceil(oldSaga2) + ' ';
+}
+
+// GTI
+
+let GTIuniResult = GTIuni * euroValue;
+let oldGTIuni = (GTIuniResult * 100) / per40;
+
+for (i = 0; i < oldPriceGTIuni.length; i++) {
+    priceGTIuni[i].innerHTML = Math.ceil(GTIuniResult) + ' ';
+    oldPriceGTIuni[i].innerHTML = Math.ceil(oldGTIuni) + ' ';
+}
+
 fromPriceLinolPVH.innerHTML = Math.ceil(spectraResult);
 fromPriceKovrPlitka.innerHTML = Math.ceil(basisResult);
 fromPriceGryaz.innerHTML = Math.ceil(brushResult);
 fromPriceKovr.innerHTML = Math.ceil(akzentResult);
 fromPriceSport.innerHTML = Math.ceil(sportStandartResult);
 fromPriceVinil.innerHTML = Math.ceil(effektaResult);
+fromPriceVinilLam.innerHTML = Math.ceil(creation30Result);
