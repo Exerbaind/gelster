@@ -589,7 +589,7 @@ body {
   display: grid;
   -ms-grid-columns: 6fr 6fr;
       grid-template-columns: 6fr 6fr;
-  grid-column-gap: 25px;
+  grid-column-gap: 30px;
 }
 
 @media screen and (max-width: 800px) {

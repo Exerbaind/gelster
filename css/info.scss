@@ -522,7 +522,7 @@ body {
         .grid-section {
             display: grid;
             grid-template-columns: 6fr 6fr;
-            grid-column-gap: 25px;
+            grid-column-gap: 30px;
 
             @media screen and (max-width: 800px) {
                 grid-template-columns: 12fr;
