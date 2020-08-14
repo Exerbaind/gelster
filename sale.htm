@@ -41,23 +41,6 @@
                 <p class="text">Цены зависят от курса евро. Уточняйте у менеджера</p>
                 <p class="text">Скидка на линолеум ПВХ действует при покупке покрытий от 500 м².</p>
                 <p class="text">Цена привязана к курсу евро и может меняться в течение дня.</p>
-
-                <p class="euro-value"><?php
-                        function CBR_XML_Daily_Ru() {
-                            $json_daily_file = __DIR__.'/daily.json';
-                            if (!is_file($json_daily_file) || filemtime($json_daily_file) < time() - 86400) {
-                                if ($json_daily = file_get_contents('https://www.cbr-xml-daily.ru/daily_json.js')) {
-                                    file_put_contents($json_daily_file, $json_daily);
-                                }
-                            }
-
-                            return json_decode(file_get_contents($json_daily_file));
-                        }
-
-                        $data = CBR_XML_Daily_Ru();
-
-                        echo "{$data->Valute->EUR->Value}";
-                    ?></p>
             </div>
         </div>
         <div class="third-block" id="back">
@@ -73,28 +56,30 @@
                         <img src="./img/pages-name-imgs/sale/icon-2-vinyl.svg" alt="Распродажа линолеум пвх Гельстер"
                             class="item-icon">
                         <p class="item-title">линолеум пвх</p>
-                        <p class="item-price">от <span class="from-price_pvh"></span> руб/м<sup><small>2</small></sup>
+                        <p class="item-price">от <span class="from-price_pvh"></span>
+                            руб/м<sup><small>2</small></sup>
                         </p>
                     </div>
                     <div class="th-content__item">
                         <img src="./img/pages-name-imgs/sale/icon-8-sport-linoleum.svg"
                             alt="Распродажа спортивного линолеума Гельстер" class="item-icon">
                         <p class="item-title">Спортивный линолеум</p>
-                        <p class="item-price">от <span class="from-price_sport"></span> руб/м<sup><small>2</small></sup>
+                        <p class="item-price">от <span class="from-price_sport"></span>
+                            руб/м<sup><small>2</small></sup>
                         </p>
                     </div>
                     <div class="th-content__item">
                         <img src="./img/pages-name-imgs/sale/icon-7-pvx.svg" alt="Распродажа плитки ПВХ Гельстер"
                             class="item-icon">
                         <p class="item-title">Виниловая плитка</p>
-                        <p class="item-price">от <span class="from-price_vinil"></span>
+                        <p class="item-price">от <span class="from-price_vinil-lam"></span>
                             руб/м<sup><small>2</small></sup></p>
                     </div>
                     <div class="th-content__item">
                         <img src="./img/pages-name-imgs/sale/icon-3-covr.plitk.svg"
                             alt="Распродажа ковровая плитка Гельстер" class="item-icon">
                         <p class="item-title">ковровая плитка</p>
-                        <p class="item-price">от <span class="from-price_kovr-plitka"></span>
+                        <p class="item-price">от <span class="from-price_kovr-plitka">1269</span>
                             руб/м<sup><small>2</small></sup>
                         </p>
                     </div>
@@ -102,14 +87,16 @@
                         <img src="./img/pages-name-imgs/sale/icon-4-gr.svg"
                             alt="Распродажа грязезащитные ковры Гельстер" class="item-icon">
                         <p class="item-title">грязезащитные ковры</p>
-                        <p class="item-price">от <span class="from-price_gryaz"></span> руб/м<sup><small>2</small></sup>
+                        <p class="item-price">от <span class="from-price_gryaz"></span>
+                            руб/м<sup><small>2</small></sup>
                         </p>
                     </div>
                     <div class="th-content__item">
                         <img src="./img/pages-name-imgs/sale/icon-6-kovrolin.svg" alt="Распродажа ковролина Гельстер"
                             class="item-icon">
                         <p class="item-title">Ковролин</p>
-                        <p class="item-price">от <span class="from-price_kovr"></span> руб/м<sup><small>2</small></sup>
+                        <p class="item-price">от <span class="from-price_kovr"></span>
+                            руб/м<sup><small>2</small></sup>
                         </p>
                     </div>
                     <div class="th-content__item">
@@ -1297,6 +1284,298 @@
                     </div>
                     <p class="rest-m">остаток 294 кв.м (М)</p>
                 </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Esprit<br>арт. 5303</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/mipolam_esprit/articles/5303.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/mipolam_esprit/articles/5303.jpg"
+                                alt="Виниловая плитка Gerflor Esprit 5303 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-esprit"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="esprit"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 310,38 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Esprit<br>арт. 5306</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/mipolam_esprit/articles/5306.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/mipolam_esprit/articles/5306.jpg"
+                                alt="Виниловая плитка Gerflor Esprit 5306 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-esprit"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="esprit"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 317,77 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Esprit<br>арт. 5310</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/mipolam_esprit/articles/5310.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/mipolam_esprit/articles/5310.jpg"
+                                alt="Виниловая плитка Gerflor Esprit 5310 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-esprit"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="esprit"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 310,38 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Esprit<br>арт. 5320</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/mipolam_esprit/articles/5320.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/mipolam_esprit/articles/5320.jpg"
+                                alt="Виниловая плитка Gerflor Esprit 5320 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-esprit"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="esprit"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 310,38 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 0005</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/0005.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/0005.jpg"
+                                alt="Виниловая плитка Gerflor Impress 0005 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impress"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impress"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 13,8 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 0679</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/0679.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/0679.jpg"
+                                alt="Виниловая плитка Gerflor Impress 0679 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impress"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impress"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 15,6 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 0518</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/0518.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/0518.jpg"
+                                alt="Виниловая плитка Gerflor Impress 0518 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impress"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impress"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 29,8 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 0036</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/0036.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/0036.jpg"
+                                alt="Виниловая плитка Gerflor Impress 0036 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impress"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impress"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 70,0 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 0069</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/0069.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/0069.jpg"
+                                alt="Виниловая плитка Gerflor Impress 0069 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impress"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impress"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 26,4 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 0062</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/0062.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/0062.jpg"
+                                alt="Виниловая плитка Gerflor Impress 0062 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impress"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impress"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 50,0 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 4743</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/4743.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/4743.jpg"
+                                alt="Виниловая плитка Gerflor Impress 4743 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impressE"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impressE"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 40,0 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Impress<br>арт. 4001</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/impress/4001.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/impress/4001.jpg"
+                                alt="Виниловая плитка Gerflor Impress 4001 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-impressE"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="impressE"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 14,0 кв.м (М)</p>
+                </div>
             </div>
             <div class="fourth-block__content show-alert">
                 <div class="content__item">
@@ -1713,6 +1992,244 @@
                     </div>
                     <p class="rest-m">остаток 50 кв.м (М)</p>
                 </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Sport<br>арт. 6430</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6430.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6430.jpg"
+                                alt="Спортивный линолеум Gerflor TX Sport 6430 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-sport"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-sport"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 36 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Sport<br>арт. 6146</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6146.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6146.jpg"
+                                alt="Спортивный линолеум Gerflor TX Sport 6146 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-sport"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-sport"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 27 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Evolution Uni<br>арт. 6431</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6431.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6431.jpg"
+                                alt="Спортивный линолеум Gerflor TX Evolution Uni 6431 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-evolution-uni"></span>руб/м</span><span
+                                            class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-evolution-uni"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 54 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Evolution Uni<br>арт. 6180</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6180.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6180.jpg"
+                                alt="Спортивный линолеум Gerflor TX Evolution Uni 6180 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-evolution-uni"></span>руб/м</span><span
+                                            class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-evolution-uni"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 23,4 кв.м (М)</p>
+                </div>
+
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Evolution Uni<br>арт. 6559</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6559.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6559.jpg"
+                                alt="Спортивный линолеум Gerflor TX Evolution Uni 6559 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-evolution-uni"></span>руб/м</span><span
+                                            class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-evolution-uni"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 61,5 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Evolution Wood<br>арт. 6375</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6375.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6375.jpg"
+                                alt="Спортивный линолеум Gerflor TX Evolution Wood 6375 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-45&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-evolution-wood"></span>руб/м</span><span
+                                            class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-evolution-wood"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 79,2 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Tennis<br>арт. 6504</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/tennis/articles/6504.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/tennis/articles/6504.jpg"
+                                alt="Спортивный линолеум Gerflor TX Tennis 6504 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-50&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-tennis"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-tennis"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 18,2 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Surface<br>арт. 6381</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6381.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6381.jpg"
+                                alt="Спортивный линолеум Gerflor TX Surface 6381 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-surface"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-surface"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 36,0 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor TX Surface<br>арт. 6038</p>
+                    <div class="item__article-block">
+                        <a href="./img/Katalog/gerflor/taraflex_sport_m_comfort/6038.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/Katalog/gerflor/taraflex_sport_m_comfort/6038.jpg"
+                                alt="Спортивный линолеум Gerflor TX Surface 6038 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span class="bottom"><span
+                                                class="old-tx-surface"></span>руб/м</span><span class="ups">2</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-surface"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-m">остаток 63,0 кв.м (М)</p>
+                </div>
             </div>
 
             <!-- Виниловая плитка -->
@@ -2005,19 +2522,414 @@
                             <div class="white-block"></div>
                             <div class="red-block"></div>
                             <div class="sale-block">
-                                <p class="sale-percent">-20&#37;</p>
+                                <p class="sale-percent">-35&#37;</p>
                                 <p class="sale-old-price"><span class="bottom"><span
-                                            class="old-effekta"></span>руб/м</span><span class="ups">2</span></p>
+                                            class="old-creation30"></span>руб/м</span><span class="ups">2</span></p>
                             </div>
                         </a>
                     </div>
                     <div class="price-now">
                         <p class="price-word">цена:</p>
                         <p class="price"><span data-class='api-price'
-                                class="effekta"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                                class="creation30"></span><span>руб/м<sup><small>2</small></sup></span></p>
                     </div>
-                    <p class="rest-s">остаток 89,420 кв.м (М)</p>
+                    <p class="rest-s">остаток 46,76 кв.м (М)</p>
                 </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 30<br>арт. 0060</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION/articles/0060.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION/articles/0060.jpg"
+                                alt="Виниловая плитка Gerflor Creation 30 0060 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation30"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation30"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 10,08 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 55<br>арт. 0437</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/Creation_55/articles/0437.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/Creation_55/articles/0437.jpg"
+                                alt="Виниловая плитка Gerflor Creation 55 0437 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation55"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation55"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 554,44 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70<br>арт. 0562</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0562.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0562.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0562 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 10,02 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70<br>арт. 0329</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0329.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0329.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0329 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 3,34 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70<br>арт. 0540</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0540.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0540.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0540 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 26,72 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70<br>арт. 0544</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0544.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0544.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0544 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 3,34 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70<br>арт. 0260</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0260.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0260.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0260 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 3,34 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70<br>арт. 0265</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0265.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0265.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0265 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 56,78 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70<br>арт. 0541</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0541.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0541.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0541 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70d"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70d"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 26,72 кв.м (М)</p>
+                </div>
+                <!-- <div class="content__item">
+                    <p class="item__name">Gerflor Creation 70 Clic<br>арт. 0085</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/CREATION_70/articles/0085.jpg"
+                            onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/CREATION_70/articles/0085.jpg"
+                                alt="Виниловая плитка Gerflor Creation 70 0085 Clic распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-35&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-creation70c"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="creation70c"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 39 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Saga 2<br>арт. 0001</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/Saga_2/articles/0001.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/Saga_2/articles/0001.jpg"
+                                alt="Виниловая плитка Gerflor Saga2 0001 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-saga"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="saga"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 7,5 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Saga 2<br>арт. 0002</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/Saga_2/articles/0002.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/Saga_2/articles/0002.jpg"
+                                alt="Виниловая плитка Gerflor Saga2 0002 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-saga"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="saga"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 10 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Saga 2<br>арт. 0017</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/Saga_2/articles/0017.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/Saga_2/articles/0017.jpg"
+                                alt="Виниловая плитка Gerflor Saga2 0017 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-saga"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="saga"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 7,5 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor Saga 2<br>арт. 0014</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/Saga_2/articles/00014.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/Saga_2/articles/00014.jpg"
+                                alt="Виниловая плитка Gerflor Saga2 00014 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-30&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-saga"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="saga"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 7,5 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor GTI Uni<br>арт. 0243</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/GTI_MAX/articles/0243.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/GTI_MAX/articles/0243.jpg"
+                                alt="Виниловая плитка Gerflor GTI Uni 0243 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-tx-gti-uni"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-gti-uni"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 20,96 кв.м (М)</p>
+                </div>
+                <div class="content__item">
+                    <p class="item__name">Gerflor GTI Uni<br>арт. 0244</p>
+                    <div class="item__article-block">
+                        <a href="./img/collections/gerflor/GTI_MAX/articles/0244.jpg" onclick="return hs.expand (this)">
+                            <img src="./img/collections/gerflor/GTI_MAX/articles/0244.jpg"
+                                alt="Виниловая плитка Gerflor GTI Uni 0244 распродажа" class="article-img">
+                            <div class="zoom-act"><img src="./icons/zoom-art.svg" class="zoom-icon" alt="" id="zoom">
+                            </div>
+                            <div class="white-block"></div>
+                            <div class="red-block"></div>
+                            <div class="sale-block">
+                                <p class="sale-percent">-40&#37;</p>
+                                <p class="sale-old-price"><span class="bottom"><span
+                                            class="old-tx-gti-uni"></span>руб/м</span><span class="ups">2</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price-now">
+                        <p class="price-word">цена:</p>
+                        <p class="price"><span data-class='api-price'
+                                class="tx-gti-uni"></span><span>руб/м<sup><small>2</small></sup></span></p>
+                    </div>
+                    <p class="rest-s">остаток 93,45 кв.м (М)</p>
+                </div> -->
+
             </div>
 
 

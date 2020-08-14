@@ -149,7 +149,8 @@ let smaragd = 7.2,
     saga2 = 34,
     GTIuni = 47;
 
-let euroValue = document.querySelector('.euro-value').innerHTML;
+// let euroValue = document.querySelector('.euro-value').innerHTML;
+let euroValue = 86.9;
 
 
 
@@ -202,7 +203,7 @@ const oldPriceSmaragd = document.querySelectorAll('.old-smaragd'),
     oldPriceCreation30 = document.querySelectorAll('.old-creation30'),
     oldPriceCreation55 = document.querySelectorAll('.old-creation55'),
     oldPriceCreation70 = document.querySelectorAll('.old-creation70'),
-    oldPriseCreation70d = document.querySelectorAll('.old-creation70d'),
+    oldPriceCreation70d = document.querySelectorAll('.old-creation70d'),
     oldPriceCreation70c = document.querySelectorAll('.old-creation70c'),
     oldPriceEsprit = document.querySelectorAll('.old-esprit'),
     oldPriceSymbioz = document.querySelectorAll('.old-symbioz'),
@@ -210,12 +211,12 @@ const oldPriceSmaragd = document.querySelectorAll('.old-smaragd'),
     oldPriceImpress = document.querySelectorAll('.old-impress'),
     oldPriceImpressE = document.querySelectorAll('.old-impressE'),
     oldPriceRecreation30 = document.querySelectorAll('.old-recreation30'),
-    oldPriceTXSport = document.querySelectorAll('.old-tx-sport'),
-    oldPriceTXEvolutionUni = document.querySelectorAll('.old-tx-evolution-uni'),
-    oldPriceTXEvolutionWood = document.querySelectorAll('.old-tx-evolution-wood'),
-    oldPriceTXTennis = document.querySelectorAll('.old-tx-tennis'),
-    oldPriceTXSurface = document.querySelectorAll('.old-tx-surface'),
-    oldPriceTXSaga = document.querySelectorAll('.old-tx-saga'),
+    oldPriceTXsport = document.querySelectorAll('.old-tx-sport'),
+    oldPriceTXevolutionUni = document.querySelectorAll('.old-tx-evolution-uni'),
+    oldPriceTXevolutionWood = document.querySelectorAll('.old-tx-evolution-wood'),
+    oldPriceTXtennis = document.querySelectorAll('.old-tx-tennis'),
+    oldPriceTXsurface = document.querySelectorAll('.old-tx-surface'),
+    oldPriceTXsaga = document.querySelectorAll('.old-tx-saga'),
     oldPriceTXGTIUni = document.querySelectorAll('.old-tx-gti-uni');
 
 const fromPriceLinolPVH = document.querySelector('.from-price_pvh'),
@@ -223,7 +224,7 @@ const fromPriceLinolPVH = document.querySelector('.from-price_pvh'),
     fromPriceGryaz = document.querySelector('.from-price_gryaz'),
     fromPriceKovr = document.querySelector('.from-price_kovr'),
     fromPriceSport = document.querySelector('.from-price_sport'),
-    fromPriceVinil = document.querySelector('.from-price_vinil'),
+    fromPriceVinil = document.querySelector('.from-price_pvh'),
     fromPriceVinilLam = document.querySelector('.from-price_vinil-lam');
 
 const per50 = 50,
@@ -438,7 +439,7 @@ let espritResult = esprit * euroValue;
 let oldEsprit = (espritResult * 100) / per35;
 
 for (i = 0; i < priceEsprit.length; i++) {
-    priceCreation70c[i].innerHTML = Math.ceil(espritResult) + ' ';
+    priceEsprit[i].innerHTML = Math.ceil(espritResult) + ' ';
     oldPriceEsprit[i].innerHTML = Math.ceil(oldEsprit) + ' ';
 }
 
@@ -515,7 +516,7 @@ for (i = 0; i < priceTXevolutionUni.length; i++) {
 // evolution wood
 
 let TXevolutionWoodResult = TXevolutionWood * euroValue;
-let oldTXEvolutionWood = (TXevolutionWoodResult * 100) / per45;
+let oldTXevolutionWood = (TXevolutionWoodResult * 100) / per45;
 
 for (i = 0; i < priceTXevolutionWood.length; i++) {
     priceTXevolutionWood[i].innerHTML = Math.ceil(TXevolutionWoodResult) + ' ';
@@ -547,9 +548,9 @@ for (i = 0; i < oldPriceTXsurface.length; i++) {
 let saga2Result = saga2 * euroValue;
 let oldSaga2 = (saga2Result * 100) / per30;
 
-for (i = 0; i < oldPriceSaga2.length; i++) {
-    priceSaga2[i].innerHTML = Math.ceil(saga2Result) + ' ';
-    oldPriceSaga2[i].innerHTML = Math.ceil(oldSaga2) + ' ';
+for (i = 0; i < oldPriceTXsaga.length; i++) {
+    priceTXsaga[i].innerHTML = Math.ceil(saga2Result) + ' ';
+    oldPriceTXSaga[i].innerHTML = Math.ceil(oldSaga2) + ' ';
 }
 
 // GTI
@@ -557,9 +558,9 @@ for (i = 0; i < oldPriceSaga2.length; i++) {
 let GTIuniResult = GTIuni * euroValue;
 let oldGTIuni = (GTIuniResult * 100) / per40;
 
-for (i = 0; i < oldPriceGTIuni.length; i++) {
-    priceGTIuni[i].innerHTML = Math.ceil(GTIuniResult) + ' ';
-    oldPriceGTIuni[i].innerHTML = Math.ceil(oldGTIuni) + ' ';
+for (i = 0; i < oldPriceTXGTIUni.length; i++) {
+    priceTXGTIUni[i].innerHTML = Math.ceil(GTIuniResult) + ' ';
+    oldPriceTXGTIUni[i].innerHTML = Math.ceil(oldGTIuni) + ' ';
 }
 
 fromPriceLinolPVH.innerHTML = Math.ceil(spectraResult);
