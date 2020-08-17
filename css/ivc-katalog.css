@@ -540,7 +540,7 @@ html {
   text-align: justify;
 }
 
-@media screen and (max-width: 5500px) {
+@media screen and (max-width: 500px) {
   .section-main .container .where-to-use .where-to-use__sphers .places-to-use .place-item .item-text {
     padding: 0 10px;
   }

@@ -185,7 +185,7 @@ const priceSmaragd = document.querySelectorAll('.price-now .smaragd'),
     priceTXevolutionWood = document.querySelectorAll('.price-now .tx-evolution-wood'),
     priceTXtennis = document.querySelectorAll('.price-now .tx-tennis'),
     priceTXsurface = document.querySelectorAll('.price-now .tx-surface'),
-    priceTXsaga = document.querySelectorAll('.price-now .tx-saga'),
+    priceTXsaga = document.querySelectorAll('.price-now .saga'),
     priceTXGTIUni = document.querySelectorAll('.price-now .tx-gti-uni');
 
 const oldPriceSmaragd = document.querySelectorAll('.old-smaragd'),
@@ -216,7 +216,7 @@ const oldPriceSmaragd = document.querySelectorAll('.old-smaragd'),
     oldPriceTXevolutionWood = document.querySelectorAll('.old-tx-evolution-wood'),
     oldPriceTXtennis = document.querySelectorAll('.old-tx-tennis'),
     oldPriceTXsurface = document.querySelectorAll('.old-tx-surface'),
-    oldPriceTXsaga = document.querySelectorAll('.old-tx-saga'),
+    oldPriceTXsaga = document.querySelectorAll('.old-saga'),
     oldPriceTXGTIUni = document.querySelectorAll('.old-tx-gti-uni');
 
 const fromPriceLinolPVH = document.querySelector('.from-price_pvh'),
@@ -550,7 +550,7 @@ let oldSaga2 = (saga2Result * 100) / per30;
 
 for (i = 0; i < oldPriceTXsaga.length; i++) {
     priceTXsaga[i].innerHTML = Math.ceil(saga2Result) + ' ';
-    oldPriceTXSaga[i].innerHTML = Math.ceil(oldSaga2) + ' ';
+    oldPriceTXsaga[i].innerHTML = Math.ceil(oldSaga2) + ' ';
 }
 
 // GTI
