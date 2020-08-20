@@ -23,6 +23,10 @@
     line-height: 24px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .section-main {
     display: flex;
     align-items: center;
@@ -119,7 +123,7 @@
         .intro {
             display: flex;
             justify-content: space-between;
-            min-height: 250px;
+            min-height: 235px;
 
             @media screen and (max-width: 530px) {
                 flex-direction: column;
@@ -283,7 +287,7 @@
                 }
 
                 .content__info {
-                    padding: 40px 70px 30px 55px;
+                    padding: 30px 70px 30px 55px;
 
                     @media screen and (max-width: 930px) {
                         padding: 20px 10px;
@@ -300,6 +304,7 @@
                         text-align: justify;
                         margin-bottom: 10px;
                         transition: .3s;
+                        font-family: 'PTSerif';
                     }
 
                     .content__link {
@@ -326,15 +331,19 @@
             .termin-state__context {
                 width: 30%;
                 background-color: $darkGreenColor;
-                padding: 55px 45px 55px 45px;
+                padding: 45px 45px 45px 45px;
                 position: relative;
                 transition: .3s;
 
                 &:hover {
                     background-color: $orangeColor;
 
-                    .termin-state__link {
-                        @include par(white, normal);
+                    .link-to-article {
+
+
+                        .termin-state__link {
+                            @include par(white, normal);
+                        }
                     }
                 }
 
@@ -350,10 +359,6 @@
                     &:hover {
                         .termin-state__par {
                             @include par(white, normal);
-                        }
-
-                        .termin-state__link {
-                            color: white;
                         }
                     }
 
