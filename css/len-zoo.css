@@ -349,6 +349,34 @@ header {
   }
 }
 
+.section-main .container .two-columns_block .content .blago__history .new-life__history-text {
+  width: 70%;
+  background-image: url(../img/blago/blago-new-life/bg.jpg);
+  background-size: cover;
+  padding: 30px 50px 30px 50px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 990px) {
+  .section-main .container .two-columns_block .content .blago__history .new-life__history-text {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+.section-main .container .two-columns_block .content .blago__history .new-life__history-text .par {
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .section-main .container .two-columns_block .content .blago__history .new-life__history-text .par {
+    margin-top: 10px;
+  }
+}
+
 .section-main .container .two-columns_block .content .kangaroo__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,5 +771,15 @@ header {
   height: auto;
   visibility: visible;
   opacity: 1;
+}
+
+.flex_50 {
+  width: 50% !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex_50 {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=len-zoo.css.map */

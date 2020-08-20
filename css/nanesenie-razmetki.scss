@@ -185,6 +185,47 @@ $cBackgroundOrange: #f7ece1;
                             }
                         }
                     }
+
+                    .navigation__item_19 {
+                        width: 19.5%;
+                        height: 40px;
+                        border-left: 5px solid $cInterface;
+                        display: flex;
+                        align-items: center;
+                        transition: .3s;
+                        margin-left: 5px;
+
+                        @media screen and (max-width: 750px) {
+                            width: 100%;
+                            margin-left: 0;
+                            margin-top: 5px;
+                        }
+
+                        &:nth-child(1) {
+                            margin-left: 0;
+                        }
+
+                        &:hover {
+                            background-color: $cInterface;
+
+                            .navigation__link {
+                                color: white;
+                            }
+                        }
+
+                        .navigation__link {
+                            text-decoration: none;
+                            color: $cDarkGreen;
+                            padding-left: 30px;
+                            text-transform: lowercase;
+                            transition: .3s;
+                            width: 100%;
+
+                            @media screen and (max-width: 750px) {
+                                padding-left: 20px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -219,6 +260,88 @@ $cBackgroundOrange: #f7ece1;
 
             .second-column {
                 width: 33%;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+
+                &:hover {
+                    .order__img {
+                        transform: scale(1.03);
+                    }
+                }
+
+                @media screen and (max-width: 800px) {
+                    order: 1;
+                }
+
+                .order__img {
+                    width: 100%;
+                    height: 100%;
+                    transition: .3s;
+                }
+
+                .block-top-icon {
+                    position: absolute;
+                    background-color: #edb056;
+                    height: 75px;
+                    width: 75px;
+                    border-radius: 50px;
+                    right: 0 !important;
+                    top: 0;
+                    transform: translate(30%, -30%);
+
+                    span {
+                        width: 30px;
+                        height: 2px;
+                        background-color: white;
+                        display: block;
+                        margin-top: 45px;
+                        margin-left: 15px;
+
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 30px;
+                            height: 2px;
+                            background-color: white;
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .flex-two-columns_green {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+            }
+
+            .first-column {
+                width: 44.5%;
+                background-color: $cDarkGreen;
+                @include padding();
+                // margin-right: 5px;
+
+                @media screen and (max-width: 800px) {
+                    order: 2;
+                }
+
+                .title {
+                    @include title(white, 24px);
+                }
+
+                .par {
+                    @include text(white, 15px);
+                }
+            }
+
+            .second-column {
+                width: 54%;
                 position: relative;
                 overflow: hidden;
                 cursor: pointer;
@@ -422,6 +545,11 @@ $cBackgroundOrange: #f7ece1;
                         flex-direction: column;
                         align-items: center;
 
+                        &:hover {
+                            transform: translate(3px, -3px);
+                            box-shadow: -5px 5px 11px -9px #000000;
+                        }
+
                         @media screen and (max-width: 900px) {
                             width: 100%;
                         }
@@ -438,6 +566,42 @@ $cBackgroundOrange: #f7ece1;
                         .product__sub {
                             @include text($cDarkGreen, -5px);
                             text-align: center;
+                        }
+                    }
+
+                    .product__container_two {
+                        width: 48.5%;
+                        background-color: $cBackground;
+                        padding: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: translate(3px, -3px);
+                            box-shadow: -5px 5px 11px -9px #000000;
+                        }
+
+                        @media screen and (max-width: 900px) {
+                            width: 100%;
+                        }
+
+                        .title {
+                            @include title($cInterface, 20px);
+                            text-align: center;
+                            transition: .3s;
+                        }
+
+                        .product__img {
+                            margin-top: 30px;
+                        }
+
+                        .product__sub {
+                            @include text($cDarkGreen, -5px);
+                            text-align: center;
+                            transition: .3s;
                         }
                     }
 

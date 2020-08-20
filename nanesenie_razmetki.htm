@@ -7,8 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Нанесение спортивной разметки является важным этапом в процессе настила спортивного линолеума,
+    от которого может зависеть проведение самого мероприятия. Спортивная разметка площадки должна
+    соответствовать определенным требованиям и правилам конкретного вида спорта, и быть понятной для
+    участников соревнований.">
+    <meta name="keywords" content="Нанесение разметки краски на спортивный линолеум">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./included_files/header-style/css/header.css">
     <link rel="stylesheet" href="./included_files/footer-style/footer.css">
@@ -126,10 +129,10 @@
                     <img src="./img/articles/ykladka_razmetka/clean.jpg" alt="Чистота покрытия" class="column__img">
                 </div>
                 <div class="column">
-                    <img src="./img/articles/ykladka_razmetka/dry.jpg" alt="Чистота покрытия" class="column__img">
+                    <img src="./img/articles/ykladka_razmetka/dry.jpg" alt="Сухое основание" class="column__img">
                 </div>
                 <div class="column">
-                    <img src="./img/articles/ykladka_razmetka/defect.jpg" alt="Чистота покрытия" class="column__img">
+                    <img src="./img/articles/ykladka_razmetka/defect.jpg" alt="Отсутствие дефектов" class="column__img">
                 </div>
                 <div class="column pad">
                     <h4 class="column__title">
@@ -257,8 +260,8 @@
                     </p>
                 </div>
                 <div class="second-column order" onclick="showForm()">
-                    <img src="./img/articles/ykladka_razmetka/order.jpg" alt="Общие принципы нанесения краски"
-                        class="order__img">
+                    <img src="./img/articles/ykladka_razmetka/order.jpg"
+                        alt="Заказывайте у нас профессиональное нанесение разметки" class="order__img">
                     <div class="block-top-icon">
                         <span></span>
                     </div>
@@ -304,6 +307,11 @@
 
     <script>
         const form = document.querySelector('.form-container');
+        const toProductPage = [...document.querySelector('.product__container')];
+
+        toProductPage.addEventListener('click', () => {
+            window.location.href = 'https://gelster.ru/k_himia_kraski.htm'
+        })
 
         function showForm() {
             form.classList.add('show-form');

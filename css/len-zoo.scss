@@ -222,6 +222,23 @@ header {
                             @include text(white, 16px, 0px, 0px);
                         }
                     }
+
+                    .new-life__history-text {
+                        width: 70%;
+                        background-image: url(../img/blago/blago-new-life/bg.jpg);
+                        background-size: cover;
+                        padding: 30px 50px 30px 50px;
+                        text-align: justify;
+
+                        @media screen and (max-width: 990px) {
+                            width: 100%;
+                            padding: 20px 10px;
+                        }
+
+                        .par {
+                            @include text(white, 16px, 20px, 10px);
+                        }
+                    }
                 }
 
                 .kangaroo__info {
@@ -509,5 +526,13 @@ header {
                 }
             }
         }
+    }
+}
+
+.flex_50 {
+    width: 50% !important;
+
+    @media screen and (max-width: 1000px) {
+        width: 100% !important;
     }
 }
