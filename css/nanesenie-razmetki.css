@@ -94,11 +94,11 @@ body {
 }
 
 .main-wrapper .container .about-block .img-block .two-imgs .upper {
-  height: 71%;
+  height: 69%;
 }
 
 .main-wrapper .container .about-block .img-block .two-imgs .down {
-  height: 25%;
+  height: 27%;
 }
 
 .main-wrapper .container .about-block .text-block {
@@ -295,6 +295,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .main-wrapper .container .flex-two-columns .first-column {
+    width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -331,6 +332,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .main-wrapper .container .flex-two-columns .second-column {
+    width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;

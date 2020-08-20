@@ -95,11 +95,11 @@ $cBackgroundOrange: #f7ece1;
                     justify-content: space-between;
 
                     .upper {
-                        height: 71%;
+                        height: 69%;
                     }
 
                     .down {
-                        height: 25%;
+                        height: 27%;
                     }
                 }
             }
@@ -246,6 +246,7 @@ $cBackgroundOrange: #f7ece1;
                 margin-right: 17px;
 
                 @media screen and (max-width: 800px) {
+                    width: 100%;
                     order: 2;
                 }
 
@@ -271,6 +272,7 @@ $cBackgroundOrange: #f7ece1;
                 }
 
                 @media screen and (max-width: 800px) {
+                    width: 100%;
                     order: 1;
                 }
 

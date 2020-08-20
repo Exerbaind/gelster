@@ -1,0 +1,165 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Дети - наша радость, наше счастье, наше будущее. В нашем мире много счастливых и
+            любимых детей, но, к сожалению, есть и те детки, которые по каким-либо причинам остались одни.
+            Таким детям очень нужна наша с вами доброта, забота и поддержка.">
+    <meta name="keywords" content="Детские дома и приюты благотворительность">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <link rel="stylesheet" href="./css/len-zoo.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick/slick.css" />
+    <title>Детские дома и приюты</title>
+</head>
+
+<body>
+    <section class="preloader">
+        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+    </section>
+    <header>
+        <? include('./included_files/header.htm'); ?>
+    </header>
+    <section class="section-main">
+        <div class="header-block" style="background: url(./img/blago/blago-priyuti/main.jpg);">
+            <div class="header-block__content">
+                <h1 class="header-block__title">
+                    Детские дома и приюты
+                </h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="intro">
+                <div class="intro__text">
+                    <h1 class="title">Детские дома и приюты Санкт-Петербурга и Ленинградской области</h1>
+                    <p class="par">Дети - наша радость, наше счастье, наше будущее. В нашем мире много счастливых и
+                        любимых детей, но, к сожалению, есть и те детки, которые по каким-либо причинам остались одни.
+                        Таким детям очень нужна наша с вами доброта, забота и поддержка. Мы выражаем огромную
+                        благодарность людям, посвятившим себя и свою жизнь детям, оставшимся без родителей. Спасибо, что
+                        Вы дарите им свою заботу, тепло, любовь и готовите к будущей взрослой жизни. А мы в свою очередь
+                        стараемся сделать их детство радостным и счастливым. Их улыбки согревают наши сердца.
+                    </p>
+                </div>
+                <div class="intro__emblem">
+                    <img src="./img/blago/blago-priyuti/logo.jpg" alt="Участие в программе опека" class="emblem">
+                    <p class="par">сотрудничаем с клубом<br>вожатых &laquo;Сто друзей&raquo;</p>
+                </div>
+            </div>
+            <hr>
+            <div class="block-with-pages">
+                <div class="years">
+                    <ul class="years__list">
+                        <li class="years__item active" onclick="chooseYear()">2015</li>
+                        <li class="years__item" onclick="chooseYear()">2016</li>
+                    </ul>
+                </div>
+                <div class="switch-pages">
+                    <div class="page show">
+                        <div class="page__info flex_50">
+                            <h3 class="title">Фотоотчет мероприятий:</h3>
+                            <h5 class="sub-title">&laquo;Новый год 2015&raquo;</h5>
+                            <p class="par">
+                                В настоящее время существует большое количество детей, которые по тем или иным причинам
+                                остались одни, а им тоже очень хочется почувствовать атмосферу праздника и сказки.
+                                Именно поэтому уже второй год ТСК «Гельстер» активно участвует в подготовке Новогоднего
+                                Торжества для детишек из приютов.
+
+                            </p>
+                            <p class="par">
+                                Мы рады видеть на лицах детей улыбку и восторг. С каждым мгновением мы убеждаемся в
+                                необходимости, в чрезмерной важности таких действий и вместе с Вами мы дарим детям
+                                новогоднее чудо.
+                            </p>
+                        </div>
+                        <div class="page__photos flex_50">
+                            <img src="./img/icons/slider.png" alt="" class="slide-prev" onclick="prevPhoto()">
+                            <ul class="dots" style="width: 150px; margin-left: -75px">
+                                <li class="dots__item filled" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                            </ul>
+                            <img src="./img/icons/slider.png" alt="" class="slide-next" onclick="nextPhoto()">
+                            <!-- слайды -->
+                            <img src="./img/blago/blago-priyuti/slide15-1.jpg" alt="Новый год 2015"
+                                class="slide__img act">
+                            <img src="./img/blago/blago-priyuti/slide15-2.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-3.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-4.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-5.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-6.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-7.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-8.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-9.jpg" alt="Новый год 2015" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide15-10.jpg" alt="Новый год 2015" class="slide__img">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page__info flex_50">
+                            <h3 class="title">Фотоотчет мероприятий:</h3>
+                            <h5 class="sub-title">&laquo;День опекуна 2016&raquo;</h5>
+                            <p class="par">
+                                Наша компания ежегодно принимает активное участие в мероприятии под названием «День
+                                опекуна», которое организовывают специалисты Ленинградского Зоопарка, и навещает
+                                кенгуренка
+                                Беннета по имени Дафния, находящегося под нашей опекой с сентября 2014 года.
+                            </p>
+                            <p class="par">
+                                Само торжество каждый год проходит в приятной дружелюбной обстановке. В этом году были
+                                затронуты основные этапы становления зоопарка, планы и перспективы развития на ближайшее
+                                будущее.
+                            </p>
+                        </div>
+                        <div class="page__photos flex_50">
+                            <img src="./img/icons/slider.png" alt="" class="slide-prev" onclick="prevPhoto()">
+                            <ul class="dots" style="width: 120px; margin-left: -60px">
+                                <li class="dots__item filled" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <li class="dots__item" onclick="slideWithDots()"></li>
+                                <!-- <li class="dots__item"></li> -->
+                            </ul>
+                            <img src="./img/icons/slider.png" alt="" class="slide-next" onclick="nextPhoto()">
+                            <!-- слайды -->
+                            <img src="./img/blago/blago-priyuti/slide16-1.jpg" alt="" class="slide__img act">
+                            <img src="./img/blago/blago-priyuti/slide16-2.jpg" alt="" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide16-3.jpg" alt="" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide16-4.jpg" alt="" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide16-5.jpg" alt="" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide16-6.jpg" alt="" class="slide__img">
+                            <img src="./img/blago/blago-priyuti/slide16-7.jpg" alt="" class="slide__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <? include('./included_files/footer.htm'); ?>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/zoo.js"></script>
+    <script src="preloader/preloader.js"></script>
+    <script src="./included_files/header-style/hamburger.js"></script>
+
+</body>
+
+</html>
