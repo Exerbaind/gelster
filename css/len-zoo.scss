@@ -436,6 +436,7 @@ header {
                         width: 45%;
                         position: relative;
                         overflow: hidden;
+                        max-height: 400px;
 
                         @media screen and (max-width: 1000px) {
                             width: 100%;
