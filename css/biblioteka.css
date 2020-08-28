@@ -510,6 +510,12 @@ body {
   overflow: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .section-main .container .termin-state .termin-state__context .articles .articles__block .articles__list {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
 .section-main .container .termin-state .termin-state__context .articles .articles__block .articles__list .articles__item {
   text-align: justify;
   margin-top: 10px;
@@ -542,6 +548,7 @@ body {
 }
 
 .section-main .container .termin-state .termin-state__context .articles .articles__block .articles__close_block {
+  z-index: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
