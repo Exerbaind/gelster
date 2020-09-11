@@ -33,8 +33,8 @@ body {
 .main-wrapper .container .page-header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr 7fr;
-      grid-template-columns: 5fr 7fr;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   grid-column-gap: 15px;
 }
 
@@ -265,6 +265,61 @@ body {
 
 .main-wrapper .container .chim-collection .chim-item .chim-item__instruction .sert:hover .download-text {
   color: #586f69;
+}
+
+.main-wrapper .container .chim-collection .grid-varios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 30% 28.8% !important;
+      grid-template-columns: 40% 30% 28.8% !important;
+}
+
+@media screen and (max-width: 900px) {
+  .main-wrapper .container .chim-collection .grid-varios {
+    -ms-grid-columns: 12fr !important;
+        grid-template-columns: 12fr !important;
+  }
+}
+
+.main-wrapper .container .chim-collection .grid-varios .chim-item__look {
+  background-color: #f7f7f7;
+  padding: 0 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .main-wrapper .container .chim-collection .grid-varios .chim-item__look {
+    padding: 0;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+.main-wrapper .container .chim-collection .grid-varios .chim-item__look .chim-name {
+  color: #edb056;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.main-wrapper .container .chim-collection .grid-varios .chim-item__look .chim-name .number {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-wrapper .container .chim-collection .grid-varios .chim-item__look .chim-name .number {
+    font-size: 30px;
+  }
 }
 
 .main-wrapper .container .articles,
