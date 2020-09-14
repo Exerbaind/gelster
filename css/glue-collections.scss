@@ -20,6 +20,7 @@ body {
 
     .container {
         width: 1200px;
+        overflow-x: hidden;
 
         @media screen and (max-width: 1200px) {
             width: 100vw;
@@ -43,6 +44,7 @@ body {
             .page-header-img {
                 width: 100%;
                 height: 100%;
+                min-height: 330px;
 
                 @media screen and (-ms-high-contrast: active),
                 (-ms-high-contrast: none) {
@@ -52,6 +54,7 @@ body {
                 @media screen and (max-width: 800px) {
                     grid-row: 1;
                     height: auto;
+                    min-height: 0px;
                 }
             }
 
@@ -75,6 +78,7 @@ body {
                     font-size: 30px;
                     font-weight: normal;
                     text-transform: uppercase;
+                    line-height: 38px;
 
                     @media screen and (max-width: 800px) {
                         font-size: 20px;
@@ -91,6 +95,18 @@ body {
 
                         @media screen and (max-width: 800px) {
                             margin-top: 10px;
+                        }
+
+                        .par-link {
+                            text-decoration: none;
+                            transition: .3s;
+                            color: white;
+                            font-style: italic;
+
+                            &:hover {
+                                opacity: .7;
+                                color: #edb056
+                            }
                         }
                     }
                 }
@@ -263,6 +279,208 @@ body {
 
                             @media screen and (max-width: 900px) {
                                 font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            height: 1px;
+            border: none;
+            width: 100%;
+            background-color: #586f69;
+            margin: 15px 0;
+        }
+
+        .row-two-columns {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+            }
+
+            .item__info {
+                background-color: #f7f7f7;
+                padding: 40px 65px;
+                width: 71.3%;
+
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                    order: 2;
+                    padding: 20px;
+                }
+
+                .title {
+                    color: $orangeColor;
+                    font-size: 24px;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    line-height: 32px;
+                }
+
+                .par {
+                    margin-top: 20px;
+                    line-height: 24px;
+                    font-size: 16px;
+                    color: $darkGreenColor;
+                    text-align: justify;
+                }
+            }
+
+            .item {
+                width: 27.4%;
+
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                    order: 1;
+                }
+            }
+        }
+
+        .giliotina__block {
+            width: 100%;
+
+            .giliotina__title {
+                font-size: 24px;
+                color: #586f69;
+                text-transform: uppercase;
+                font-weight: lighter;
+                margin: 10px 0;
+                line-height: 32px;
+
+                @media screen and (max-width: 1200px) {
+                    padding-left: 20px;
+                    font-size: 20px;
+                }
+            }
+
+            .giliotina__items {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .item {
+                    width: 15%;
+                    background-color: #f7f7f7;
+                    padding: 20px 0;
+
+                    @media screen and (max-width: 890px) {
+                        width: 32%;
+                        margin-top: 10px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .item__name {
+                        color: $orangeColor;
+                        margin: 5px 0;
+                        text-align: center;
+                        padding: 0 20px;
+                        display: flex;
+                        height: 60px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .video-block {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+            }
+
+            .how-to-buy {
+                width: 49%;
+                background-color: #586f69;
+                padding: 45px 55px;
+
+                @media screen and (max-width: 900px) {
+                    padding: 10px 20px;
+                    width: 100%;
+                    margin-top: 10px;
+                    order: 2;
+                }
+
+                .title {
+                    color: $orangeColor;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    line-height: 32px;
+                }
+
+                .par {
+                    color: white;
+                    margin-top: 25px;
+
+                    .telephone {
+                        color: white;
+                        transition: .3s;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $orangeColor;
+                        }
+                    }
+                }
+            }
+
+            .video {
+                width: 49%;
+                background-image: url(../img/Katalog/Dollken-plintus/giliotina/video.jpg);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+
+                @media screen and (max-width: 900px) {
+                    width: 100%;
+                    min-height: 200px;
+                    order: 1;
+                }
+
+                .video__info {
+                    position: absolute;
+                    background-color: rgba($color: #586f69, $alpha: 0.7);
+                    height: 50%;
+                    width: 100%;
+                    bottom: 0;
+                    padding: 30px 65px;
+
+                    @media screen and (max-width: 900px) {
+                        padding: 10px 20px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                    .sub__title {
+                        color: $orangeColor;
+                        text-transform: uppercase;
+                    }
+
+                    .par {
+                        color: white;
+                        margin-top: 10px;
+                        line-height: 24px;
+
+                        .par-link {
+                            text-decoration: none;
+                            color: $orangeColor;
+                            transition: .3s;
+
+                            &:hover {
+                                color: white;
                             }
                         }
                     }
@@ -691,4 +909,16 @@ body {
     @media screen and (max-width: 900px) {
         bottom: 0;
     }
+}
+
+.green-text {
+    color: #586f69 !important;
+}
+
+.white-text {
+    color: white !important;
+}
+
+.green-bg {
+    background-color: #586f69 !important;
 }
