@@ -1078,6 +1078,276 @@ $myPTSerif: "PTSerif";
     }
   }
 
+
+
+
+  .section-gallery_v2 {
+    .gallery {
+      display: grid;
+      grid-template-columns: 50% 2fr 4fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      min-height: 430px;
+      grid-template-rows: 60% 40%;
+
+      @media screen and (-ms-high-contrast: active),
+      (-ms-high-contrast: none) {
+        display: -ms-grid;
+        -ms-grid-columns: 50% 2fr 2fr 2fr;
+        -ms-grid-rows: 200px 200px;
+      }
+
+      @media screen and (max-width: 990px) {
+        grid-template-columns: 12fr 4fr 4fr;
+        min-height: 860px;
+      }
+
+      @media screen and (max-width: 800px) {
+        grid-template-rows: 100%;
+        grid-template-columns: 12fr;
+        min-height: auto;
+      }
+
+      // position: relative;
+
+      .big-background {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        // position: absolute;
+        width: 100%;
+        grid-row: 1/3;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+          -ms-grid-row: 1/3;
+          -ms-grid-column: 1;
+        }
+
+        @media screen and (max-width: 990px) {
+          grid-column: 1/4;
+          height: 100%;
+          grid-row: 1/2;
+        }
+
+        @media screen and (max-width: 800px) {
+          height: 350px;
+          grid-row: 1;
+          grid-column: 1;
+        }
+
+        @media screen and (max-width: 425px) {
+          height: 320px;
+        }
+
+        @media screen and (max-width: 400px) {
+          height: 250px;
+        }
+      }
+
+      .collection-review {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        // position: absolute;
+        width: 100%;
+        position: relative;
+        grid-row: 1/3;
+        overflow: hidden;
+        transition: 0.3s;
+        cursor: pointer;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+          -ms-grid-row: 1/3;
+          -ms-grid-column: 2;
+        }
+
+        @media screen and (max-width: 990px) {
+          grid-row: 2/3;
+          grid-column: 1;
+        }
+
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+
+        &:hover {
+          background-size: 102% 102%;
+        }
+
+        .opacity-block {
+          position: absolute;
+          background-color: rgba($color: #ffffff, $alpha: 0.5);
+          width: 100%;
+          height: 40%;
+          bottom: 0;
+          left: 0;
+          text-align: center;
+
+          .background__video-icon {
+            height: 75px;
+            width: 75px;
+            background-color: #edb056;
+            border-radius: 50px;
+            position: relative;
+            margin-top: -37.5px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .video-icon {
+              height: 35px;
+              width: 35px;
+              position: absolute;
+              left: 50%;
+              margin-left: -17.5px;
+              top: 50%;
+              margin-top: -17.5px;
+            }
+          }
+
+          .collection-review__text {
+            font-family: $myPTSans;
+            font-size: 20px;
+            color: #5a5456;
+            margin-top: 30px;
+
+            span {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      .collection-schema {
+        grid-row: 1/2;
+        width: 102.5%;
+        height: 100%;
+
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+
+      .watch-projects {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        // position: absolute;
+        width: 100%;
+        position: relative;
+        grid-row: 1/2;
+        overflow: hidden;
+        transition: 0.3s;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+          -ms-grid-row: 1/2;
+          -ms-grid-column: 4;
+        }
+
+        @media screen and (max-width: 990px) {
+          grid-row: 2/3;
+          grid-column: 3;
+        }
+
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+
+        &:hover {
+          background-size: 102% 102%;
+        }
+
+        .fotogal-link {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          z-index: 1;
+        }
+
+        .opacity-block {
+          position: absolute;
+          background-color: rgba($color: #ffffff, $alpha: 0.5);
+          height: 100%;
+          width: 100%;
+
+          .block-top-icon {
+            position: absolute;
+            background-color: #edb056;
+            height: 75px;
+            width: 75px;
+            border-radius: 50px;
+            right: 0 !important;
+            top: 0;
+            transform: translate(30%, -30%);
+
+            span {
+              width: 30px;
+              height: 2px;
+              background-color: white;
+              display: block;
+              margin-top: 45px;
+              margin-left: 15px;
+
+              &:after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: white;
+                transform: rotate(90deg);
+              }
+            }
+          }
+
+          .watch-projects__text {
+            font-family: $myPTSans;
+            font-size: 16px;
+            color: #5a5456;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+          }
+        }
+      }
+
+      .collection-name {
+        background-color: #5a5456;
+        height: 100%;
+        width: 100%;
+        grid-column: 3/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+          -ms-grid-row: 2/3;
+          -ms-grid-column: 3/5;
+        }
+
+        @media screen and (max-width: 990px) {
+          display: none;
+        }
+
+        .name {
+          font-size: 30px;
+          font-family: $myPTSans;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 400;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
   .description-and-table {
     display: grid;
     grid-template-columns: 50% 6fr;
