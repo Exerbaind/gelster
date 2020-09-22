@@ -125,19 +125,6 @@ body {
   }
 }
 
-.main-wrapper .container .page-header .page-header-description .text .par .par-link {
-  text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
-  color: white;
-  font-style: italic;
-}
-
-.main-wrapper .container .page-header .page-header-description .text .par .par-link:hover {
-  opacity: .7;
-  color: #edb056;
-}
-
 .main-wrapper .container .chim-collection .chim-item {
   display: -ms-grid;
   display: grid;
@@ -215,6 +202,18 @@ body {
   font-size: 16px;
   color: #586f69;
   text-align: justify;
+}
+
+.main-wrapper .container .chim-collection .chim-item .chim-item__description .par .par-link {
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #edb056;
+  font-style: italic;
+}
+
+.main-wrapper .container .chim-collection .chim-item .chim-item__description .par .par-link:hover {
+  opacity: .7;
 }
 
 .main-wrapper .container .chim-collection .chim-item .chim-item__description .how-to-use {
