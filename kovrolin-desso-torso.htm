@@ -78,8 +78,8 @@
                 <li class="out-list">
                     <a href="kovrolin-desso-sense.htm" class="out-list_a">Sense of Marble</a>
                 </li>
-                <li class="out-list">
-                    <a href="kovrolin-desso-ribs.htm" class="out-list_a">Reclaim Ribs II</a>
+                  <li class="out-list">
+                    <a href="kovrolin-desso-patterns.htm" class="out-list_a">Patterns</a>
                 </li>
             </menu>
             <div class="side-bar-collection-header_dop">
@@ -129,8 +129,8 @@
                 <li class="out-list">
                     <a href="kovrolin-desso-sense.htm" class="out-list_a">Sense of Marble</a>
                 </li>
-                <li class="out-list">
-                    <a href="kovrolin-desso-ribs.htm" class="out-list_a">Reclaim Ribs II</a>
+                  <li class="out-list">
+                    <a href="kovrolin-desso-patterns.htm" class="out-list_a">Patterns</a>
                 </li>
             </menu>
             <div class="side-bar-collection-header_dop">
@@ -816,34 +816,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
-    </script>
     <script>
-        (function (w, d, c) {
-            var s = d.createElement('script'),
-                h = d.getElementsByTagName('script')[0],
-                e = d.documentElement;
-            if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
-                e.className += ' ya-page_js_yes';
+        const url = window.location.href.split('').slice(19, window.location.href.length).join('').trim();
+        const link = [...document.querySelectorAll('a')];
+
+        link.forEach(item => {
+            if (item.getAttribute('href') === url) {
+                item.classList.add('chosen-collection');
             }
-            s.type = 'text/javascript';
-            s.async = true;
-            s.charset = 'utf-8';
-            s.src = (
-                d.location.protocol === 'https:' ?
-                'https:' :
-                'http:'
-            ) + '//site.yandex.net/v2.0/js/all.js';
-            h
-                .parentNode
-                .insertBefore(s, h);
-            (w[c] || (w[c] = [])).push(function () {
-                Ya
-                    .Site
-                    .Form
-                    .init()
-            })
-        })(window, document, 'yandex_site_callbacks');
+        })
     </script>
     <script src="./plugins/highslide/highslide-full.js"></script>
     <script src="./included_files/header-style/hamburger.js"></script>
