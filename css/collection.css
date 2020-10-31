@@ -3803,6 +3803,10 @@ body {
           justify-content: center;
   padding-top: 250px;
   outline: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 450px) {
@@ -3810,6 +3814,15 @@ body {
     height: auto !important;
     width: 100vw !important;
   }
+}
+
+.main .articles .articles-container .article-video-block .article-video-block_text {
+  font-size: 18px;
+  background-color: #cc9d58;
+  color: white;
+  margin-top: 50px;
+  font-family: "PTSerif";
+  padding: 10px 20px;
 }
 
 .main .articles .see-all-collections {

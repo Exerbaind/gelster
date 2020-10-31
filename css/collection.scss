@@ -2739,6 +2739,7 @@ $myPTSerif: "PTSerif";
         justify-content: center;
         padding-top: 250px;
         outline: none;
+        flex-direction: column;
 
         @media screen and (max-width: 450px) {
           video {
@@ -2747,10 +2748,15 @@ $myPTSerif: "PTSerif";
           }
         }
 
+        .article-video-block_text {
+          font-size: 18px;
+          background-color: #cc9d58;
+          color: white;
+          margin-top: 50px;
+          font-family: $myPTSerif;
+          padding: 10px 20px;
+        }
 
-        // @media screen and (max-width: 425px) {
-        //   display: none;
-        // }
       }
     }
 
