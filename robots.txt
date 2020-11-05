@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /new/Disallow: *-new.htm*
+Sitemap: http://www.gelster.ru/sitemap.xml
