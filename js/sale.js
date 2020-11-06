@@ -150,7 +150,7 @@ let smaragd = 7.2,
     GTIuni = 47;
 
 // let euroValue = document.querySelector('.euro-value').innerHTML;
-let euroValue = 88.9;
+let euroValue = 92;
 
 
 
