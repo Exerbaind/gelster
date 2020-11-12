@@ -251,10 +251,28 @@
                 <div class="collection__item flex_24-per">
                     <a href="kovrolin_desso_asteranne.htm" class="full-block-link">
                         <div class="item__img_container">
-                            <img src="./img/Katalog/KOVROLIN/Desso/axminster.jpg"
+                            <img src="./img/Katalog/KOVROLIN/Desso/asteranne.jpg"
                                 alt="Коллекция ковролина Desso Asteranne" class="item__img">
                         </div>
                         <p class="item__name">Коллекция Asteranne</p>
+                    </a>
+                </div>
+                <div class="collection__item flex_49-per">
+                    <a href="kovrolin-desso-axminster.htm" class="full-block-link">
+                        <div class="item__img_container">
+                            <img src="./img/Katalog/KOVROLIN/Desso/axminster.jpg"
+                                alt="Коллекция ковролина Desso Axminster" class="item__img">
+                        </div>
+                        <p class="item__name">Коллекция Axminster</p>
+                    </a>
+                </div>
+                <div class="collection__item flex_49-per open-from" onclick="showForm()">
+                    <a href="" class="full-block-link"></a>
+                        <div class="item__img_container">
+                            <img src="./img/pages-name-imgs/services/images/nastil-new-v2_05.jpg"
+                                alt="Заказать настил" class="item__img">
+                        </div>
+                        <p class="item__name">Заказать настил</p>
                     </a>
                 </div>
             </div>
@@ -374,6 +392,32 @@
             </div>
         </div>
     </section>
+    <section class="form-container">
+        <div class="form-block">
+            <div class="close-form_btn" onclick="closeForm()">
+                <span></span>
+            </div>
+            <p class="form__title">
+                Бланк заказа работ
+            </p>
+            <form action="php-forms/other-city_services.php" class="form" method="POST" target="_blank">
+                <label class="form-label" for="fio">Введите Ваше имя:*</label>
+                <input type="text" name="fio" placeholder="Имя" required
+                    oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
+                <label class="form-label" for="tel">Введите номер:*</label>
+                <input type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required
+                    oninvalid="this.setCustomValidity('Введите Номер')" oninput="setCustomValidity('')">
+                <label class="form-label" for="city">Город:*</label>
+                <input type="text" name="city" placeholder="Город" required
+                    oninvalid="this.setCustomValidity('Введите Город')" oninput="setCustomValidity('')">
+                <label class="form-label" for="city">Услуга:*</label>
+                <input id="check" name="check" type="hidden" value="" />
+                <textarea name="services" rows="5"></textarea>
+                <input type="submit" value="Отправить" class="submit-btn"
+                    onclick="document.getElementById('check').value = 'secretcode';">
+            </form>
+        </div>
+    </section>
 
     <footer class="footer">
         <? include('./included_files/footer.htm'); ?>
@@ -382,6 +426,23 @@
     <script src="./preloader/preloader.js"></script>
     <script src="./included_files/header-style/hamburger.js"></script>
     <script src="./js/general_catalogs.js"></script>
+    <script>
+        const form = document.querySelector('.form-container');
+
+        function showForm() {
+            form.classList.add('show-form');
+        };
+
+        function closeForm() {
+            form.classList.remove('show-form');
+        };
+
+        document.addEventListener('keydown', function (e) {
+            if (e.keyCode === 27) {
+                form.classList.remove('show-form');
+            }
+        });
+    </script>
 </body>
 
 </html>

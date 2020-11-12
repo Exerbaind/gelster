@@ -36,8 +36,8 @@ header {
   background-color: rgba(233, 190, 137, 0.08);
   width: 70px;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-animation: attentionMenu 5s infinite;
           animation: attentionMenu 5s infinite;
   -webkit-animation-delay: 5s;
@@ -58,8 +58,8 @@ header {
   color: #5d585c;
   font-size: 20px;
   text-transform: uppercase;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-block .menu-arrow {
@@ -72,8 +72,8 @@ header {
   top: 80%;
   left: 70px;
   z-index: 999999;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   -webkit-animation: attentionArrow 5s infinite;
           animation: attentionArrow 5s infinite;
   -webkit-animation-delay: 5s;
@@ -90,8 +90,8 @@ header {
   background-color: white;
   border-right: 2px solid #deab69;
   width: 275px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -116,7 +116,7 @@ header {
 }
 
 .menu .menu-active .header-side-menu .close-menu::before, .menu .menu-active .header-side-menu .close-menu::after {
-  content: '';
+  content: "";
   background-color: #cc9d58;
   height: 2px;
   width: 26px;
@@ -142,8 +142,8 @@ header {
   margin-top: 30px;
   padding: 0px 0px 5px 35px;
   position: relative;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .side-bar-collection-header:hover {
@@ -153,14 +153,14 @@ header {
 .menu .menu-active .side-bar-collection-header h4 {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
 }
 
 .menu .menu-active .side-bar-collection-header h4 a {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
 }
@@ -171,8 +171,8 @@ header {
   margin-top: 10px;
   padding: 0px 0px 5px 35px;
   position: relative;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .side-bar-collection-header_sub:hover {
@@ -182,14 +182,14 @@ header {
 .menu .menu-active .side-bar-collection-header_sub h4 {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
 }
 
 .menu .menu-active .side-bar-collection-header_sub h4 a {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
 }
@@ -203,7 +203,7 @@ header {
   text-decoration: none;
   list-style-type: none;
   color: #586f69;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   margin-top: 5px;
   cursor: pointer;
 }
@@ -211,8 +211,8 @@ header {
 .menu .menu-active .side-bar-collection-list li a {
   text-decoration: none;
   color: #586f69;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .side-bar-collection-list li a:hover {
@@ -303,8 +303,8 @@ header {
 .menu .menu-active .side-bar-collection-list_dop:last-of-type {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateX(90deg);
           transform: rotateX(90deg);
   -webkit-transform-origin: top center;
@@ -333,8 +333,8 @@ header {
   font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .side-bar-collection-header_dop p a:hover {
@@ -354,8 +354,8 @@ header {
   font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .side-bar-collection-header_dop h4 a:hover {
@@ -375,8 +375,8 @@ header {
   padding-left: 35px;
   font-family: "PTSans";
   margin-top: 10px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .other-collections:hover .other-collections__title {
@@ -386,8 +386,8 @@ header {
 .menu .menu-active .other-collections:hover .other-collections__menu {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   height: auto;
 }
 
@@ -397,8 +397,8 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .other-collections .other-collections__menu {
@@ -407,8 +407,8 @@ header {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   height: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .other-collections .other-collections__menu .menu {
@@ -419,7 +419,7 @@ header {
   text-decoration: none;
   list-style-type: none;
   color: #586f69 !important;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   margin-top: 5px;
   cursor: pointer;
 }
@@ -427,8 +427,8 @@ header {
 .menu .menu-active .other-collections .other-collections__menu .menu li a {
   text-decoration: none;
   color: #586f69 !important;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .menu-active .other-collections .other-collections__menu .menu li a:hover {
@@ -455,8 +455,8 @@ header {
     opacity: 0.9;
     top: 5%;
     left: 5%;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu-mobile .menu-mobile__hamb span {
     display: block;
@@ -468,11 +468,11 @@ header {
     margin-top: -1px;
     left: 50%;
     margin-left: -15px;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu-mobile .menu-mobile__hamb span:before, .menu-mobile .menu-mobile__hamb span:after {
-    content: '';
+    content: "";
     display: block;
     height: 2px;
     width: 30px;
@@ -482,8 +482,8 @@ header {
     margin-top: -1px;
     left: 50%;
     margin-left: -15px;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu-mobile .menu-mobile__hamb span:before {
     -webkit-transform: translateY(-7px);
@@ -503,8 +503,8 @@ header {
           transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   top: 0;
   left: 0;
   height: 100vh;
@@ -524,14 +524,14 @@ header {
 .menu-mobile .mobile-menu__block .side-bar-collection-header h4 {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
 }
 
 .menu-mobile .mobile-menu__block .side-bar-collection-header h4 a {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
 }
@@ -542,8 +542,8 @@ header {
   margin-top: 10px;
   padding: 0px 0px 5px 35px;
   position: relative;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu-mobile .mobile-menu__block .side-bar-collection-header_sub:hover {
@@ -553,14 +553,14 @@ header {
 .menu-mobile .mobile-menu__block .side-bar-collection-header_sub h4 {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
 }
 
 .menu-mobile .mobile-menu__block .side-bar-collection-header_sub h4 a {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
 }
@@ -574,7 +574,7 @@ header {
   text-decoration: none;
   list-style-type: none;
   color: #586f69;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   margin-top: 5px;
   cursor: pointer;
 }
@@ -588,8 +588,8 @@ header {
   padding-left: 35px;
   font-family: "PTSans";
   margin-top: 10px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu-mobile .mobile-menu__block .other-collections:hover .other-collections__title {
@@ -599,8 +599,8 @@ header {
 .menu-mobile .mobile-menu__block .other-collections:hover .other-collections__menu {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   height: auto;
 }
 
@@ -610,8 +610,8 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu-mobile .mobile-menu__block .other-collections .other-collections__menu {
@@ -620,8 +620,8 @@ header {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   height: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu-mobile .mobile-menu__block .other-collections .other-collections__menu .menu {
@@ -632,7 +632,7 @@ header {
   text-decoration: none;
   list-style-type: none;
   color: #586f69 !important;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   margin-top: 5px;
   cursor: pointer;
 }
@@ -640,8 +640,8 @@ header {
 .menu-mobile .mobile-menu__block .other-collections .other-collections__menu .menu li a {
   text-decoration: none;
   color: #586f69 !important;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu-mobile .mobile-menu__block .other-collections .other-collections__menu .menu li a:hover {
@@ -728,8 +728,8 @@ header {
     opacity: 0.9;
     top: 5%;
     left: 5%;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu-mobile .menu-mobile__hamb span {
     display: block;
@@ -741,11 +741,11 @@ header {
     margin-top: -1px;
     left: 50%;
     margin-left: -15px;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu-mobile .menu-mobile__hamb span:before, .menu-mobile .menu-mobile__hamb span:after {
-    content: '';
+    content: "";
     display: block;
     height: 2px;
     width: 30px;
@@ -755,8 +755,8 @@ header {
     margin-top: -1px;
     left: 50%;
     margin-left: -15px;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu-mobile .menu-mobile__hamb span:before {
     -webkit-transform: translateY(-7px);
@@ -776,8 +776,8 @@ header {
           transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   top: 0;
   left: 0;
   height: 100vh;
@@ -797,14 +797,14 @@ header {
 .menu-mobile .mobile-menu__block .side-bar-collection-header h4 {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
 }
 
 .menu-mobile .mobile-menu__block .side-bar-collection-header h4 a {
   color: #edb056;
   font-size: 18px;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
 }
@@ -818,7 +818,7 @@ header {
   text-decoration: none;
   list-style-type: none;
   color: #586f69;
-  font-family: 'PTSans';
+  font-family: "PTSans";
   margin-top: 5px;
   cursor: pointer;
 }
@@ -910,8 +910,8 @@ header {
 .menu-mobile .mobile-menu__block .side-bar-collection-list_dop:last-of-type {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateX(90deg);
           transform: rotateX(90deg);
   -webkit-transform-origin: top center;
@@ -940,8 +940,8 @@ header {
   font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu-mobile .mobile-menu__block .side-bar-collection-header_dop p a:hover {
@@ -961,8 +961,8 @@ header {
   font-family: "PTSans";
   font-weight: 400;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu-mobile .mobile-menu__block .side-bar-collection-header_dop h4 a:hover {
@@ -1040,7 +1040,7 @@ header {
 
 .section-main .header-block .header-block__content .header-block__title {
   height: 75px;
-  background-color: #EDB056;
+  background-color: #edb056;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1297,7 +1297,7 @@ header {
   font-style: italic;
   line-height: 24px;
   margin-top: 20px;
-  font-family: 'PTSerif';
+  font-family: "PTSerif";
 }
 
 @media screen and (max-width: 600px) {
@@ -1309,8 +1309,8 @@ header {
 .section-main .container .collection__small-articels-container .collection__section .collection__item {
   position: relative;
   background-color: #f7f7f7;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-top: 15px;
 }
 
@@ -1335,8 +1335,8 @@ header {
 
 .section-main .container .collection__small-articels-container .collection__section .collection__item .item__img_container .item__img {
   width: 100%;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 700px) {
@@ -1356,8 +1356,8 @@ header {
           justify-content: center;
   text-transform: uppercase;
   color: #586f69;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-size: 18px;
   text-align: center;
 }
@@ -1375,8 +1375,8 @@ header {
 .section-main .container .collection__small-articels-container .collection__item {
   position: relative;
   background-color: #f7f7f7;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-top: 15px;
 }
 
@@ -1401,8 +1401,8 @@ header {
 
 .section-main .container .collection__small-articels-container .collection__item .item__img_container .item__img {
   width: 100%;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 700px) {
@@ -1422,8 +1422,8 @@ header {
           justify-content: center;
   text-transform: uppercase;
   color: #586f69;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-size: 18px;
   text-align: center;
 }
@@ -1442,8 +1442,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   overflow: hidden;
   position: relative;
 }
@@ -1467,8 +1467,8 @@ header {
           justify-content: center;
   text-transform: uppercase;
   color: #586f69;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-size: 22px;
   text-align: center;
   line-height: 32px;
@@ -1523,8 +1523,8 @@ header {
 
 .section-main .container .collection__big-articels-container .collection__item {
   background-color: #f7f7f7;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-top: 20px;
 }
 
@@ -1585,8 +1585,8 @@ header {
 .section-main .container .collection__big-articels-container .collection__item .full-block-link_flex .item__img_container .item__img {
   width: 100%;
   height: 100%;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 700px) {
@@ -1625,8 +1625,8 @@ header {
   font-weight: lighter;
   line-height: 24px;
   font-weight: lighter;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .section-main .container .collection__big-articels-container .collection__item .full-block-link_flex .item__text .par {
@@ -1634,8 +1634,8 @@ header {
   color: #586f69;
   line-height: 24px;
   margin-top: 27px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 800px) {
@@ -1876,8 +1876,8 @@ header {
 .section-main .container .spheres-cleaning .cleaning .text .par .par-link {
   text-decoration: none;
   color: #edb056;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .section-main .container .spheres-cleaning .cleaning .text .par .par-link:hover {
@@ -1988,8 +1988,8 @@ header {
   background-size: 100% 100%;
   background-position: center;
   padding: 30px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -2326,8 +2326,8 @@ header {
   margin-top: 100px;
   pointer-events: none;
   z-index: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .form-container .form-block {
@@ -2391,12 +2391,12 @@ header {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   border-radius: 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .form-container .form-block .close-form_btn span:before {
-  content: '';
+  content: "";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2447,8 +2447,8 @@ header {
   border-bottom: 1px solid #a8a8a8;
   color: #586f69;
   outline: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .form-container .form-block .form textarea {
@@ -2479,8 +2479,8 @@ header {
           box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
   font-size: 20px;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-appearance: none;
   border-radius: 0;
 }
@@ -2510,8 +2510,8 @@ header {
 }
 
 .hidden-text {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {
