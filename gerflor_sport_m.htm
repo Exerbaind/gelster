@@ -233,6 +233,9 @@
                     <li class="out-list">
                         <a href="k-lin-mipolam-robust-el7.htm" class="out-list_a">Mipolam Robust EL 7</a>
                     </li>
+                    <li class="out-list">
+                        <a href="k_lin_mipolam_aff_el.htm" class="out-list_a">Mipolam Affinity EL 7</a>
+                    </li>
                 </menu>
             </menu>
             <div class="side-bar-collection-header">
@@ -492,6 +495,9 @@
                     <li class="out-list">
                         <a href="k-lin-mipolam-robust-el7.htm" class="out-list_a">Mipolam Robust EL 7</a>
                     </li>
+                    <li class="out-list">
+                        <a href="k_lin_mipolam_aff_el.htm" class="out-list_a">Mipolam Affinity EL 7</a>
+                    </li>
                 </menu>
             </menu>
             <div class="side-bar-collection-header">
@@ -574,8 +580,8 @@
                     style="background-image: url(./img/collections/gerflor/taraflex_sport_m_comfort/images/catalog_03.jpg);">
                 </div>
                 <div class="collection-review"
-                    style="background-image: url(./img/collections/gerflor/taraflex_sport_m_comfort/images/catalog-in-new_05.jpg);">
-                    <div class="opacity-block">
+                    style="background-image: url(./img/collections/gerflor/taraflex_sport_m_comfort/images/catalog-in-new_05.jpg); pointer-events: none;">
+                    <!-- <div class="opacity-block">
                         <div class="background__video-icon">
                             <img src="./icons/video_icon.svg" alt="" class="video-icon">
                         </div>
@@ -583,7 +589,7 @@
                             видео-обзор<br>
                             <span>коллекции</span>
                         </p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="order-material"
                     style="background-image: url(./img/collections/gerflor/taraflex_sport_m_comfort/images/catalog-in-new_07.jpg);">
@@ -1446,15 +1452,15 @@
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        var player;
+        // var player;
         var playerClean;
 
         function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '400',
-                width: '680',
-                videoId: 'CMHlWDcQ3Bo',
-            });
+            // player = new YT.Player('player', {
+            //     height: '400',
+            //     width: '680',
+            //     videoId: 'CMHlWDcQ3Bo',
+            // });
             playerClean = new YT.Player('player-clean', {
                 height: '400',
                 width: '680',
@@ -1463,7 +1469,7 @@
         }
 
         function stopVideo() {
-            player.stopVideo();
+            // player.stopVideo();
             playerClean.stopVideo();
         }
     </script>
