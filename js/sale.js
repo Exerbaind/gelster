@@ -158,7 +158,7 @@ let smaragd = 7.2,
   GTIuni = 47;
 
 // let euroValue = document.querySelector('.euro-value').innerHTML;
-let euroValue = 91;
+let euroValue = 90;
 
 const priceSmaragd = document.querySelectorAll(".price-now .smaragd"),
   priceSpectra = document.querySelectorAll(".price-now .spectra"),
