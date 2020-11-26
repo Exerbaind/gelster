@@ -1,23 +1,35 @@
-const reviewer = [...document.querySelectorAll('.reviewer')];
+const reviewer = [...document.querySelectorAll(".reviewer")];
 let currentReviewer = 0;
 
-
 function nextSlide() {
-    if (currentReviewer !== 12) {
-        for (let index = 0; index < reviewer.length; index++) {
-            reviewer[index].classList.remove('show');
-        }
-        reviewer[currentReviewer + 1].classList.add('show');
-        return currentReviewer++;
+  if (currentReviewer !== reviewer.length - 1) {
+    for (let index = 0; index < reviewer.length; index++) {
+      reviewer[index].classList.remove("show");
     }
-
+    reviewer[currentReviewer + 1].classList.add("show");
+    return currentReviewer++;
+  } else {
+    for (let index = 0; index < reviewer.length; index++) {
+      reviewer[index].classList.remove("show");
+    }
+    reviewer[0].classList.add("show");
+    return (currentReviewer = 0);
+  }
 }
 
 function prevSlide() {
-    // dots = [...document.querySelectorAll('.show .dots__item')];
+  console.log(currentReviewer);
+  if (currentReviewer !== 0) {
     for (let index = 0; index < reviewer.length; index++) {
-        reviewer[index].classList.remove('show');
+      reviewer[index].classList.remove("show");
     }
-    reviewer[currentReviewer - 1].classList.add('show');
+    reviewer[currentReviewer - 1].classList.add("show");
     return currentReviewer--;
+  } else {
+    for (let index = 0; index < reviewer.length; index++) {
+      reviewer[index].classList.remove("show");
+    }
+    reviewer[reviewer.length - 1].classList.add("show");
+    return (currentReviewer = reviewer.length - 1);
+  }
 }
