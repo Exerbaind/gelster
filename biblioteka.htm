@@ -264,6 +264,9 @@
                                 <li class="articles__item"><a href="nanesenie_razmetki.htm"
                                         class="articles__link">Нанесение разметки на спортивные покрытия</a>
                                 </li>
+                                <li class="articles__item collection-review"><a 
+                                    class="articles__link">Укладка спортивного паркета</a>
+                            </li>
                             </menu>
                             <div class="articles__close_block">
                                 <div class="articles__close">
@@ -351,6 +354,30 @@
             </div>
         </div>
     </section>
+    <!-- YouTube API -->
+    <section class="youtube-api">
+        <div id="player"></div>
+    </section>
+    <script>
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '400',
+                width: '680',
+                videoId: 'Bdbc9Gz5lqU',
+            });
+        }
+
+        function stopVideo() {
+            player.stopVideo();
+        }
+    </script>
 
     <footer class="footer">
         <? include('./included_files/footer.htm'); ?>
