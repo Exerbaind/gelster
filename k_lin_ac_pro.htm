@@ -1,315 +1,370 @@
 <?php header("Content-Type:text/html;charset=utf-8");?>
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-FVT7JXV');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-FVT7JXV");
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="Коммерческий линолеум Tarkett ACCZENT PRO разработан специально для коммерческих помещений и мест c интенсивной проходимостью, имеет пожарный сертификат КМ2.">
-    <meta name="keywords" content="Спортивный линолеум Tarkett Acczent Pro">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./plugins/highslide/highslide.css">
-    <link rel="stylesheet" href="./css/collection.css">
-    <link rel="stylesheet" href="./preloader/preloader.css">
-    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
-    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Коммерческий линолеум Tarkett ACCZENT PRO разработан специально для коммерческих помещений и мест c интенсивной проходимостью, имеет пожарный сертификат КМ2."
+    />
+    <meta name="keywords" content="Спортивный линолеум Tarkett Acczent Pro" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./plugins/highslide/highslide.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="./preloader/preloader.css" />
+    <link
+      rel="stylesheet"
+      href="./included_files/header-style/css/header.css"
+    />
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap"
+      rel="stylesheet"
+    />
     <title>Acczent Pro Tarkett коммерческий линолеум</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <section class="preloader">
-        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+      <img src="./preloader/tiger.gif" alt="" class="tiger-img" />
     </section>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <header>
-        <? include('./included_files/header.htm'); ?>
+      <? include('./included_files/header.htm'); ?>
     </header>
     <section class="section-menu">
-        <div class="menu animated__menu">
-            <p class="menu-title">другие коллекции</p>
-            <div class="menu-arrow animated__menu-arrow"></div>
+      <div class="menu animated__menu">
+        <p class="menu-title">другие коллекции</p>
+        <div class="menu-arrow animated__menu-arrow"></div>
+      </div>
+      <div class="active-menu animated__active-menu">
+        <div class="header-side-menu">
+          <!-- <h3>Каталог</h3> -->
+          <span
+            class="close-menu"
+            id="close-menu"
+            onclick="anotherCloseCross()"
+          ></span>
         </div>
-        <div class="active-menu animated__active-menu">
-            <div class="header-side-menu">
-                <!-- <h3>Каталог</h3> -->
-                <span class="close-menu" id="close-menu" onclick="anotherCloseCross()"></span>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_lin_tarkett.htm">Все коллекции Tarkett</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>Гетерогенный линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_esquisse.htm" class="out-list_a">Acczent Esquisse</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Гомогенный линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_iqeminent.htm" class="out-list_a">IQ Eminent</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqgranit.htm" class="out-list_a">IQ Granit</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqmegalit.htm" class="out-list_a">IQ Megalit</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqmelodia.htm" class="out-list_a">IQ Melodia</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Monolit</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Optima</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_primoplus.htm" class="out-list_a">Primo Plus</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iq-zenith.htm" class="out-list_a">IQ Zenith</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_tarasafe-plus.htm" class="out-list_a">Tempo Plus</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Акустический линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_iqgranit-acoustic.htm" class="out-list_a">IQ Granit Acoustic</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Специальные покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_mineralas.htm" class="out-list_a">Acczent Mineral AS</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_granitsd.htm" class="out-list_a">Granit SD</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_torosd.htm" class="out-list_a">Toro SC</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Спортивные покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="omni_speed_tarkett.htm" class="out-list_a">Omnisports R35</a>
-                </li>
-                <li class="out-list">
-                    <a href="omni_reference_tarkett.htm" class="out-list_a">Omnisports R65</a>
-                </li>
-                <li class="out-list">
-                    <a href="omni_exel_tarkett.htm" class="out-list_a">Omnisports R83</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Серия PRO - гетерогенные покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list chosen-collection">Acczent PRO</li>
-                <li class="out-list">
-                    <a href="k_lin_spr_pro.htm" class="out-list_a">Sprint PRO</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_tra_pro.htm" class="out-list_a">Travertine PRO</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Полукоммерческий линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_force.htm" class="out-list_a">Force</a>
-                </li>
-                <li class="out-list">
-                    <a href="idylle_nova.htm" class="out-list_a">Idylle Nova</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_moda.htm" class="out-list_a">Moda</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Противоскользящие покрытия ПВХ</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k-lin-granit-multisafe.htm" class="out-list_a">IQ Granit Multisafe</a>
-                </li>
-                <li class="out-list">
-                    <a href="k-lin-granit-safet.htm" class="out-list_a">IQ Granit Safe T</a>
-                </li>
-            </menu>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_lin_tarkett.htm">Все коллекции Tarkett</a>
+          </h4>
         </div>
+        <div class="side-bar-collection-header">
+          <h4>Гетерогенный линолеум</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_esquisse.htm" class="out-list_a">Acczent Esquisse</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Гомогенный линолеум</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_iqeminent.htm" class="out-list_a">IQ Eminent</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqgranit.htm" class="out-list_a">IQ Granit</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqmegalit.htm" class="out-list_a">IQ Megalit</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqmelodia.htm" class="out-list_a">IQ Melodia</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Monolit</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Optima</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_primoplus.htm" class="out-list_a">Primo Plus</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iq-zenith.htm" class="out-list_a">IQ Zenith</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_tarasafe-plus.htm" class="out-list_a">Tempo Plus</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Акустический линолеум</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_iqgranit-acoustic.htm" class="out-list_a"
+              >IQ Granit Acoustic</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Специальные покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_mineralas.htm" class="out-list_a"
+              >Acczent Mineral AS</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k_lin_granitsd.htm" class="out-list_a">Granit SD</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_torosd.htm" class="out-list_a">Toro SC</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Спортивные покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="omni_speed_tarkett.htm" class="out-list_a"
+              >Omnisports R35</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="omni_reference_tarkett.htm" class="out-list_a"
+              >Omnisports R65</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="omni_exel_tarkett.htm" class="out-list_a"
+              >Omnisports R83</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Серия PRO - гетерогенные покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list chosen-collection">Acczent PRO</li>
+          <li class="out-list">
+            <a href="k_lin_spr_pro.htm" class="out-list_a">Sprint PRO</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_tra_pro.htm" class="out-list_a">Travertine PRO</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Полукоммерческий линолеум</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_force.htm" class="out-list_a">Force</a>
+          </li>
+          <li class="out-list">
+            <a href="idylle_nova.htm" class="out-list_a">Idylle Nova</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_moda.htm" class="out-list_a">Moda</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Противоскользящие покрытия ПВХ</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k-lin-granit-multisafe.htm" class="out-list_a"
+              >IQ Granit Multisafe</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k-lin-granit-safet.htm" class="out-list_a"
+              >IQ Granit Safe T</a
+            >
+          </li>
+        </menu>
+      </div>
     </section>
     <section class="section-menu_mobile">
-        <div class="background-section-hamburger" id="background-section-hamburger">
-            <a class="section-hamburger"><span></span></a>
+      <div
+        class="background-section-hamburger"
+        id="background-section-hamburger"
+      >
+        <a class="section-hamburger"><span></span></a>
+      </div>
+      <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_lin_tarkett.htm">Все коллекции Tarkett</a>
+          </h4>
         </div>
-        <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_lin_tarkett.htm">Все коллекции Tarkett</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>Гетерогенный линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_esquisse.htm" class="out-list_a">Acczent Esquisse</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Гомогенный линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_iqeminent.htm" class="out-list_a">IQ Eminent</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqgranit.htm" class="out-list_a">IQ Granit</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqmegalit.htm" class="out-list_a">IQ Megalit</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqmelodia.htm" class="out-list_a">IQ Melodia</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Monolit</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Optima</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_primoplus.htm" class="out-list_a">Primo Plus</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_iq-zenith.htm" class="out-list_a">IQ Zenith</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_tarasafe-plus.htm" class="out-list_a">Tempo Plus</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Акустический линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_iqgranit-acoustic.htm" class="out-list_a">IQ Granit Acoustic</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Специальные покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_mineralas.htm" class="out-list_a">Acczent Mineral AS</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_granitsd.htm" class="out-list_a">Granit SD</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_torosd.htm" class="out-list_a">Toro SC</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Спортивные покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="omni_speed_tarkett.htm" class="out-list_a">Omnisports R35</a>
-                </li>
-                <li class="out-list">
-                    <a href="omni_reference_tarkett.htm" class="out-list_a">Omnisports R65</a>
-                </li>
-                <li class="out-list">
-                    <a href="omni_exel_tarkett.htm" class="out-list_a">Omnisports R83</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Серия PRO - гетерогенные покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list chosen-collection">Acczent PRO</li>
-                <li class="out-list">
-                    <a href="k_lin_spr_pro.htm" class="out-list_a">Sprint PRO</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_tra_pro.htm" class="out-list_a">Travertine PRO</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Полукоммерческий линолеум</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k_lin_force.htm" class="out-list_a">Force</a>
-                </li>
-                <li class="out-list">
-                    <a href="idylle_nova.htm" class="out-list_a">Idylle Nova</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_lin_moda.htm" class="out-list_a">Moda</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Противоскользящие покрытия ПВХ</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="k-lin-granit-multisafe.htm" class="out-list_a">IQ Granit Multisafe</a>
-                </li>
-                <li class="out-list">
-                    <a href="k-lin-granit-safet.htm" class="out-list_a">IQ Granit Safe T</a>
-                </li>
-            </menu>
+        <div class="side-bar-collection-header">
+          <h4>Гетерогенный линолеум</h4>
         </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_esquisse.htm" class="out-list_a">Acczent Esquisse</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Гомогенный линолеум</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_iqeminent.htm" class="out-list_a">IQ Eminent</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqgranit.htm" class="out-list_a">IQ Granit</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqmegalit.htm" class="out-list_a">IQ Megalit</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqmelodia.htm" class="out-list_a">IQ Melodia</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Monolit</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iqoptima.htm" class="out-list_a">IQ Optima</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_primoplus.htm" class="out-list_a">Primo Plus</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_iq-zenith.htm" class="out-list_a">IQ Zenith</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_tarasafe-plus.htm" class="out-list_a">Tempo Plus</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Акустический линолеум</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_iqgranit-acoustic.htm" class="out-list_a"
+              >IQ Granit Acoustic</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Специальные покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_mineralas.htm" class="out-list_a"
+              >Acczent Mineral AS</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k_lin_granitsd.htm" class="out-list_a">Granit SD</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_torosd.htm" class="out-list_a">Toro SC</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Спортивные покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="omni_speed_tarkett.htm" class="out-list_a"
+              >Omnisports R35</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="omni_reference_tarkett.htm" class="out-list_a"
+              >Omnisports R65</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="omni_exel_tarkett.htm" class="out-list_a"
+              >Omnisports R83</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Серия PRO - гетерогенные покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list chosen-collection">Acczent PRO</li>
+          <li class="out-list">
+            <a href="k_lin_spr_pro.htm" class="out-list_a">Sprint PRO</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_tra_pro.htm" class="out-list_a">Travertine PRO</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Полукоммерческий линолеум</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k_lin_force.htm" class="out-list_a">Force</a>
+          </li>
+          <li class="out-list">
+            <a href="idylle_nova.htm" class="out-list_a">Idylle Nova</a>
+          </li>
+          <li class="out-list">
+            <a href="k_lin_moda.htm" class="out-list_a">Moda</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Противоскользящие покрытия ПВХ</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="k-lin-granit-multisafe.htm" class="out-list_a"
+              >IQ Granit Multisafe</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k-lin-granit-safet.htm" class="out-list_a"
+              >IQ Granit Safe T</a
+            >
+          </li>
+        </menu>
+      </div>
     </section>
     <section class="main">
-        <div class="section-gallery">
-            <div class="gallery">
-                <div class="big-background"
-                    style="background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-tarkett_03.jpg);">
-                </div>
-                <div class="collection-review"
-                    style="background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-new_05.jpg); pointer-events: none; cursor: default;">
-                    <!-- <div class="opacity-block">
+      <div class="section-gallery">
+        <div class="gallery">
+          <div
+            class="big-background"
+            style="
+              background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-tarkett_03.jpg);
+            "
+          ></div>
+          <div
+            class="collection-review"
+            style="
+              background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-new_05.jpg);
+              pointer-events: none;
+              cursor: default;
+            "
+          >
+            <!-- <div class="opacity-block">
                         <div class="background__video-icon">
                             <img src="./icons/video_icon.svg" alt="" class="video-icon">
                         </div>
@@ -318,1049 +373,1403 @@
                             <span>коллекции</span>
                         </p>
                     </div> -->
-                </div>
-                <div class="order-material"
-                    style="background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-new_07.jpg);">
-                    <div class="opacity-block">
-                        <div class="block-top-icon">
-                            <span></span>
-                        </div>
-                        <p class="order-material__text">
-                            Заказать<br>этот материал
-                        </p>
-                    </div>
-                </div>
-                <div class="watch-projects"
-                    style="background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-new_09.jpg);">
-                    <a href="fotogal.htm" class="fotogal-link"></a>
-                    <div class="opacity-block">
-                        <div class="block-top-icon">
-                            <span></span>
-                        </div>
-                        <p class="watch-projects__text">
-                            смотреть все<br>реализованные<br>проекты
-                        </p>
-                    </div>
-                </div>
-                <div class="collection-name">
-                    <h1 class="name">acczent pro</h1>
-                </div>
+          </div>
+          <div
+            class="order-material"
+            style="
+              background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-new_07.jpg);
+            "
+          >
+            <div class="opacity-block">
+              <div class="block-top-icon">
+                <span></span>
+              </div>
+              <p class="order-material__text">Заказать<br />этот материал</p>
             </div>
+          </div>
+          <div
+            class="watch-projects"
+            style="
+              background-image: url(./img/collections/sport/tarkett/ACCZENT_PRO/images/catalog-in-new_09.jpg);
+            "
+          >
+            <a href="fotogal.htm" class="fotogal-link"></a>
+            <div class="opacity-block">
+              <div class="block-top-icon">
+                <span></span>
+              </div>
+              <p class="watch-projects__text">
+                смотреть все<br />реализованные<br />проекты
+              </p>
+            </div>
+          </div>
+          <div class="collection-name">
+            <h1 class="name">acczent pro</h1>
+          </div>
         </div>
-        <div class="description-and-table">
-            <div class="description">
-                <div class="upper">
-                    <h2 class="description__title">
-                        Коммерческий линолеум<br>tarkett acczent pro
-                    </h2>
-                    <div class="description__watch-article">
-                        <a href="#articles" class="watch-article__href"></a>
-                        <img src="./icons/arrow-side.svg" alt="" class="watch-article__arrow-down">
-                        <p class="watch-article__text">Смотреть<br>артикулы</p>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="description__text">
-                        <p class="par">
-                            Коммерческий линолеум Tarkett ACCZENT PRO разработан специально для коммерческих помещений и
-                            мест c интенсивной проходимостью, имеет пожарный сертификат КМ2.
-                        </p>
-                        <p class="par">Коммерческое напольное покрытие Tarkett ACCZENT PRO — это более прочный и плотный
-                            коммерческий линолеум в отличие от других серий Акцент. Материал подходит для общественных
-                            помещений: офисов, торговых центров, университетов или больничных помещений. Линолеум
-                            Таркетт Акцент Про выдержит нагрузки от давления оборудования или провоза каталок, колясок,
-                            острых каблуков. Благодаря специальной защите материал долго сохраняет первоначальный
-                            внешний вид и легок в уборке.
-                        </p>
-                        <div class="description__text-hidden">
-                            <p class="par">
-                                Широкий выбор дизайнов коллекции коммерческого линолеума Tarkett ACCZENT PRO отличается
-                                разнообразием цветовых и фактурных решений (абстрактные рисунки, линолеум под дерево), и
-                                неповторимым внешним видом.
-                            </p>
-                            <p class="par">
-                                Коммерческий линолеум Таркетт Акцент ПРО имеет отличные эксплуатационные характеристики,
-                                а также обладает великолепными потребительскими свойствами по показателям
-                                износостойкости и безопасности.
-                            </p>
-                        </div>
-                        <div class="description__show">
-                            <p class="show-text">читать далее</p>
-                            <div class="show__arrow-icon"></div>
-                        </div>
-                    </div>
-                    <div class="description__side-title">
-                        Характеристики
-                    </div>
-                </div>
+      </div>
+      <div class="description-and-table">
+        <div class="description">
+          <div class="upper">
+            <h2 class="description__title">
+              Коммерческий линолеум<br />tarkett acczent pro
+            </h2>
+            <div class="description__watch-article">
+              <a href="#articles" class="watch-article__href"></a>
+              <img
+                src="./icons/arrow-side.svg"
+                alt=""
+                class="watch-article__arrow-down"
+              />
+              <p class="watch-article__text">Смотреть<br />артикулы</p>
             </div>
-            <div class="table">
-                <table class="attributes">
-                    <thead class="attributes-head">
-                        <tr class="first-row">
-                            <td>Длина покрытия</td>
-                            <td>Толщина покрытия</td>
-                            <td>Ширина покрытия</td>
-                        </tr>
-                        <tr class="second-row">
-                            <td>20 пог.м.</td>
-                            <td>2,0 мм</td>
-                            <td>2,0/2,5/3,0/3,5/4,0 м</td>
-                        </tr>
-                    </thead>
-                    <tbody class="attributes-body">
-                        <tr class="body-row">
-                            <td>Класс применения<sup><img src="./icons/information.svg" alt="" class="info-icon"></sup>
-                            </td>
-                            <td>34/43</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Вес 1 м<sup>2</sup></td>
-                            <td>3090 г/м<sup>2</sup></td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Дополнительное защитное покрытие</td>
-                            <td>Pur</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Класс пожарной опасности<sup><img src="./icons/information.svg" alt=""
-                                        class="info-icon"></sup></td>
-                            <td>КМ2</td>
-                        </tr>
-                    </tbody>
-                    <tfoot class="attributes-hidden">
-                        <tr class="body-row">
-                            <td>Абсолютная остаточная деформация</td>
-                            <td>&le; 0,1 мм</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Группа истираемости</td>
-                            <td>Т</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Устойчиовсть к колосекам мебели</td>
-                            <td>устойчиво</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Цветоустойчивость</td>
-                            <td>6 из 8. Метод 3</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Коэффициент противоскольжение</td>
-                            <td>R9</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Использование для теплых полов</td>
-                            <td>Макс. +27°C</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Изменение линейных размеров</td>
-                            <td>0,40%</td>
-                        </tr>
-                        <tr class="body-row">
-                            <td>Звукопоглощение</td>
-                            <td>11 дБ</td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <div class="table__show">
-                    <p class="table-text">развернуть характеристики</p>
-                    <div class="table__arrow-icon"></div>
-                </div>
+          </div>
+          <div class="down">
+            <div class="description__text">
+              <p class="par">
+                Коммерческий линолеум Tarkett ACCZENT PRO разработан специально
+                для коммерческих помещений и мест c интенсивной проходимостью,
+                имеет пожарный сертификат КМ2.
+              </p>
+              <p class="par">
+                Коммерческое напольное покрытие Tarkett ACCZENT PRO — это более
+                прочный и плотный коммерческий линолеум в отличие от других
+                серий Акцент. Материал подходит для общественных помещений:
+                офисов, торговых центров, университетов или больничных
+                помещений. Линолеум Таркетт Акцент Про выдержит нагрузки от
+                давления оборудования или провоза каталок, колясок, острых
+                каблуков. Благодаря специальной защите материал долго сохраняет
+                первоначальный внешний вид и легок в уборке.
+              </p>
+              <div class="description__text-hidden">
+                <p class="par">
+                  Широкий выбор дизайнов коллекции коммерческого линолеума
+                  Tarkett ACCZENT PRO отличается разнообразием цветовых и
+                  фактурных решений (абстрактные рисунки, линолеум под дерево),
+                  и неповторимым внешним видом.
+                </p>
+                <p class="par">
+                  Коммерческий линолеум Таркетт Акцент ПРО имеет отличные
+                  эксплуатационные характеристики, а также обладает
+                  великолепными потребительскими свойствами по показателям
+                  износостойкости и безопасности.
+                </p>
+              </div>
+              <div class="description__show">
+                <p class="show-text">читать далее</p>
+                <div class="show__arrow-icon"></div>
+              </div>
             </div>
+            <div class="description__side-title">Характеристики</div>
+          </div>
         </div>
-        <div class="dlc-materials">
-            <h3 class="dlc-materials__title">
-                к этому материалу вам понадобится
-            </h3>
-            <div class="materials-container">
-                <div class="left-slide">
-                    <img src="./icons/arrow-yellow.svg" alt="" class="left-slide__arrow" onclick="previousSlide()">
-                </div>
-                <div class="materials-container__item show">
-                    <a href="himia_kley_linoleum.htm"></a>
-                    <p class="item-title">Клей</p>
-                    <img src="./icons/desired_items/icon-1.svg" alt="Клей коммерческий линолеум Acczent Pro">
-                    <p class="item-name">Клей Форбо 522</p>
-                </div>
-                <div class="materials-container__item">
-                    <a href="#"></a>
-                    <p class="item-title">Шнур</p>
-                    <img src="./icons/desired_items/icon-2.svg" alt="Шнур спортивный линолеум Acczent Pro">
-                    <p class="item-name">Виды шнуров для<br>сварки линолеума</p>
-                </div>
-                <div class="materials-container__item">
-                    <a href="himia_yhod.htm"></a>
-                    <p class="item-title">Очиститель</p>
-                    <img src="./icons/desired_items/icon-3.svg" alt="Очиститель спортивный линолеум Acczent Pro">
-                    <p class="item-name">Форбо 888</p>
-                </div>
-                <div class="materials-container__item">
-                    <a href="plintus_Dollken.htm"></a>
-                    <p class="item-title">Плинтус</p>
-                    <img src="./icons/desired_items/icon-4.svg" alt="Плинтус спортивный линолеум Acczent Pro">
-                    <p class="item-name">Каталог плинтусов</p>
-                </div>
-                <div class="materials-container__item">
-                    <p class="item-title">Настил</p>
-                    <img src="./icons/desired_items/icon-5.svg" alt="Настил спортивный линолеум Acczent Pro">
-                    <p class="item-name_btn"><i class="font-fix">заказать</i></p>
-                </div>
-                <div class="right-slide" onclick='nextSlide()'>
-                    <img src="./icons/arrow-yellow.svg" alt="" class="right-slide__arrow">
-                </div>
-            </div>
+        <div class="table">
+          <table class="attributes">
+            <thead class="attributes-head">
+              <tr class="first-row">
+                <td>Длина покрытия</td>
+                <td>Толщина покрытия</td>
+                <td>Ширина покрытия</td>
+              </tr>
+              <tr class="second-row">
+                <td>20 пог.м</td>
+                <td>2,0 мм</td>
+                <td>2,0/2,5/3,0/3,5/4,0 м</td>
+              </tr>
+            </thead>
+            <tbody class="attributes-body">
+              <tr class="body-row">
+                <td>
+                  Класс применения<sup
+                    ><img
+                      src="./icons/information.svg"
+                      alt=""
+                      class="info-icon"
+                  /></sup>
+                </td>
+                <td>34/43</td>
+              </tr>
+              <tr class="body-row">
+                <td>Вес 1 м<sup>2</sup></td>
+                <td>3090 г/м<sup>2</sup></td>
+              </tr>
+              <tr class="body-row">
+                <td>Дополнительное защитное покрытие</td>
+                <td>Pur</td>
+              </tr>
+              <tr class="body-row">
+                <td>
+                  Класс пожарной опасности<sup
+                    ><img
+                      src="./icons/information.svg"
+                      alt=""
+                      class="info-icon"
+                  /></sup>
+                </td>
+                <td>КМ2</td>
+              </tr>
+            </tbody>
+            <tfoot class="attributes-hidden">
+              <tr class="body-row">
+                <td>Абсолютная остаточная деформация</td>
+                <td>&le; 0,1 мм</td>
+              </tr>
+              <tr class="body-row">
+                <td>Группа истираемости</td>
+                <td>Т</td>
+              </tr>
+              <tr class="body-row">
+                <td>Устойчиовсть к колосекам мебели</td>
+                <td>устойчиво</td>
+              </tr>
+              <tr class="body-row">
+                <td>Цветоустойчивость</td>
+                <td>6 из 8. Метод 3</td>
+              </tr>
+              <tr class="body-row">
+                <td>Коэффициент противоскольжение</td>
+                <td>R9</td>
+              </tr>
+              <tr class="body-row">
+                <td>Использование для теплых полов</td>
+                <td>Макс. +27°C</td>
+              </tr>
+              <tr class="body-row">
+                <td>Изменение линейных размеров</td>
+                <td>0,40%</td>
+              </tr>
+              <tr class="body-row">
+                <td>Звукопоглощение</td>
+                <td>11 дБ</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="table__show">
+            <p class="table-text">развернуть характеристики</p>
+            <div class="table__arrow-icon"></div>
+          </div>
         </div>
-        <div class="articles" id="articles">
-            <h5 class="articles-title">
-                Цветовая палитра Acczent Pro
-            </h5>
-            <menu class="articles-btns">
-                <ul class="articles-podkatalog">
-                    <li class="articles-podkatalog-name all chosen-article" onclick="all()"><span class="color"></span>
-                    </li>
-                    <li class="articles-podkatalog-name blue" onclick="blue()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name grey" onclick="grey()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name beige" onclick="beige()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name orange" onclick="orange()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name white" onclick="white()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name green" onclick="green()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name brown" onclick="brown()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name yellow" onclick="yellow()"><span class="color"></span></li>
-                    <li class="articles-podkatalog-name red" onclick="red()"><span class="color"></span></li>
-                </ul>
-            </menu>
-            <div class="articles-container">
-                <div class="article-item grey">
-                    <!-- <div class="video-act">
+      </div>
+      <div class="dlc-materials">
+        <h3 class="dlc-materials__title">к этому материалу вам понадобится</h3>
+        <div class="materials-container">
+          <div class="left-slide">
+            <img
+              src="./icons/arrow-yellow.svg"
+              alt=""
+              class="left-slide__arrow"
+              onclick="previousSlide()"
+            />
+          </div>
+          <div class="materials-container__item show">
+            <a href="himia_kley_linoleum.htm"></a>
+            <p class="item-title">Клей</p>
+            <img
+              src="./icons/desired_items/icon-1.svg"
+              alt="Клей коммерческий линолеум Acczent Pro"
+            />
+            <p class="item-name">Клей Форбо 522</p>
+          </div>
+          <div class="materials-container__item">
+            <a href="#"></a>
+            <p class="item-title">Шнур</p>
+            <img
+              src="./icons/desired_items/icon-2.svg"
+              alt="Шнур спортивный линолеум Acczent Pro"
+            />
+            <p class="item-name">Виды шнуров для<br />сварки линолеума</p>
+          </div>
+          <div class="materials-container__item">
+            <a href="himia_yhod.htm"></a>
+            <p class="item-title">Очиститель</p>
+            <img
+              src="./icons/desired_items/icon-3.svg"
+              alt="Очиститель спортивный линолеум Acczent Pro"
+            />
+            <p class="item-name">Форбо 888</p>
+          </div>
+          <div class="materials-container__item">
+            <a href="plintus_Dollken.htm"></a>
+            <p class="item-title">Плинтус</p>
+            <img
+              src="./icons/desired_items/icon-4.svg"
+              alt="Плинтус спортивный линолеум Acczent Pro"
+            />
+            <p class="item-name">Каталог плинтусов</p>
+          </div>
+          <div class="materials-container__item">
+            <p class="item-title">Настил</p>
+            <img
+              src="./icons/desired_items/icon-5.svg"
+              alt="Настил спортивный линолеум Acczent Pro"
+            />
+            <p class="item-name_btn"><i class="font-fix">заказать</i></p>
+          </div>
+          <div class="right-slide" onclick="nextSlide()">
+            <img
+              src="./icons/arrow-yellow.svg"
+              alt=""
+              class="right-slide__arrow"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="articles" id="articles">
+        <h5 class="articles-title">Цветовая палитра Acczent Pro</h5>
+        <menu class="articles-btns">
+          <ul class="articles-podkatalog">
+            <li
+              class="articles-podkatalog-name all chosen-article"
+              onclick="all()"
+            >
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name blue" onclick="blue()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name grey" onclick="grey()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name beige" onclick="beige()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name orange" onclick="orange()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name white" onclick="white()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name green" onclick="green()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name brown" onclick="brown()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name yellow" onclick="yellow()">
+              <span class="color"></span>
+            </li>
+            <li class="articles-podkatalog-name red" onclick="red()">
+              <span class="color"></span>
+            </li>
+          </ul>
+        </menu>
+        <div class="articles-container">
+          <div class="article-item grey">
+            <!-- <div class="video-act">
                         <img src="./icons/video_icon.svg" class="video-article" alt="">
                     </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_1.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_1.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 1">
-                        <div class="white-block">
-                            <p class="article-text">aspect 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_1.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_1.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 1"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                         <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                             preloader="none" loop="loop" controls class="article" muted></video>
                     </div> -->
-                </div>
-                <div class="article-item blue">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item blue">
+            <!-- <div class="video-act">
                             <img src="./icons/video_icon.svg" class="video-article" alt="">
                         </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_10.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_10.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 10">
-                        <div class="white-block">
-                            <p class="article-text">aspect 10</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_10.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_10.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 10"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 10</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                             <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                 preloader="none" loop="loop" controls class="article" muted></video>
                         </div> -->
-                </div>
-                <div class="article-item blue">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item blue">
+            <!-- <div class="video-act">
                             <img src="./icons/video_icon.svg" class="video-article" alt="">
                         </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_11.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_11.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 11">
-                        <div class="white-block">
-                            <p class="article-text">aspect 11</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_11.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_11.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 11"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 11</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                             <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                 preloader="none" loop="loop" controls class="article" muted></video>
                         </div> -->
-                </div>
-                <div class="article-item brown">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item brown">
+            <!-- <div class="video-act">
                             <img src="./icons/video_icon.svg" class="video-article" alt="">
                         </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_12.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_12.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 12">
-                        <div class="white-block">
-                            <p class="article-text">aspect 12</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_12.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_12.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 12"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 12</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                             <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                 preloader="none" loop="loop" controls class="article" muted></video>
                         </div> -->
-                </div>
-                <div class="article-item grey">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item grey">
+            <!-- <div class="video-act">
                             <img src="./icons/video_icon.svg" class="video-article" alt="">
                         </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_2.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_2.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 2">
-                        <div class="white-block">
-                            <p class="article-text">aspect 2</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_2.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_2.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 2"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 2</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                             <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                 preloader="none" loop="loop" controls class="article" muted></video>
                         </div> -->
-                </div>
-                <div class="article-item hide-article grey">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article grey">
+            <!-- <div class="video-act">
                             <img src="./icons/video_icon.svg" class="video-article" alt="">
                         </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_3.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_3.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 1">
-                        <div class="white-block">
-                            <p class="article-text">aspect 3</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_3.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_3.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 1"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 3</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                             <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                 preloader="none" loop="loop" controls class="article" muted></video>
                         </div> -->
-                </div>
-                <div class="article-item hide-article white">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article white">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_4.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_4.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 4">
-                        <div class="white-block">
-                            <p class="article-text">aspect 4</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_4.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_4.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 4"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 4</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_5.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_5.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 5">
-                        <div class="white-block">
-                            <p class="article-text">aspect 5</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_5.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_5.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 5"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 5</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article yellow">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article yellow">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_6.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_6.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 6">
-                        <div class="white-block">
-                            <p class="article-text">aspect 6</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_6.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_6.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 6"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 6</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article orange">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article orange">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_7.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_7.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 7">
-                        <div class="white-block">
-                            <p class="article-text">aspect 7</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_7.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_7.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 7"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 7</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article red">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article red">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_8.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_8.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 8">
-                        <div class="white-block">
-                            <p class="article-text">aspect 8</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_8.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_8.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 8"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 8</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article green">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article green">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_9.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_9.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 9">
-                        <div class="white-block">
-                            <p class="article-text">aspect 9</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_9.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_9.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 9"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 9</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article brown">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article brown">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_DENIM_6.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_DENIM_6.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Denim 6">
-                        <div class="white-block">
-                            <p class="article-text">denim 6</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_DENIM_6.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_DENIM_6.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Denim 6"
+              />
+              <div class="white-block">
+                <p class="article-text">denim 6</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article brown">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article brown">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_MODUS_3.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_MODUS_3.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Modus 3">
-                        <div class="white-block">
-                            <p class="article-text">modus 3</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_MODUS_3.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_MODUS_3.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Modus 3"
+              />
+              <div class="white-block">
+                <p class="article-text">modus 3</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article grey">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article grey">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MODUS_5_1920x1920.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MODUS_5_1920x1920.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Modus 5">
-                        <div class="white-block">
-                            <p class="article-text">modus 5</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MODUS_5_1920x1920.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MODUS_5_1920x1920.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Modus 5"
+              />
+              <div class="white-block">
+                <p class="article-text">modus 5</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MONTREAL_2.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MONTREAL_2.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Montreal 2">
-                        <div class="white-block">
-                            <p class="article-text">montreal 2</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MONTREAL_2.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_MONTREAL_2.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Montreal 2"
+              />
+              <div class="white-block">
+                <p class="article-text">montreal 2</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_OAK_01.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_OAK_01.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Oak 1">
-                        <div class="white-block">
-                            <p class="article-text">oak 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_OAK_01.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_OAK_01.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Oak 1"
+              />
+              <div class="white-block">
+                <p class="article-text">oak 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_SAMSON_1.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_SAMSON_1.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Samson 1">
-                        <div class="white-block">
-                            <p class="article-text">samson 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_SAMSON_1.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_SAMSON_1.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Samson 1"
+              />
+              <div class="white-block">
+                <p class="article-text">samson 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_Samson_2.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_1.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Samson 2">
-                        <div class="white-block">
-                            <p class="article-text">samson 2</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_Samson_2.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_aspect_1.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Samson 2"
+              />
+              <div class="white-block">
+                <p class="article-text">samson 2</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article brown">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article brown">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_Samson_3.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_Samson_3.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Samson 3">
-                        <div class="white-block">
-                            <p class="article-text">samson 3</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_Samson_3.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_ACCZENT_PRO_Samson_3.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Samson 3"
+              />
+              <div class="white-block">
+                <p class="article-text">samson 3</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article white">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article white">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_SELECT_1_1920x1920.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_SELECT_1_1920x1920.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Select 1">
-                        <div class="white-block">
-                            <p class="article-text">select 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_SELECT_1_1920x1920.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_SELECT_1_1920x1920.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Select 1"
+              />
+              <div class="white-block">
+                <p class="article-text">select 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_1.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_1.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Tobago 1">
-                        <div class="white-block">
-                            <p class="article-text">tobago 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_1.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_1.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Tobago 1"
+              />
+              <div class="white-block">
+                <p class="article-text">tobago 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_2.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_2.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Tobago 2">
-                        <div class="white-block">
-                            <p class="article-text">tobago 2</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_2.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_2.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Tobago 2"
+              />
+              <div class="white-block">
+                <p class="article-text">tobago 2</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article brown">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article brown">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_5.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles//TH_Acczent_PRO_TOBAGO_5.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 1">
-                        <div class="white-block">
-                            <p class="article-text">aspect 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TOBAGO_5.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles//TH_Acczent_PRO_TOBAGO_5.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Aspect 1"
+              />
+              <div class="white-block">
+                <p class="article-text">aspect 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                 <img src="./icons/video_icon.svg" class="video-article" alt="">
                             </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_1.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_1.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Trinidad 1">
-                        <div class="white-block">
-                            <p class="article-text">trinided 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_1.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_1.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Trinidad 1"
+              />
+              <div class="white-block">
+                <p class="article-text">trinided 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                 <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                     preloader="none" loop="loop" controls class="article" muted></video>
                             </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                     <img src="./icons/video_icon.svg" class="video-article" alt="">
                                 </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_2.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_2.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Trinidad 2">
-                        <div class="white-block">
-                            <p class="article-text">trinided 2</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_2.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/TH_Acczent_PRO_TRINIDAD_2.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Trinidad 2"
+              />
+              <div class="white-block">
+                <p class="article-text">trinided 2</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                     <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                         preloader="none" loop="loop" controls class="article" muted></video>
                                 </div> -->
-                </div>
-                <div class="article-item hide-article white">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article white">
+            <!-- <div class="video-act">
                                         <img src="./icons/video_icon.svg" class="video-article" alt="">
                                     </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne1.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne1.jpg" class="article-img"
-                            alt="Коммерческий линолеум Tarkett Acczent Pro Berne 1">
-                        <div class="white-block">
-                            <p class="article-text">berne 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne1.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne1.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Berne 1"
+              />
+              <div class="white-block">
+                <p class="article-text">berne 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                         <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                             preloader="none" loop="loop" controls class="article" muted></video>
                                     </div> -->
-                </div>
-                <div class="article-item hide-article grey">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article grey">
+            <!-- <div class="video-act">
                                         <img src="./icons/video_icon.svg" class="video-article" alt="">
                                     </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne2.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne2.jpg" class="article-img"
-                            alt="Коммерческий линолеум Tarkett Acczent Pro Berne 2">
-                        <div class="white-block">
-                            <p class="article-text">berne 2</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne2.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/berne2.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Berne 2"
+              />
+              <div class="white-block">
+                <p class="article-text">berne 2</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                         <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                             preloader="none" loop="loop" controls class="article" muted></video>
                                     </div> -->
-                </div>
-                <div class="article-item hide-article beige">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article beige">
+            <!-- <div class="video-act">
                                         <img src="./icons/video_icon.svg" class="video-article" alt="">
                                     </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete1.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete1.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Concrete 1">
-                        <div class="white-block">
-                            <p class="article-text">concrete 1</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete1.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete1.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Concrete 1"
+              />
+              <div class="white-block">
+                <p class="article-text">concrete 1</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                         <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                             preloader="none" loop="loop" controls class="article" muted></video>
                                     </div> -->
-                </div>
-                <div class="article-item hide-article grey">
-                    <!-- <div class="video-act">
+          </div>
+          <div class="article-item hide-article grey">
+            <!-- <div class="video-act">
                                         <img src="./icons/video_icon.svg" class="video-article" alt="">
                                     </div> -->
-                    <a href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete2.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete2.jpg"
-                            class="article-img" alt="Коммерческий линолеум Tarkett Acczent Pro Concrete 2">
-                        <div class="white-block">
-                            <p class="article-text">concrete 2</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <!-- <div class="article-video-block">
+            <a
+              href="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete2.jpg"
+              onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })"
+            >
+              <img
+                src="./img/collections/sport/tarkett/ACCZENT_PRO/articles/concrete2.jpg"
+                class="article-img"
+                alt="Коммерческий линолеум Tarkett Acczent Pro Concrete 2"
+              />
+              <div class="white-block">
+                <p class="article-text">concrete 2</p>
+              </div>
+              <div class="article-zoom">
+                <img src="./icons/zoom-art.svg" class="article-zoom" alt="" />
+              </div>
+            </a>
+            <!-- <div class="article-video-block">
                                         <video src="./video-article/forbo/marmoleum/concrete/3738+.mp4" height="468px" width="700px"
                                             preloader="none" loop="loop" controls class="article" muted></video>
                                     </div> -->
-                </div>
-            </div>
-            <div class="see-all-collections">
-                <p class="text-collections">развернуть коллекцию</p>
-                <img src="./icons/arrow_righ-orange.svg" alt="" class="collections-arrow">
-            </div>
+          </div>
         </div>
-        <div class="useful-pages">
-            <div class="useful-header">
-                <div class="header-line"></div>
-                <p>полезная информация</p>
-                <div class="header-line"></div>
+        <div class="see-all-collections">
+          <p class="text-collections">развернуть коллекцию</p>
+          <img
+            src="./icons/arrow_righ-orange.svg"
+            alt=""
+            class="collections-arrow"
+          />
+        </div>
+      </div>
+      <div class="useful-pages">
+        <div class="useful-header">
+          <div class="header-line"></div>
+          <p>полезная информация</p>
+          <div class="header-line"></div>
+        </div>
+        <div class="useful-pages__container">
+          <div
+            class="sale-page"
+            style="
+              background-image: url(./img/pages-name-imgs/collection-in/collection-sale.jpg);
+            "
+          >
+            <a href="https://gelster.ru/sale.htm#item1" class="href-link"></a>
+            <div class="opacity-block"></div>
+            <p class="sale-title">распродажа <br /><span>линолеума</span></p>
+            <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side" />
+          </div>
+          <div
+            class="page-text"
+            style="
+              background-image: url(./img/pages-name-imgs/collection-in/collection-article2.jpg);
+            "
+          >
+            <a href="uhod_geterogen.htm" class="href-link"></a>
+            <div class="opacity-block"></div>
+            <p class="page-text__title">
+              как ухаживать <br /><span>за гетерогенным линолеумом</span>
+            </p>
+            <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side" />
+            <div class="background__file-icon">
+              <img src="./icons/file_icon.svg" alt="" class="file-icon" />
             </div>
-            <div class="useful-pages__container">
-                <div class="sale-page"
-                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-sale.jpg);">
-                    <a href='https://gelster.ru/sale.htm#item1' class="href-link"></a>
-                    <div class="opacity-block"></div>
-                    <p class="sale-title">распродажа <br><span>линолеума</span></p>
-                    <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side">
-                </div>
-                <div class="page-text"
-                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-article2.jpg);">
-                    <a href='uhod_geterogen.htm' class="href-link"></a>
-                    <div class="opacity-block"></div>
-                    <p class="page-text__title">как ухаживать <br><span>за гетерогенным линолеумом</span></p>
-                    <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side">
-                    <div class="background__file-icon">
-                        <img src="./icons/file_icon.svg" alt="" class="file-icon">
-                    </div>
-                </div>
-                <div class="page-text"
-                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-article1.jpg);">
-                    <a href='sovet_marm.htm' class="href-link"></a>
-                    <div class="opacity-block"></div>
-                    <p class="page-text__title">обновление и восстановление<br><span>натурального линолеума</span></p>
-                    <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side">
-                    <div class="background__file-icon">
-                        <img src="./icons/file_icon.svg" alt="" class="file-icon">
-                    </div>
-                </div>
-                <div class="clean-page"
-                    style="background-image: url(./img/pages-name-imgs/collection-in/collection-video.jpg);">
-                    <!-- <a href=""></a> -->
-                    <div class="opacity-block"></div>
-                    <div class="watch-video">
-                        <div class="play-icon"></div>
-                        <p class="text">смотреть видео</p>
-                    </div>
-                    <p class="watch-text">
-                        очистка и восстановление<br><span>натурального линолеума</span>
-                    </p>
-                    <div class="background__file-icon">
-                        <img src="./icons/video_icon.svg" alt="" class="file-icon">
-                    </div>
-                </div>
-                <div class="clean-video__mobile"
-                    style="background-image: url(./img/pages-name-imgs/collection-in/mobile1_02.jpg);">
-                    <a href="https://www.youtube.com/watch?v=9wzbKD6c6eU&t=13s" class="clean-video__link"
-                        target="_blank"></a>
-                    <div class="opacity-block"></div>
-                    <div class="watch-video">
-                        <div class="play-icon"></div>
-                        <p class="text">восстановление<br><span>мармолеума</span></p>
-                    </div>
-                </div>
-                <div class="page-text__mobile"
-                    style="background-image: url(./img/pages-name-imgs/collection-in/mobile1_04.jpg);">
-                    <a href='uhod_geterogen.htm' class="page-text__mobile-link"></a>
-                    <div class="opacity-block"></div>
-                    <p class="page-text__mobile__title">уход<br><span class="snoska">за линолеумом</span><br><span
-                            class="read">читать</span></p>
-                </div>
-                <div class="collection-review__mobile"
-                    style="background-image: url(./img/pages-name-imgs/collection-in/mobile1_02-08.jpg); pointer-events: none;">
-                    <!-- <a href="https://www.youtube.com/watch?v=Dgwarg1bnIc&t" target="_blank"></a>
+          </div>
+          <div
+            class="page-text"
+            style="
+              background-image: url(./img/pages-name-imgs/collection-in/collection-article1.jpg);
+            "
+          >
+            <a href="sovet_marm.htm" class="href-link"></a>
+            <div class="opacity-block"></div>
+            <p class="page-text__title">
+              обновление и восстановление<br /><span
+                >натурального линолеума</span
+              >
+            </p>
+            <img src="./icons/arrow-side.svg" alt="" class="sale-arrow-side" />
+            <div class="background__file-icon">
+              <img src="./icons/file_icon.svg" alt="" class="file-icon" />
+            </div>
+          </div>
+          <div
+            class="clean-page"
+            style="
+              background-image: url(./img/pages-name-imgs/collection-in/collection-video.jpg);
+            "
+          >
+            <!-- <a href=""></a> -->
+            <div class="opacity-block"></div>
+            <div class="watch-video">
+              <div class="play-icon"></div>
+              <p class="text">смотреть видео</p>
+            </div>
+            <p class="watch-text">
+              очистка и восстановление<br /><span>натурального линолеума</span>
+            </p>
+            <div class="background__file-icon">
+              <img src="./icons/video_icon.svg" alt="" class="file-icon" />
+            </div>
+          </div>
+          <div
+            class="clean-video__mobile"
+            style="
+              background-image: url(./img/pages-name-imgs/collection-in/mobile1_02.jpg);
+            "
+          >
+            <a
+              href="https://www.youtube.com/watch?v=9wzbKD6c6eU&t=13s"
+              class="clean-video__link"
+              target="_blank"
+            ></a>
+            <div class="opacity-block"></div>
+            <div class="watch-video">
+              <div class="play-icon"></div>
+              <p class="text">восстановление<br /><span>мармолеума</span></p>
+            </div>
+          </div>
+          <div
+            class="page-text__mobile"
+            style="
+              background-image: url(./img/pages-name-imgs/collection-in/mobile1_04.jpg);
+            "
+          >
+            <a href="uhod_geterogen.htm" class="page-text__mobile-link"></a>
+            <div class="opacity-block"></div>
+            <p class="page-text__mobile__title">
+              уход<br /><span class="snoska">за линолеумом</span><br /><span
+                class="read"
+                >читать</span
+              >
+            </p>
+          </div>
+          <div
+            class="collection-review__mobile"
+            style="
+              background-image: url(./img/pages-name-imgs/collection-in/mobile1_02-08.jpg);
+              pointer-events: none;
+            "
+          >
+            <!-- <a href="https://www.youtube.com/watch?v=Dgwarg1bnIc&t" target="_blank"></a>
                     <div class="opacity-block">
                         <p class="title">видео-обзор<br><span>коллекции</span></p>
                     </div>
                     <div class="background__video-icon">
                         <img src="./icons/video_icon.svg" alt="" class="video-icon">
                     </div> -->
-                </div>
-                <div class="sert-sootv">
-                    <img src="./icons/arrow-down.svg" alt="" class="arrow-down">
-                    <a href="./sertificate/forbo/tessera/tessera_fire.pdf" target="_blank">скачать
-                        сертификат<br>соответствия</a>
-                </div>
-                <div class="sert-zakl">
-                    <img src="./icons/arrow-down.svg" alt="" class="arrow-down">
-                    <a href="./sertificate/forbo/tessera/tessera_ez.pdf" target="_blank">скачать
-                        экспертное<br>заключение</a>
-                </div>
-            </div>
+          </div>
+          <div class="sert-sootv">
+            <img src="./icons/arrow-down.svg" alt="" class="arrow-down" />
+            <a
+              href="./sertificate/forbo/tessera/tessera_fire.pdf"
+              target="_blank"
+              >скачать сертификат<br />соответствия</a
+            >
+          </div>
+          <div class="sert-zakl">
+            <img src="./icons/arrow-down.svg" alt="" class="arrow-down" />
+            <a href="./sertificate/forbo/tessera/tessera_ez.pdf" target="_blank"
+              >скачать экспертное<br />заключение</a
+            >
+          </div>
         </div>
+      </div>
     </section>
     <!-- Youtube API -->
     <section class="youtube-api">
-        <div id="player"></div>
+      <div id="player"></div>
     </section>
     <section class="youtube-api-clean">
-        <div id="player-clean"></div>
+      <div id="player-clean"></div>
     </section>
     <script>
-        var tag = document.createElement('script');
+      var tag = document.createElement("script");
 
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        // var player;
-        var playerClean;
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      // var player;
+      var playerClean;
 
-        function onYouTubeIframeAPIReady() {
-            // player = new YT.Player('player', {
-            //     height: '400',
-            //     width: '680',
-            //     videoId: 'ti06GUK0tAI',
-            // });
-            playerClean = new YT.Player('player-clean', {
-                height: '400',
-                width: '680',
-                videoId: '9wzbKD6c6eU',
-            });
-        }
+      function onYouTubeIframeAPIReady() {
+        // player = new YT.Player('player', {
+        //     height: '400',
+        //     width: '680',
+        //     videoId: 'ti06GUK0tAI',
+        // });
+        playerClean = new YT.Player("player-clean", {
+          height: "400",
+          width: "680",
+          videoId: "9wzbKD6c6eU",
+        });
+      }
 
-        function stopVideo() {
-            // player.stopVideo();
-            playerClean.stopVideo();
-        }
+      function stopVideo() {
+        // player.stopVideo();
+        playerClean.stopVideo();
+      }
     </script>
     <!-- Forms -->
     <section class="form__order-materials">
-        <div class="form__order-materials__content">
-            <header class="service-head-pay_form">
-                <h2 class="uppercase">бланк заказа работ</h2>
-                <div class="close-form"><img src="./icons/cross.png" alt=""></div>
-            </header>
-            <form class="service-pay_form" action="./php-forms/send_uslugi.php" method="POST" target="_blank">
-                <label for="fio">Введите Ваше имя:*</label>
-                <input type="text" id="fio" name="fio" placeholder="Имя" title="Введите Ваше имя" required="required"
-                    oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
-                <label for="telephone">Введите телефон для связи:*</label>
-                <input type="tel" id="telephone" name="tel" placeholder="+7 ( ___ ) ___-__-__" title="Введите телефон"
-                    required="required" oninvalid="this.setCustomValidity('Введите телефон')"
-                    oninput="setCustomValidity('')">
-                <label for="city">Укажите город:*</label>
-                <input type="text" id="city" name="city" placeholder="Город" title="Укажите город" required="required"
-                    oninvalid="this.setCustomValidity('Укажите ваш город')" oninput="setCustomValidity('')">
-                <label for="need_service">Площадь помещения:</label>
-                <textarea name="need_service" id="need_service" cols="1" rows="1" placeholder="Площадь в м²"
-                    title="Площадь помещения" oninvalid="this.setCustomValidity('Напишите площадь помещения')"
-                    oninput="setCustomValidity('')"></textarea>
-                <label for="need_article">Требуемый артикул:</label>
-                <textarea name="need_article" id="need_article" cols="1" rows="1" placeholder="Номер артикула"
-                    title="Номер артикула" oninvalid="this.setCustomValidity('Напишите номер артикула')"
-                    oninput="setCustomValidity('')"></textarea>
-                <div class="g-recaptcha" data-sitekey="6Lc33LgUAAAAAJyG-7MnyrRzuzZ-KJFPhBeC2zCV"></div>
-                <div class="text-danger" id="recaptchaError"></div>
-                <p class="service_buttons">
-                    <input type="submit" name="enter" value="Заказать">
-                    <input type="reset" value="Очистить">
-                </p>
-            </form>
-        </div>
+      <div class="form__order-materials__content">
+        <header class="service-head-pay_form">
+          <h2 class="uppercase">бланк заказа работ</h2>
+          <div class="close-form"><img src="./icons/cross.png" alt="" /></div>
+        </header>
+        <form
+          class="service-pay_form"
+          action="./php-forms/send_uslugi.php"
+          method="POST"
+          target="_blank"
+        >
+          <label for="fio">Введите Ваше имя:*</label>
+          <input
+            type="text"
+            id="fio"
+            name="fio"
+            placeholder="Имя"
+            title="Введите Ваше имя"
+            required="required"
+            oninvalid="this.setCustomValidity('Введите Имя')"
+            oninput="setCustomValidity('')"
+          />
+          <label for="telephone">Введите телефон для связи:*</label>
+          <input
+            type="tel"
+            id="telephone"
+            name="tel"
+            placeholder="+7 ( ___ ) ___-__-__"
+            title="Введите телефон"
+            required="required"
+            oninvalid="this.setCustomValidity('Введите телефон')"
+            oninput="setCustomValidity('')"
+          />
+          <label for="city">Укажите город:*</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Город"
+            title="Укажите город"
+            required="required"
+            oninvalid="this.setCustomValidity('Укажите ваш город')"
+            oninput="setCustomValidity('')"
+          />
+          <label for="need_service">Площадь помещения:</label>
+          <textarea
+            name="need_service"
+            id="need_service"
+            cols="1"
+            rows="1"
+            placeholder="Площадь в м²"
+            title="Площадь помещения"
+            oninvalid="this.setCustomValidity('Напишите площадь помещения')"
+            oninput="setCustomValidity('')"
+          ></textarea>
+          <label for="need_article">Требуемый артикул:</label>
+          <textarea
+            name="need_article"
+            id="need_article"
+            cols="1"
+            rows="1"
+            placeholder="Номер артикула"
+            title="Номер артикула"
+            oninvalid="this.setCustomValidity('Напишите номер артикула')"
+            oninput="setCustomValidity('')"
+          ></textarea>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lc33LgUAAAAAJyG-7MnyrRzuzZ-KJFPhBeC2zCV"
+          ></div>
+          <div class="text-danger" id="recaptchaError"></div>
+          <p class="service_buttons">
+            <input type="submit" name="enter" value="Заказать" />
+            <input type="reset" value="Очистить" />
+          </p>
+        </form>
+      </div>
     </section>
     <section class="form__favours">
-        <div class="form__favours__content">
-            <header class="service-head-pay_form">
-                <h2 class="uppercase">бланк заказа работ</h2>
-                <div class="close-form_f"><img src="./icons/cross.png" alt=""></div>
-            </header>
-            <form class="service-pay_form" action="./php-forms/send_uslugi.php" method="POST" target="_blank">
-                <label for="fio">Введите Ваше имя:*</label>
-                <input type="text" id="fio" name="fio" placeholder="Имя" title="Введите Ваше имя" required="required"
-                    oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
-                <label for="telephone">Введите телефон для связи:*</label>
-                <input type="tel" id="telephone" name="tel" placeholder="+7 ( ___ ) ___-__-__" title="Введите телефон"
-                    required="required" oninvalid="this.setCustomValidity('Введите телефон')"
-                    oninput="setCustomValidity('')">
-                <label for="city">Укажите город:*</label>
-                <input type="text" id="city" name="city" placeholder="Город" title="Укажите город" required="required"
-                    oninvalid="this.setCustomValidity('Укажите ваш город')" oninput="setCustomValidity('')">
-                <label for="need_article">Какие услуги необходимы:</label>
-                <textarea name="need_article" id="need_article" cols="1" rows="1" placeholder="Список услуг"
-                    title="Услуги" oninvalid="this.setCustomValidity('Укажите список услуг')"
-                    oninput="setCustomValidity('')"></textarea>
-                <div class="g-recaptcha" data-sitekey="6Lc33LgUAAAAAJyG-7MnyrRzuzZ-KJFPhBeC2zCV"></div>
-                <div class="text-danger" id="recaptchaError"></div>
-                <p class="service_buttons">
-                    <input type="submit" name="enter" value="Заказать">
-                    <input type="reset" value="Очистить">
-                </p>
-            </form>
-        </div>
+      <div class="form__favours__content">
+        <header class="service-head-pay_form">
+          <h2 class="uppercase">бланк заказа работ</h2>
+          <div class="close-form_f"><img src="./icons/cross.png" alt="" /></div>
+        </header>
+        <form
+          class="service-pay_form"
+          action="./php-forms/send_uslugi.php"
+          method="POST"
+          target="_blank"
+        >
+          <label for="fio">Введите Ваше имя:*</label>
+          <input
+            type="text"
+            id="fio"
+            name="fio"
+            placeholder="Имя"
+            title="Введите Ваше имя"
+            required="required"
+            oninvalid="this.setCustomValidity('Введите Имя')"
+            oninput="setCustomValidity('')"
+          />
+          <label for="telephone">Введите телефон для связи:*</label>
+          <input
+            type="tel"
+            id="telephone"
+            name="tel"
+            placeholder="+7 ( ___ ) ___-__-__"
+            title="Введите телефон"
+            required="required"
+            oninvalid="this.setCustomValidity('Введите телефон')"
+            oninput="setCustomValidity('')"
+          />
+          <label for="city">Укажите город:*</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Город"
+            title="Укажите город"
+            required="required"
+            oninvalid="this.setCustomValidity('Укажите ваш город')"
+            oninput="setCustomValidity('')"
+          />
+          <label for="need_article">Какие услуги необходимы:</label>
+          <textarea
+            name="need_article"
+            id="need_article"
+            cols="1"
+            rows="1"
+            placeholder="Список услуг"
+            title="Услуги"
+            oninvalid="this.setCustomValidity('Укажите список услуг')"
+            oninput="setCustomValidity('')"
+          ></textarea>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lc33LgUAAAAAJyG-7MnyrRzuzZ-KJFPhBeC2zCV"
+          ></div>
+          <div class="text-danger" id="recaptchaError"></div>
+          <p class="service_buttons">
+            <input type="submit" name="enter" value="Заказать" />
+            <input type="reset" value="Очистить" />
+          </p>
+        </form>
+      </div>
     </section>
     <section class="modal-attributes">
-        <div class="attr">
-            <div class="block">
-                <div class="title">
-                    <p class="attr-name">Класс применения</p>
-                    <div class="close-modal"><span></span></div>
-                </div>
-                <p class="text">
-                    Каждому напольному покрытию присваивается класс применения, в зависимости от того, какие
-                    нагрузки это покрытие может выдержать. Классы делятся на бытовые (обозначаются цифрами в
-                    диапазоне 21-23), коммерческие (31-34) и промышленные (34-43).<br>
-                </p>
-            </div>
+      <div class="attr">
+        <div class="block">
+          <div class="title">
+            <p class="attr-name">Класс применения</p>
+            <div class="close-modal"><span></span></div>
+          </div>
+          <p class="text">
+            Каждому напольному покрытию присваивается класс применения, в
+            зависимости от того, какие нагрузки это покрытие может выдержать.
+            Классы делятся на бытовые (обозначаются цифрами в диапазоне 21-23),
+            коммерческие (31-34) и промышленные (34-43).<br />
+          </p>
         </div>
-        <div class="attr">
-            <div class="block">
-                <div class="title">
-                    <p class="attr-name">Класс пожарной опасности</p>
-                    <div class="close-modal"><span></span></div>
-                </div>
-                <img src="./img/attributes/KM.jpg" alt="" class="km">
-            </div>
+      </div>
+      <div class="attr">
+        <div class="block">
+          <div class="title">
+            <p class="attr-name">Класс пожарной опасности</p>
+            <div class="close-modal"><span></span></div>
+          </div>
+          <img src="./img/attributes/KM.jpg" alt="" class="km" />
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <? include('./included_files/footer.htm'); ?>
+      <? include('./included_files/footer.htm'); ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://mc.yandex.ru/metrika/watch.js"
+    ></script>
     <script src="./plugins/highslide/highslide-full.js"></script>
     <script src="./included_files/header-style/hamburger.js"></script>
     <script src="./js/collection.js"></script>
     <script src="js/color-filter/color-filter.js"></script>
-</body>
-
+  </body>
 </html>

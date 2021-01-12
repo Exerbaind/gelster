@@ -49,7 +49,7 @@
 <main class='container-fluid col-lg-12 wrapper px-0 px-md-3'>
 <?php
 // $to  = 'info@gelster.ru';
-$to  = 'digr98@gmail.com';
+$to  = 'digr98@gmail.ru';
 $subject = 'Заказ услуг с сайта';
 $fio = $_POST['fio'];
 $tel = $_POST['tel'];
