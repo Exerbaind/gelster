@@ -50,8 +50,14 @@ $(window).scroll(function () {
   }
 });
 
-document.addEventListener('click', function (e) {
-  if (e.target != desktopOpenedSideMenu && e.target != document.querySelector(".menu") && e.target != document.querySelector(".menu-title") && e.target != document.querySelector(".close-menu") && desktopOpenedSideMenu.classList.contains("active-menu_act")) {
+document.addEventListener("click", function (e) {
+  if (
+    e.target != desktopOpenedSideMenu &&
+    e.target != document.querySelector(".menu") &&
+    e.target != document.querySelector(".menu-title") &&
+    e.target != document.querySelector(".close-menu") &&
+    desktopOpenedSideMenu.classList.contains("active-menu_act")
+  ) {
     desktopMenuArrow.classList.add("animated__menu-arrow");
     desktopOpenedSideMenu.classList.add("animated__active-menu");
     document
@@ -87,25 +93,43 @@ $(".background-section-hamburger").click(function () {
 // открытие и закрытие обзора youtube
 
 let openYouTubeReview = document.querySelector(".youtube-api");
+let openCollectionReview = document.querySelector(".video-collection");
 let collectionReview = document.querySelector(".collection-review");
 
 collectionReview.addEventListener("click", function () {
   openYouTubeReview.classList.add("youtube-api__active");
   document.body.classList.add("overflow-hidden");
+  openCollectionReview.classList.add("youtube-api__active");
 });
 
 openYouTubeReview.addEventListener("click", function (e) {
   if (e.target == this) {
+    openCollectionReview.classList.remove("youtube-api__active");
     openYouTubeReview.classList.remove("youtube-api__active");
     document.body.classList.remove("overflow-hidden");
     player.stopVideo();
+    document.querySelector(".collection-video").pause();
+    document.querySelector(".collection-video").currentTime = 0;
+  }
+});
+
+openCollectionReview.addEventListener("click", function (e) {
+  if (e.target == this) {
+    openCollectionReview.classList.remove("youtube-api__active");
+    openYouTubeReview.classList.remove("youtube-api__active");
+    document.body.classList.remove("overflow-hidden");
+    document.querySelector(".collection-video").pause();
+    document.querySelector(".collection-video").currentTime = 0;
   }
 });
 
 document.addEventListener("keydown", function (e) {
   if (e.code == "Escape") {
+    openCollectionReview.classList.remove("youtube-api__active");
     openYouTubeReview.classList.remove("youtube-api__active");
     document.body.classList.remove("overflow-hidden");
+    document.querySelector(".collection-video").pause();
+    document.querySelector(".collection-video").currentTime = 0;
     player.stopVideo();
   }
 });
@@ -324,7 +348,9 @@ let openAndCloseCollections = true;
 showAllArticlesBtn.addEventListener("click", function () {
   if (openAndCloseCollections == true) {
     for (
-      articleNumber = 0; articleNumber < allHiddenArticles.length; articleNumber++
+      articleNumber = 0;
+      articleNumber < allHiddenArticles.length;
+      articleNumber++
     ) {
       allHiddenArticles[articleNumber].classList.remove("hide-article");
     }
@@ -334,7 +360,9 @@ showAllArticlesBtn.addEventListener("click", function () {
     return openAndCloseCollections;
   } else {
     for (
-      articleNumber = 0; articleNumber < allHiddenArticles.length; articleNumber++
+      articleNumber = 0;
+      articleNumber < allHiddenArticles.length;
+      articleNumber++
     ) {
       allHiddenArticles[articleNumber].classList.add("hide-article");
     }

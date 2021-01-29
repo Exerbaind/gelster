@@ -120,6 +120,17 @@ body {
   line-height: 24px;
 }
 
+.main-wrapper .container .page-header .page-header-description .text .par .par-link {
+  color: #edb056;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-wrapper .container .page-header .page-header-description .text .par .par-link:hover {
+  color: white;
+}
+
 @media screen and (max-width: 800px) {
   .main-wrapper .container .page-header .page-header-description .text .par {
     margin-top: 10px;

@@ -278,8 +278,8 @@
                     style="background-image: url(./img/collections/Dollken-plintus/Cubu/images/catalog-plintus_03.jpg);">
                 </div>
                 <div class="collection-review"
-                    style="background-image: url(./img/collections/Dollken-plintus/Cubu/images/catalog-in-new_05.jpg); pointer-events: none; cursor: default;">
-                    <!-- <div class="opacity-block">
+                    style="background-image: url(./img/collections/Dollken-plintus/Cubu/images/catalog-in-new_05.jpg);">
+                    <div class="opacity-block">
                         <div class="background__video-icon">
                             <img src="./icons/video_icon.svg" alt="" class="video-icon">
                         </div>
@@ -287,7 +287,7 @@
                             видео-обзор<br>
                             <span>коллекции</span>
                         </p>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="order-material"
                     style="background-image: url(./img/collections/Dollken-plintus/Cubu/images/catalog-in-new_07.jpg);">
@@ -653,13 +653,13 @@
                 </div>
                 <div class="collection-review__mobile"
                     style="background-image: url(./img/pages-name-imgs/collection-in/mobile1_02-08.jpg); pointer-events: none;">
-                    <!-- <a href="https://www.youtube.com/watch?v=Dgwarg1bnIc&t" target="_blank"></a>
+                    <a href="https://www.youtube.com/watch?v=Y2b3arPTC_Q" target="_blank"></a>
                     <div class="opacity-block">
                         <p class="title">видео-обзор<br><span>коллекции</span></p>
                     </div>
                     <div class="background__video-icon">
                         <img src="./icons/video_icon.svg" alt="" class="video-icon">
-                    </div> -->
+                    </div>
                 </div>
                 <div class="sert-sootv">
                     <img src="./icons/arrow-down.svg" alt="" class="arrow-down">
@@ -687,15 +687,15 @@
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        // var player;
+        var player;
         var playerClean;
 
         function onYouTubeIframeAPIReady() {
-            // player = new YT.Player('player', {
-            //     height: '400',
-            //     width: '680',
-            //     videoId: 'ti06GUK0tAI',
-            // });
+            player = new YT.Player('player', {
+                height: '400',
+                width: '680',
+                videoId: 'Y2b3arPTC_Q',
+            });
             playerClean = new YT.Player('player-clean', {
                 height: '400',
                 width: '680',
@@ -704,7 +704,7 @@
         }
 
         function stopVideo() {
-            // player.stopVideo();
+            player.stopVideo();
             playerClean.stopVideo();
         }
     </script>
