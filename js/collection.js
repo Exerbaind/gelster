@@ -93,43 +93,43 @@ $(".background-section-hamburger").click(function () {
 // открытие и закрытие обзора youtube
 
 let openYouTubeReview = document.querySelector(".youtube-api");
-let openCollectionReview = document.querySelector(".video-collection");
+// let openCollectionReview = document.querySelector(".video-collection");
 let collectionReview = document.querySelector(".collection-review");
 
 collectionReview.addEventListener("click", function () {
   openYouTubeReview.classList.add("youtube-api__active");
   document.body.classList.add("overflow-hidden");
-  openCollectionReview.classList.add("youtube-api__active");
+  // openCollectionReview.classList.add("youtube-api__active");
 });
 
 openYouTubeReview.addEventListener("click", function (e) {
   if (e.target == this) {
-    openCollectionReview.classList.remove("youtube-api__active");
+    // openCollectionReview.classList.remove("youtube-api__active");
     openYouTubeReview.classList.remove("youtube-api__active");
     document.body.classList.remove("overflow-hidden");
     player.stopVideo();
-    document.querySelector(".collection-video").pause();
-    document.querySelector(".collection-video").currentTime = 0;
+    // document.querySelector(".collection-video").pause();
+    // document.querySelector(".collection-video").currentTime = 0;
   }
 });
 
-openCollectionReview.addEventListener("click", function (e) {
-  if (e.target == this) {
-    openCollectionReview.classList.remove("youtube-api__active");
-    openYouTubeReview.classList.remove("youtube-api__active");
-    document.body.classList.remove("overflow-hidden");
-    document.querySelector(".collection-video").pause();
-    document.querySelector(".collection-video").currentTime = 0;
-  }
-});
+// openCollectionReview.addEventListener("click", function (e) {
+//   if (e.target == this) {
+//     openCollectionReview.classList.remove("youtube-api__active");
+//     openYouTubeReview.classList.remove("youtube-api__active");
+//     document.body.classList.remove("overflow-hidden");
+//     document.querySelector(".collection-video").pause();
+//     document.querySelector(".collection-video").currentTime = 0;
+//   }
+// });
 
 document.addEventListener("keydown", function (e) {
   if (e.code == "Escape") {
-    openCollectionReview.classList.remove("youtube-api__active");
+    // openCollectionReview.classList.remove("youtube-api__active");
     openYouTubeReview.classList.remove("youtube-api__active");
     document.body.classList.remove("overflow-hidden");
-    document.querySelector(".collection-video").pause();
-    document.querySelector(".collection-video").currentTime = 0;
+    // document.querySelector(".collection-video").pause();
+    // document.querySelector(".collection-video").currentTime = 0;
     player.stopVideo();
   }
 });

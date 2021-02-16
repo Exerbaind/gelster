@@ -1,305 +1,358 @@
 <?php header("Content-Type:text/html;charset=utf-8");?>
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-FVT7JXV');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-FVT7JXV");
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="Специально для настила токопроводящий напольных покрытий завод Forbo (Форбо) разработал токопроводящие клеи и грунтовки.">
-    <meta name="keywords" content="Клей для токопроводящих напольных покрытий Forbo">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/glue-collections.css">
-    <link rel="stylesheet" href="./css/collection.css">
-    <link rel="stylesheet" href="./preloader/preloader.css">
-    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
-    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Специально для настила токопроводящий напольных покрытий завод Forbo (Форбо) разработал токопроводящие клеи и грунтовки."
+    />
+    <meta
+      name="keywords"
+      content="Клей для токопроводящих напольных покрытий Forbo"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/glue-collections.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="./preloader/preloader.css" />
+    <link
+      rel="stylesheet"
+      href="./included_files/header-style/css/headerr.css"
+    />
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap"
+      rel="stylesheet"
+    />
     <title>Клей для токопроводящих покрытий Forbo</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="preloader">
-        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+      <img src="./preloader/tiger.gif" alt="" class="tiger-img" />
     </section>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <header>
-        <? include('./included_files/header.htm'); ?>
+      <? include('./included_files/header.htm'); ?>
     </header>
     <section class="section-menu">
-        <div class="menu animated__menu">
-            <p class="menu-title">другие коллекции</p>
-            <div class="menu-arrow animated__menu-arrow"></div>
+      <div class="menu animated__menu">
+        <p class="menu-title">другие коллекции</p>
+        <div class="menu-arrow animated__menu-arrow"></div>
+      </div>
+      <div class="active-menu animated__active-menu">
+        <div class="header-side-menu">
+          <span
+            class="close-menu"
+            id="close-menu"
+            onclick="anotherCloseCross()"
+          ></span>
         </div>
-        <div class="active-menu animated__active-menu">
-            <div class="header-side-menu">
-                <span class="close-menu" id="close-menu" onclick="anotherCloseCross()"></span>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="klei.htm">Каталог</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>Клей для покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_522.htm" class="out-list_a">Клей Forbo 522</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор для ковровой плитки</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
-                </li>
-                <li class="out-list chosen-collection">Токопроводящий клей 523 для напольных покрытий</li>
-                <li class="out-list">
-                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_himia_grass-ukladka.htm" class="out-list_a">Клей для искусственной травы</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_himia_cold-svarka.htm" class="out-list_a">Клей холодная сварка</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="ukladka.htm">Укладка</a>
-                </h4>
-            </div>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="klei.htm">Каталог</a>
+          </h4>
         </div>
+        <div class="side-bar-collection-header">
+          <h4>Клей для покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_kley_linoleum.htm" class="out-list_a"
+              >Клей для натурального линолеума</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_pvh.htm" class="out-list_a"
+              >Клей для плитки ПВХ</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_522.htm" class="out-list_a">Клей Forbo 522</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kontakt.htm" class="out-list_a"
+              >Клей для резиновых покрытий</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_fix.htm" class="out-list_a"
+              >Клей-фиксатор для ковровой плитки</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_contact.htm" class="out-list_a"
+              >Контактный клей</a
+            >
+          </li>
+          <li class="out-list chosen-collection">
+            Токопроводящий клей 523 для напольных покрытий
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kovrolin.htm" class="out-list_a"
+              >Клей для ковролина</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k_himia_grass-ukladka.htm" class="out-list_a"
+              >Клей для искусственной травы</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k_himia_cold-svarka.htm" class="out-list_a"
+              >Клей холодная сварка</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="ukladka.htm">Укладка</a>
+          </h4>
+        </div>
+      </div>
     </section>
     <section class="section-menu_mobile">
-        <div class="background-section-hamburger" id="background-section-hamburger">
-            <a class="section-hamburger"><span></span></a>
+      <div
+        class="background-section-hamburger"
+        id="background-section-hamburger"
+      >
+        <a class="section-hamburger"><span></span></a>
+      </div>
+      <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="klei.htm">Каталог</a>
+          </h4>
         </div>
-        <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="klei.htm">Каталог</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>Клей для покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_522.htm" class="out-list_a">Клей Forbo 522</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор для ковровой плитки</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
-                </li>
-                <li class="out-list chosen-collection">Токопроводящий клей 523 для напольных покрытий</li>
-                <li class="out-list">
-                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_himia_grass-ukladka.htm" class="out-list_a">Клей для искусственной травы</a>
-                </li>
-                <li class="out-list">
-                    <a href="k_himia_cold-svarka.htm" class="out-list_a">Клей холодная сварка</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="ukladka.htm">Укладка</a>
-                </h4>
-            </div>
+        <div class="side-bar-collection-header">
+          <h4>Клей для покрытия</h4>
         </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_kley_linoleum.htm" class="out-list_a"
+              >Клей для натурального линолеума</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_pvh.htm" class="out-list_a"
+              >Клей для плитки ПВХ</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_522.htm" class="out-list_a">Клей Forbo 522</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kontakt.htm" class="out-list_a"
+              >Клей для резиновых покрытий</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_fix.htm" class="out-list_a"
+              >Клей-фиксатор для ковровой плитки</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_contact.htm" class="out-list_a"
+              >Контактный клей</a
+            >
+          </li>
+          <li class="out-list chosen-collection">
+            Токопроводящий клей 523 для напольных покрытий
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kovrolin.htm" class="out-list_a"
+              >Клей для ковролина</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k_himia_grass-ukladka.htm" class="out-list_a"
+              >Клей для искусственной травы</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="k_himia_cold-svarka.htm" class="out-list_a"
+              >Клей холодная сварка</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="ukladka.htm">Укладка</a>
+          </h4>
+        </div>
+      </div>
     </section>
     <section class="main-wrapper">
-        <div class="container">
-            <div class="page-header">
-                <img src="./img/pages-name-imgs/glue/tokoprovod/tokoprov.jpg"
-                    alt="Виды клея для резиновых покрытий Forbo" class="page-header-img">
-                <div class="page-header-description">
-                    <h1 class="title">
-                        Токопроводящий клей 523 для напольных покрытий
-                    </h1>
-                    <div class="text">
-                        <p class="par">
-                            Специально для настила токопроводящий напольных покрытий завод Forbo (Форбо) разработал
-                            токопроводящие клеи и грунтовки.
-                        </p>
-                        <p class="par">
-                            Использование специальных средств для укладки токопроводящих покрытий особенно важно, так
-                            как отведение электричества будет эффективно работать только в случае, если все элементы
-                            системы будут способны проводить ток. Поэтому при покупке токопроводящего и
-                            токорассеивающего покрытия обязательно запросите у специалистов информацию о соответствующем
-                            клее и грунтовке.
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="page-header">
+          <img
+            src="./img/pages-name-imgs/glue/tokoprovod/tokoprov.jpg"
+            alt="Виды клея для резиновых покрытий Forbo"
+            class="page-header-img"
+          />
+          <div class="page-header-description">
+            <h1 class="title">
+              Токопроводящий клей 523 для напольных покрытий
+            </h1>
+            <div class="text">
+              <p class="par">
+                Специально для настила токопроводящий напольных покрытий завод
+                Forbo (Форбо) разработал токопроводящие клеи и грунтовки.
+              </p>
+              <p class="par">
+                Использование специальных средств для укладки токопроводящих
+                покрытий особенно важно, так как отведение электричества будет
+                эффективно работать только в случае, если все элементы системы
+                будут способны проводить ток. Поэтому при покупке
+                токопроводящего и токорассеивающего покрытия обязательно
+                запросите у специалистов информацию о соответствующем клее и
+                грунтовке.
+              </p>
             </div>
-            <div class="chim-collection">
-                <div class="chim-item">
-                    <div class="chim-item__look">
-                        <h5 class="chim-name">
-                            <span class="number">523</span><br>Eurostar Tack EC
-                        </h5>
-                        <img src="./img/pages-name-imgs/glue/tokoprovod/523.jpg"
-                            alt="Токопроводящий клей для покрытий Eurostar Tack EC 523" class="chim-img">
-                    </div>
-                    <div class="chim-item__description">
-                        <p class="dis-title">
-                            Forbo 523 Eurostar Tack EC<br>
-                            <span class="sub-title">токопроводящий клей</span>
-                        </p>
-                        <p class="par">
-                            Клей Forbo (Форбо) 523 – это токопроводящий морозоустойчивый клей светлого цвета с высокой
-                            клеящей способностью.
-                        </p>
-                        <p class="par">
-                            Предназначен для настила токопроводящего линолеума и плитки ПВХ, а также ковровых покрытий
-                            на поверхности, подготовленные с помощью токопроводящей грунтовкой Forbo (Форбо) 041
-                            Europrimer EL, или на сетку из медной ленты 801.
-                        </p>
-                        <p class="par">
-                            Предназначен для укладки на абсорбирующие основания.<br>
-                            Время для укладки – 20 мин.
-                        </p>
-                    </div>
-                    <div class="chim-item__instruction">
-                        <p class="inst-title">
-                            расход:
-                        </p>
-                        <p class="inst-text">
-                            ~ 250-450 г/м<sup><small>2</small></sup>
-                        </p>
-                        <p class="inst-title">
-                            упаковка:
-                        </p>
-                        <p class="inst-text">
-                            Ведро пластиковое 12 кг, на поддоне — 44 шт.
-                        </p>
-                        <p class="inst-title">
-                            способ нанесения:
-                        </p>
-                        <p class="inst-text">
-                            Зубчатый шпатель S1 (ПВХ, винил), TL (текстильн. покр.)
-                        </p>
-                        <p class="inst-title">
-                            время для подсушки:
-                        </p>
-                        <p class="inst-text">
-                            Для впитывающих оснований: 10-20 минут<br>
-                            Для невпитывающих оснований: 20-40 минут<br>
-                        </p>
-                        <p class="inst-title">
-                            открытое время:
-                        </p>
-                        <p class="inst-text">
-                            60 минут
-                        </p>
-                        <a href='./sertificate/glue-sert/425-522-523-525-528-541-542-545-599/СГР_клеи.jpg'
-                            target="_blank" class="sert bottom10">
-                            <img src="./icons/arrow-down.svg" alt="" class="sert-icon">
-                            <p class="download-text">скачать сертификат</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="chim-item">
-                    <div class="chim-item__look">
-                        <h5 class="chim-name">
-                            <span class="number">801</span><br>Eurostripe EC
-                        </h5>
-                        <img src="./img/pages-name-imgs/glue/tokoprovod/801.jpg"
-                            alt="Медная лента для токопроводящих покрытий Eurostripe EC 801" class="chim-img">
-                    </div>
-                    <div class="chim-item__description">
-                        <p class="dis-title">
-                            Forbo 801 Eurostripe EC<br>
-                            <span class="sub-title">медная лента</span>
-                        </p>
-                        <p class="par">
-                            Медная лента 801 от Forbo (Форбо) – это самоклеящаяся медная лента для создания отводного
-                            потенциала при укладке токопроводящих напольных покрытий.
-                        </p>
-                        <p class="par">
-                            При укладке учитывайте требования производителей напольных покрытий.
-                        </p>
-                    </div>
-                    <div class="chim-item__instruction">
-                        <p class="inst-title">
-                            расход:
-                        </p>
-                        <p class="inst-text">
-                            На каждые 30 м<sup><small>2</small></sup> один отводной потенциал или сетка по всей площади
-                            помещения
-                        </p>
-                        <p class="inst-title">
-                            упаковка:
-                        </p>
-                        <p class="inst-text">
-                            В коробке — 30 бобин
-                        </p>
-                        <p class="inst-title">
-                            длина ленты:
-                        </p>
-                        <p class="inst-text">
-                            20 метров
-                        </p>
-                        <p class="inst-title">
-                            способ нанесения:
-                        </p>
-                        <p class="inst-text">
-                            Самоклеящаяся
-                        </p>
-                        <a href='./sertificate/glue-sert/801.pdf' target="_blank" class="sert">
-                            <img src="./icons/arrow-down.svg" alt="" class="sert-icon">
-                            <p class="download-text">скачать сертификат</p>
-                        </a>
-                    </div>
-                </div>
-                <!-- <div class="chim-item">
+          </div>
+        </div>
+        <div class="chim-collection">
+          <div class="chim-item">
+            <div class="chim-item__look">
+              <h5 class="chim-name">
+                <span class="number">523</span><br />Eurostar Tack EC
+              </h5>
+              <img
+                src="./img/pages-name-imgs/glue/tokoprovod/523.jpg"
+                alt="Токопроводящий клей для покрытий Eurostar Tack EC 523"
+                class="chim-img"
+              />
+            </div>
+            <div class="chim-item__description">
+              <p class="dis-title">
+                Forbo 523 Eurostar Tack EC<br />
+                <span class="sub-title">токопроводящий клей</span>
+              </p>
+              <p class="par">
+                Клей Forbo (Форбо) 523 – это токопроводящий морозоустойчивый
+                клей светлого цвета с высокой клеящей способностью.
+              </p>
+              <p class="par">
+                Предназначен для настила токопроводящего линолеума и плитки ПВХ,
+                а также ковровых покрытий на поверхности, подготовленные с
+                помощью токопроводящей грунтовкой Forbo (Форбо) 041 Europrimer
+                EL, или на сетку из медной ленты 801.
+              </p>
+              <p class="par">
+                Предназначен для укладки на абсорбирующие основания.<br />
+                Время для укладки – 20 мин.
+              </p>
+            </div>
+            <div class="chim-item__instruction">
+              <p class="inst-title">расход:</p>
+              <p class="inst-text">
+                ~ 250-450 г/м<sup><small>2</small></sup>
+              </p>
+              <p class="inst-title">упаковка:</p>
+              <p class="inst-text">
+                Ведро пластиковое 12 кг, на поддоне — 44 шт.
+              </p>
+              <p class="inst-title">способ нанесения:</p>
+              <p class="inst-text">
+                Зубчатый шпатель S1 (ПВХ, винил), TL (текстильн. покр.)
+              </p>
+              <p class="inst-title">время для подсушки:</p>
+              <p class="inst-text">
+                Для впитывающих оснований: 10-20 минут<br />
+                Для невпитывающих оснований: 20-40 минут<br />
+              </p>
+              <p class="inst-title">открытое время:</p>
+              <p class="inst-text">60 минут</p>
+              <a
+                href="./sertificate/glue-sert/425-522-523-525-528-541-542-545-599/СГР_клеи.jpg"
+                target="_blank"
+                class="sert bottom10"
+              >
+                <img src="./icons/arrow-down.svg" alt="" class="sert-icon" />
+                <p class="download-text">скачать сертификат</p>
+              </a>
+            </div>
+          </div>
+          <div class="chim-item">
+            <div class="chim-item__look">
+              <h5 class="chim-name">
+                <span class="number">801</span><br />Eurostripe EC
+              </h5>
+              <img
+                src="./img/pages-name-imgs/glue/tokoprovod/801.jpg"
+                alt="Медная лента для токопроводящих покрытий Eurostripe EC 801"
+                class="chim-img"
+              />
+            </div>
+            <div class="chim-item__description">
+              <p class="dis-title">
+                Forbo 801 Eurostripe EC<br />
+                <span class="sub-title">медная лента</span>
+              </p>
+              <p class="par">
+                Медная лента 801 от Forbo (Форбо) – это самоклеящаяся медная
+                лента для создания отводного потенциала при укладке
+                токопроводящих напольных покрытий.
+              </p>
+              <p class="par">
+                При укладке учитывайте требования производителей напольных
+                покрытий.
+              </p>
+            </div>
+            <div class="chim-item__instruction">
+              <p class="inst-title">расход:</p>
+              <p class="inst-text">
+                На каждые 30 м<sup><small>2</small></sup> один отводной
+                потенциал или сетка по всей площади помещения
+              </p>
+              <p class="inst-title">упаковка:</p>
+              <p class="inst-text">В коробке — 30 бобин</p>
+              <p class="inst-title">длина ленты:</p>
+              <p class="inst-text">20 метров</p>
+              <p class="inst-title">способ нанесения:</p>
+              <p class="inst-text">Самоклеящаяся</p>
+              <a
+                href="./sertificate/glue-sert/801.pdf"
+                target="_blank"
+                class="sert"
+              >
+                <img src="./icons/arrow-down.svg" alt="" class="sert-icon" />
+                <p class="download-text">скачать сертификат</p>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="chim-item">
                     <div class="chim-item__look">
                         <h5 class="chim-name">
                             <span class="number">041</span><br>Europrimer EC
@@ -355,18 +408,20 @@
                         </a>
                     </div>
                 </div> -->
-            </div>
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <? include('./included_files/footer.htm'); ?>
+      <? include('./included_files/footer.htm'); ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
-    </script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://mc.yandex.ru/metrika/watch.js"
+    ></script>
     <script src="./included_files/header-style/hamburger.js"></script>
     <script src="./js/collection.js"></script>
-</body>
-
+  </body>
 </html>

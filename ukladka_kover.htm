@@ -2,335 +2,500 @@
 
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-FVT7JXV');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-FVT7JXV");
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Укладка коврового покрытия производится в определенных условиях, которые позволяют выполнить
-    работы максимально эффективно и гарантировать долговечность ковролина.">
-    <meta name="keywords" content="Укладка ковровых покрытий">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
-    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
-    <link rel="stylesheet" href="./css/nanesenie-razmetki.css">
-    <link rel="stylesheet" href="./plugins/wowjs/animate.css">
-    <link rel="stylesheet" href="./preloader/preloader.css">
-    <link rel="stylesheet" href="./js/components/arrow-to-top.css">
-    <link rel="stylesheet" href="./js/components/share.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Укладка коврового покрытия производится в определенных условиях, которые позволяют выполнить
+    работы максимально эффективно и гарантировать долговечность ковролина."
+    />
+    <meta name="keywords" content="Укладка ковровых покрытий" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="./included_files/header-style/css/headerr.css"
+    />
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css" />
+    <link rel="stylesheet" href="./css/nanesenie-razmetki.css" />
+    <link rel="stylesheet" href="./plugins/wowjs/animate.css" />
+    <link rel="stylesheet" href="./preloader/preloader.css" />
+    <link rel="stylesheet" href="./js/components/arrow-to-top.css" />
+    <link rel="stylesheet" href="./js/components/share.css" />
     <title>Укладка ковровых покрытий</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="preloader">
-        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+      <img src="./preloader/tiger.gif" alt="" class="tiger-img" />
     </section>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <header>
-        <? include('./included_files/header.htm'); ?>
+      <? include('./included_files/header.htm'); ?>
     </header>
 
     <a href="#begin" class="arrow-to-top show-arrow"></a>
     <div class="share">
-        <div class="share__icon-bg" onclick="shareList()">
-            <img src="./img/articles/share_icons/share.svg" alt="" class="share__icon">
-        </div>
-        <menu class="share__list">
-            <li>
-                <button class="button" data-sharer="twitter" data-title="Укладка ковровых покрытий" data-hashtags=""
-                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/twitter.svg"
-                        alt="" class="share__icon-social" title="Поделиться статьей в Twitter"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="vk" data-caption="" data-title="Укладка ковровых покрытий"
-                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/vk.svg" alt=""
-                        class="share__icon-social" title="Поделиться статьей в VK"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="telegram" data-title="Укладка ковровых покрытий"
-                    data-url="https://gelster.ru/uhod_geterogen.htm" data-to=""><img
-                        src="./img/articles/share_icons/telegram.svg" alt="" class="share__icon-social"
-                        title="Поделиться статьей в Telegram"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="facebook" data-hashtag=""
-                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/facebook.svg"
-                        alt="" class="share__icon-social" title="Поделиться статьей в FaceBook"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="whatsapp" data-title="Укладка ковровых покрытий"
-                    data-url="https://gelster.ru/uhod_geterogen.htm"><img src="./img/articles/share_icons/whatsapp.svg"
-                        alt="" class="share__icon-social" title="Поделиться статьей в WhatsApp"></button>
-            </li>
-        </menu>
+      <div class="share__icon-bg" onclick="shareList()">
+        <img
+          src="./img/articles/share_icons/share.svg"
+          alt=""
+          class="share__icon"
+        />
+      </div>
+      <menu class="share__list">
+        <li>
+          <button
+            class="button"
+            data-sharer="twitter"
+            data-title="Укладка ковровых покрытий"
+            data-hashtags=""
+            data-url="https://gelster.ru/uhod_geterogen.htm"
+          >
+            <img
+              src="./img/articles/share_icons/twitter.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в Twitter"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="vk"
+            data-caption=""
+            data-title="Укладка ковровых покрытий"
+            data-url="https://gelster.ru/uhod_geterogen.htm"
+          >
+            <img
+              src="./img/articles/share_icons/vk.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в VK"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="telegram"
+            data-title="Укладка ковровых покрытий"
+            data-url="https://gelster.ru/uhod_geterogen.htm"
+            data-to=""
+          >
+            <img
+              src="./img/articles/share_icons/telegram.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в Telegram"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="facebook"
+            data-hashtag=""
+            data-url="https://gelster.ru/uhod_geterogen.htm"
+          >
+            <img
+              src="./img/articles/share_icons/facebook.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в FaceBook"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="whatsapp"
+            data-title="Укладка ковровых покрытий"
+            data-url="https://gelster.ru/uhod_geterogen.htm"
+          >
+            <img
+              src="./img/articles/share_icons/whatsapp.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в WhatsApp"
+            />
+          </button>
+        </li>
+      </menu>
     </div>
 
     <section class="main-wrapper">
-        <div class="container">
-            <div class="about-block" id="begin">
-                <div class="img-block">
-                    <img src="./img/articles/ykladka_kovrolin/intro1.jpg" alt="Укладка ковровых покрытий" class="
-                        long-img">
-                    <div class="two-imgs">
-                        <img src="./img/articles/ykladka_kovrolin/intro2.jpg"
-                            alt="Инструкция по укладке ковровых покрытий" class="upper">
-                        <img src="./img/articles/ykladka_kovrolin/intro3.jpg" alt="Как укладывать ковровые покрытия"
-                            class="down">
-                    </div>
-                </div>
-                <div class="text-block">
-                    <h1 class="title">
-                        Укладка ковровых покрытий
-                    </h1>
-                    <p class="par">
-                        Укладка коврового покрытия производится в определенных условиях, которые позволяют выполнить
-                        работы максимально эффективно и гарантировать долговечность ковролина.
-                    </p>
-                </div>
+      <div class="container">
+        <div class="about-block" id="begin">
+          <div class="img-block">
+            <img
+              src="./img/articles/ykladka_kovrolin/intro1.jpg"
+              alt="Укладка ковровых покрытий"
+              class="long-img"
+            />
+            <div class="two-imgs">
+              <img
+                src="./img/articles/ykladka_kovrolin/intro2.jpg"
+                alt="Инструкция по укладке ковровых покрытий"
+                class="upper"
+              />
+              <img
+                src="./img/articles/ykladka_kovrolin/intro3.jpg"
+                alt="Как укладывать ковровые покрытия"
+                class="down"
+              />
             </div>
-            <div class="navigation">
-                <menu class="navigation__menu">
-                    <ul class="navigation__list">
-                        <li class="navigation__item_19"><a href="#demands" class="navigation__link">Требование к
-                                помещению</a>
-                        </li>
-                        <li class="navigation__item_19"><a href="#prepare" class="navigation__link">Подготовка
-                                коврового покрытия</a></li>
-                        <li class="navigation__item_19"><a href="#prepare-osn" class="navigation__link">Подготовка
-                                основания</a></li>
-                        <li class="navigation__item_19"><a href="#raskroy" class="navigation__link">Раскрой ковра</a>
-                        </li>
-                        <li class="navigation__item_19"><a href="#klei" class="navigation__link">Нанесение клея</a>
-                        </li>
-                    </ul>
-                </menu>
-            </div>
-            <div class="flex-two-columns" id="demands">
-                <div class="first-column">
-                    <h3 class="title">
-                        Требования к помещению
-                    </h3>
-                    <p class="par">
-                        Минимальная температура в помещении, при которой можно производить укладку, должна быть не менее
-                        15°С, а влажность не должна превышать 75%.
-                    </p>
-                </div>
-                <img src="./img/articles/ykladka_kovrolin/demand.jpg" alt="Требования к помещению"
-                    class="second-column">
-            </div>
-            <div class="flex-two-columns_green" id="prepare">
-                <div class="first-column">
-                    <h3 class="title">
-                        Подготовка коврового покрытия
-                    </h3>
-                    <p class="par">
-                        Перед укладкой ковролин должен принять температуру помещения. Каким образом это можно сделать?
-                        Самый лучший способ – это занести ковровое покрытие в помещение, где будет производиться
-                        укладка, и оставить ковролин на 24 часа. Перед началом работ ковролин желательно расправить по
-                        всей поверхности пола и подождать пару часов.
-                    </p>
-                </div>
-                <img src="./img/articles/ykladka_kovrolin/prepare-kovr.jpg" alt="Подготовка коврового покрытия"
-                    class="second-column">
-            </div>
-            <hr>
-            <div class="flex-two-columns" id="prepare-osn">
-                <div class="first-column">
-                    <h3 class="title" style="color: #586f69;">
-                        Подготовка основания
-                    </h3>
-                    <p class="par">
-                        Перед укладкой любого покрытия необходимо подготовить основание, которое должно соответствовать
-                        некоторым требованиям.
-                    </p>
-                </div>
-                <img src="./img/articles/ykladka_kovrolin/prepare.jpg" alt="Подготовка основания" class="second-column">
-            </div>
-            <div class="flex-three-columns">
-                <div class="column">
-                    <img src="./img/articles/ykladka_kovrolin/step1.jpg" alt="Проверяем на отсутствие дефектов"
-                        class="column__img">
-                </div>
-                <div class="column">
-                    <img src="./img/articles/ykladka_kovrolin/step2.jpg" alt="Правильно выравниваем"
-                        class="column__img">
-                </div>
-                <div class="column">
-                    <img src="./img/articles/ykladka_kovrolin/step3.jpg" alt="Убираем пыль" class="column__img">
-                </div>
-                <div class="column pad" style="background-image: url(./img/articles/ykladka_kovrolin/step1-1.jpg);">
-                    <h4 class="column__title">
-                        Шаг 1: Проверяем на отсутствие дефектов
-                    </h4>
-                    <p class="column__par">
-                        В первую очередь, основание должно быть ровным и не содержать каких-либо дефектов, а также
-                        различных углублений, вмятин и других неровностей (зазор на двух метровой рейке не должен
-                        превышать 2 мм). Это позволит избежать локальных повреждений ковролина, связанных с чрезмерным
-                        трением выступающих неровностей и вздутий.
-                    </p>
-                </div>
-                <div class="column pad" style="background-image: url(./img/articles/ykladka_kovrolin/step2-1.jpg);">
-                    <h4 class="column__title">
-                        Шаг 2: Правильно выравниваем
-                    </h4>
-                    <p class="column__par">
-                        Чтобы предупредить деформацию коврового покрытия и потерю его первоначальных свойств, основание
-                        необходимо выровнить ровнителем, либо постелить два слоя фанеры толщиной по 10 мм, так, чтобы
-                        стыки фанеры не повторялись, а целое полотно второго слоя перекрывало стык нижнего слоя.
-                    </p>
-                </div>
-                <div class="column pad" style="background-image: url(./img/articles/ykladka_kovrolin/step3-1.jpg);">
-                    <h4 class="column__title">
-                        Шаг 3: Убираем пыль
-                    </h4>
-                    <p class="column__par">
-                        Для прочной фиксации коврового покрытия, с основания убирается влага, а также различного рода
-                        грязь и пыль. Необходимо предварительно пропылесосить пол, а при пористой поверхности желательно
-                        нанести грунт на основание.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="flex-two-columns" id="raskroy">
-                <div class="first-column">
-                    <h3 class="title">
-                        Раскрой ковра
-                    </h3>
-                    <p class="par">
-                        После подготовки коврового покрытия для укладки, его необходимо нарезать на составные части для
-                        дальнейшего настила. Раскрой производят с нахлестом полотен друг на друга по 5 см для
-                        последующего сквозного прорезания и получения соединения «стык в стык». Рекомендуется нарезать
-                        каждой стороны, после чего, в процессе укладки, подрезать полотно вплотную к стене.
-                    </p>
-                    <p class="par">
-                        При настиле важно укладывать ковролин в одном направлении, так как ворс имеет направленность и в
-                        результате укладки полотен в разных направлениях стык станет заметен.
-                    </p>
-                </div>
-                <img src="./img/articles/ykladka_kovrolin/raskroy.jpg" alt="Раскрой ковра" class="second-column">
-            </div>
-            <hr>
-            <div class="flex-four-blocks" id="klei">
-                <div class="text-block">
-                    <h3 class="block__title">
-                        Нанесение клея
-                    </h3>
-                    <div class="block__info">
-                        <p class="par">
-                            Ковролин, особенно в коммерческих помещениях, необходимо приклеивать к основанию по всей
-                            площади поверхности. В этом случае рекомендуется использовать клей Форбо 525, который
-                            наносится на всю поверхность основания зубчатым шпателем А1.
-                        </p>
-                        <p class="par">
-                            Если же площадь помещения меньше 50 м², то можно использовать либо клей-фиксатор Форбо 541,
-                            либо двусторонний скотч для частичной фиксации коврового покрытия.
-                        </p>
-                        <p class="par">
-                            У потребителей часто возникает вопрос:
-                        </p>
-                        <p class="par">&laquo;МОЖНО ЛИ НЕ ПРИКЛЕИВАТЬ КОВРОВОЕ ПОКРЫТИЕ?&raquo;</p>
-                        <p class="par">Да, можно, в случае, если площадь помещения менее 20 м². Но нужно учитывать, что
-                            незафиксированное покрытие может сдвигаться при эксплуатации, образовывая
-                            &laquo;волны&raquo;.</p>
-                        <p class="par">Использовать помещение после укладки покрытия можно через 24 часа.</p>
-                    </div>
-                </div>
-                <div class="product-block">
-                    <img src="./img/articles/ykladka_kovrolin/klei.jpg" alt="Нанесение клея" class="block__img">
-                    <div class="product">
-                        <div class="product__container_two">
-                            <h4 class="title">
-                                Клей Eurosafe<br>Basic 525
-                            </h4>
-                            <img src="./img/articles/ykladka_kovrolin/525.jpg" alt="Клей Eurosafe Basic 525"
-                                class="product__img">
-                            <hr>
-                            <p class="product__sub">
-                                Для помещений<br>больше 50 м<sup><small>2</small></sup>
-                            </p>
-                        </div>
-                        <div class="product__container_two">
-                            <h4 class="title">
-                                Клей Eurofix<br>Anti Slip 541
-                            </h4>
-                            <img src="./img/articles/ykladka_kovrolin/541.jpg" alt="Клей Eurofix Anti Slip 541"
-                                class="product__img">
-                            <hr>
-                            <p class="product__sub">
-                                Для помещений<br>менее 50 м<sup><small>2</small></sup>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="flex-two-columns">
-                <div class="first-column">
-                    <h3 class="title">
-                        Заказывайте у нас профессиональную<br>укладку напольных покрытий
-                    </h3>
-                    <p class="par">
-                        Укладка коврового напольного покрытия требует профессионализма и опыта. Поэтому мы советуем Вам
-                        обращаться за ней к мастерам-укладчикам. Наши менеджеры назначат начало работ с нашей бригадой
-                        или помогут Вам проконтролировать работу нанятых мастеров.
-                    </p>
-                </div>
-                <div class="second-column order" onclick="showForm()" style="cursor: pointer;">
-                    <img src="./img/articles/ykladka_kovrolin/order.jpg"
-                        alt="Заказывайте у нас профессиональную укладку напольных покрытий" class="order__img">
-                    <div class="block-top-icon">
-                        <span></span>
-                    </div>
-                </div>
-
-            </div>
+          </div>
+          <div class="text-block">
+            <h1 class="title">Укладка ковровых покрытий</h1>
+            <p class="par">
+              Укладка коврового покрытия производится в определенных условиях,
+              которые позволяют выполнить работы максимально эффективно и
+              гарантировать долговечность ковролина.
+            </p>
+          </div>
         </div>
+        <div class="navigation">
+          <menu class="navigation__menu">
+            <ul class="navigation__list">
+              <li class="navigation__item_19">
+                <a href="#demands" class="navigation__link"
+                  >Требование к помещению</a
+                >
+              </li>
+              <li class="navigation__item_19">
+                <a href="#prepare" class="navigation__link"
+                  >Подготовка коврового покрытия</a
+                >
+              </li>
+              <li class="navigation__item_19">
+                <a href="#prepare-osn" class="navigation__link"
+                  >Подготовка основания</a
+                >
+              </li>
+              <li class="navigation__item_19">
+                <a href="#raskroy" class="navigation__link">Раскрой ковра</a>
+              </li>
+              <li class="navigation__item_19">
+                <a href="#klei" class="navigation__link">Нанесение клея</a>
+              </li>
+            </ul>
+          </menu>
+        </div>
+        <div class="flex-two-columns" id="demands">
+          <div class="first-column">
+            <h3 class="title">Требования к помещению</h3>
+            <p class="par">
+              Минимальная температура в помещении, при которой можно производить
+              укладку, должна быть не менее 15°С, а влажность не должна
+              превышать 75%.
+            </p>
+          </div>
+          <img
+            src="./img/articles/ykladka_kovrolin/demand.jpg"
+            alt="Требования к помещению"
+            class="second-column"
+          />
+        </div>
+        <div class="flex-two-columns_green" id="prepare">
+          <div class="first-column">
+            <h3 class="title">Подготовка коврового покрытия</h3>
+            <p class="par">
+              Перед укладкой ковролин должен принять температуру помещения.
+              Каким образом это можно сделать? Самый лучший способ – это занести
+              ковровое покрытие в помещение, где будет производиться укладка, и
+              оставить ковролин на 24 часа. Перед началом работ ковролин
+              желательно расправить по всей поверхности пола и подождать пару
+              часов.
+            </p>
+          </div>
+          <img
+            src="./img/articles/ykladka_kovrolin/prepare-kovr.jpg"
+            alt="Подготовка коврового покрытия"
+            class="second-column"
+          />
+        </div>
+        <hr />
+        <div class="flex-two-columns" id="prepare-osn">
+          <div class="first-column">
+            <h3 class="title" style="color: #586f69">Подготовка основания</h3>
+            <p class="par">
+              Перед укладкой любого покрытия необходимо подготовить основание,
+              которое должно соответствовать некоторым требованиям.
+            </p>
+          </div>
+          <img
+            src="./img/articles/ykladka_kovrolin/prepare.jpg"
+            alt="Подготовка основания"
+            class="second-column"
+          />
+        </div>
+        <div class="flex-three-columns">
+          <div class="column">
+            <img
+              src="./img/articles/ykladka_kovrolin/step1.jpg"
+              alt="Проверяем на отсутствие дефектов"
+              class="column__img"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/articles/ykladka_kovrolin/step2.jpg"
+              alt="Правильно выравниваем"
+              class="column__img"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/articles/ykladka_kovrolin/step3.jpg"
+              alt="Убираем пыль"
+              class="column__img"
+            />
+          </div>
+          <div
+            class="column pad"
+            style="
+              background-image: url(./img/articles/ykladka_kovrolin/step1-1.jpg);
+            "
+          >
+            <h4 class="column__title">
+              Шаг 1: Проверяем на отсутствие дефектов
+            </h4>
+            <p class="column__par">
+              В первую очередь, основание должно быть ровным и не содержать
+              каких-либо дефектов, а также различных углублений, вмятин и других
+              неровностей (зазор на двух метровой рейке не должен превышать 2
+              мм). Это позволит избежать локальных повреждений ковролина,
+              связанных с чрезмерным трением выступающих неровностей и вздутий.
+            </p>
+          </div>
+          <div
+            class="column pad"
+            style="
+              background-image: url(./img/articles/ykladka_kovrolin/step2-1.jpg);
+            "
+          >
+            <h4 class="column__title">Шаг 2: Правильно выравниваем</h4>
+            <p class="column__par">
+              Чтобы предупредить деформацию коврового покрытия и потерю его
+              первоначальных свойств, основание необходимо выровнить ровнителем,
+              либо постелить два слоя фанеры толщиной по 10 мм, так, чтобы стыки
+              фанеры не повторялись, а целое полотно второго слоя перекрывало
+              стык нижнего слоя.
+            </p>
+          </div>
+          <div
+            class="column pad"
+            style="
+              background-image: url(./img/articles/ykladka_kovrolin/step3-1.jpg);
+            "
+          >
+            <h4 class="column__title">Шаг 3: Убираем пыль</h4>
+            <p class="column__par">
+              Для прочной фиксации коврового покрытия, с основания убирается
+              влага, а также различного рода грязь и пыль. Необходимо
+              предварительно пропылесосить пол, а при пористой поверхности
+              желательно нанести грунт на основание.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="flex-two-columns" id="raskroy">
+          <div class="first-column">
+            <h3 class="title">Раскрой ковра</h3>
+            <p class="par">
+              После подготовки коврового покрытия для укладки, его необходимо
+              нарезать на составные части для дальнейшего настила. Раскрой
+              производят с нахлестом полотен друг на друга по 5 см для
+              последующего сквозного прорезания и получения соединения «стык в
+              стык». Рекомендуется нарезать каждой стороны, после чего, в
+              процессе укладки, подрезать полотно вплотную к стене.
+            </p>
+            <p class="par">
+              При настиле важно укладывать ковролин в одном направлении, так как
+              ворс имеет направленность и в результате укладки полотен в разных
+              направлениях стык станет заметен.
+            </p>
+          </div>
+          <img
+            src="./img/articles/ykladka_kovrolin/raskroy.jpg"
+            alt="Раскрой ковра"
+            class="second-column"
+          />
+        </div>
+        <hr />
+        <div class="flex-four-blocks" id="klei">
+          <div class="text-block">
+            <h3 class="block__title">Нанесение клея</h3>
+            <div class="block__info">
+              <p class="par">
+                Ковролин, особенно в коммерческих помещениях, необходимо
+                приклеивать к основанию по всей площади поверхности. В этом
+                случае рекомендуется использовать клей Форбо 525, который
+                наносится на всю поверхность основания зубчатым шпателем А1.
+              </p>
+              <p class="par">
+                Если же площадь помещения меньше 50 м², то можно использовать
+                либо клей-фиксатор Форбо 541, либо двусторонний скотч для
+                частичной фиксации коврового покрытия.
+              </p>
+              <p class="par">У потребителей часто возникает вопрос:</p>
+              <p class="par">
+                &laquo;МОЖНО ЛИ НЕ ПРИКЛЕИВАТЬ КОВРОВОЕ ПОКРЫТИЕ?&raquo;
+              </p>
+              <p class="par">
+                Да, можно, в случае, если площадь помещения менее 20 м². Но
+                нужно учитывать, что незафиксированное покрытие может сдвигаться
+                при эксплуатации, образовывая &laquo;волны&raquo;.
+              </p>
+              <p class="par">
+                Использовать помещение после укладки покрытия можно через 24
+                часа.
+              </p>
+            </div>
+          </div>
+          <div class="product-block">
+            <img
+              src="./img/articles/ykladka_kovrolin/klei.jpg"
+              alt="Нанесение клея"
+              class="block__img"
+            />
+            <div class="product">
+              <div class="product__container_two">
+                <h4 class="title">Клей Eurosafe<br />Basic 525</h4>
+                <img
+                  src="./img/articles/ykladka_kovrolin/525.jpg"
+                  alt="Клей Eurosafe Basic 525"
+                  class="product__img"
+                />
+                <hr />
+                <p class="product__sub">
+                  Для помещений<br />больше 50 м<sup><small>2</small></sup>
+                </p>
+              </div>
+              <div class="product__container_two">
+                <h4 class="title">Клей Eurofix<br />Anti Slip 541</h4>
+                <img
+                  src="./img/articles/ykladka_kovrolin/541.jpg"
+                  alt="Клей Eurofix Anti Slip 541"
+                  class="product__img"
+                />
+                <hr />
+                <p class="product__sub">
+                  Для помещений<br />менее 50 м<sup><small>2</small></sup>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="flex-two-columns">
+          <div class="first-column">
+            <h3 class="title">
+              Заказывайте у нас профессиональную<br />укладку напольных покрытий
+            </h3>
+            <p class="par">
+              Укладка коврового напольного покрытия требует профессионализма и
+              опыта. Поэтому мы советуем Вам обращаться за ней к
+              мастерам-укладчикам. Наши менеджеры назначат начало работ с нашей
+              бригадой или помогут Вам проконтролировать работу нанятых
+              мастеров.
+            </p>
+          </div>
+          <div
+            class="second-column order"
+            onclick="showForm()"
+            style="cursor: pointer"
+          >
+            <img
+              src="./img/articles/ykladka_kovrolin/order.jpg"
+              alt="Заказывайте у нас профессиональную укладку напольных покрытий"
+              class="order__img"
+            />
+            <div class="block-top-icon">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="form-container">
-        <div class="form-block">
-            <div class="close-form_btn" onclick="closeForm()">
-                <span></span>
-            </div>
-            <p class="form__title">
-                Бланк заказа работ
-            </p>
-            <form action="php-forms/other-city_services.php" class="form" method="POST" target="_blank">
-                <label class="form-label" for="fio">Введите Ваше имя:*</label>
-                <input type="text" name="fio" placeholder="Имя" required
-                    oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
-                <label class="form-label" for="tel">Введите номер:*</label>
-                <input type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required
-                    oninvalid="this.setCustomValidity('Введите Номер')" oninput="setCustomValidity('')">
-                <label class="form-label" for="city">Город:*</label>
-                <input type="text" name="city" placeholder="Город" required
-                    oninvalid="this.setCustomValidity('Введите Город')" oninput="setCustomValidity('')">
-                <label class="form-label" for="city">Услуга:*</label>
-                <input id="check" name="check" type="hidden" value="" />
-                <textarea name="services" rows="5"></textarea>
-                <input type="submit" value="Отправить" class="submit-btn"
-                    onclick="document.getElementById('check').value = 'secretcode';">
-            </form>
+      <div class="form-block">
+        <div class="close-form_btn" onclick="closeForm()">
+          <span></span>
         </div>
+        <p class="form__title">Бланк заказа работ</p>
+        <form
+          action="php-forms/other-city_services.php"
+          class="form"
+          method="POST"
+          target="_blank"
+        >
+          <label class="form-label" for="fio">Введите Ваше имя:*</label>
+          <input
+            type="text"
+            name="fio"
+            placeholder="Имя"
+            required
+            oninvalid="this.setCustomValidity('Введите Имя')"
+            oninput="setCustomValidity('')"
+          />
+          <label class="form-label" for="tel">Введите номер:*</label>
+          <input
+            type="tel"
+            name="tel"
+            placeholder="+7 (___) ___ - __ - __"
+            required
+            oninvalid="this.setCustomValidity('Введите Номер')"
+            oninput="setCustomValidity('')"
+          />
+          <label class="form-label" for="city">Город:*</label>
+          <input
+            type="text"
+            name="city"
+            placeholder="Город"
+            required
+            oninvalid="this.setCustomValidity('Введите Город')"
+            oninput="setCustomValidity('')"
+          />
+          <label class="form-label" for="city">Услуга:*</label>
+          <input id="check" name="check" type="hidden" value="" />
+          <textarea name="services" rows="5"></textarea>
+          <input
+            type="submit"
+            value="Отправить"
+            class="submit-btn"
+            onclick="document.getElementById('check').value = 'secretcode';"
+          />
+        </form>
+      </div>
     </section>
     <footer class="footer">
-        <? include('./included_files/footer.htm'); ?>
+      <? include('./included_files/footer.htm'); ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="preloader/preloader.js"></script>
@@ -339,36 +504,36 @@
     <script src="js/components/share.js"></script>
 
     <script>
-        const form = document.querySelector('.form-container');
-        const toProductPage = [...document.querySelectorAll('.product__container_two')];
+      const form = document.querySelector(".form-container");
+      const toProductPage = [
+        ...document.querySelectorAll(".product__container_two"),
+      ];
 
-        toProductPage.forEach((item, index) => {
-            item.addEventListener('click', () => {
-                if (index = 0) {
-                    window.location.href = 'https://gelster.ru/himia_kley_kovrolin.htm'
-                } else {
-                    window.location.href = 'https://gelster.ru/himia_kley_fix.htm'
-                }
-
-            });
-        })
-
-        function showForm() {
-            form.classList.add('show-form');
-        };
-
-        function closeForm() {
-            form.classList.remove('show-form');
-        };
-
-        document.addEventListener('keydown', function (e) {
-            if (e.keyCode === 27) {
-                form.classList.remove('show-form');
-            }
+      toProductPage.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          if ((index = 0)) {
+            window.location.href = "https://gelster.ru/himia_kley_kovrolin.htm";
+          } else {
+            window.location.href = "https://gelster.ru/himia_kley_fix.htm";
+          }
         });
+      });
+
+      function showForm() {
+        form.classList.add("show-form");
+      }
+
+      function closeForm() {
+        form.classList.remove("show-form");
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          form.classList.remove("show-form");
+        }
+      });
     </script>
 
     <script src="./included_files/header-style/hamburger.js"></script>
-</body>
-
+  </body>
 </html>

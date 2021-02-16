@@ -33,7 +33,10 @@
     <link rel="stylesheet" href="./plugins/highslide/highslide.css">
     <link rel="stylesheet" href="./css/collection.css">
     <link rel="stylesheet" href="./preloader/preloader.css">
-    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
+     <link
+      rel="stylesheet"
+      href="./included_files/header-style/css/headerr.css"
+    />
     <link rel="stylesheet" href="./included_files/footer-style/footer.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
@@ -443,6 +446,46 @@
                 </div>
             </div>
         </div>
+
+        <div class="articles" id="articles">
+            <h5 class="articles-title">
+                Цветовая палитра Cubu HS
+            </h5>
+            <menu class="articles-btns">
+                <ul class="articles-podkatalog">
+                    <li class="articles-podkatalog-name all chosen-article" onclick="all()"><span class="color"></span>
+                    </li>
+                    <li class="articles-podkatalog-name white" onclick="white()"><span class="color"></span>
+                    </li>
+                </ul>
+            </menu>
+            <div class="articles-container">
+                <div class="article-item white">
+                    <div class="video-act">
+                            <img src="./icons/video_icon.svg" class="video-article" alt="">
+                        </div>
+                    <a href="./img/collections/Dollken-plintus/Cubu/articles/1013.jpg"
+                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
+                        <img src="./img/collections/Dollken-plintus/Cubu/articles/1013.jpg" class="article-img"
+                            alt="Плинтус Dollken Cubu Hamburg Style 1013">
+                        <div class="white-block">
+                            <p class="article-text">1013</p>
+                        </div>
+                        <div class="article-zoom">
+                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
+                        </div>
+                    </a>
+                    <div class="article-video-block">
+                            <video src="./video-article/dollken/cubu_hamburg_style/Hamburger stil 80 1013(5012).mp4" height="468px" width="700px"
+                                preloader="none" loop="loop" controls class="article" muted></video>
+                        </div>
+                </div>
+            </div>
+            <div class="see-all-collections" style="opacity: 0; pointer-events: none;">
+                <p class="text-collections">развернуть коллекцию</p>
+                <img src="./icons/arrow_righ-orange.svg" alt="" class="collections-arrow">
+            </div>
+        </div>
         <div class="dlc-materials">
             <h3 class="dlc-materials__title">
                 к этому материалу вам понадобится
@@ -487,45 +530,6 @@
                 <div class="right-slide" onclick='nextSlide()'>
                     <img src="./icons/arrow-yellow.svg" alt="" class="right-slide__arrow">
                 </div>
-            </div>
-        </div>
-        <div class="articles" id="articles">
-            <h5 class="articles-title">
-                Цветовая палитра Cubu HS
-            </h5>
-            <menu class="articles-btns">
-                <ul class="articles-podkatalog">
-                    <li class="articles-podkatalog-name all chosen-article" onclick="all()"><span class="color"></span>
-                    </li>
-                    <li class="articles-podkatalog-name white" onclick="white()"><span class="color"></span>
-                    </li>
-                </ul>
-            </menu>
-            <div class="articles-container">
-                <div class="article-item white">
-                    <div class="video-act">
-                            <img src="./icons/video_icon.svg" class="video-article" alt="">
-                        </div>
-                    <a href="./img/collections/Dollken-plintus/Cubu/articles/1013.jpg"
-                        onclick="return hs.expand (this, { captionEval: 'this.thumb.alt' })">
-                        <img src="./img/collections/Dollken-plintus/Cubu/articles/1013.jpg" class="article-img"
-                            alt="Плинтус Dollken Cubu Hamburg Style 1013">
-                        <div class="white-block">
-                            <p class="article-text">1013</p>
-                        </div>
-                        <div class="article-zoom">
-                            <img src="./icons/zoom-art.svg" class="article-zoom" alt="">
-                        </div>
-                    </a>
-                    <div class="article-video-block">
-                            <video src="./video-article/dollken/cubu_hamburg_style/Hamburger stil 80 1013(5012).mp4" height="468px" width="700px"
-                                preloader="none" loop="loop" controls class="article" muted></video>
-                        </div>
-                </div>
-            </div>
-            <div class="see-all-collections" style="opacity: 0; pointer-events: none;">
-                <p class="text-collections">развернуть коллекцию</p>
-                <img src="./icons/arrow_righ-orange.svg" alt="" class="collections-arrow">
             </div>
         </div>
         <div class="useful-pages">

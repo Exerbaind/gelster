@@ -1,490 +1,662 @@
 <?php header("Content-Type:text/html;charset=utf-8");?>
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-FVT7JXV');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-FVT7JXV");
     </script>
-    <meta name=" keywords" content="Уход за мармолеумом натуральным линолеумом">
-    <meta name="description"
-        content="Ковролин на сегодняшний день стал очень  распространенным  покрытием для коммерческих помещений: офисов и общественных помещений, гостиниц, ресторанов, кафе и выставочных центров.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./preloader/preloader.css">
-    <link rel="stylesheet" href="./css/uhod_marmoleum.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./plugins/wowjs/animate.css">
-    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
-    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
-    <link rel="stylesheet" href="./js/components/arrow-to-top.css">
-    <link rel="stylesheet" href="./js/components/share.css">
+    <meta
+      name=" keywords"
+      content="Уход за мармолеумом натуральным линолеумом"
+    />
+    <meta
+      name="description"
+      content="Ковролин на сегодняшний день стал очень  распространенным  покрытием для коммерческих помещений: офисов и общественных помещений, гостиниц, ресторанов, кафе и выставочных центров."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./preloader/preloader.css" />
+    <link rel="stylesheet" href="./css/uhod_marmoleum.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./plugins/wowjs/animate.css" />
+    <link
+      rel="stylesheet"
+      href="./included_files/header-style/css/headerr.css"
+    />
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css" />
+    <link rel="stylesheet" href="./js/components/arrow-to-top.css" />
+    <link rel="stylesheet" href="./js/components/share.css" />
     <title>Уход за мармолеумом</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="preloader">
-        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+      <img src="./preloader/tiger.gif" alt="" class="tiger-img" />
     </section>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <header>
-        <? include('./included_files/header.htm'); ?>
+      <? include('./included_files/header.htm'); ?>
     </header>
     <a href="#begin" class="arrow-to-top show-arrow"></a>
 
     <div class="share">
-        <div class="share__icon-bg" onclick="shareList()">
-            <img src="./img/articles/share_icons/share.svg" alt="" class="share__icon">
-        </div>
-        <menu class="share__list">
-            <li>
-                <button class="button" data-sharer="twitter" data-title="Как правильно ухаживать за мармолеумом"
-                    data-hashtags="" data-url="https://gelster.ru/uhod_marmoleum.htm"><img
-                        src="./img/articles/share_icons/twitter.svg" alt="" class="share__icon-social"
-                        title="Поделиться статьей в Twitter"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="vk" data-caption=""
-                    data-title="Как правильно ухаживать за мармолеумом"
-                    data-url="https://gelster.ru/uhod_marmoleum.htm"><img src="./img/articles/share_icons/vk.svg" alt=""
-                        class="share__icon-social" title="Поделиться статьей в VK"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="telegram" data-title="Как правильно ухаживать за мармолеумом"
-                    data-url="https://gelster.ru/uhod_marmoleum.htm" data-to=""><img
-                        src="./img/articles/share_icons/telegram.svg" alt="" class="share__icon-social"
-                        title="Поделиться статьей в Telegram"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="facebook" data-hashtag=""
-                    data-url="https://gelster.ru/uhod_marmoleum.htm"><img src="./img/articles/share_icons/facebook.svg"
-                        alt="" class="share__icon-social" title="Поделиться статьей в FaceBook"></button>
-            </li>
-            <li>
-                <button class="button" data-sharer="whatsapp" data-title="Как правильно ухаживать за мармолеумом"
-                    data-url="https://gelster.ru/uhod_marmoleum.htm"><img src="./img/articles/share_icons/whatsapp.svg"
-                        alt="" class="share__icon-social" title="Поделиться статьей в WhatsApp"></button>
-            </li>
-        </menu>
+      <div class="share__icon-bg" onclick="shareList()">
+        <img
+          src="./img/articles/share_icons/share.svg"
+          alt=""
+          class="share__icon"
+        />
+      </div>
+      <menu class="share__list">
+        <li>
+          <button
+            class="button"
+            data-sharer="twitter"
+            data-title="Как правильно ухаживать за мармолеумом"
+            data-hashtags=""
+            data-url="https://gelster.ru/uhod_marmoleum.htm"
+          >
+            <img
+              src="./img/articles/share_icons/twitter.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в Twitter"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="vk"
+            data-caption=""
+            data-title="Как правильно ухаживать за мармолеумом"
+            data-url="https://gelster.ru/uhod_marmoleum.htm"
+          >
+            <img
+              src="./img/articles/share_icons/vk.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в VK"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="telegram"
+            data-title="Как правильно ухаживать за мармолеумом"
+            data-url="https://gelster.ru/uhod_marmoleum.htm"
+            data-to=""
+          >
+            <img
+              src="./img/articles/share_icons/telegram.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в Telegram"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="facebook"
+            data-hashtag=""
+            data-url="https://gelster.ru/uhod_marmoleum.htm"
+          >
+            <img
+              src="./img/articles/share_icons/facebook.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в FaceBook"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            data-sharer="whatsapp"
+            data-title="Как правильно ухаживать за мармолеумом"
+            data-url="https://gelster.ru/uhod_marmoleum.htm"
+          >
+            <img
+              src="./img/articles/share_icons/whatsapp.svg"
+              alt=""
+              class="share__icon-social"
+              title="Поделиться статьей в WhatsApp"
+            />
+          </button>
+        </li>
+      </menu>
     </div>
 
     <section class="container" id="begin">
-        <div class="first-block wow fadeIn">
-            <div class="fb-grid-container">
-                <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_03.jpg"
-                    alt="Уход за мармолеумом">
-                <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_vinyl_itog2_05.jpg"
-                    alt="Уход за натуральным линолеумом">
-                <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_08.jpg"
-                    alt="Советы по уходу за мармолеумом">
-                <div class="fb-text-container">
-                    <h1 class="title">мармолеум и уход за ним</h1>
-                    <p class="text">Как же правильно ухаживать за натуральным линолеумом? Пыль, грязь, особенно имеющая
-                        зернистую структуру (песок, земля), которая попадает в помещение на подошве уличной обуви,
-                        способствует стиранию поверхностного (защитного) слоя напольного покрытия. Мармолеум, как и
-                        любое другое напольное покрытие, надолго сохраняет свой свежий внешний вид только в случае
-                        правильного и регулярного ухода за ним.
-                    </p>
-                </div>
-            </div>
+      <div class="first-block wow fadeIn">
+        <div class="fb-grid-container">
+          <img
+            src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_03.jpg"
+            alt="Уход за мармолеумом"
+          />
+          <img
+            src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_vinyl_itog2_05.jpg"
+            alt="Уход за натуральным линолеумом"
+          />
+          <img
+            src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_08.jpg"
+            alt="Советы по уходу за мармолеумом"
+          />
+          <div class="fb-text-container">
+            <h1 class="title">мармолеум и уход за ним</h1>
+            <p class="text">
+              Как же правильно ухаживать за натуральным линолеумом? Пыль, грязь,
+              особенно имеющая зернистую структуру (песок, земля), которая
+              попадает в помещение на подошве уличной обуви, способствует
+              стиранию поверхностного (защитного) слоя напольного покрытия.
+              Мармолеум, как и любое другое напольное покрытие, надолго
+              сохраняет свой свежий внешний вид только в случае правильного и
+              регулярного ухода за ним.
+            </p>
+          </div>
         </div>
-        <div class="second-block wow fadeIn">
-            <div class="navigation-block">
-                <menu class="nav-menu">
-                    <ul class="nav-menu-list">
-                        <li class="nav-list-item"><a href="#soveti" class="href-item">общие советы по уходу за
-                                натуральным
-                                линолеумом</a></li>
-                        <li class="nav-list-item"><a href="#uhodReg" class="href-item">уход за натуральным линолеумом
-                                (регулярный)</a></li>
-                        <li class="nav-list-item"><a href="#generalUhod" class="href-item">мармолеум - генеральная
-                                уборка и уход
-                                (восстановление покрытия)</a></li>
-                        <li class="nav-list-item"><a href="#uhodOffice" class="href-item">уход за натуральным линолеумом
-                                в
-                                общественных помещениях</a></li>
-                    </ul>
-                </menu>
-            </div>
+      </div>
+      <div class="second-block wow fadeIn">
+        <div class="navigation-block">
+          <menu class="nav-menu">
+            <ul class="nav-menu-list">
+              <li class="nav-list-item">
+                <a href="#soveti" class="href-item"
+                  >общие советы по уходу за натуральным линолеумом</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="#uhodReg" class="href-item"
+                  >уход за натуральным линолеумом (регулярный)</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="#generalUhod" class="href-item"
+                  >мармолеум - генеральная уборка и уход (восстановление
+                  покрытия)</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="#uhodOffice" class="href-item"
+                  >уход за натуральным линолеумом в общественных помещениях</a
+                >
+              </li>
+            </ul>
+          </menu>
         </div>
-        <div class="third-block wow fadeIn" id="soveti">
-            <div class="tb-grid-container">
-                <div class="tb-text-block">
-                    <h2 class="title">
-                        Советы по уходу за натуральным линолеумом
-                    </h2>
-                    <div class="text">
-                        <p class="par">Всем известно, что за вещами нужно ухаживать: мыть, стирать, гладить, и все это
-                            для того, чтобы они как можно дольше сохраняли свой первоначальный вид, максимально долго
-                            радовали нас. Ухода требуют не только вещи, машины, но и напольные покрытия, а для
-                            сохранения напольного покрытия в идеальном состоянии долгие годы, нужно за ним ухаживать
-                            регулярно и с использованием подходящих средств для очистки.</p>
-                        <p class="par">Около 80% грязи, попадающей на пол, мы заносим с улицы и разносим по всему
-                            помещению. Но примерно 90% этой грязи можно избежать, если положить на входе в помещение
-                            грязезащитный коврик. Чем больше грязи остается на коврике, тем меньше Вам придется убирать
-                            и реже ухаживать за натуральным линолеумом.</p>
-                        <p class="par">Итак, уход за натуральным линолеумом достаточно прост, он не требует больших
-                            денежных вложений и физических затрат, но тем не менее требует ухода.</p>
-                    </div>
-                </div>
-                <div class="tb-img-block">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_12.jpg"
-                        alt="Советы по уходу за мармолеумом">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_15.jpg"
-                        alt="Помощь в уходе за натуральным линолеумом">
-                </div>
+      </div>
+      <div class="third-block wow fadeIn" id="soveti">
+        <div class="tb-grid-container">
+          <div class="tb-text-block">
+            <h2 class="title">Советы по уходу за натуральным линолеумом</h2>
+            <div class="text">
+              <p class="par">
+                Всем известно, что за вещами нужно ухаживать: мыть, стирать,
+                гладить, и все это для того, чтобы они как можно дольше
+                сохраняли свой первоначальный вид, максимально долго радовали
+                нас. Ухода требуют не только вещи, машины, но и напольные
+                покрытия, а для сохранения напольного покрытия в идеальном
+                состоянии долгие годы, нужно за ним ухаживать регулярно и с
+                использованием подходящих средств для очистки.
+              </p>
+              <p class="par">
+                Около 80% грязи, попадающей на пол, мы заносим с улицы и
+                разносим по всему помещению. Но примерно 90% этой грязи можно
+                избежать, если положить на входе в помещение грязезащитный
+                коврик. Чем больше грязи остается на коврике, тем меньше Вам
+                придется убирать и реже ухаживать за натуральным линолеумом.
+              </p>
+              <p class="par">
+                Итак, уход за натуральным линолеумом достаточно прост, он не
+                требует больших денежных вложений и физических затрат, но тем не
+                менее требует ухода.
+              </p>
             </div>
+          </div>
+          <div class="tb-img-block">
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_12.jpg"
+              alt="Советы по уходу за мармолеумом"
+            />
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_15.jpg"
+              alt="Помощь в уходе за натуральным линолеумом"
+            />
+          </div>
         </div>
-        <div class="fourth-block wow fadeIn" id="uhodReg">
-            <div class="fb-grid-container">
-                <div class="fb-text-container">
-                    <div class="title">
-                        Уход за натуральным линолеумом регулярный (поддерживающий)
-                    </div>
-                    <div class="text">
-                        <p class="par">
-                            Натуральный линолеум в квартире, как правило, не подвержен серьезным загрязнениям, поэтому
-                            достаточно периодически проводить уборку пылесосом или теплой водой. Для регулярной очистки
-                            (без забот) и ухода за мармолеумом рекомендуется, при мытье пола, добавлять в теплую воду
-                            небольшое количество жидкого моющего средства Forbo 888 (1:100 или один колпачок на ведро
-                            воды). Очиститель Форбо 888 помогает легко избавиться от различного рода загрязнений на
-                            натуральном линолеуме без особых усилий.
-                        </p>
-                        <p class="par">
-                            Регулярное применение средства для очистки и ухода за напольными покрытиями: Forbo 888
-                            увеличивает срок эксплуатации не только натурального линолеума, но и любого другого
-                            напольного покрытия.
-                        </p>
-                        <p class="par">
-                            При регулярном уходе за мармолемом с помощью мытья теплой водой с очистителем, больше
-                            никаких действий производить с ним не нужно. Иногда, лишь раз в год - два для квартиры, и
-                            раз в полгода - год для коммерческих помещений, мармолеум рекомендуется натирать мастикой.
-                        </p>
-                        <p class="par">
-                            Натуральный линолеум в квартире, как правило, не подвержен серьезным загрязнениям,
-                            поэтому
-                            достаточно периодически проводить уборку пылесосом или теплой водой. Для регулярной
-                            очистки
-                            (без забот) и ухода за мармолеумом рекомендуется, при мытье пола, добавлять в теплую
-                            воду
-                            небольшое количество жидкого моющего средства Forbo 888 (1:100 или один колпачок на
-                            ведро
-                            воды). Очиститель Форбо 888 помогает легко избавиться от различного рода загрязнений на
-                            натуральном линолеуме без особых усилий.
-                        </p>
-                    </div>
-                </div>
-                <div class="fb-right-content">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_18.jpg"
-                        alt="Поддерживающий уход за натуральным линолеумом" class='fb-content-img'>
-                    <h3 class="fb-right-content-title">Регулярная очистка мармолеума</h3>
-                    <div class="fb-bottom-cleaner">
-                        <div class="cleaner-container">
-                            <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_21.jpg" alt=""
-                                class="cleaner-img">
-                            <span class="cleaner-name">Очиститель Forbo 888</span>
-                        </div>
-                        <div class="cleaner-property">
-                            <p class="property">Средство</p>
-                            <span class="property-description">очиститель Forbo 888</span>
-                            <p class="property">Применение</p>
-                            <span class="property-description">при мытье пола, добавлять в теплую воду небольшое
-                                количество жидкого моющего средства Forbo 888
-                            </span>
-                            <p class="property">Дозировка</p>
-                            <span class="property-description">1:100 или один колпачок на ведро воды</span>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="fourth-block wow fadeIn" id="uhodReg">
+        <div class="fb-grid-container">
+          <div class="fb-text-container">
+            <div class="title">
+              Уход за натуральным линолеумом регулярный (поддерживающий)
             </div>
-        </div>
-        <div class="five-block wow fadeIn" id="generalUhod">
-            <div class="fb-grid-container">
-                <div class="fb-content-text">
-                    <h4 class="title">
-                        Генеральная уборка мармолеума (восстановление)
-                    </h4>
-                    <p class="text">
-                        Если Ваш мармолеум мыли без очистителя и на его поверхности появились пятна, дорожки и прочая
-                        грязь, то ее легко убрать выполнив процедуру глубокой очистки. Для удобства мы разделили
-                        восстановление мармолеума на три этапа.
-                    </p>
-                </div>
-                <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_25.jpg"
-                    alt="Генеральная уборка мармолеума" class="fb-img">
+            <div class="text">
+              <p class="par">
+                Натуральный линолеум в квартире, как правило, не подвержен
+                серьезным загрязнениям, поэтому достаточно периодически
+                проводить уборку пылесосом или теплой водой. Для регулярной
+                очистки (без забот) и ухода за мармолеумом рекомендуется, при
+                мытье пола, добавлять в теплую воду небольшое количество жидкого
+                моющего средства Forbo 888 (1:100 или один колпачок на ведро
+                воды). Очиститель Форбо 888 помогает легко избавиться от
+                различного рода загрязнений на натуральном линолеуме без особых
+                усилий.
+              </p>
+              <p class="par">
+                Регулярное применение средства для очистки и ухода за напольными
+                покрытиями: Forbo 888 увеличивает срок эксплуатации не только
+                натурального линолеума, но и любого другого напольного покрытия.
+              </p>
+              <p class="par">
+                При регулярном уходе за мармолемом с помощью мытья теплой водой
+                с очистителем, больше никаких действий производить с ним не
+                нужно. Иногда, лишь раз в год - два для квартиры, и раз в
+                полгода - год для коммерческих помещений, мармолеум
+                рекомендуется натирать мастикой.
+              </p>
+              <p class="par">
+                Натуральный линолеум в квартире, как правило, не подвержен
+                серьезным загрязнениям, поэтому достаточно периодически
+                проводить уборку пылесосом или теплой водой. Для регулярной
+                очистки (без забот) и ухода за мармолеумом рекомендуется, при
+                мытье пола, добавлять в теплую воду небольшое количество жидкого
+                моющего средства Forbo 888 (1:100 или один колпачок на ведро
+                воды). Очиститель Форбо 888 помогает легко избавиться от
+                различного рода загрязнений на натуральном линолеуме без особых
+                усилий.
+              </p>
             </div>
-        </div>
-        <div class="sixth-block wow fadeIn">
-            <div class="grid-section">
-                <div class="items">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_31.jpg"
-                        alt="Нанесение в теплую воду отчистителя Forbo 891">
-                    <div class="item-content">
-                        <h5 class="title">
-                            Этап I
-                        </h5>
-                        <p class="text">Нужно добавить в теплую воду универсальный очиститель Forbo 891 в соотношении
-                            3:1 или 10:1 (в зависимости от загрязненности пола, чем выше степень загрязнения, тем меньше
-                            воды). Нанести разбавленный очиститель на загрязненные участки (протоптанные участки, темные
-                            полосы и пятна) и оставить на 10-15 минут. При сильном загрязнении наносить концентрат
-                            разбавленный 1:1 с водой.</p>
-                    </div>
-                </div>
-                <div class="items">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_28.jpg"
-                        alt="Чистка засаренных мест щеткой">
-                    <div class="item-content">
-                        <h5 class="title">
-                            Этап II
-                        </h5>
-                        <p class="text">Через 10-15 минут эти сильно загрязненные места мармолеума потереть щеткой или
-                            губкой для мытья посуды, пятна сойдут, после этого помыть весь пол теплой водой с
-                            очистителем (1:100, или колпачок на ведро воды) и, после высыхания, 2 раза промыть пол
-                            чистой теплой водой.</p>
-                    </div>
-                </div>
-                <div class="items">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_30.jpg"
-                        alt="Нанесение полимерной мастики Forbo 898">
-                    <div class="item-content">
-                        <h5 class="title">
-                            Этап III
-                        </h5>
-                        <p class="text">Теперь на уже на очищенный и обезжиренный натуральный линолеум (мармолеум)
-                            нанести полимерную мастику Forbo 898 (0,7 л на 30 м2) и распределить ее по всей поверхности
-                            пола круговыми движениями с помощью чистой ткани или специальной шваброй, главное что бы
-                            ткань не оставляла ворсинок, не сыпалась. Следите, что бы мастика распределялась равномерно,
-                            не оставляйте на полу белесых скоплений мастики.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="fb-right-content">
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_18.jpg"
+              alt="Поддерживающий уход за натуральным линолеумом"
+              class="fb-content-img"
+            />
+            <h3 class="fb-right-content-title">
+              Регулярная очистка мармолеума
+            </h3>
+            <div class="fb-bottom-cleaner">
+              <div class="cleaner-container">
+                <img
+                  src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_21.jpg"
+                  alt=""
+                  class="cleaner-img"
+                />
+                <span class="cleaner-name">Очиститель Forbo 888</span>
+              </div>
+              <div class="cleaner-property">
+                <p class="property">Средство</p>
+                <span class="property-description">очиститель Forbo 888</span>
+                <p class="property">Применение</p>
+                <span class="property-description"
+                  >при мытье пола, добавлять в теплую воду небольшое количество
+                  жидкого моющего средства Forbo 888
+                </span>
+                <p class="property">Дозировка</p>
+                <span class="property-description"
+                  >1:100 или один колпачок на ведро воды</span
+                >
+              </div>
             </div>
+          </div>
         </div>
-        <div class="seventh-block wow fadeIn">
-            <div class="sb-grid-section">
-                <div class="sb-content-text">
-                    <h5 class="title">
-                        Советы по нанесению мастики
-                    </h5>
-                    <div class="text">
-                        <p class="par">
-                            После нанесения мастики на мармолеум - дайте ей подсохнуть, постарайтесь в течение получаса
-                            не ходить по натертому полу. Для получения яркого блеска или глубокой матовости можно
-                            нанести мастику в два слоя. В таком случае, после высыхания первого слоя (через 30 минут)
-                            нанесите второй слой мастики.
-                        </p>
-                        <p class="par">
-                            Полимерная мастика Forbo 898 позволяет получить как матовый, так и глянцевый защитный слой,
-                            и придать Вашему натуральному линолеуму новый вид. Мастику можно время от времени менять, и,
-                            в зависимости от Вашего настроения, придавать Вашему полу разный уровень блеска, - один год
-                            Ваш пол будет блестеть, отражать солнечные лучи, а другой - будет иметь глубокий матовый
-                            цвет.
-                        </p>
-                        <p class="par">
-                            После такого восстановления мармолеума, краски на Вашем полу станут более насыщенными и
-                            яркими будет четче прослеживается фактура натурального линолеума. Внешний вид покрытия
-                            обновится, и будет выглядеть, как новый пол.
-                        </p>
-                        <p class="par">
-                            Результаты восстановления натурального линолеума Вы можете <a href="fotogal.htm"
-                                class="par-href">посмотреть тут...</a>
-                        </p>
-                    </div>
-                </div>
-                <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_41.jpg"
-                    alt="Как правильно наносить мастику" class="sb-img">
+      </div>
+      <div class="five-block wow fadeIn" id="generalUhod">
+        <div class="fb-grid-container">
+          <div class="fb-content-text">
+            <h4 class="title">
+              Генеральная уборка мармолеума (восстановление)
+            </h4>
+            <p class="text">
+              Если Ваш мармолеум мыли без очистителя и на его поверхности
+              появились пятна, дорожки и прочая грязь, то ее легко убрать
+              выполнив процедуру глубокой очистки. Для удобства мы разделили
+              восстановление мармолеума на три этапа.
+            </p>
+          </div>
+          <img
+            src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_25.jpg"
+            alt="Генеральная уборка мармолеума"
+            class="fb-img"
+          />
+        </div>
+      </div>
+      <div class="sixth-block wow fadeIn">
+        <div class="grid-section">
+          <div class="items">
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_31.jpg"
+              alt="Нанесение в теплую воду отчистителя Forbo 891"
+            />
+            <div class="item-content">
+              <h5 class="title">Этап I</h5>
+              <p class="text">
+                Нужно добавить в теплую воду универсальный очиститель Forbo 891
+                в соотношении 3:1 или 10:1 (в зависимости от загрязненности
+                пола, чем выше степень загрязнения, тем меньше воды). Нанести
+                разбавленный очиститель на загрязненные участки (протоптанные
+                участки, темные полосы и пятна) и оставить на 10-15 минут. При
+                сильном загрязнении наносить концентрат разбавленный 1:1 с
+                водой.
+              </p>
             </div>
-        </div>
-        <div class="eight-block wow fadeIn" id="uhodOffice">
-            <h5 class="eb-title">
-                Уход за натуральным линолеумом в офисе, магазине и других общественных помещениях
-            </h5>
-            <div class="eb-grid-section">
-                <div class="eb-content-text">
-                    <h5 class="title">
-                        Трехступенчатая система грязезащиты
-                    </h5>
-                    <div class="text">
-                        <p class="par">Если натуральный линолеум настелен в коммерческом помещении, будь то
-                            бизнес-центр, спортивный клуб или магазин, то очищать мармолеум следует ежедневно и с
-                            применением очистителя. Но, прежде всего, необходимо создать эффективную защиту мармолеума
-                            от грязи, которая попадает на поверхность натурального линолеума с улицы. Для этого
-                            существует трехступенчатая система защиты.</p>
-                        <p class="par">Такая система защиты задерживает до 90% уличной грязи и позволяет надолго
-                            сохранит любое напольное покрытие от преждевременного старения и порчи, и более того,
-                            экономит Ваши средства на уход и замену напольных покрытий в дальнейшем.</p>
-                    </div>
-                </div>
-                <div class="eb-steps">
-                    <div class="eb-step-item">
-                        <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48.jpg"
-                            alt="Металлическая решетка при входе" class="steps-img">
-                        <div class="steps-content-text">
-                            <p class="text">
-                                Во-первых, на входе со стороны улицы должна лежать металлическая сетка для очищения
-                                крупной грязи с подошвы обуви.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="eb-step-item">
-                        <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-18.jpg"
-                            alt="Металлическая решетка при входе" class="steps-img">
-                        <div class="steps-content-text">
-                            <p class="text">
-                                Во-вторых: после металлической решетки следует положить плотный «щетинистый» коврик,
-                                который собирает остатки крупной грязи, впитывает влагу и мелкую грязь.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="eb-step-item">
-                        <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-20.jpg"
-                            alt="Металлическая решетка при входе" class="steps-img">
-                        <div class="steps-content-text">
-                            <p class="text">
-                                В-третьих: в последнюю очередь рекомендуется класть ворсовой коврик, который задерживает
-                                и впитывает всю оставшуюся грязь и пыль с обуви.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="eb-step-item">
-                        <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-22.jpg"
-                            alt="Металлическая решетка при входе" class="steps-img">
-                        <div class="steps-content-text">
-                            <p class="text">
-                                Общая длина трех грязезащитных ковриков может доходить до 7-8 метров для крупных
-                                общественных помещений с высокой проходимостью.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="items">
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_28.jpg"
+              alt="Чистка засаренных мест щеткой"
+            />
+            <div class="item-content">
+              <h5 class="title">Этап II</h5>
+              <p class="text">
+                Через 10-15 минут эти сильно загрязненные места мармолеума
+                потереть щеткой или губкой для мытья посуды, пятна сойдут, после
+                этого помыть весь пол теплой водой с очистителем (1:100, или
+                колпачок на ведро воды) и, после высыхания, 2 раза промыть пол
+                чистой теплой водой.
+              </p>
             </div>
-        </div>
-        <div class="ninth-block wow fadeIn">
-            <div class="grid-section">
-                <div class="items">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-24.jpg"
-                        alt="Нанесение и обновление мастики">
-                    <div class="item-content">
-                        <h5 class="title">
-                            Нанесение и обновление мастики
-                        </h5>
-                        <div class="text">
-                            <p class="par">Натирать мастикой мармолеум рекомендуется раз в полгода для общественных
-                                помещений с высокой проходимостью (магазины, спортивные клубы, школы, больницы и пр.) и
-                                раз
-                                в год для помещений с небольшой проходимостью: офисы, подсобные помещения в банках,
-                                торговых
-                                центрах.</p>
-                            <p class="par">Если натуральный линолеум Marmoleum, который Вы выбрали для магазина или
-                                крупного офиса, подвергался в процессе ремонта сильным грязевым нагрузкам, был покрыт
-                                пылью,
-                                или стелился не в самую последнюю очередь, то нанесение мастики просто необходимо
-                                провести
-                                до начала эксплуатации помещения, чтобы защитить и сохранить внешний вид Вашего
-                                натурального линолеума.</p>
-                            <p class="par">Вот несколько несложных советов и рекомендаций по уходу за мармолеумом.</p>
-                            <p class="par">Надеемся, Marmoleum будет радовать Вас своим внешним видом долгие годы! А
-                                если у
-                                Вас в ходе эксплуатации натурального линолеума появятся какие-либо вопросы по уходу
-                                или
-                                восстановлению Marmoleuma, - звоните нам, мы ответим на Ваши вопросы.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="items">
-                    <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-25.jpg"
-                        alt="Проведение регулярной влажной уборки">
-                    <div class="item-content">
-                        <h5 class="title">
-                            Регулярная влажная уборка
-                        </h5>
-                        <div class="text">
-                            <p class="par">Трение подошв, песок и другие абразивные частицы воздействуют не лучшим
-                                образом на напольные покрытия какое бы прочное и износостойкое оно ни было, поэтому
-                                уборка мармолеума и любого другого напольного покрытия в общественных помещениях должна
-                                проходить ежедневно.</p>
-                            <p class="par">Регулярная влажная уборка Marmoleuma моющими средствами (универсальным
-                                средством для очистки и ухода Forbo 888) удаляет мелкие абразивные частицы и создает
-                                легкий защитный слой на поверхности мармолеума. Обратите внимание, что для мытья пола
-                                требуется лишь малая часть очистителя 1 колпачок на ведро воды. Такая очищающая смесь
-                                легко смывает грязь и экономит Ваши средства на восстановление или замену покрытия.
-                                Подходит очиститель Форбо 888 для многих видов напольных покрытий.
-                            </p>
-                            <p class="par">Для глубокой очистки и восстановления мармолеума используйте универсальный
-                                очиститель Forbo 891 и полимерную мастику 898 матового или глянцевого вида.</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="items">
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_rez_30.jpg"
+              alt="Нанесение полимерной мастики Forbo 898"
+            />
+            <div class="item-content">
+              <h5 class="title">Этап III</h5>
+              <p class="text">
+                Теперь на уже на очищенный и обезжиренный натуральный линолеум
+                (мармолеум) нанести полимерную мастику Forbo 898 (0,7 л на 30
+                м2) и распределить ее по всей поверхности пола круговыми
+                движениями с помощью чистой ткани или специальной шваброй,
+                главное что бы ткань не оставляла ворсинок, не сыпалась.
+                Следите, что бы мастика распределялась равномерно, не оставляйте
+                на полу белесых скоплений мастики.
+              </p>
             </div>
+          </div>
         </div>
-        <div class="tenth-block">
-            <h5 class="tb-title">Средства для ухода за натуральным линолеумом</h5>
-            <div class="tb-grid-section">
-                <div class="clean-item">
-                    <a href="himia_yhod.htm" class=link-block>
-                    </a>
-                    <div class="cleaner-info">
-                        <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_73.jpg"
-                            alt="Очиститель Forbo 891">
-                        <div class="info">
-                            <p class="title">
-                                универсальный очиститель
-                            </p>
-                            <span class="name">Forbo 891</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="clean-item">
-                    <a href="himia_yhod.htm" class=link-block>
-                    </a>
-                    <div class="cleaner-info">
-                        <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_75.jpg"
-                            alt="Очиститель Forbo 888">
-                        <div class="info">
-                            <p class="title">
-                                универсальное средство для очистки и ухода
-                            </p>
-                            <span class="name">Forbo 888</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="clean-item">
-                    <a href="himia_yhod.htm" class=link-block>
-                    </a>
-                    <div class="cleaner-info">
-                        <img src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_78.jpg"
-                            alt="Очиститель Forbo 898">
-                        <div class="info">
-                            <p class="title">
-                                мастика<br> полимерная
-                            </p>
-                            <span class="name">Forbo 898</span>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="seventh-block wow fadeIn">
+        <div class="sb-grid-section">
+          <div class="sb-content-text">
+            <h5 class="title">Советы по нанесению мастики</h5>
+            <div class="text">
+              <p class="par">
+                После нанесения мастики на мармолеум - дайте ей подсохнуть,
+                постарайтесь в течение получаса не ходить по натертому полу. Для
+                получения яркого блеска или глубокой матовости можно нанести
+                мастику в два слоя. В таком случае, после высыхания первого слоя
+                (через 30 минут) нанесите второй слой мастики.
+              </p>
+              <p class="par">
+                Полимерная мастика Forbo 898 позволяет получить как матовый, так
+                и глянцевый защитный слой, и придать Вашему натуральному
+                линолеуму новый вид. Мастику можно время от времени менять, и, в
+                зависимости от Вашего настроения, придавать Вашему полу разный
+                уровень блеска, - один год Ваш пол будет блестеть, отражать
+                солнечные лучи, а другой - будет иметь глубокий матовый цвет.
+              </p>
+              <p class="par">
+                После такого восстановления мармолеума, краски на Вашем полу
+                станут более насыщенными и яркими будет четче прослеживается
+                фактура натурального линолеума. Внешний вид покрытия обновится,
+                и будет выглядеть, как новый пол.
+              </p>
+              <p class="par">
+                Результаты восстановления натурального линолеума Вы можете
+                <a href="fotogal.htm" class="par-href">посмотреть тут...</a>
+              </p>
             </div>
+          </div>
+          <img
+            src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_41.jpg"
+            alt="Как правильно наносить мастику"
+            class="sb-img"
+          />
         </div>
+      </div>
+      <div class="eight-block wow fadeIn" id="uhodOffice">
+        <h5 class="eb-title">
+          Уход за натуральным линолеумом в офисе, магазине и других общественных
+          помещениях
+        </h5>
+        <div class="eb-grid-section">
+          <div class="eb-content-text">
+            <h5 class="title">Трехступенчатая система грязезащиты</h5>
+            <div class="text">
+              <p class="par">
+                Если натуральный линолеум настелен в коммерческом помещении,
+                будь то бизнес-центр, спортивный клуб или магазин, то очищать
+                мармолеум следует ежедневно и с применением очистителя. Но,
+                прежде всего, необходимо создать эффективную защиту мармолеума
+                от грязи, которая попадает на поверхность натурального линолеума
+                с улицы. Для этого существует трехступенчатая система защиты.
+              </p>
+              <p class="par">
+                Такая система защиты задерживает до 90% уличной грязи и
+                позволяет надолго сохранит любое напольное покрытие от
+                преждевременного старения и порчи, и более того, экономит Ваши
+                средства на уход и замену напольных покрытий в дальнейшем.
+              </p>
+            </div>
+          </div>
+          <div class="eb-steps">
+            <div class="eb-step-item">
+              <img
+                src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48.jpg"
+                alt="Металлическая решетка при входе"
+                class="steps-img"
+              />
+              <div class="steps-content-text">
+                <p class="text">
+                  Во-первых, на входе со стороны улицы должна лежать
+                  металлическая сетка для очищения крупной грязи с подошвы
+                  обуви.
+                </p>
+              </div>
+            </div>
+            <div class="eb-step-item">
+              <img
+                src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-18.jpg"
+                alt="Металлическая решетка при входе"
+                class="steps-img"
+              />
+              <div class="steps-content-text">
+                <p class="text">
+                  Во-вторых: после металлической решетки следует положить
+                  плотный «щетинистый» коврик, который собирает остатки крупной
+                  грязи, впитывает влагу и мелкую грязь.
+                </p>
+              </div>
+            </div>
+            <div class="eb-step-item">
+              <img
+                src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-20.jpg"
+                alt="Металлическая решетка при входе"
+                class="steps-img"
+              />
+              <div class="steps-content-text">
+                <p class="text">
+                  В-третьих: в последнюю очередь рекомендуется класть ворсовой
+                  коврик, который задерживает и впитывает всю оставшуюся грязь и
+                  пыль с обуви.
+                </p>
+              </div>
+            </div>
+            <div class="eb-step-item">
+              <img
+                src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-22.jpg"
+                alt="Металлическая решетка при входе"
+                class="steps-img"
+              />
+              <div class="steps-content-text">
+                <p class="text">
+                  Общая длина трех грязезащитных ковриков может доходить до 7-8
+                  метров для крупных общественных помещений с высокой
+                  проходимостью.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ninth-block wow fadeIn">
+        <div class="grid-section">
+          <div class="items">
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-24.jpg"
+              alt="Нанесение и обновление мастики"
+            />
+            <div class="item-content">
+              <h5 class="title">Нанесение и обновление мастики</h5>
+              <div class="text">
+                <p class="par">
+                  Натирать мастикой мармолеум рекомендуется раз в полгода для
+                  общественных помещений с высокой проходимостью (магазины,
+                  спортивные клубы, школы, больницы и пр.) и раз в год для
+                  помещений с небольшой проходимостью: офисы, подсобные
+                  помещения в банках, торговых центрах.
+                </p>
+                <p class="par">
+                  Если натуральный линолеум Marmoleum, который Вы выбрали для
+                  магазина или крупного офиса, подвергался в процессе ремонта
+                  сильным грязевым нагрузкам, был покрыт пылью, или стелился не
+                  в самую последнюю очередь, то нанесение мастики просто
+                  необходимо провести до начала эксплуатации помещения, чтобы
+                  защитить и сохранить внешний вид Вашего натурального
+                  линолеума.
+                </p>
+                <p class="par">
+                  Вот несколько несложных советов и рекомендаций по уходу за
+                  мармолеумом.
+                </p>
+                <p class="par">
+                  Надеемся, Marmoleum будет радовать Вас своим внешним видом
+                  долгие годы! А если у Вас в ходе эксплуатации натурального
+                  линолеума появятся какие-либо вопросы по уходу или
+                  восстановлению Marmoleuma, - звоните нам, мы ответим на Ваши
+                  вопросы.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <img
+              src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_48-25.jpg"
+              alt="Проведение регулярной влажной уборки"
+            />
+            <div class="item-content">
+              <h5 class="title">Регулярная влажная уборка</h5>
+              <div class="text">
+                <p class="par">
+                  Трение подошв, песок и другие абразивные частицы воздействуют
+                  не лучшим образом на напольные покрытия какое бы прочное и
+                  износостойкое оно ни было, поэтому уборка мармолеума и любого
+                  другого напольного покрытия в общественных помещениях должна
+                  проходить ежедневно.
+                </p>
+                <p class="par">
+                  Регулярная влажная уборка Marmoleuma моющими средствами
+                  (универсальным средством для очистки и ухода Forbo 888)
+                  удаляет мелкие абразивные частицы и создает легкий защитный
+                  слой на поверхности мармолеума. Обратите внимание, что для
+                  мытья пола требуется лишь малая часть очистителя 1 колпачок на
+                  ведро воды. Такая очищающая смесь легко смывает грязь и
+                  экономит Ваши средства на восстановление или замену покрытия.
+                  Подходит очиститель Форбо 888 для многих видов напольных
+                  покрытий.
+                </p>
+                <p class="par">
+                  Для глубокой очистки и восстановления мармолеума используйте
+                  универсальный очиститель Forbo 891 и полимерную мастику 898
+                  матового или глянцевого вида.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tenth-block">
+        <h5 class="tb-title">Средства для ухода за натуральным линолеумом</h5>
+        <div class="tb-grid-section">
+          <div class="clean-item">
+            <a href="himia_yhod.htm" class="link-block"> </a>
+            <div class="cleaner-info">
+              <img
+                src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_73.jpg"
+                alt="Очиститель Forbo 891"
+              />
+              <div class="info">
+                <p class="title">универсальный очиститель</p>
+                <span class="name">Forbo 891</span>
+              </div>
+            </div>
+          </div>
+          <div class="clean-item">
+            <a href="himia_yhod.htm" class="link-block"> </a>
+            <div class="cleaner-info">
+              <img
+                src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_75.jpg"
+                alt="Очиститель Forbo 888"
+              />
+              <div class="info">
+                <p class="title">универсальное средство для очистки и ухода</p>
+                <span class="name">Forbo 888</span>
+              </div>
+            </div>
+          </div>
+          <div class="clean-item">
+            <a href="himia_yhod.htm" class="link-block"> </a>
+            <div class="cleaner-info">
+              <img
+                src="./img/pages-name-imgs/marmoleum-cleaning/images/Article_marm_78.jpg"
+                alt="Очиститель Forbo 898"
+              />
+              <div class="info">
+                <p class="title">
+                  мастика<br />
+                  полимерная
+                </p>
+                <span class="name">Forbo 898</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
     <footer class="footer">
-        <? include('./included_files/footer.htm'); ?>
+      <? include('./included_files/footer.htm'); ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
@@ -493,10 +665,8 @@
     <script src="js/components/arrow-to-top.js"></script>
     <script src="js/components/share.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
     </script>
     <script src="./included_files/header-style/hamburger.js"></script>
-
-</body>
-
+  </body>
 </html>

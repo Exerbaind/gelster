@@ -1,731 +1,1032 @@
 <?php header("Content-Type:text/html;charset=utf-8");?>
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-FVT7JXV');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-FVT7JXV");
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="О компании ТРК Гельстер">
-    <meta name="description"
-        content="Однажды мы поняли, что можем сами творить историю и создать компанию, которая будет на рынке примером для других, лучшей в отрасли. Компанию с отменным сервисом, с проверенными и качественными материалами, которые долгие годы будут служить нашим клиентам. И тогда, и сейчас мы твердо уверены в том, что своей работой можем сделать мир лучше. И делаем его таковым каждый день, когда приходим на работу.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./preloader/preloader.css">
-    <link rel="stylesheet" href="css/about-company.css">
-    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="О компании ТРК Гельстер" />
+    <meta
+      name="description"
+      content="Однажды мы поняли, что можем сами творить историю и создать компанию, которая будет на рынке примером для других, лучшей в отрасли. Компанию с отменным сервисом, с проверенными и качественными материалами, которые долгие годы будут служить нашим клиентам. И тогда, и сейчас мы твердо уверены в том, что своей работой можем сделать мир лучше. И делаем его таковым каждый день, когда приходим на работу."
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./preloader/preloader.css" />
+    <link rel="stylesheet" href="css/about-company.css" />
+    <link
+      rel="stylesheet"
+      href="./included_files/header-style/css/headerr.css"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css" />
     <title>Торгово-строительная компания Гельстер</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="preloader">
-        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+      <img src="./preloader/tiger.gif" alt="" class="tiger-img" />
     </section>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <header>
-        <? include('./included_files/header.htm'); ?>
+      <? include('./included_files/header.htm'); ?>
     </header>
     <section class="section-main">
-        <div class="header-block" style="background: url(./img/about/main.jpg);">
-            <div class="header-block__content">
-                <h1 class="header-block__title">
-                    О компании
-                </h1>
-            </div>
+      <div class="header-block" style="background: url(./img/about/main.jpg)">
+        <div class="header-block__content">
+          <h1 class="header-block__title">О компании</h1>
         </div>
-        <div class="container">
-            <div class="intro">
-                <img src="./img/about/owners.jpg" alt="Владельцы компании Гельстер" class="intro_img">
-                <div class="intro_info">
-                    <img src="./img/about/arrow-big-left.svg" alt="" class="info_arrow-left">
-                    <div class="info_text">
-                        <h1 class="text_title">СМУЩЕНКО Михаил и Оксана</h1>
-                        <p class="par">Успешный бизнес – это не только про деньги. Это всегда про цели и ценности.
-                            Поэтому мы решили поделиться с Вами тем, что важно для сотрудников «Гельстер», чем они
-                            руководствуются при работе с клиентами и партнерами, что их мотивирует.
-                        </p>
-                        <p class="par">
-                            Рассказать об этом мы решили через интервью с основателями бизнеса Михаилом и Оксаной
-                            Смущенко. В нем они рассказали, что для них значит компания «Гельстер».
-                        </p>
-                    </div>
-                    <img src="./img/about/cite.svg" alt="" class="quatation">
-                </div>
+      </div>
+      <div class="container">
+        <div class="intro">
+          <img
+            src="./img/about/owners.jpg"
+            alt="Владельцы компании Гельстер"
+            class="intro_img"
+          />
+          <div class="intro_info">
+            <img
+              src="./img/about/arrow-big-left.svg"
+              alt=""
+              class="info_arrow-left"
+            />
+            <div class="info_text">
+              <h1 class="text_title">СМУЩЕНКО Михаил и Оксана</h1>
+              <p class="par">
+                Успешный бизнес – это не только про деньги. Это всегда про цели
+                и ценности. Поэтому мы решили поделиться с Вами тем, что важно
+                для сотрудников «Гельстер», чем они руководствуются при работе с
+                клиентами и партнерами, что их мотивирует.
+              </p>
+              <p class="par">
+                Рассказать об этом мы решили через интервью с основателями
+                бизнеса Михаилом и Оксаной Смущенко. В нем они рассказали, что
+                для них значит компания «Гельстер».
+              </p>
             </div>
-
-            <div class="reason">
-                <div class="reason_info">
-                    <img src="./img/about/arrow-line-big.svg" alt="" class="info_right">
-                    <div class="info_text">
-                        <h1 class="text_title">Почему мы решили открыть свою компанию:</h1>
-                        <p class="par">Однажды мы поняли, что можем сами творить историю и создать компанию, которая
-                            будет на рынке примером для других, лучшей в отрасли. Компанию с отменным сервисом, с
-                            проверенными и качественными материалами, которые долгие годы будут служить нашим клиентам.
-                            И тогда, и сейчас мы твердо уверены в том, что своей работой можем сделать мир лучше. И
-                            делаем его таковым каждый день, когда приходим на работу.
-                        </p>
-                    </div>
-                    <div class="quo_block">
-                        <p class="quo_top">“</p>
-                        <p class="quo">И тогда, и сейчас мы твердо уверены в том, что своей работой можем сделать мир
-                            лучше. И делаем его таковым каждый день, когда приходим на работу.</p>
-                        <p class="quo_bottom">”</p>
-                    </div>
-                </div>
-                <img src="./img/about/open.jpg" alt="Причина открытия своей компании" class="reason_img">
-            </div>
-
-            <div class="small_block">
-                <img src="./img/about/flooring.jpg" alt="Почему напольные покрытия" class="block_img">
-                <div class="block_text">
-                    <h3 class="title">
-                        Почему напольные покрытия
-                    </h3>
-                    <p class="par">
-                        Потому что мир напольных покрытий безграничен и прекрасен. Человек соприкасается с полом каждый
-                        день, везде, где бы он ни был. Но порой, то, что окружает нас постоянно – мы даже не замечаем,
-                        как воздух. Но на качества этого «воздуха» и его безопасность мы можем влиять. Так и в мире
-                        полов – нам нравится отрывать людям этот прекрасный мир красивых и безопасных покрытий. Обращать
-                        на него внимание, доносить ценность качественного пола.
-                    </p>
-                </div>
-            </div>
-            <div class="big_block">
-                <div class="block_info">
-                    <img src="./img/about/arrow-line-small.svg" alt="" class="arrow_small">
-                    <div class="block_text pr_150">
-                        <h3 class="title">
-                            Бизнес для нас - это...
-                        </h3>
-                        <p class="par">
-                            Возможность влиять на происходящие события и принимать ответственные решения в отношении
-                            проектов, сотрудников, методов достижения результата. Мы сами устанавливаем высокую планку
-                            для
-                            себя и своей команды и делаем все, чтобы ее достичь. Нам не безразлично, какие напольные
-                            покрытия будут лежать на объектах наших клиентов. Мы хотим влиять на результат, на судьбы
-                            наших
-                            клиентов и их объектов, и таким образом внести свой вклад в историю.
-                        </p>
-                    </div>
-                    <div class="block_text mt_60 pr_85">
-                        <h3 class="title">
-                            Что мы любим в этом бизнесе
-                        </h3>
-                        <p class="par">
-                            То, что каждый день ставит перед нами новые сложные, но интересные задачи, которые мы с
-                            довольствием решаем. Ежедневное общение с клиентами и сотрудниками - это новые знания и
-                            открытия, это эмоции и новые знакомства. После реализации проекта, наступает гордость за то,
-                            что мы сделали, за работу, которую провели. Это то, что вдохновляет и окрыляет каждый день.
-                        </p>
-                    </div>
-                </div>
-                <div class="block_quo">
-                    <img src="./img/about/is.jpg" alt="Что такое бизнес" class="quo_img">
-                    <div class="quo_block">
-                        <p class="quo_top">“</p>
-                        <p class="quo">Мы сами устанавливаем высокую планку для себя и своей команды и делаем все, чтобы
-                            ее достичь. </p>
-                        <p class="quo_bottom">”</p>
-                    </div>
-                </div>
-            </div>
-            <div class="small_block">
-                <img src="./img/about/busines.jpg" alt="Каким бы мы хотели видеть этот бизнес" class="block_img">
-                <div class="block_text">
-                    <h3 class="title">
-                        Мы бы хотели видеть этот бизнес
-                    </h3>
-                    <p class="par">
-                        Сильным, уверенным, развивающимся, стойким к нестабильности рынка и экономики. Полным новых
-                        возможностей и перспектив для нас, наших сотрудников и наших клиентов.
-                    </p>
-                </div>
-            </div>
-            <div class="wish">
-                <div class="block_info">
-                    <img src="./img/about/arrow-line-small.svg" alt="" class="arrow_small">
-                    <div class="block_text pr_150">
-                        <h3 class="title">
-                            Наша мечта
-                        </h3>
-                        <p class="par">
-                            Сделать мир вокруг красивым, безопасным, качественным. Мир, где во главе угла стоит
-                            превосходный результат, а не максимально низкая стоимость товаров и услуг, а что получится в
-                            итоге – не важно.
-                        </p>
-                        <p class="par">
-                            Еще мы мечтаем открыть производство нового напольного покрытия, которого еще нет на рынке,
-                            сделать его полезным для наших клиентов, уникальным и функциональным, внедрить его в мир
-                            напольных покрытий и почувствовать любовь потребителей к этому продукту.
-                        </p>
-                    </div>
-                </div>
-                <img src="./img/about/wishes.jpg" alt="Наша мечта" class="wish_img">
-            </div>
-            <div class="review">
-                <div class="reviewer show">
-                    <div class="review_worker">
-                        <img src="./img/about/Andrey.jpg" alt="Андрей Станцель заместитель генерального директора"
-                            class="worker_photo">
-                        <h3 class="worker_name">СТАНЦЕЛЬ Андрей</h3>
-                        <hr>
-                        <p class="worker_post">заместитель ген. директора</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел продаж</h4>
-                        <div class="answer_text">
-                            <h4 class="title">В работе меня вдохновляет</h4>
-                            <p class="par">
-                                возможность вести клиента за собой, предлагать лучшее решение к его потребностям. Часто
-                                бывает так, что сам клиент не достаточно хорошо разбирается в тематике покрытий для
-                                пола. В связи с этим его личный выбор может быть неверным. И вот здесь начинается
-                                процесс вовлечения клиента в яркий и многообразный мир напольных покрытий, он становится
-                                соучастником в рассмотрении различных вариантов, которые предлагает современный мир и
-                                его технологии. А я в этот момент становлюсь проводником в этом пространстве покрытий, и
-                                мы вместе принимаем решение в пользу того или иного продукта.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Ulia.jpg" alt="Юлия Соколова менеджер по снабжению" class="worker_photo">
-                        <h3 class="worker_name">СОКОЛОВА Юлия</h3>
-                        <hr>
-                        <p class="worker_post">менеджер по снабжению</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел снабжения</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Мои коллеги для меня – это </h4>
-                            <p class="par">
-                                дружная команда, в которой каждый увлечен своим делом, увлекательные беседы на самые
-                                разные темы, это активные и интересные корпоративы. Это поддержка в трудных ситуациях,
-                                коллективный и творческий подход к решению задач, интересные проекты и дружный
-                                коллектив. А еще мои коллеги – это старательный выбор подарков друг другу на праздники,
-                                это задержаться на работе, чтобы всем вместе поиграть в настольные игры. Мои коллеги для
-                                меня – это те люди, по которым я буду скучать в отпуске!
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Tanya.jpg" alt="Татьяна Пшеничная менеджер отдела рекламы"
-                            class="worker_photo">
-                        <h3 class="worker_name">ПШЕНИЧНАЯ Татьяна</h3>
-                        <hr>
-                        <p class="worker_post">менеджер отдела рекламы</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел рекламы</h4>
-                        <div class="answer_text">
-                            <h4 class="title">После выходных я</h4>
-                            <p class="par">
-                                прихожу на работу с хорошим настроением. Как правило, на выходных появляются интересные
-                                идеи, которые хочется тут же воплотить в жизнь. Поэтому с утра в понедельник уже
-                                заряжена на работу.
-                            </p>
-                            <p class="par">
-                                Меня очень вдохновляет то, что мы делаем, работа не отбирает, а добавляет мне силы и
-                                энергию. Хочется достигать большего и стремиться выше.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Vanya.jpg" alt="Иван Логинов руководитель отдела продаж"
-                            class="worker_photo">
-                        <h3 class="worker_name">ЛОГИНОВ Иван</h3>
-                        <hr>
-                        <p class="worker_post">Руководитель отдела продаж</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел продаж</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Самое классное в моей работе</h4>
-                            <p class="par">
-                                1. Отличный подбор сотрудников, все очень отзывчивые и всегда приходят на помощь!<br>
-                                2. Руководители всегда заботятся о сотрудниках, проводят корпоративы и праздники.
-                                Записывают на обучение, которое в процессе очень помогает. Ты становишься экспертом не
-                                только в теории, но и в практике.<br>
-                                3. Очень интересная мотивация, каждый месяц подводим итоги, и выявляется лучший
-                                сотрудник, получаю подарки!<br>
-                                4. Комфортный и уютный офис, много разных образцов, которые с охотой показываешь
-                                клиентам, не стыдно пригласить в такой офис!<br>
-                                5. Отличная реклама в Интернете, многие про нас знают и с уважением относятся. Есть
-                                входящие заявки, это очень радует, что нас находят в интернете, среди многих компаний
-                                выбирают именно нас!<br>
-                                6. Отдел снабжения, всегда находит выход из любых запросов, всегда есть что предложить и
-                                посчитать самые выгодные доставки.<br>
-                                7. Люблю вести переговоры и общение с клиентами, вся информация есть, прайсы, остатки,
-                                акции.<br>
-                                8. Отличное рабочее место, новые компьютеры!
-                            </p>
-                            <p class="par">
-                                Очень доволен работой всего коллектива и рад, что тут работаю!
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Nastya.jpg" alt="Анастасия Дятлова графический дизайнер"
-                            class="worker_photo">
-                        <h3 class="worker_name">ДЯТЛОВА Анастасия</h3>
-                        <hr>
-                        <p class="worker_post">Графический дизайнер</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел рекламы</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Мне нравится в моей работе</h4>
-                            <p class="par">
-                                сам процесс: когда приходит очередная задача, зачастую что-то вообще неожиданное. Это
-                                может быть новый проект или даже новое направление в деятельности компании. Задачи
-                                дизайнера у нас совершенно разные: от печатной продукции, календаря, презентации до
-                                нового лендинга или титров для ролика. Ну и конечно большое удовольствие работать в
-                                команде, где позитивный настрой, поддержка коллег и горящие глаза не только
-                                приветствуются, но являются неотъемлемой частью будней.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Vika.jpg" alt="Виктория Капустина офис-менеджер" class="worker_photo">
-                        <h3 class="worker_name">КАПУСТИНА Виктория</h3>
-                        <hr>
-                        <p class="worker_post">офис-менеджер</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел снабжения</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Я каждый раз радуюсь, когда</h4>
-                            <p class="par">
-                                получается выполнить за день все поставленные задачи, появляющиеся трудности и проблемы
-                                удается быстро решить. И так же каждый раз радуюсь, когда вижу полученные оплаты от
-                                клиентов, потому что это значит, что работа всей компании приводит к результату.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Zhenya.jpg" alt="Евгения Алейникова проектный менеджер"
-                            class="worker_photo">
-                        <h3 class="worker_name">АЛЕЙНИКОВА Евгения</h3>
-                        <hr>
-                        <p class="worker_post">Проектный менеджер</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел продаж</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Я люблю, когда </h4>
-                            <p class="par">
-                                завершаются интересные крупные проекты, и я звоню клиентам, чтобы узнать, довольны ли
-                                они результатом. Я уверена в качестве товаров, которые мы поставляем и в качестве услуг,
-                                которые мы осуществляем, поэтому я ожидаю отличный результат от проделанной работы. Мне,
-                                как и всем людям, приятно слышать похвалу и позитивный отклик клиента. Так я вижу, что я
-                                приношу пользу. Поэтому это важная часть моей работы и одна из самых любимых.
-                            </p>
-                            <p class="par">
-                                Еще я люблю встречи с клиентами. Мне нравится знакомиться с ними лично, видеть их глаза.
-                                Реальное знакомство помогает наладить более прочный контакт с клиентом, что полезно для
-                                работы с ним в будущем.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Dima.jpg" alt="Дмитрий Шамаль веб-разработчик" class="worker_photo">
-                        <h3 class="worker_name">ШАМАЛЬ Дмитрий</h3>
-                        <hr>
-                        <p class="worker_post">веб-разработчик</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел рекламы</h4>
-                        <div class="answer_text">
-                            <h4 class="title">В этой компании я чувствую себя</h4>
-                            <p class="par">
-                                нужным. Чувствую себя тем, кто несет ответственность за проделанную работу, которая
-                                затем идет в массы и создает имидж нашей компании.
-                            </p>
-                            <p class="par">
-                                Так же я чувствую себя свободным. У меня большой спектр задач, между которыми могу
-                                переключаться и не чувствовать дискомфорта из-за выполнения однообразных и рутинных
-                                заданий. Это помогает лучше думать и быстрее находить оптимальные решения. То, что я
-                                могу предлагать новые идеи и реализовывать их, добавляет мне энергии и мотивации.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Maksim.jpg" alt="Максим Малинин менеджер по продажам"
-                            class="worker_photo">
-                        <h3 class="worker_name">МАЛИНИН Максим</h3>
-                        <hr>
-                        <p class="worker_post">менеджер по продажам</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел продаж</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Самый вдохновляющий момент в моей работе для меня – </h4>
-                            <p class="par">
-                                это общение с клиентами, потому что я очень общительный человек, и мне нравится помогать
-                                людям в решении их вопросов, искать варианты решений проблем, и я чувствую
-                                удовлетворение от проделанной работы.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/about_ant.jpg" alt="Антон Голополосов менеджер по продажам"
-                            class="worker_photo">
-                        <h3 class="worker_name">ГОЛОПОЛОСОВ Антон</h3>
-                        <hr>
-                        <p class="worker_post">менеджер по продажам</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел продаж</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Я решил устроиться на работу в «Гельстер», </h4>
-                            <p class="par">
-                                потому что для меня было важно, чтобы компания повышала квалификацию своих сотрудников и
-                                была заинтересована в профессиональном и личностном росте специалистов. Я познакомился с
-                                будущими коллегами из «Гельстер» на обучении в тренинг-центре фабрики-производителя. И
-                                такое первое знакомство с компанией, с коллективом произвело на меня огромное
-                                впечатление. После этой встречи я начал изучать компанию: направления работы, материалы,
-                                корпоративную культуру. Все что я узнал о компании, подтолкнуло меня отправить резюме и
-                                устроиться на работу в эту компанию.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/about-konst.jpg" alt="Константин Маркович видеооператор" class="worker_photo">
-                        <h3 class="worker_name">МАРКОВИЧ Константин</h3>
-                        <hr>
-                        <p class="worker_post">видеооператор</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел рекламы</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Когда я впервые пришел в компанию, </h4>
-                            <p class="par">
-                                меня приятно удивило отношение сотрудников друг к другу и ко мне, как к новому
-                                сотруднику. Все были приветливые. Это позволило быстро влиться в коллектив.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                                <li class="dots__item"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-                <div class="reviewer">
-                    <div class="review_worker">
-                        <img src="./img/about/Vanya.jpg" alt="Иван Логинов руководитель отдела продаж"
-                            class="worker_photo">
-                        <h3 class="worker_name">ЛОГИНОВ Иван</h3>
-                        <hr>
-                        <p class="worker_post">Руководитель отдела продаж</p>
-                    </div>
-                    <div class="review_answer">
-                        <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg">
-                        <img src="./img/about/cite-green-gray.svg" alt="" class="answer_quo">
-                        <h4 class="answer_team">Отдел продаж</h4>
-                        <div class="answer_text">
-                            <h4 class="title">Самое сложное в моей работе – </h4>
-                            <p class="par">
-                                общаться с такими клиентами, которым нужен очень срочно материал, которого нет в
-                                наличии, например, заказные позиции. Такая спешка негативно сказывается на выборе
-                                клиента!
-                            </p>
-                            <p class="par">
-                                Еще один сложный момент – это пересогласование материала. Довольно часто клиенты не
-                                понимают тех или иных характеристик напольных покрытий и отказываются разбираться в них.
-                                В результате они делают неправильный выбор, потому что не доверились экспертам!
-                            </p>
-                            <p class="par">
-                                И еще одна трудность – курс валют, который регулярно растет. Это очень сильно
-                                сказывается на проектах, которых ведешь не один год. Цена, которая заложена была
-                                изначальна, будет не актуальна на момент покупки. А это чревато пересогласованиями
-                                данного материала. И некоторые заказчики делают выбор в пользу самого выгодного товара
-                                по цене, а не по качеству.
-                            </p>
-                        </div>
-                        <div class="answer_switcher">
-                            <img src="./img/icons/slider.png" alt="" class="slide_prev" onclick="prevSlide()">
-                            <ul class="dots">
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item"></li>
-                                <li class="dots__item filled"></li>
-                            </ul>
-                            <img src="./img/icons/slider.png" alt="" class="slide_next" onclick="nextSlide()">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img src="./img/about/cite.svg" alt="" class="quatation" />
+          </div>
         </div>
+
+        <div class="reason">
+          <div class="reason_info">
+            <img
+              src="./img/about/arrow-line-big.svg"
+              alt=""
+              class="info_right"
+            />
+            <div class="info_text">
+              <h1 class="text_title">
+                Почему мы решили открыть свою компанию:
+              </h1>
+              <p class="par">
+                Однажды мы поняли, что можем сами творить историю и создать
+                компанию, которая будет на рынке примером для других, лучшей в
+                отрасли. Компанию с отменным сервисом, с проверенными и
+                качественными материалами, которые долгие годы будут служить
+                нашим клиентам. И тогда, и сейчас мы твердо уверены в том, что
+                своей работой можем сделать мир лучше. И делаем его таковым
+                каждый день, когда приходим на работу.
+              </p>
+            </div>
+            <div class="quo_block">
+              <p class="quo_top">“</p>
+              <p class="quo">
+                И тогда, и сейчас мы твердо уверены в том, что своей работой
+                можем сделать мир лучше. И делаем его таковым каждый день, когда
+                приходим на работу.
+              </p>
+              <p class="quo_bottom">”</p>
+            </div>
+          </div>
+          <img
+            src="./img/about/open.jpg"
+            alt="Причина открытия своей компании"
+            class="reason_img"
+          />
+        </div>
+
+        <div class="small_block">
+          <img
+            src="./img/about/flooring.jpg"
+            alt="Почему напольные покрытия"
+            class="block_img"
+          />
+          <div class="block_text">
+            <h3 class="title">Почему напольные покрытия</h3>
+            <p class="par">
+              Потому что мир напольных покрытий безграничен и прекрасен. Человек
+              соприкасается с полом каждый день, везде, где бы он ни был. Но
+              порой, то, что окружает нас постоянно – мы даже не замечаем, как
+              воздух. Но на качества этого «воздуха» и его безопасность мы можем
+              влиять. Так и в мире полов – нам нравится отрывать людям этот
+              прекрасный мир красивых и безопасных покрытий. Обращать на него
+              внимание, доносить ценность качественного пола.
+            </p>
+          </div>
+        </div>
+        <div class="big_block">
+          <div class="block_info">
+            <img
+              src="./img/about/arrow-line-small.svg"
+              alt=""
+              class="arrow_small"
+            />
+            <div class="block_text pr_150">
+              <h3 class="title">Бизнес для нас - это...</h3>
+              <p class="par">
+                Возможность влиять на происходящие события и принимать
+                ответственные решения в отношении проектов, сотрудников, методов
+                достижения результата. Мы сами устанавливаем высокую планку для
+                себя и своей команды и делаем все, чтобы ее достичь. Нам не
+                безразлично, какие напольные покрытия будут лежать на объектах
+                наших клиентов. Мы хотим влиять на результат, на судьбы наших
+                клиентов и их объектов, и таким образом внести свой вклад в
+                историю.
+              </p>
+            </div>
+            <div class="block_text mt_60 pr_85">
+              <h3 class="title">Что мы любим в этом бизнесе</h3>
+              <p class="par">
+                То, что каждый день ставит перед нами новые сложные, но
+                интересные задачи, которые мы с довольствием решаем. Ежедневное
+                общение с клиентами и сотрудниками - это новые знания и
+                открытия, это эмоции и новые знакомства. После реализации
+                проекта, наступает гордость за то, что мы сделали, за работу,
+                которую провели. Это то, что вдохновляет и окрыляет каждый день.
+              </p>
+            </div>
+          </div>
+          <div class="block_quo">
+            <img
+              src="./img/about/is.jpg"
+              alt="Что такое бизнес"
+              class="quo_img"
+            />
+            <div class="quo_block">
+              <p class="quo_top">“</p>
+              <p class="quo">
+                Мы сами устанавливаем высокую планку для себя и своей команды и
+                делаем все, чтобы ее достичь.
+              </p>
+              <p class="quo_bottom">”</p>
+            </div>
+          </div>
+        </div>
+        <div class="small_block">
+          <img
+            src="./img/about/busines.jpg"
+            alt="Каким бы мы хотели видеть этот бизнес"
+            class="block_img"
+          />
+          <div class="block_text">
+            <h3 class="title">Мы бы хотели видеть этот бизнес</h3>
+            <p class="par">
+              Сильным, уверенным, развивающимся, стойким к нестабильности рынка
+              и экономики. Полным новых возможностей и перспектив для нас, наших
+              сотрудников и наших клиентов.
+            </p>
+          </div>
+        </div>
+        <div class="wish">
+          <div class="block_info">
+            <img
+              src="./img/about/arrow-line-small.svg"
+              alt=""
+              class="arrow_small"
+            />
+            <div class="block_text pr_150">
+              <h3 class="title">Наша мечта</h3>
+              <p class="par">
+                Сделать мир вокруг красивым, безопасным, качественным. Мир, где
+                во главе угла стоит превосходный результат, а не максимально
+                низкая стоимость товаров и услуг, а что получится в итоге – не
+                важно.
+              </p>
+              <p class="par">
+                Еще мы мечтаем открыть производство нового напольного покрытия,
+                которого еще нет на рынке, сделать его полезным для наших
+                клиентов, уникальным и функциональным, внедрить его в мир
+                напольных покрытий и почувствовать любовь потребителей к этому
+                продукту.
+              </p>
+            </div>
+          </div>
+          <img src="./img/about/wishes.jpg" alt="Наша мечта" class="wish_img" />
+        </div>
+        <div class="review">
+          <div class="reviewer show">
+            <div class="review_worker">
+              <img
+                src="./img/about/Andrey.jpg"
+                alt="Андрей Станцель заместитель генерального директора"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">СТАНЦЕЛЬ Андрей</h3>
+              <hr />
+              <p class="worker_post">заместитель ген. директора</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел продаж</h4>
+              <div class="answer_text">
+                <h4 class="title">В работе меня вдохновляет</h4>
+                <p class="par">
+                  возможность вести клиента за собой, предлагать лучшее решение
+                  к его потребностям. Часто бывает так, что сам клиент не
+                  достаточно хорошо разбирается в тематике покрытий для пола. В
+                  связи с этим его личный выбор может быть неверным. И вот здесь
+                  начинается процесс вовлечения клиента в яркий и многообразный
+                  мир напольных покрытий, он становится соучастником в
+                  рассмотрении различных вариантов, которые предлагает
+                  современный мир и его технологии. А я в этот момент становлюсь
+                  проводником в этом пространстве покрытий, и мы вместе
+                  принимаем решение в пользу того или иного продукта.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Ulia.jpg"
+                alt="Юлия Соколова менеджер по снабжению"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">СОКОЛОВА Юлия</h3>
+              <hr />
+              <p class="worker_post">менеджер по снабжению</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел снабжения</h4>
+              <div class="answer_text">
+                <h4 class="title">Мои коллеги для меня – это</h4>
+                <p class="par">
+                  дружная команда, в которой каждый увлечен своим делом,
+                  увлекательные беседы на самые разные темы, это активные и
+                  интересные корпоративы. Это поддержка в трудных ситуациях,
+                  коллективный и творческий подход к решению задач, интересные
+                  проекты и дружный коллектив. А еще мои коллеги – это
+                  старательный выбор подарков друг другу на праздники, это
+                  задержаться на работе, чтобы всем вместе поиграть в настольные
+                  игры. Мои коллеги для меня – это те люди, по которым я буду
+                  скучать в отпуске!
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Tanya.jpg"
+                alt="Татьяна Пшеничная менеджер отдела рекламы"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">ПШЕНИЧНАЯ Татьяна</h3>
+              <hr />
+              <p class="worker_post">менеджер отдела рекламы</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел рекламы</h4>
+              <div class="answer_text">
+                <h4 class="title">После выходных я</h4>
+                <p class="par">
+                  прихожу на работу с хорошим настроением. Как правило, на
+                  выходных появляются интересные идеи, которые хочется тут же
+                  воплотить в жизнь. Поэтому с утра в понедельник уже заряжена
+                  на работу.
+                </p>
+                <p class="par">
+                  Меня очень вдохновляет то, что мы делаем, работа не отбирает,
+                  а добавляет мне силы и энергию. Хочется достигать большего и
+                  стремиться выше.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Vanya.jpg"
+                alt="Иван Логинов руководитель отдела продаж"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">ЛОГИНОВ Иван</h3>
+              <hr />
+              <p class="worker_post">Руководитель отдела продаж</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел продаж</h4>
+              <div class="answer_text">
+                <h4 class="title">Самое классное в моей работе</h4>
+                <p class="par">
+                  1. Отличный подбор сотрудников, все очень отзывчивые и всегда
+                  приходят на помощь!<br />
+                  2. Руководители всегда заботятся о сотрудниках, проводят
+                  корпоративы и праздники. Записывают на обучение, которое в
+                  процессе очень помогает. Ты становишься экспертом не только в
+                  теории, но и в практике.<br />
+                  3. Очень интересная мотивация, каждый месяц подводим итоги, и
+                  выявляется лучший сотрудник, получаю подарки!<br />
+                  4. Комфортный и уютный офис, много разных образцов, которые с
+                  охотой показываешь клиентам, не стыдно пригласить в такой
+                  офис!<br />
+                  5. Отличная реклама в Интернете, многие про нас знают и с
+                  уважением относятся. Есть входящие заявки, это очень радует,
+                  что нас находят в интернете, среди многих компаний выбирают
+                  именно нас!<br />
+                  6. Отдел снабжения, всегда находит выход из любых запросов,
+                  всегда есть что предложить и посчитать самые выгодные
+                  доставки.<br />
+                  7. Люблю вести переговоры и общение с клиентами, вся
+                  информация есть, прайсы, остатки, акции.<br />
+                  8. Отличное рабочее место, новые компьютеры!
+                </p>
+                <p class="par">
+                  Очень доволен работой всего коллектива и рад, что тут работаю!
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Nastya.jpg"
+                alt="Анастасия Дятлова графический дизайнер"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">ДЯТЛОВА Анастасия</h3>
+              <hr />
+              <p class="worker_post">Графический дизайнер</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел рекламы</h4>
+              <div class="answer_text">
+                <h4 class="title">Мне нравится в моей работе</h4>
+                <p class="par">
+                  сам процесс: когда приходит очередная задача, зачастую что-то
+                  вообще неожиданное. Это может быть новый проект или даже новое
+                  направление в деятельности компании. Задачи дизайнера у нас
+                  совершенно разные: от печатной продукции, календаря,
+                  презентации до нового лендинга или титров для ролика. Ну и
+                  конечно большое удовольствие работать в команде, где
+                  позитивный настрой, поддержка коллег и горящие глаза не только
+                  приветствуются, но являются неотъемлемой частью будней.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Vika.jpg"
+                alt="Виктория Капустина офис-менеджер"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">КАПУСТИНА Виктория</h3>
+              <hr />
+              <p class="worker_post">офис-менеджер</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел снабжения</h4>
+              <div class="answer_text">
+                <h4 class="title">Я каждый раз радуюсь, когда</h4>
+                <p class="par">
+                  получается выполнить за день все поставленные задачи,
+                  появляющиеся трудности и проблемы удается быстро решить. И так
+                  же каждый раз радуюсь, когда вижу полученные оплаты от
+                  клиентов, потому что это значит, что работа всей компании
+                  приводит к результату.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Zhenya.jpg"
+                alt="Евгения Алейникова проектный менеджер"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">АЛЕЙНИКОВА Евгения</h3>
+              <hr />
+              <p class="worker_post">Проектный менеджер</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел продаж</h4>
+              <div class="answer_text">
+                <h4 class="title">Я люблю, когда</h4>
+                <p class="par">
+                  завершаются интересные крупные проекты, и я звоню клиентам,
+                  чтобы узнать, довольны ли они результатом. Я уверена в
+                  качестве товаров, которые мы поставляем и в качестве услуг,
+                  которые мы осуществляем, поэтому я ожидаю отличный результат
+                  от проделанной работы. Мне, как и всем людям, приятно слышать
+                  похвалу и позитивный отклик клиента. Так я вижу, что я приношу
+                  пользу. Поэтому это важная часть моей работы и одна из самых
+                  любимых.
+                </p>
+                <p class="par">
+                  Еще я люблю встречи с клиентами. Мне нравится знакомиться с
+                  ними лично, видеть их глаза. Реальное знакомство помогает
+                  наладить более прочный контакт с клиентом, что полезно для
+                  работы с ним в будущем.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Dima.jpg"
+                alt="Дмитрий Шамаль веб-разработчик"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">ШАМАЛЬ Дмитрий</h3>
+              <hr />
+              <p class="worker_post">веб-разработчик</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел рекламы</h4>
+              <div class="answer_text">
+                <h4 class="title">В этой компании я чувствую себя</h4>
+                <p class="par">
+                  нужным. Чувствую себя тем, кто несет ответственность за
+                  проделанную работу, которая затем идет в массы и создает имидж
+                  нашей компании.
+                </p>
+                <p class="par">
+                  Так же я чувствую себя свободным. У меня большой спектр задач,
+                  между которыми могу переключаться и не чувствовать дискомфорта
+                  из-за выполнения однообразных и рутинных заданий. Это помогает
+                  лучше думать и быстрее находить оптимальные решения. То, что я
+                  могу предлагать новые идеи и реализовывать их, добавляет мне
+                  энергии и мотивации.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Maksim.jpg"
+                alt="Максим Малинин менеджер по продажам"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">МАЛИНИН Максим</h3>
+              <hr />
+              <p class="worker_post">менеджер по продажам</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел продаж</h4>
+              <div class="answer_text">
+                <h4 class="title">
+                  Самый вдохновляющий момент в моей работе для меня –
+                </h4>
+                <p class="par">
+                  это общение с клиентами, потому что я очень общительный
+                  человек, и мне нравится помогать людям в решении их вопросов,
+                  искать варианты решений проблем, и я чувствую удовлетворение
+                  от проделанной работы.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/about_ant.jpg"
+                alt="Антон Голополосов менеджер по продажам"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">ГОЛОПОЛОСОВ Антон</h3>
+              <hr />
+              <p class="worker_post">менеджер по продажам</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел продаж</h4>
+              <div class="answer_text">
+                <h4 class="title">
+                  Я решил устроиться на работу в «Гельстер»,
+                </h4>
+                <p class="par">
+                  потому что для меня было важно, чтобы компания повышала
+                  квалификацию своих сотрудников и была заинтересована в
+                  профессиональном и личностном росте специалистов. Я
+                  познакомился с будущими коллегами из «Гельстер» на обучении в
+                  тренинг-центре фабрики-производителя. И такое первое
+                  знакомство с компанией, с коллективом произвело на меня
+                  огромное впечатление. После этой встречи я начал изучать
+                  компанию: направления работы, материалы, корпоративную
+                  культуру. Все что я узнал о компании, подтолкнуло меня
+                  отправить резюме и устроиться на работу в эту компанию.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/about-konst.jpg"
+                alt="Константин Маркович видеооператор"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">МАРКОВИЧ Константин</h3>
+              <hr />
+              <p class="worker_post">видеооператор</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел рекламы</h4>
+              <div class="answer_text">
+                <h4 class="title">Когда я впервые пришел в компанию,</h4>
+                <p class="par">
+                  меня приятно удивило отношение сотрудников друг к другу и ко
+                  мне, как к новому сотруднику. Все были приветливые. Это
+                  позволило быстро влиться в коллектив.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                  <li class="dots__item"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="review_worker">
+              <img
+                src="./img/about/Vanya.jpg"
+                alt="Иван Логинов руководитель отдела продаж"
+                class="worker_photo"
+              />
+              <h3 class="worker_name">ЛОГИНОВ Иван</h3>
+              <hr />
+              <p class="worker_post">Руководитель отдела продаж</p>
+            </div>
+            <div class="review_answer">
+              <img src="./img/about/back-arrow.jpg" alt="" class="answer_bg" />
+              <img
+                src="./img/about/cite-green-gray.svg"
+                alt=""
+                class="answer_quo"
+              />
+              <h4 class="answer_team">Отдел продаж</h4>
+              <div class="answer_text">
+                <h4 class="title">Самое сложное в моей работе –</h4>
+                <p class="par">
+                  общаться с такими клиентами, которым нужен очень срочно
+                  материал, которого нет в наличии, например, заказные позиции.
+                  Такая спешка негативно сказывается на выборе клиента!
+                </p>
+                <p class="par">
+                  Еще один сложный момент – это пересогласование материала.
+                  Довольно часто клиенты не понимают тех или иных характеристик
+                  напольных покрытий и отказываются разбираться в них. В
+                  результате они делают неправильный выбор, потому что не
+                  доверились экспертам!
+                </p>
+                <p class="par">
+                  И еще одна трудность – курс валют, который регулярно растет.
+                  Это очень сильно сказывается на проектах, которых ведешь не
+                  один год. Цена, которая заложена была изначальна, будет не
+                  актуальна на момент покупки. А это чревато пересогласованиями
+                  данного материала. И некоторые заказчики делают выбор в пользу
+                  самого выгодного товара по цене, а не по качеству.
+                </p>
+              </div>
+              <div class="answer_switcher">
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_prev"
+                  onclick="prevSlide()"
+                />
+                <ul class="dots">
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item"></li>
+                  <li class="dots__item filled"></li>
+                </ul>
+                <img
+                  src="./img/icons/slider.png"
+                  alt=""
+                  class="slide_next"
+                  onclick="nextSlide()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer">
-        <? include('./included_files/footer.htm'); ?>
+      <? include('./included_files/footer.htm'); ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
     <script defer src="./js/about.js"></script>
     <script src="./included_files/header-style/hamburger.js"></script>
     <script src="./js/general_catalogs.js"></script>
-</body>
-
+  </body>
 </html>

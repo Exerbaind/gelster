@@ -1,377 +1,437 @@
 <?php header("Content-Type:text/html;charset=utf-8");?>
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-FVT7JXV');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-FVT7JXV");
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="Перед тем, как постелить напольное покрытие, особенно если речь идет о фиксируемом к полу напольном покрытии, таком как: линолеум, мармолеум, ковролин, ковровая плитка, дизайн-плитка ПВХ и прочие виды покрытий, необходимо подготовить основание.">
-    <meta name="keywords" content="Ремонтные смеси равнители пола Forbo">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/glue-collections.css">
-    <link rel="stylesheet" href="./css/collection.css">
-    <link rel="stylesheet" href="./preloader/preloader.css">
-    <link rel="stylesheet" href="./included_files/header-style/css/header.css">
-    <link rel="stylesheet" href="./included_files/footer-style/footer.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Перед тем, как постелить напольное покрытие, особенно если речь идет о фиксируемом к полу напольном покрытии, таком как: линолеум, мармолеум, ковролин, ковровая плитка, дизайн-плитка ПВХ и прочие виды покрытий, необходимо подготовить основание."
+    />
+    <meta name="keywords" content="Ремонтные смеси равнители пола Forbo" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/glue-collections.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="./preloader/preloader.css" />
+    <link
+      rel="stylesheet"
+      href="./included_files/header-style/css/headerr.css"
+    />
+    <link rel="stylesheet" href="./included_files/footer-style/footer.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400&display=swap"
+      rel="stylesheet"
+    />
     <title>Ремонтные смеси Forbo</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="preloader">
-        <img src="./preloader/tiger.gif" alt="" class="tiger-img">
+      <img src="./preloader/tiger.gif" alt="" class="tiger-img" />
     </section>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-FVT7JXV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <header>
-        <? include('./included_files/header.htm'); ?>
+      <? include('./included_files/header.htm'); ?>
     </header>
     <section class="section-menu">
-        <div class="menu animated__menu">
-            <p class="menu-title">другие коллекции</p>
-            <div class="menu-arrow animated__menu-arrow"></div>
+      <div class="menu animated__menu">
+        <p class="menu-title">другие коллекции</p>
+        <div class="menu-arrow animated__menu-arrow"></div>
+      </div>
+      <div class="active-menu animated__active-menu">
+        <div class="header-side-menu">
+          <span
+            class="close-menu"
+            id="close-menu"
+            onclick="anotherCloseCross()"
+          ></span>
         </div>
-        <div class="active-menu animated__active-menu">
-            <div class="header-side-menu">
-                <span class="close-menu" id="close-menu" onclick="anotherCloseCross()"></span>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia.htm">Каталог</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>Подготовительная химия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_gryntovka.htm" class="out-list_a">Грунтовка для пола</a>
-                </li>
-                <li class="out-list chosen-collection">Ремонтные смеси</li>
-                <li class="out-list">
-                    <a href="himia_viravn_smesi.htm" class="out-list_a">Выравнивающие смеси</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Клей для покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_plitka.htm" class="out-list_a">Клей для плитки и керамогранита</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_moroz.htm" class="out-list_a">Морозоустойчивый клей для ПВХ</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Средства по уходу</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_mastika.htm" class="out-list_a">Мастика</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia_kraski.htm">Краска для разметки</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia_grass-ukladka.htm">Средства для укладки искусственных газонов</a>
-                </h4>
-            </div>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia.htm">Каталог</a>
+          </h4>
         </div>
+        <div class="side-bar-collection-header">
+          <h4>Подготовительная химия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_gryntovka.htm" class="out-list_a"
+              >Грунтовка для пола</a
+            >
+          </li>
+          <li class="out-list chosen-collection">Ремонтные смеси</li>
+          <li class="out-list">
+            <a href="himia_viravn_smesi.htm" class="out-list_a"
+              >Выравнивающие смеси</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Клей для покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_kley_pvh.htm" class="out-list_a"
+              >Клей для плитки ПВХ</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kovrolin.htm" class="out-list_a"
+              >Клей для ковролина</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_linoleum.htm" class="out-list_a"
+              >Клей для натурального линолеума</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_contact.htm" class="out-list_a"
+              >Контактный клей</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_plitka.htm" class="out-list_a"
+              >Клей для плитки и керамогранита</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kontakt.htm" class="out-list_a"
+              >Клей для резиновых покрытий</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_tokoprovod.htm" class="out-list_a"
+              >Токопроводящий клей</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_moroz.htm" class="out-list_a"
+              >Морозоустойчивый клей для ПВХ</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Средства по уходу</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_mastika.htm" class="out-list_a">Мастика</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia_kraski.htm">Краска для разметки</a>
+          </h4>
+        </div>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
+          </h4>
+        </div>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia_grass-ukladka.htm"
+              >Средства для укладки искусственных газонов</a
+            >
+          </h4>
+        </div>
+      </div>
     </section>
     <section class="section-menu_mobile">
-        <div class="background-section-hamburger" id="background-section-hamburger">
-            <a class="section-hamburger"><span></span></a>
+      <div
+        class="background-section-hamburger"
+        id="background-section-hamburger"
+      >
+        <a class="section-hamburger"><span></span></a>
+      </div>
+      <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia.htm">Каталог</a>
+          </h4>
         </div>
-        <div class="section-menu_mobile-window" id="section-menu_mobile-wndow">
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia.htm">Каталог</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>Подготовительная химия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_gryntovka.htm" class="out-list_a">Грунтовка для пола</a>
-                </li>
-                <li class="out-list chosen-collection">Ремонтные смеси</li>
-                <li class="out-list">
-                    <a href="himia_viravn_smesi.htm" class="out-list_a">Выравнивающие смеси</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Клей для покрытия</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_kley_pvh.htm" class="out-list_a">Клей для плитки ПВХ</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_kovrolin.htm" class="out-list_a">Клей для ковролина</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_linoleum.htm" class="out-list_a">Клей для натурального линолеума</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_contact.htm" class="out-list_a">Контактный клей</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_plitka.htm" class="out-list_a">Клей для плитки и керамогранита</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_kontakt.htm" class="out-list_a">Клей для резиновых покрытий</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_kley_tokoprovod.htm" class="out-list_a">Токопроводящий клей</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_moroz.htm" class="out-list_a">Морозоустойчивый клей для ПВХ</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>Средства по уходу</h4>
-            </div>
-            <menu class="side-bar-collection-list">
-                <li class="out-list">
-                    <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
-                </li>
-                <li class="out-list">
-                    <a href="himia_mastika.htm" class="out-list_a">Мастика</a>
-                </li>
-            </menu>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia_kraski.htm">Краска для разметки</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
-                </h4>
-            </div>
-            <div class="side-bar-collection-header">
-                <h4>
-                    <a href="k_himia_grass-ukladka.htm">Средства для укладки искусственных газонов</a>
-                </h4>
-            </div>
+        <div class="side-bar-collection-header">
+          <h4>Подготовительная химия</h4>
         </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_gryntovka.htm" class="out-list_a"
+              >Грунтовка для пола</a
+            >
+          </li>
+          <li class="out-list chosen-collection">Ремонтные смеси</li>
+          <li class="out-list">
+            <a href="himia_viravn_smesi.htm" class="out-list_a"
+              >Выравнивающие смеси</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Клей для покрытия</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_kley_pvh.htm" class="out-list_a"
+              >Клей для плитки ПВХ</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_linol.htm" class="out-list_a">Клей для линолеума</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_fix.htm" class="out-list_a">Клей-фиксатор</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kovrolin.htm" class="out-list_a"
+              >Клей для ковролина</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_linoleum.htm" class="out-list_a"
+              >Клей для натурального линолеума</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_contact.htm" class="out-list_a"
+              >Контактный клей</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_plitka.htm" class="out-list_a"
+              >Клей для плитки и керамогранита</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_kontakt.htm" class="out-list_a"
+              >Клей для резиновых покрытий</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_kley_tokoprovod.htm" class="out-list_a"
+              >Токопроводящий клей</a
+            >
+          </li>
+          <li class="out-list">
+            <a href="himia_moroz.htm" class="out-list_a"
+              >Морозоустойчивый клей для ПВХ</a
+            >
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>Средства по уходу</h4>
+        </div>
+        <menu class="side-bar-collection-list">
+          <li class="out-list">
+            <a href="himia_yhod.htm" class="out-list_a">Очистители</a>
+          </li>
+          <li class="out-list">
+            <a href="himia_mastika.htm" class="out-list_a">Мастика</a>
+          </li>
+        </menu>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia_kraski.htm">Краска для разметки</a>
+          </h4>
+        </div>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia_cold-svarka.htm">Жидкость для холодной сварки</a>
+          </h4>
+        </div>
+        <div class="side-bar-collection-header">
+          <h4>
+            <a href="k_himia_grass-ukladka.htm"
+              >Средства для укладки искусственных газонов</a
+            >
+          </h4>
+        </div>
+      </div>
     </section>
     <section class="main-wrapper">
-        <div class="container">
-            <div class="page-header">
-                <img src="./img/pages-name-imgs/glue/chimia/remontn_smesi/catalog-in-chemical-new_03.jpg"
-                    alt="Виды ремонтных смесей Forbo" class="page-header-img">
-                <div class="page-header-description">
-                    <h1 class="title">
-                        Ремонтные смеси Forbo
-                    </h1>
-                    <div class="text">
-                        <p class="par">
-                            Перед тем, как постелить напольное покрытие, особенно если речь идет о фиксируемом к полу
-                            напольном покрытии, таком как: линолеум, мармолеум, ковролин, ковровая плитка, дизайн-плитка
-                            ПВХ и прочие виды покрытий, необходимо подготовить основание.
-                        </p>
-                        <p class="par">
-                            Для укладки таких видов напольных покрытий основание должно быть идеально подготовлено - оно
-                            должно быть ровным и гладким, без трещин, пузырей, наплывов и прочих неровностей, в
-                            противном случае, все эти огрехи проявятся на Вашем финишном покрытии.
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="page-header">
+          <img
+            src="./img/pages-name-imgs/glue/chimia/remontn_smesi/catalog-in-chemical-new_03.jpg"
+            alt="Виды ремонтных смесей Forbo"
+            class="page-header-img"
+          />
+          <div class="page-header-description">
+            <h1 class="title">Ремонтные смеси Forbo</h1>
+            <div class="text">
+              <p class="par">
+                Перед тем, как постелить напольное покрытие, особенно если речь
+                идет о фиксируемом к полу напольном покрытии, таком как:
+                линолеум, мармолеум, ковролин, ковровая плитка, дизайн-плитка
+                ПВХ и прочие виды покрытий, необходимо подготовить основание.
+              </p>
+              <p class="par">
+                Для укладки таких видов напольных покрытий основание должно быть
+                идеально подготовлено - оно должно быть ровным и гладким, без
+                трещин, пузырей, наплывов и прочих неровностей, в противном
+                случае, все эти огрехи проявятся на Вашем финишном покрытии.
+              </p>
             </div>
-            <div class="chim-collection">
-                <div class="chim-item">
-                    <div class="chim-item__look">
-                        <h5 class="chim-name">
-                            <span class="number">940</span><br>Europlan Quick
-                        </h5>
-                        <img src="./img/pages-name-imgs/glue/chimia/remontn_smesi/images/940_07.jpg"
-                            alt="Ремонтная масса Forbo Europlan Quick 940" class="chim-img">
-                    </div>
-                    <div class="chim-item__description">
-                        <p class="dis-title">
-                            Forbo 940 Europlan Quick<br>
-                            <span class="sub-title">ремонтная масса</span>
-                        </p>
-                        <p class="par">
-                            Ровнитель для пола Forbo 940 – это стабильная, устойчивая к высоким нагрузкам и быстро
-                            затвердевающая шпаклевочная ремонтная смесь.
-                        </p>
-                        <p class="par">
-                            Используется для ремонта и нивелирования лестниц и площадок, для заполнения отверстий и
-                            глубоких неровностей в бетонной стяжке, а также для придания формы краям лестниц, переходам
-                            и уклонам.
-                        </p>
-                        <p class="par">
-                            Толщина слоя до 50 мм.
-                        </p>
-                    </div>
-                    <div class="chim-item__instruction">
-                        <p class="inst-title">
-                            расход:
-                        </p>
-                        <p class="inst-text">
-                            1,5 кг/м <sup><small>2</small></sup> в зависимости от поверхности
-                        </p>
-                        <p class="inst-title">
-                            упаковка:
-                        </p>
-                        <p class="inst-text">
-                            Мешок 25 кг
-                        </p>
-                        <p class="inst-title">
-                            способ нанесения:
-                        </p>
-                        <p class="inst-text">
-                            Гладкий шпатель
-                        </p>
-                        <p class="inst-title">
-                            можно ходить:
-                        </p>
-                        <p class="inst-text">
-                            через ~30 минут при нормальных условиях
-                        </p>
-                        <p class="inst-title">
-                            дальнейшие работы на полу:
-                        </p>
-                        <p class="inst-text">
-                            через 1 час
-                        </p>
-                        <a href='./sertificate/glue-sert/900/СГР_900.jpg' target="_blank" class="sert">
-                            <img src="./icons/arrow-down.svg" alt="" class="sert-icon">
-                            <p class="download-text">скачать сертификат</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="chim-item">
-                    <div class="chim-item__look">
-                        <h5 class="chim-name">
-                            <span class="number">900</span><br>Europlan DSP Polaris
-                        </h5>
-                        <img src="./img/pages-name-imgs/glue/chimia/remontn_smesi/images/900.jpg"
-                            alt="Дисперсионная шпаклевка Forbo Europlan DSP Polaris 900" class="chim-img">
-                    </div>
-                    <div class="chim-item__description">
-                        <p class="dis-title">
-                            Forbo 900 Europlan DSP Polaris<br>
-                            <span class="sub-title">дисперсионная шпаклевка</span>
-                        </p>
-                        <p class="par">
-                            ТЕКСТ !!!
-                        </p>
-                    </div>
-                    <div class="chim-item__instruction">
-                        <p class="inst-title">
-                            расход:
-                        </p>
-                        <p class="inst-text">
-                            ~ 0,3-1,2 кг/м <sup><small>2</small></sup> в зависимости от поверхности
-                        </p>
-                        <p class="inst-title">
-                            упаковка:
-                        </p>
-                        <p class="inst-text">
-                            Ведро пластиковое 14 кг, на поддоне — 44 шт.
-                        </p>
-                        <p class="inst-title">
-                            способ нанесения:
-                        </p>
-                        <p class="inst-text">
-                            Широкий шпатель
-                        </p>
-                        <p class="inst-title">
-                            можно ходить:
-                        </p>
-                        <p class="inst-text">
-                            через ~ 1-3 часа
-                        </p>
-                        <p class="inst-title">
-                            дальнейшие работы на полу:
-                        </p>
-                        <p class="inst-text">
-                            через 24 часа
-                        </p>
-                        <a href='./sertificate/glue-sert/900/СГР_900.jpg' target="_blank" class="sert bottom10">
-                            <img src="./icons/arrow-down.svg" alt="" class="sert-icon">
-                            <p class="download-text">НУЖЕН СЕРТИФИКАТ</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="chim-collection">
+          <div class="chim-item">
+            <div class="chim-item__look">
+              <h5 class="chim-name">
+                <span class="number">940</span><br />Europlan Quick
+              </h5>
+              <img
+                src="./img/pages-name-imgs/glue/chimia/remontn_smesi/images/940_07.jpg"
+                alt="Ремонтная масса Forbo Europlan Quick 940"
+                class="chim-img"
+              />
+            </div>
+            <div class="chim-item__description">
+              <p class="dis-title">
+                Forbo 940 Europlan Quick<br />
+                <span class="sub-title">ремонтная масса</span>
+              </p>
+              <p class="par">
+                Ровнитель для пола Forbo 940 – это стабильная, устойчивая к
+                высоким нагрузкам и быстро затвердевающая шпаклевочная ремонтная
+                смесь.
+              </p>
+              <p class="par">
+                Используется для ремонта и нивелирования лестниц и площадок, для
+                заполнения отверстий и глубоких неровностей в бетонной стяжке, а
+                также для придания формы краям лестниц, переходам и уклонам.
+              </p>
+              <p class="par">Толщина слоя до 50 мм.</p>
+            </div>
+            <div class="chim-item__instruction">
+              <p class="inst-title">расход:</p>
+              <p class="inst-text">
+                1,5 кг/м <sup><small>2</small></sup> в зависимости от
+                поверхности
+              </p>
+              <p class="inst-title">упаковка:</p>
+              <p class="inst-text">Мешок 25 кг</p>
+              <p class="inst-title">способ нанесения:</p>
+              <p class="inst-text">Гладкий шпатель</p>
+              <p class="inst-title">можно ходить:</p>
+              <p class="inst-text">через ~30 минут при нормальных условиях</p>
+              <p class="inst-title">дальнейшие работы на полу:</p>
+              <p class="inst-text">через 1 час</p>
+              <a
+                href="./sertificate/glue-sert/900/СГР_900.jpg"
+                target="_blank"
+                class="sert"
+              >
+                <img src="./icons/arrow-down.svg" alt="" class="sert-icon" />
+                <p class="download-text">скачать сертификат</p>
+              </a>
+            </div>
+          </div>
+          <div class="chim-item">
+            <div class="chim-item__look">
+              <h5 class="chim-name">
+                <span class="number">900</span><br />Europlan DSP Polaris
+              </h5>
+              <img
+                src="./img/pages-name-imgs/glue/chimia/remontn_smesi/images/900.jpg"
+                alt="Дисперсионная шпаклевка Forbo Europlan DSP Polaris 900"
+                class="chim-img"
+              />
+            </div>
+            <div class="chim-item__description">
+              <p class="dis-title">
+                Forbo 900 Europlan DSP Polaris<br />
+                <span class="sub-title">дисперсионная шпаклевка</span>
+              </p>
+              <p class="par">
+                Шпатлевка для шпатлевания поверхностей, изменяющих форму.
+                Шпатлевка готова к применению, она быстро сохнет и при этом
+                остается эластичной. Особенно хорошо шпатлевка подходит для
+                укладки эластичных покрытий для спорта, а также плавающих полов,
+                укладке на фанеру, ДСП, изоляционные плиты.
+              </p>
+              <p class="par">
+                Шпатлевка применяется в качестве преграды для миграции
+                пластификаторов перед укладкой на изоляционные плиты или укладке
+                виниловых покрытий на другие виниловые покрытия. Не содержит
+                растворителей. Может применяться для сокрытия швов ДСП-плит,
+                отверстий от шурупов.
+              </p>
+            </div>
+            <div class="chim-item__instruction">
+              <p class="inst-title">расход:</p>
+              <p class="inst-text">
+                ~ 0,3-1,2 кг/м <sup><small>2</small></sup> в зависимости от
+                поверхности
+              </p>
+              <p class="inst-title">упаковка:</p>
+              <p class="inst-text">
+                Ведро пластиковое 14 кг, на поддоне — 44 шт.
+              </p>
+              <p class="inst-title">способ нанесения:</p>
+              <p class="inst-text">Широкий шпатель</p>
+              <p class="inst-title">можно ходить:</p>
+              <p class="inst-text">через ~ 1-3 часа</p>
+              <p class="inst-title">дальнейшие работы на полу:</p>
+              <p class="inst-text">через 24 часа</p>
+              <a
+                href="./sertificate/glue-sert/900/СГР_900.jpg"
+                target="_blank"
+                class="sert bottom10"
+              >
+                <img src="./icons/arrow-down.svg" alt="" class="sert-icon" />
+                <p class="download-text">НУЖЕН СЕРТИФИКАТ</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer">
-        <? include('./included_files/footer.htm'); ?>
+      <? include('./included_files/footer.htm'); ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./preloader/preloader.js"></script>
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js">
-    </script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://mc.yandex.ru/metrika/watch.js"
+    ></script>
     <script src="./included_files/header-style/hamburger.js"></script>
     <script src="./js/collection.js"></script>
-</body>
-
+  </body>
 </html>
