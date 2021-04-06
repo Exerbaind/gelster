@@ -8,7 +8,7 @@ $topMenuHeight: 45px;
 $bottomMenuHeight: 88px;
 $headerHeight: 140px;
 
-$myPTSans: "PTSans";
+$myPTSans: "PT Sans";
 $myPTSerif: "PTSerif";
 
 body {
@@ -305,6 +305,8 @@ body {
           padding: 10px 10px 80px 20px;
           overflow-y: scroll;
           z-index: -1;
+          visibility: hidden;
+          margin-bottom: 100px;
         }
 
         .menu-list_h {
@@ -320,7 +322,7 @@ body {
             display: grid;
             height: 30px;
             padding-right: 0px;
-            justify-content: center;
+            // justify-content: center;
             position: relative;
           }
 
@@ -386,7 +388,7 @@ body {
             }
           }
 
-          .drop-menu-list {
+          .small {
             position: absolute;
             width: 180%;
             background-color: #586f69;
@@ -480,6 +482,179 @@ body {
                   opacity: 1;
                   pointer-events: all;
                   visibility: visible;
+                }
+              }
+            }
+          }
+
+          .big {
+            position: absolute;
+            background-color: white;
+            width: 1200px;
+            z-index: 500;
+            margin-top: 34px;
+            box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.75);
+            list-style: none;
+            padding: 20px 30px;
+            font-family: $myPTSans;
+            transform: scaleY(0) translateX(-19.4%);
+            transform-origin: top;
+            opacity: 0;
+            transition: 0.3s;
+            display: flex;
+            flex: 1 1 3;
+            overflow: hidden;
+            @media screen and (max-width: 960px) {
+              width: 200% !important;
+            }
+            .drop-menu-list__list {
+              position: relative;
+              // overflow: hidden;
+              list-style: none;
+              height: 100%;
+              width: 100%;
+              .drop-menu-list-item {
+                padding: 5px 20px;
+                transition: 0.3s;
+                .drop-href-item {
+                  font-size: 20px;
+                  color: #586f69;
+                  text-decoration: none;
+                  display: block;
+                }
+                @media screen and (min-width: 1200px) {
+                  &:hover {
+                    .drop-href-item {
+                      color: #e2a459;
+                      opacity: 0.5;
+                    }
+                  }
+                }
+                @media screen and (min-width: 1200px) {
+                  &:hover {
+                    .second-column__container {
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
+                }
+                .second-column__container {
+                  top: 0;
+                  position: absolute;
+                  opacity: 0;
+                  visibility: hidden;
+                  left: 30%;
+                  height: 100%;
+                  width: 70%;
+                  z-index: 300;
+                  border-left: 1px solid rgba(114, 114, 114, 0.2);
+                  padding: 5px 0;
+                  padding-left: 20px;
+                  .second-column__name {
+                    padding-left: 20px;
+                    color: #e2a459;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                  }
+                  .second-column__sub-name {
+                    padding-left: 20px;
+                    color: #e2a459;
+                    margin-bottom: 5px;
+                    margin-top: 10px;
+                    font-size: 18px;
+                  }
+                  .flex-style {
+                    display: flex;
+                    flex-wrap: wrap;
+                  }
+                  .second-column__list {
+                    list-style: none;
+                    .second-column__item {
+                      padding: 5px 20px;
+                      transition: 0.3s;
+                      // position: relative;
+                      @media screen and (min-width: 1200px) {
+                        &:hover {
+                          .second-column__link {
+                            color: #e2a459;
+                            opacity: 0.5;
+                          }
+                        }
+                      }
+                      .second-column__link {
+                        font-size: 18px;
+                        color: #586f69;
+                        text-decoration: none;
+                        display: block;
+                      }
+                      .second-column__sub-link {
+                        position: absolute;
+                        font-size: 14px;
+                        transform: translateY(-5px);
+                        color: #e2a459;
+                        font-style: italic;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        &:hover {
+                          opacity: 1;
+                          visibility: visible;
+                          .third-column__container {
+                            opacity: 1;
+                            visibility: visible;
+                          }
+                        }
+                      }
+                      .third-column__container {
+                        top: 0;
+                        position: absolute;
+                        opacity: 0;
+                        visibility: hidden;
+                        left: 33%;
+                        width: 70%;
+                        z-index: 100;
+                        overflow: auto;
+                        height: 100%;
+                        padding: 5px 0;
+                        .third-column__name {
+                          padding-left: 20px;
+                          color: #e2a459;
+                          margin-bottom: 10px;
+                          font-weight: bold;
+                          text-transform: uppercase;
+                        }
+                        .third-column__sub-name {
+                          padding-left: 20px;
+                          color: #e2a459;
+                          margin-bottom: 5px;
+                          margin-top: 10px;
+                        }
+                        .third-column__list {
+                          list-style: none;
+                          display: flex;
+                          flex-wrap: wrap;
+                          .third-column__item {
+                            padding: 5px 20px;
+                            transition: 0.3s;
+                            // max-height: 20px;
+                            &:hover {
+                              .third-column__link {
+                                color: #e2a459;
+                                opacity: 0.5;
+                              }
+                            }
+                            .third-column__link {
+                              font-size: 16px;
+                              color: #586f69;
+                              text-decoration: none;
+                              display: block;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -681,17 +856,21 @@ body {
 
       .back-to-index {
         text-decoration: none;
+        text-align: center;
         img {
           height: 100px;
           width: 135px;
         }
         .logo__text {
           color: #586f69;
-          font-size: 16px;
+          font-size: 14px;
           text-align: center;
           margin-top: -10px;
           font-family: "PTSerif", sans-serif;
           font-style: italic;
+          @media screen and (max-width: 500px) {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -708,7 +887,7 @@ body {
 }
 
 .drop-menu_open {
-  transform: scaleY(1) !important;
+  transform: scaleY(1) translateX(-19.4%) !important;
   opacity: 1 !important;
 }
 
@@ -733,8 +912,9 @@ body {
 .mobile-menu_show {
   opacity: 1 !important;
   // transform: translateX(0%) !important;
-  width: auto !important;
+  width: 80% !important;
   z-index: 9000 !important;
+  visibility: visible !important;
 }
 
 .mobile-drop-menu_show {
@@ -746,6 +926,9 @@ body {
   margin-bottom: 20px !important;
   pointer-events: all !important;
   margin-top: 10px !important;
+  @media screen and (max-width: 500px) {
+    width: 200% !important;
+  }
 }
 
 .overflow-hidden {

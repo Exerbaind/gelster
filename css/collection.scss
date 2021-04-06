@@ -2650,9 +2650,9 @@ $myPTSerif: "PTSerif";
           z-index: 1;
           cursor: pointer;
 
-          // @media screen and (max-width: 425px) {
-          //   display: none;
-          // }
+          @media screen and (max-width: 425px) {
+            display: none;
+          }
 
           .video-article {
             position: absolute;
@@ -2712,6 +2712,33 @@ $myPTSerif: "PTSerif";
             }
           }
         }
+        .basket-act {
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          z-index: 20;
+          cursor: pointer;
+
+          @media screen and (max-width: 425px) {
+            width: 35px;
+            height: 35px;
+            top: 35%;
+            left: 45%;
+            margin-left: -15px;
+          }
+
+          .basket-article {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            @media screen and (max-width: 425px) {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
       }
 
       .article-video-block {
@@ -2731,6 +2758,36 @@ $myPTSerif: "PTSerif";
         padding-top: 250px;
         outline: none;
         flex-direction: column;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50px;
+          right: 50px;
+          height: 2px;
+          width: 30px;
+          background-color: white;
+          transform: rotate(45deg);
+          @media screen and (max-width: 600px) {
+            top: 20px;
+            right: 20px;
+          }
+        }
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50px;
+          right: 50px;
+          height: 2px;
+          width: 30px;
+          background-color: white;
+          transform: rotate(-45deg);
+          @media screen and (max-width: 600px) {
+            top: 20px;
+            right: 20px;
+          }
+        }
 
         @media screen and (max-width: 450px) {
           video {
@@ -4416,7 +4473,8 @@ $myPTSerif: "PTSerif";
   }
 }
 
-.form__favours {
+.form__favours,
+.form__buy {
   top: 0;
   left: 0;
   height: 100vh;
@@ -4437,7 +4495,7 @@ $myPTSerif: "PTSerif";
   }
 
   .form__favours__content {
-    max-height: 700px;
+    max-height: 800px;
     max-width: 400px;
     display: flex;
     justify-content: center;
@@ -4446,8 +4504,8 @@ $myPTSerif: "PTSerif";
     box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.13);
 
     @media screen and (max-width: 426px) {
-      height: 100vh;
       width: 100vw;
+      overflow: auto;
     }
 
     .service-head-pay_form {
@@ -4478,7 +4536,7 @@ $myPTSerif: "PTSerif";
     }
 
     .service-pay_form {
-      height: 600px;
+      height: 100%;
       width: 100%;
       background-color: white;
       display: flex;
@@ -4546,6 +4604,173 @@ $myPTSerif: "PTSerif";
   opacity: 1;
   padding-top: 0;
   pointer-events: auto;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 100px;
+  pointer-events: none;
+  z-index: 0;
+  transition: 0.3s;
+
+  .form-block {
+    height: 700px;
+    width: 30%;
+    box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+    font-family: $myPTSans;
+    background-color: white;
+
+    @media screen and (max-width: 950px) {
+      height: 80vh;
+      width: 50vw;
+    }
+
+    @media screen and (max-width: 650px) {
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      overflow: auto;
+    }
+
+    .close-form_btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        span {
+          transform: rotate(135deg);
+        }
+      }
+
+      &:active {
+        span {
+          transform: rotate(135deg) scale(0.9);
+        }
+      }
+
+      span {
+        background-color: white;
+        height: 2px;
+        width: 30px;
+        position: relative;
+        transform: rotate(45deg);
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &:before {
+          content: "";
+          display: flex;
+          position: absolute;
+          background-color: white;
+          height: 2px;
+          width: 30px;
+          transform: rotate(90deg);
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .form__title {
+      color: white;
+      background-color: $orangeColor;
+      width: 100%;
+      padding: 20px 0px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 24px;
+      box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 30px;
+      position: relative;
+      height: 100%;
+      overflow: auto;
+
+      .form-label {
+        color: $darkGreenColor;
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+      }
+
+      input {
+        padding: 5px 10px;
+        border: none;
+        border-bottom: 1px solid #a8a8a8;
+        color: $darkGreenColor;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      textarea {
+        border: 1px solid #a8a8a8;
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+      }
+
+      .submit-btn {
+        position: absolute;
+        bottom: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // padding: 30px;
+        left: 0;
+        background-color: $orangeColor;
+        color: white;
+        box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        -webkit-appearance: none;
+        border-radius: 0;
+
+        &:hover {
+          filter: brightness(105%);
+        }
+
+        @media screen and (max-width: 600px) {
+          position: fixed;
+          bottom: 0;
+
+          &:hover {
+            filter: brightness(100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.show-form {
+  margin-top: 0px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: all !important;
+  z-index: 999999;
 }
 
 // Animation classes

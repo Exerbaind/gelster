@@ -3603,6 +3603,26 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 425px) {
+  .main .articles .articles-container .article-item .video-act,
+  .main .articles .articles-container .article-item .green .video-act,
+  .main .articles .articles-container .article-item .black .video-act,
+  .main .articles .articles-container .article-item .grey .video-act,
+  .main .articles .articles-container .article-item .white .video-act,
+  .main .articles .articles-container .article-item .red .video-act,
+  .main .articles .articles-container .article-item .blue .video-act,
+  .main .articles .articles-container .article-item .orange .video-act,
+  .main .articles .articles-container .article-item .yellow .video-act,
+  .main .articles .articles-container .article-item .beige .video-act,
+  .main .articles .articles-container .article-item .purple .video-act,
+  .main .articles .articles-container .article-item .two .video-act,
+  .main .articles .articles-container .article-item .two-half .article-item .three-two .video-act,
+  .main .articles .articles-container .article-item .three-half .video-act,
+  .main .articles .articles-container .article-item .four .video-act {
+    display: none;
+  }
+}
+
 .main .articles .articles-container .article-item .video-act .video-article,
 .main .articles .articles-container .article-item .green .video-act .video-article,
 .main .articles .articles-container .article-item .black .video-act .video-article,
@@ -3780,6 +3800,95 @@ body {
   width: 35px;
 }
 
+.main .articles .articles-container .article-item .basket-act,
+.main .articles .articles-container .article-item .green .basket-act,
+.main .articles .articles-container .article-item .black .basket-act,
+.main .articles .articles-container .article-item .grey .basket-act,
+.main .articles .articles-container .article-item .white .basket-act,
+.main .articles .articles-container .article-item .red .basket-act,
+.main .articles .articles-container .article-item .blue .basket-act,
+.main .articles .articles-container .article-item .orange .basket-act,
+.main .articles .articles-container .article-item .yellow .basket-act,
+.main .articles .articles-container .article-item .beige .basket-act,
+.main .articles .articles-container .article-item .purple .basket-act,
+.main .articles .articles-container .article-item .two .basket-act,
+.main .articles .articles-container .article-item .two-half .article-item .three-two .basket-act,
+.main .articles .articles-container .article-item .three-half .basket-act,
+.main .articles .articles-container .article-item .four .basket-act {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .main .articles .articles-container .article-item .basket-act,
+  .main .articles .articles-container .article-item .green .basket-act,
+  .main .articles .articles-container .article-item .black .basket-act,
+  .main .articles .articles-container .article-item .grey .basket-act,
+  .main .articles .articles-container .article-item .white .basket-act,
+  .main .articles .articles-container .article-item .red .basket-act,
+  .main .articles .articles-container .article-item .blue .basket-act,
+  .main .articles .articles-container .article-item .orange .basket-act,
+  .main .articles .articles-container .article-item .yellow .basket-act,
+  .main .articles .articles-container .article-item .beige .basket-act,
+  .main .articles .articles-container .article-item .purple .basket-act,
+  .main .articles .articles-container .article-item .two .basket-act,
+  .main .articles .articles-container .article-item .two-half .article-item .three-two .basket-act,
+  .main .articles .articles-container .article-item .three-half .basket-act,
+  .main .articles .articles-container .article-item .four .basket-act {
+    width: 35px;
+    height: 35px;
+    top: 35%;
+    left: 45%;
+    margin-left: -15px;
+  }
+}
+
+.main .articles .articles-container .article-item .basket-act .basket-article,
+.main .articles .articles-container .article-item .green .basket-act .basket-article,
+.main .articles .articles-container .article-item .black .basket-act .basket-article,
+.main .articles .articles-container .article-item .grey .basket-act .basket-article,
+.main .articles .articles-container .article-item .white .basket-act .basket-article,
+.main .articles .articles-container .article-item .red .basket-act .basket-article,
+.main .articles .articles-container .article-item .blue .basket-act .basket-article,
+.main .articles .articles-container .article-item .orange .basket-act .basket-article,
+.main .articles .articles-container .article-item .yellow .basket-act .basket-article,
+.main .articles .articles-container .article-item .beige .basket-act .basket-article,
+.main .articles .articles-container .article-item .purple .basket-act .basket-article,
+.main .articles .articles-container .article-item .two .basket-act .basket-article,
+.main .articles .articles-container .article-item .two-half .article-item .three-two .basket-act .basket-article,
+.main .articles .articles-container .article-item .three-half .basket-act .basket-article,
+.main .articles .articles-container .article-item .four .basket-act .basket-article {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  .main .articles .articles-container .article-item .basket-act .basket-article,
+  .main .articles .articles-container .article-item .green .basket-act .basket-article,
+  .main .articles .articles-container .article-item .black .basket-act .basket-article,
+  .main .articles .articles-container .article-item .grey .basket-act .basket-article,
+  .main .articles .articles-container .article-item .white .basket-act .basket-article,
+  .main .articles .articles-container .article-item .red .basket-act .basket-article,
+  .main .articles .articles-container .article-item .blue .basket-act .basket-article,
+  .main .articles .articles-container .article-item .orange .basket-act .basket-article,
+  .main .articles .articles-container .article-item .yellow .basket-act .basket-article,
+  .main .articles .articles-container .article-item .beige .basket-act .basket-article,
+  .main .articles .articles-container .article-item .purple .basket-act .basket-article,
+  .main .articles .articles-container .article-item .two .basket-act .basket-article,
+  .main .articles .articles-container .article-item .two-half .article-item .three-two .basket-act .basket-article,
+  .main .articles .articles-container .article-item .three-half .basket-act .basket-article,
+  .main .articles .articles-container .article-item .four .basket-act .basket-article {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .main .articles .articles-container .article-video-block {
   top: 0;
   left: 0;
@@ -3807,6 +3916,46 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.main .articles .articles-container .article-video-block:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media screen and (max-width: 600px) {
+  .main .articles .articles-container .article-video-block:before {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.main .articles .articles-container .article-video-block:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 600px) {
+  .main .articles .articles-container .article-video-block:after {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -5889,7 +6038,8 @@ body {
   cursor: pointer;
 }
 
-.form__favours {
+.form__favours,
+.form__buy {
   top: 0;
   left: 0;
   height: 100vh;
@@ -5914,13 +6064,15 @@ body {
 }
 
 @media screen and (max-width: 426px) {
-  .form__favours {
+  .form__favours,
+  .form__buy {
     overflow-y: auto;
   }
 }
 
-.form__favours .form__favours__content {
-  max-height: 700px;
+.form__favours .form__favours__content,
+.form__buy .form__favours__content {
+  max-height: 800px;
   max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5940,13 +6092,15 @@ body {
 }
 
 @media screen and (max-width: 426px) {
-  .form__favours .form__favours__content {
-    height: 100vh;
+  .form__favours .form__favours__content,
+  .form__buy .form__favours__content {
     width: 100vw;
+    overflow: auto;
   }
 }
 
-.form__favours .form__favours__content .service-head-pay_form {
+.form__favours .form__favours__content .service-head-pay_form,
+.form__buy .form__favours__content .service-head-pay_form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5964,7 +6118,8 @@ body {
   position: relative;
 }
 
-.form__favours .form__favours__content .service-head-pay_form .uppercase {
+.form__favours .form__favours__content .service-head-pay_form .uppercase,
+.form__buy .form__favours__content .service-head-pay_form .uppercase {
   color: #fff;
   font-size: 24px;
   font-weight: 400;
@@ -5973,15 +6128,17 @@ body {
   font-family: "PTSans";
 }
 
-.form__favours .form__favours__content .service-head-pay_form .close-form_f {
+.form__favours .form__favours__content .service-head-pay_form .close-form_f,
+.form__buy .form__favours__content .service-head-pay_form .close-form_f {
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
 }
 
-.form__favours .form__favours__content .service-pay_form {
-  height: 600px;
+.form__favours .form__favours__content .service-pay_form,
+.form__buy .form__favours__content .service-pay_form {
+  height: 100%;
   width: 100%;
   background-color: white;
   display: -webkit-box;
@@ -5996,37 +6153,44 @@ body {
   color: #586f69;
 }
 
-.form__favours .form__favours__content .service-pay_form label {
+.form__favours .form__favours__content .service-pay_form label,
+.form__buy .form__favours__content .service-pay_form label {
   margin-top: 10px;
 }
 
-.form__favours .form__favours__content .service-pay_form input {
+.form__favours .form__favours__content .service-pay_form input,
+.form__buy .form__favours__content .service-pay_form input {
   margin-top: 5px;
 }
 
-.form__favours .form__favours__content .service-pay_form input[placeholder] {
+.form__favours .form__favours__content .service-pay_form input[placeholder],
+.form__buy .form__favours__content .service-pay_form input[placeholder] {
   padding: 10px 5px;
   border: 1px solid #e0e0e0;
   background-color: #fff;
   font-size: 14px;
 }
 
-.form__favours .form__favours__content .service-pay_form textarea {
+.form__favours .form__favours__content .service-pay_form textarea,
+.form__buy .form__favours__content .service-pay_form textarea {
   margin-top: 5px;
 }
 
-.form__favours .form__favours__content .service-pay_form textarea[placeholder] {
+.form__favours .form__favours__content .service-pay_form textarea[placeholder],
+.form__buy .form__favours__content .service-pay_form textarea[placeholder] {
   padding: 10px 5px;
   border: 1px solid #e0e0e0;
   background-color: #fff;
   font-size: 14px;
 }
 
-.form__favours .form__favours__content .service-pay_form .g-recaptcha {
+.form__favours .form__favours__content .service-pay_form .g-recaptcha,
+.form__buy .form__favours__content .service-pay_form .g-recaptcha {
   margin-top: 20px;
 }
 
-.form__favours .form__favours__content .service-pay_form .service_buttons {
+.form__favours .form__favours__content .service-pay_form .service_buttons,
+.form__buy .form__favours__content .service-pay_form .service_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6036,7 +6200,9 @@ body {
 }
 
 .form__favours .form__favours__content .service-pay_form .service_buttons input[type="submit"],
-.form__favours .form__favours__content .service-pay_form .service_buttons input[type="reset"] {
+.form__favours .form__favours__content .service-pay_form .service_buttons input[type="reset"],
+.form__buy .form__favours__content .service-pay_form .service_buttons input[type="submit"],
+.form__buy .form__favours__content .service-pay_form .service_buttons input[type="reset"] {
   border-radius: 6px;
   background-color: #586f69;
   -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.24);
@@ -6057,6 +6223,211 @@ body {
   opacity: 1;
   padding-top: 0;
   pointer-events: auto;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 100px;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-container .form-block {
+  height: 700px;
+  width: 30%;
+  -webkit-box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  font-family: "PTSans";
+  background-color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .form-container .form-block {
+    height: 80vh;
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form-container .form-block {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    overflow: auto;
+  }
+}
+
+.form-container .form-block .close-form_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.form-container .form-block .close-form_btn:hover span {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.form-container .form-block .close-form_btn:active span {
+  -webkit-transform: rotate(135deg) scale(0.9);
+          transform: rotate(135deg) scale(0.9);
+}
+
+.form-container .form-block .close-form_btn span {
+  background-color: white;
+  height: 2px;
+  width: 30px;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-container .form-block .close-form_btn span:before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 30px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-radius: 5px;
+}
+
+.form-container .form-block .form__title {
+  color: white;
+  background-color: #edb056;
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  -webkit-box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form-container .form-block .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 30px;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.form-container .form-block .form .form-label {
+  color: #586f69;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.form-container .form-block .form input {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #586f69;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-container .form-block .form textarea {
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
+.form-container .form-block .form .submit-btn {
+  position: absolute;
+  bottom: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  left: 0;
+  background-color: #edb056;
+  color: white;
+  -webkit-box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -0.5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.form-container .form-block .form .submit-btn:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+@media screen and (max-width: 600px) {
+  .form-container .form-block .form .submit-btn {
+    position: fixed;
+    bottom: 0;
+  }
+  .form-container .form-block .form .submit-btn:hover {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+}
+
+.show-form {
+  margin-top: 0px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: all !important;
+  z-index: 999999;
 }
 
 @-webkit-keyframes attentionMenu {

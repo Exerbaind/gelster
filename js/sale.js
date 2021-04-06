@@ -38,6 +38,30 @@ $(document).ready(function () {
   }
 });
 
+let orderMaterialsForm = document.querySelector(".form__order-materials");
+let orderMaterial = document.querySelector(".order-material");
+let closeOrderMaterialForm = document.querySelector(".close-form");
+
+orderMaterial.addEventListener("click", function () {
+  orderMaterialsForm.classList.add("forms__act");
+});
+
+closeOrderMaterialForm.addEventListener("click", function () {
+  orderMaterialsForm.classList.remove("forms__act");
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.code == "Escape") {
+    orderMaterialsForm.classList.remove("forms__act");
+  }
+});
+
+orderMaterialsForm.addEventListener("click", function (e) {
+  if (e.target == this) {
+    orderMaterialsForm.classList.remove("forms__act");
+  }
+});
+
 const materialBlocks = document.querySelectorAll(".fourth-block__content");
 let currentMaterialBlock;
 

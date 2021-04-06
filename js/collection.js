@@ -67,7 +67,6 @@ document.addEventListener("click", function (e) {
     desktopSideMenuClicker--;
     return desktopSideMenuClicker;
   }
-  console.log(e.target);
 });
 // мобильное меню
 
@@ -259,12 +258,19 @@ orderMaterial.addEventListener("click", function () {
 });
 
 let favoursButton = document.querySelector(".item-name_btn");
+let buyButton = document.querySelector(".basket-act");
 let favoursForm = document.querySelector(".form__favours");
+let buyForm = document.querySelector(".form-container");
 let closeFavoursForm = document.querySelector(".close-form_f");
+// let closeBuyForm = document.querySelector(".close-form_btn");
 
 favoursButton.addEventListener("click", function () {
   favoursForm.classList.add("forms__act");
 });
+
+function openBuyForm() {
+  buyForm.classList.add("show-form");
+}
 
 // закрытие форм
 
@@ -288,9 +294,14 @@ closeFavoursForm.addEventListener("click", function () {
   favoursForm.classList.remove("forms__act");
 });
 
+function closeBuyForm() {
+  buyForm.classList.remove("show-form");
+}
+
 document.addEventListener("keydown", function (event) {
   if (event.code == "Escape") {
     favoursForm.classList.remove("forms__act");
+    buyForm.classList.remove("show-form");
   }
 });
 favoursForm.addEventListener("click", function (e) {
@@ -298,6 +309,12 @@ favoursForm.addEventListener("click", function (e) {
     favoursForm.classList.remove("forms__act");
   }
 });
+
+// buyForm.addEventListener("click", function (e) {
+//   if (e.target == this) {
+//     buyForm.classList.remove("show-form");
+//   }
+// });
 
 // открытие модальных окон характеристик
 
