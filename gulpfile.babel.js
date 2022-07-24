@@ -54,16 +54,7 @@ export { paths };
 
 export const development = gulp.series(
   "clean",
-  gulp.parallel([
-    "views",
-    "styles",
-    "scripts",
-    "images",
-    "webp",
-    "sprites",
-    "fonts",
-    "favicons",
-  ]),
+  gulp.parallel(["views", "styles", "scripts", "images", "fonts", "favicons"]),
   gulp.parallel("serve")
 );
 
@@ -74,8 +65,6 @@ export const prod = gulp.series(
     "styles",
     "scripts",
     "images",
-    "webp",
-    "sprites",
     "fonts",
     "favicons",
     "gzip",
