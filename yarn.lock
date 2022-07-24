@@ -4634,6 +4634,29 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"customizr@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "customizr@npm:2.0.4"
+  dependencies:
+    colors: ^1.4.0
+    cross-spawn: ^7.0.3
+    fast-deep-equal: ^3.1.3
+    fsevents: ^2.3.2
+    glob: ^7.2.0
+    lodash: ^4.17.21
+    mkdirp: ^1.0.4
+    modernizr: ^3
+    nopt: ^5.0.0
+    promised-io: ^0.3.6
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    customizr: bin/customizr
+  checksum: 5a038817b70f54a27ed4e0fd73e63b67ecd49edb83abcabeda6110ecbc97c19caf3dec56ff526678ee7a17ef09e4111a745d7a41e52e405f60255794d3a7088a
+  languageName: node
+  linkType: hard
+
 "cwebp-bin@npm:^5.0.0":
   version: 5.1.0
   resolution: "cwebp-bin@npm:5.1.0"
@@ -5426,6 +5449,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 2.2.0
   resolution: "entities@npm:2.2.0"
   checksum: 19010dacaf0912c895ea262b4f6128574f9ccf8d4b3b65c7e8334ad0079b3706376360e28d8843ff50a78aabcb8f08f0a32dbfacdc77e47ed77ca08b713669b3
+  languageName: node
+  linkType: hard
+
+"entities@npm:~2.1.0":
+  version: 2.1.0
+  resolution: "entities@npm:2.1.0"
+  checksum: a10a877e489586a3f6a691fe49bf3fc4e58f06c8e80522f08214a5150ba457e7017b447d4913a3fa041bda06ee4c92517baa4d8d75373eaa79369e9639225ffd
   languageName: node
   linkType: hard
 
@@ -6291,6 +6321,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"file@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "file@npm:0.2.2"
+  checksum: ea653e91c2ffb3325db28d63aeef6ce35cbc7b65835f21a33dd6baaeb3044cfd426b0c00b5d9f22a1e4489f0790240368229244ab6714584204326cdeb92a9a4
+  languageName: node
+  linkType: hard
+
 "filename-regex@npm:^2.0.0":
   version: 2.0.1
   resolution: "filename-regex@npm:2.0.1"
@@ -6717,7 +6754,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:^2.3.2, fsevents@npm:~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -6737,7 +6774,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
@@ -7539,6 +7576,18 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"gulp-modernizr@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "gulp-modernizr@npm:4.0.3"
+  dependencies:
+    customizr: ^2.0.4
+    plugin-error: ^1.0.1
+    through2: ^4.0.2
+    vinyl: ^2.2.1
+  checksum: 91259622612f7e07c7740d71d7702024a2dc8639da791d980050e11e62927dcfcf957a2d2ba181333d3502f80ba2814c14929c29869e505daae63bf69a30f6af
+  languageName: node
+  linkType: hard
+
 "gulp-newer@npm:^1.4.0":
   version: 1.4.0
   resolution: "gulp-newer@npm:1.4.0"
@@ -7627,6 +7676,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     gulp-group-css-media-queries: ^1.2.2
     gulp-if: ^3.0.0
     gulp-imagemin: ^7.1.0
+    gulp-modernizr: ^4.0.3
     gulp-newer: ^1.4.0
     gulp-plumber: ^1.2.1
     gulp-rename: ^2.0.0
@@ -9631,6 +9681,15 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"linkify-it@npm:^3.0.1":
+  version: 3.0.3
+  resolution: "linkify-it@npm:3.0.3"
+  dependencies:
+    uc.micro: ^1.0.1
+  checksum: 31367a4bb70c5bbc9703246236b504b0a8e049bcd4e0de4291fa50f0ebdebf235b5eb54db6493cb0b1319357c6eeafc4324c9f4aa34b0b943d9f2e11a1268fbc
+  languageName: node
+  linkType: hard
+
 "lint-staged@npm:^12.3.5":
   version: 12.5.0
   resolution: "lint-staged@npm:12.5.0"
@@ -10184,6 +10243,21 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"markdown-it@npm:^12.3.2":
+  version: 12.3.2
+  resolution: "markdown-it@npm:12.3.2"
+  dependencies:
+    argparse: ^2.0.1
+    entities: ~2.1.0
+    linkify-it: ^3.0.1
+    mdurl: ^1.0.1
+    uc.micro: ^1.0.5
+  bin:
+    markdown-it: bin/markdown-it.js
+  checksum: 890555711c1c00fa03b936ca2b213001a3b9b37dea140d8445ae4130ce16628392aad24b12e2a0a9935336ca5951f2957a38f4e5309a2e38eab44e25ff32a41e
+  languageName: node
+  linkType: hard
+
 "matchdep@npm:^2.0.0":
   version: 2.0.0
   resolution: "matchdep@npm:2.0.0"
@@ -10221,6 +10295,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 2.0.4
   resolution: "mdn-data@npm:2.0.4"
   checksum: add3c95e6d03d301b8a8bcfee3de33f4d07e4c5eee5b79f18d6d737de717e22472deadf67c1a8563983c0b603e10d7df40aa8e5fddf18884dfe118ccec7ae329
+  languageName: node
+  linkType: hard
+
+"mdurl@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "mdurl@npm:1.0.1"
+  checksum: 71731ecba943926bfbf9f9b51e28b5945f9411c4eda80894221b47cc105afa43ba2da820732b436f0798fd3edbbffcd1fc1415843c41a87fea08a41cc1e3d02b
   languageName: node
   linkType: hard
 
@@ -10470,7 +10551,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.1.0, minimist@npm:^1.1.3, minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.6":
+"minimist@npm:^1.1.0, minimist@npm:^1.1.3, minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:^1.2.6":
   version: 1.2.6
   resolution: "minimist@npm:1.2.6"
   checksum: d15428cd1e11eb14e1233bcfb88ae07ed7a147de251441d61158619dfb32c4d7e9061d09cab4825fdee18ecd6fce323228c8c47b5ba7cd20af378ca4048fb3fb
@@ -10582,6 +10663,17 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"mkdirp@npm:0.5.5":
+  version: 0.5.5
+  resolution: "mkdirp@npm:0.5.5"
+  dependencies:
+    minimist: ^1.2.5
+  bin:
+    mkdirp: bin/cmd.js
+  checksum: 3bce20ea525f9477befe458ab85284b0b66c8dc3812f94155af07c827175948cdd8114852ac6c6d82009b13c1048c37f6d98743eb019651ee25c39acc8aabe7d
+  languageName: node
+  linkType: hard
+
 "mkdirp@npm:^0.5.0, mkdirp@npm:^0.5.1, mkdirp@npm:^0.5.4, mkdirp@npm:^0.5.5, mkdirp@npm:~0.5.1":
   version: 0.5.6
   resolution: "mkdirp@npm:0.5.6"
@@ -10599,6 +10691,23 @@ bem-tools-create@bem-tools/bem-tools-create:
   bin:
     mkdirp: bin/cmd.js
   checksum: a96865108c6c3b1b8e1d5e9f11843de1e077e57737602de1b82030815f311be11f96f09cce59bd5b903d0b29834733e5313f9301e3ed6d6f6fba2eae0df4298f
+  languageName: node
+  linkType: hard
+
+"modernizr@npm:^3":
+  version: 3.12.0
+  resolution: "modernizr@npm:3.12.0"
+  dependencies:
+    doctrine: ^3.0.0
+    file: ^0.2.2
+    lodash: ^4.17.21
+    markdown-it: ^12.3.2
+    mkdirp: 0.5.5
+    requirejs: ^2.3.6
+    yargs: ^15.4.1
+  bin:
+    modernizr: bin/modernizr
+  checksum: b2e10218468758d7a3f80790bdec60efe4a3029a4f97a565ea0677c66f56e4856f761f69b1ec0f33d9635a323b7c50a472a38701e4c2c58fedde73b0f2a6a403
   languageName: node
   linkType: hard
 
@@ -12031,6 +12140,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"promised-io@npm:^0.3.6":
+  version: 0.3.6
+  resolution: "promised-io@npm:0.3.6"
+  checksum: 4d20d4a9fb5e71c49ce4e62f83b2e30be7776308b429c59f3891075a1a0af3a9e941efb939351f3c6cd1ee10576b0fd5071dd183943d8c103084e93bfb5ef6db
+  languageName: node
+  linkType: hard
+
 "proto-list@npm:~1.2.1":
   version: 1.2.4
   resolution: "proto-list@npm:1.2.4"
@@ -12629,6 +12745,16 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 2.0.0
   resolution: "require-main-filename@npm:2.0.0"
   checksum: e9e294695fea08b076457e9ddff854e81bffbe248ed34c1eec348b7abbd22a0d02e8d75506559e2265e96978f3c4720bd77a6dad84755de8162b357eb6c778c7
+  languageName: node
+  linkType: hard
+
+"requirejs@npm:^2.3.6":
+  version: 2.3.6
+  resolution: "requirejs@npm:2.3.6"
+  bin:
+    r.js: ./bin/r.js
+    r_js: ./bin/r.js
+  checksum: 7c3c006bf5e1887d93ac7adb7f600328918d23cf3d28282a505a2873d4ddde499c7ec560e55cee3440d17fe1205cb4dcb72b07f35b39e8940372eca850e49b62
   languageName: node
   linkType: hard
 
@@ -14802,6 +14928,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 1.0.2
   resolution: "ua-parser-js@npm:1.0.2"
   checksum: ff7f6d79a9c1a38aa85a0e751040fc7e17a0b621bda876838d14ebe55aca4e50e68da0350f181e58801c2d8a35e7db4e12473776e558910c4b7cabcec96aa3bf
+  languageName: node
+  linkType: hard
+
+"uc.micro@npm:^1.0.1, uc.micro@npm:^1.0.5":
+  version: 1.0.6
+  resolution: "uc.micro@npm:1.0.6"
+  checksum: 6898bb556319a38e9cf175e3628689347bd26fec15fc6b29fa38e0045af63075ff3fea4cf1fdba9db46c9f0cbf07f2348cd8844889dd31ebd288c29fe0d27e7a
   languageName: node
   linkType: hard
 
