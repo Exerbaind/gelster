@@ -1,0 +1,100 @@
+$textColor: #d2d2d2;
+
+.footer {
+    width: 100%;
+    background-color: #353535;
+    padding: 15px 0;
+    @include flex();
+}
+
+.footer__container {
+    height: 100%;
+    @include commonContainer();
+    @include flex(space-between);
+
+    @media screen and (max-width: $tablet) {
+        @include flex(center, center, column, wrap);
+    }
+}
+
+.footer__social {
+    @include flex();
+}
+
+.social__link {
+    width: 36px;
+    height: 28px;
+    text-decoration: none;
+    margin-left: 5px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        .social__icon {
+            use {
+                fill: $primary;
+            }
+        }
+    }
+}
+
+.social__icon {
+    width: 100%;
+    height: 100%;
+    use {
+        fill: $textColor;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+    }
+}
+
+.footer__disclaimer {
+    text-align: center;
+    @media screen and (max-width: $tablet) {
+        margin-top: 15px;
+    }
+}
+
+.disclaimer__upper {
+    font-size: 18px;
+    color: $textColor;
+}
+
+.disclaimer__bottom {
+    font-size: 16px;
+    font-family: 'PTSerif';
+    font-style: italic;
+    color: $textColor;
+    margin-top: 5px;
+}
+
+.footer__contact {
+    @include flex(flex-end, flex-end, column, wrap);
+    @media screen and (max-width: $tablet) {
+        margin-top: 15px;
+    }
+}
+
+.contact__phone {
+    color: $textColor;
+    text-decoration: none;
+    font-family: 'PTSerif';
+    font-size: 18px;
+
+    small {
+        opacity: 1 !important;
+        color: $textColor !important;
+    }
+}
+
+.footer__hotlog {
+    @media screen and (max-width: $tablet) {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+}
