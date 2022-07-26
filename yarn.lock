@@ -7567,6 +7567,16 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"gulp-json-minify@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "gulp-json-minify@npm:1.2.2"
+  dependencies:
+    node-json-minify: ^1.0.0
+    through2: ^2.0.3
+  checksum: 76e6e53aefb43ab2aa48b25df275204a20764844ed53d788b8245c610a5a0df2feb861d728c33372a2a7276dfca90290be7f4b4ca95fd6e1ded7fd4b7a6d9eea
+  languageName: node
+  linkType: hard
+
 "gulp-match@npm:^1.1.0":
   version: 1.1.0
   resolution: "gulp-match@npm:1.1.0"
@@ -7676,6 +7686,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     gulp-group-css-media-queries: ^1.2.2
     gulp-if: ^3.0.0
     gulp-imagemin: ^7.1.0
+    gulp-json-minify: ^1.2.2
     gulp-modernizr: ^4.0.3
     gulp-newer: ^1.4.0
     gulp-plumber: ^1.2.1
@@ -10905,6 +10916,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   bin:
     node-gyp: bin/node-gyp.js
   checksum: 1437fa4a879b5b9010604128e8da8609b57c66034262087539ee04a8b764b8436af2be01bab66f8fc729a3adba2dcc21b10a32b9f552696c3fa8cd657d134fc4
+  languageName: node
+  linkType: hard
+
+"node-json-minify@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "node-json-minify@npm:1.0.0"
+  checksum: f13b3b687eb7c5acd1092bbafe8e1907b5783fe343123ba2486166dd47eb9d1e5092ea7f51bb02d36f2e310b3f359d765c51eaa30fb25b1fbb4430b0fae3bc4b
   languageName: node
   linkType: hard
 

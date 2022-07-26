@@ -5,9 +5,9 @@ import gulp from "gulp";
 const requireDir = require("require-dir"),
   paths = {
     views: {
-      src: ["./src/views/**/*.html"],
+      src: ["./src/views/**/*.{htm,html}"],
       dist: "./dist/",
-      watch: ["./src/blocks/**/*.html", "./src/views/**/*.html"],
+      watch: ["./src/blocks/**/*.{htm,html}", "./src/views/**/*.{htm,html}"],
     },
     styles: {
       src: "./src/styles/main.{scss,sass}",
@@ -46,6 +46,11 @@ const requireDir = require("require-dir"),
       src: "./src/.htaccess",
       dist: "./dist/",
     },
+    database: {
+      src: "./src/database/**/*.json",
+      dist: "./dist/database/",
+      watch: "./src/database/**/*.json",
+    },
   };
 
 requireDir("./gulp-tasks/");
@@ -58,6 +63,7 @@ export const development = gulp.series(
     "views",
     "styles",
     "scripts",
+    "database",
     "images",
     "sprites",
     "fonts",
@@ -72,6 +78,7 @@ export const prod = gulp.series(
     "views",
     "styles",
     "scripts",
+    "database",
     "images",
     "sprites",
     "fonts",

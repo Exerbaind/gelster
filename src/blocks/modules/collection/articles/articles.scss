@@ -1,0 +1,156 @@
+.articles {
+    @include flex();
+    width: 100%;
+}
+
+.articles__container {
+    @include commonContainer();
+}
+
+.articles__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: $green;
+    font-weight: lighter;
+}
+
+.articles__filters {
+    margin-top: 20px;
+    @include flex(space-between);
+}
+
+.filters__colors {
+    @include flex(flex-start);
+}
+
+.color__item {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 15px;
+    transition: $transition;
+    opacity: 0.7;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 120%;
+        width: 120%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid transparent;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &--active {
+        opacity: 1;
+        &::before {
+            border: 2px solid $primary;
+        }
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.filters__width {
+    @include flex(flex-start);
+}
+
+.width__item {
+    background-color: $greyExtraLight;
+    border: none;
+    color: #403533;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &--active {
+        background-color: $primary;
+        color: white;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.articles__list {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 20px;
+    min-height: 230px;
+    max-height: 230px;
+}
+
+.articles__item {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        .item__info {
+            bottom: -70px;
+        }
+    }
+}
+
+.item__hishslide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.item__image {
+    height: 100%;
+    width: 100%;
+}
+
+.item__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.6);
+    @include flex(center, center, column, wrap);
+    transition: $transition;
+}
+
+.item__number, .item__name {
+    color: #403533;
+    font-size: 18px;
+}
+
+.item__name {
+    font-family: "PTSerif";
+    font-style: italic;
+}
+
+// highslide
+
+.highslide-credits {
+    display: none !important;
+}

@@ -1,0 +1,47 @@
+{
+    "link": "k_lin_real.htm",
+    "name": "Marmoleum Real",
+    "type": "Натуральный линолеум",
+    "articles": [
+        {
+            "name": "dove grey",
+            "number": "2621",
+            "color": "grey",
+            "width": ["2,5", "3,5"],
+            "image": "./img/assets/forbo/marmoleum/real/articles/2621.jpg",
+            "video": "null"
+        },
+        {
+            "name": "blue",
+            "number": "3030",
+            "color": "blue",
+            "width": ["2,0", "2,5", "3,5"],
+            "image": "./img/assets/forbo/marmoleum/real/articles/3030.jpg",
+            "video": "null"     
+        },
+        {
+            "name": "chartreuse",
+            "number": "3224",
+            "color": "green",
+            "width": ["2,0", "2,5", "3,5"],
+            "image": "./img/assets/forbo/marmoleum/real/articles/3224.jpg",
+            "video": "null"     
+        },
+        {
+            "name": "dandelion",
+            "number": "3225",
+            "color": "orange",
+            "width": ["2,5", "3,5"],
+            "image": "./img/assets/forbo/marmoleum/real/articles/3225.jpg",
+            "video": "null"     
+        },
+        {
+            "name": "bleeckerstreet",
+            "number": "3127",
+            "color": "red",
+            "width": ["2,0", "2,5", "3,5"],
+            "image": "./img/assets/forbo/marmoleum/real/articles/3127.jpg",
+            "video": "null"     
+        }
+    ]
+}

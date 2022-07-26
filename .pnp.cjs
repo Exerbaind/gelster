@@ -53,6 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gulp-group-css-media-queries", "npm:1.2.2"],\
             ["gulp-if", "npm:3.0.0"],\
             ["gulp-imagemin", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:7.1.0"],\
+            ["gulp-json-minify", "npm:1.2.2"],\
             ["gulp-modernizr", "npm:4.0.3"],\
             ["gulp-newer", "npm:1.4.0"],\
             ["gulp-plumber", "npm:1.2.1"],\
@@ -9647,6 +9648,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["gulp-json-minify", [\
+        ["npm:1.2.2", {\
+          "packageLocation": "./.yarn/cache/gulp-json-minify-npm-1.2.2-811a03fdc2-76e6e53aef.zip/node_modules/gulp-json-minify/",\
+          "packageDependencies": [\
+            ["gulp-json-minify", "npm:1.2.2"],\
+            ["node-json-minify", "npm:1.0.0"],\
+            ["through2", "npm:2.0.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["gulp-match", [\
         ["npm:1.1.0", {\
           "packageLocation": "./.yarn/cache/gulp-match-npm-1.1.0-eb08501eba-1c0950be35.zip/node_modules/gulp-match/",\
@@ -9765,6 +9777,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gulp-group-css-media-queries", "npm:1.2.2"],\
             ["gulp-if", "npm:3.0.0"],\
             ["gulp-imagemin", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:7.1.0"],\
+            ["gulp-json-minify", "npm:1.2.2"],\
             ["gulp-modernizr", "npm:4.0.3"],\
             ["gulp-newer", "npm:1.4.0"],\
             ["gulp-plumber", "npm:1.2.1"],\
@@ -13318,6 +13331,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.3.7"],\
             ["tar", "npm:6.1.11"],\
             ["which", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["node-json-minify", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/node-json-minify-npm-1.0.0-33222352a0-f13b3b687e.zip/node_modules/node-json-minify/",\
+          "packageDependencies": [\
+            ["node-json-minify", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
