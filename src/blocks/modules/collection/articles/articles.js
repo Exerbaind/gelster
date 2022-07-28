@@ -1,9 +1,14 @@
+// globl variables
+
+const articlesContainer = document.querySelector(".articles__list");
+
 // Handlers
 
 let colors = null;
 let widths = null;
 let colorFilterValue = "all";
 let widthFilterValue = "all";
+let listIsOpened = false;
 
 function toggleClassName(item) {
   const activeItem = document.querySelector(`.${item.className}--active`);
@@ -38,6 +43,18 @@ function widthHandler(item, data) {
   createArticlesList(data, colorFilterValue, widthFilterValue);
 }
 
+function moreArticlesHandler() {
+  const moreButtonText = document.querySelector(".articles__more-text") || null;
+  listIsOpened = !listIsOpened;
+
+  if (listIsOpened) {
+    moreButtonText.innerHTML = "скрыть";
+    return articlesContainer.classList.add("articles__list--active");
+  }
+  moreButtonText.innerHTML = "раскрыть коллекцию";
+  return articlesContainer.classList.remove("articles__list--active");
+}
+
 //
 
 let widthFilter = [];
@@ -62,14 +79,11 @@ function createTitle(data) {
 
 function createArticlesList(data, filterByColor, filterByWidth) {
   const { articles } = data;
-  const list = document.querySelector(".articles__list");
 
-  articles.forEach((item) =>
-    createArticle(item, list, filterByColor, filterByWidth)
-  );
+  articles.forEach((item) => createArticle(item, filterByColor, filterByWidth));
 }
 
-function createArticle(item, list, filterByColor, filterByWidth) {
+function createArticle(item, filterByColor, filterByWidth) {
   const { name, number, color, width, image, video } = item;
 
   if (filterByColor !== "all") {
@@ -128,7 +142,7 @@ function createArticle(item, list, filterByColor, filterByWidth) {
 
   container.appendChild(itemInfo);
 
-  list.appendChild(container);
+  articlesContainer.appendChild(container);
 }
 
 function createWidthFilter() {
@@ -178,6 +192,7 @@ function createColorFilter() {
 function initHandlers(data) {
   colors = document.querySelectorAll(".color__item");
   widths = document.querySelectorAll(".width__item");
+  moreButton = document.querySelector(".articles__more-button") || null;
 
   if (colors) {
     colors.forEach((item) => {
@@ -190,6 +205,26 @@ function initHandlers(data) {
       item.onclick = () => widthHandler(item, data);
     });
   }
+
+  if (moreButton) {
+    moreButton.onclick = () => moreArticlesHandler();
+  }
+}
+
+function createMoreButton() {
+  const container = document.querySelector(".articles__more-container");
+
+  const button = document.createElement("div");
+  button.className = "articles__more-button";
+
+  const buttonText = document.createElement("p");
+  buttonText.className = "articles__more-text";
+  buttonText.innerHTML = "развернуть коллекцию";
+  button.appendChild(buttonText);
+
+  // TODO: допилить иконку стрелки
+
+  return container.appendChild(button);
 }
 
 function main() {
@@ -203,6 +238,10 @@ function main() {
 
   if (colorFilter && colorFilter.length) {
     createColorFilter();
+  }
+
+  if (data.articles.length > 5) {
+    createMoreButton(data);
   }
 
   initHandlers(data);

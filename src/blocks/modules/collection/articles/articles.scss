@@ -94,11 +94,17 @@
 .articles__list {
     display: grid;
     grid-template-columns: repeat(5, 2fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
     margin-top: 20px;
     min-height: 230px;
     max-height: 230px;
+    overflow: hidden;
+    transition: $transition;
+
+    &--active {
+        max-height: 20000px;
+    }
 }
 
 .articles__item {
@@ -147,6 +153,28 @@
 .item__name {
     font-family: "PTSerif";
     font-style: italic;
+}
+
+.articles__more-container {
+    display: flex;
+    margin-top: 10px;
+    @include flex(flex-end, center);
+}
+
+.articles__more-button {
+    @include flex(center, center);
+    cursor: pointer;
+}
+
+.articles__more-text {
+    font-size: 16px;
+    color: $green;
+}
+
+.articles__more-icon {
+    width: 30px;
+    height: 30px;
+    @include flex();
 }
 
 // highslide

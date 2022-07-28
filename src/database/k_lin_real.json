@@ -42,6 +42,14 @@
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3127.jpg",
             "video": "null"     
+        },
+        {
+            "name": "serene grey",
+            "number": "3146",
+            "color": "grey",
+            "width": ["2,0", "2,5", "3,2", "3,5"],
+            "image": "./img/assets/forbo/marmoleum/real/articles/3146.jpg",
+            "video": "null"     
         }
     ]
 }
