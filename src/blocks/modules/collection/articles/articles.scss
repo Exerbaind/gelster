@@ -1,6 +1,6 @@
 
 .articles {
-    @include flex(flex-start, flex-start, column, wrap);
+    @include flex(flex-start, center, column, wrap);
     width: 100%;
     transition: $transition;
     @media screen and (max-width: $mobile) {
