@@ -7,6 +7,9 @@ const isMobile = document.documentElement.clientWidth <= 700;
 // globl variables
 
 const articlesContainer = document.querySelector(".articles__list");
+const sectionHandlerButton =
+  document.querySelector(".articles__handler") || null;
+const mainContainer = document.querySelector(".articles");
 
 // Handlers
 
@@ -15,6 +18,7 @@ let widths = null;
 let colorFilterValue = "all";
 let widthFilterValue = "all";
 let listIsOpened = false;
+let isSectionActive = true;
 
 function initHandlers(data) {
   colors = document.querySelectorAll(".color__item");
@@ -35,6 +39,10 @@ function initHandlers(data) {
 
   if (moreButton) {
     moreButton.onclick = () => moreArticlesHandler();
+  }
+
+  if (sectionHandlerButton) {
+    sectionHandlerButton.onclick = () => sectionHandler();
   }
 }
 
@@ -81,6 +89,16 @@ function moreArticlesHandler() {
   }
   moreButtonText.innerHTML = "раскрыть коллекцию";
   return articlesContainer.classList.remove("articles__list--active");
+}
+
+function sectionHandler() {
+  isSectionActive = !isSectionActive;
+
+  if (isSectionActive) {
+    return mainContainer.classList.add("articles--active");
+  }
+
+  return mainContainer.classList.remove("articles--active");
 }
 
 //
@@ -158,6 +176,8 @@ function createArticle(item, filterByColor, filterByWidth) {
 
   const itemNumber = createTag("p", "item__number", number);
   itemInfo.appendChild(itemNumber);
+
+  //   TODO: доделать иконки
 
   const itemName = createTag("p", "item__name", name);
   itemInfo.appendChild(itemName);
