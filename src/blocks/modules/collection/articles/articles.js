@@ -1,3 +1,9 @@
+import createTag from "../../../../js/utils/createTag";
+
+// screenType
+
+const isMobile = document.documentElement.clientWidth <= 700;
+
 // globl variables
 
 const articlesContainer = document.querySelector(".articles__list");
@@ -9,6 +15,28 @@ let widths = null;
 let colorFilterValue = "all";
 let widthFilterValue = "all";
 let listIsOpened = false;
+
+function initHandlers(data) {
+  colors = document.querySelectorAll(".color__item");
+  widths = document.querySelectorAll(".width__item");
+  const moreButton = document.querySelector(".articles__more-button") || null;
+
+  if (colors) {
+    colors.forEach((item) => {
+      item.onclick = () => colorsHandler(item, data);
+    });
+  }
+
+  if (widths) {
+    widths.forEach((item) => {
+      item.onclick = () => widthHandler(item, data);
+    });
+  }
+
+  if (moreButton) {
+    moreButton.onclick = () => moreArticlesHandler();
+  }
+}
 
 function toggleClassName(item) {
   const activeItem = document.querySelector(`.${item.className}--active`);
@@ -74,7 +102,9 @@ function createTitle(data) {
   const { name } = data;
   const title = document.querySelector(".articles__title");
 
-  title.innerHTML = `Цветовая палитра ${name}`;
+  if (isMobile) return null;
+
+  return (title.innerHTML = `Цветовая палитра ${name}`);
 }
 
 function createArticlesList(data, filterByColor, filterByWidth) {
@@ -99,8 +129,7 @@ function createArticle(item, filterByColor, filterByWidth) {
     }
   }
 
-  const container = document.createElement("div");
-  container.className = "articles__item";
+  const container = createTag("div", "articles__item");
   if (color) {
     colorFilter = [...colorFilter, color];
     container.dataset.color = color;
@@ -111,33 +140,26 @@ function createArticle(item, filterByColor, filterByWidth) {
     container.dataset.widthValue = itemWidth;
   }
 
-  const highslideContainer = document.createElement("a");
-  highslideContainer.className = "item__hishslide";
+  const highslideContainer = createTag("a", "item__highslide");
   highslideContainer.setAttribute("href", image);
   highslideContainer.setAttribute(
     "onclick",
     "return hs.expand (this, { captionEval: 'this.thumb.alt' })"
   );
 
-  const itemImage = document.createElement("img");
-  itemImage.className = "item__image";
+  const itemImage = createTag("img", "item__image");
   itemImage.setAttribute("alt", `${name}`);
   itemImage.src = image;
 
   highslideContainer.appendChild(itemImage);
   container.appendChild(highslideContainer);
 
-  const itemInfo = document.createElement("div");
-  itemInfo.className = "item__info";
+  const itemInfo = createTag("div", "item__info");
 
-  const itemNumber = document.createElement("p");
-  itemNumber.className = "item__number";
-  itemNumber.innerHTML = number;
+  const itemNumber = createTag("p", "item__number", number);
   itemInfo.appendChild(itemNumber);
 
-  const itemName = document.createElement("p");
-  itemName.className = "item__name";
-  itemName.innerHTML = name;
+  const itemName = createTag("p", "item__name", name);
   itemInfo.appendChild(itemName);
 
   container.appendChild(itemInfo);
@@ -149,17 +171,23 @@ function createWidthFilter() {
   const filtersWidth = document.querySelector(".filters__width");
   const widthFilterValues = Array.from(new Set(widthFilter));
 
-  const allWidthButton = document.createElement("button");
-  allWidthButton.className = "width__item width__item--active";
-  allWidthButton.innerHTML = `Все`;
+  const allWidthButton = createTag(
+    "button",
+    "width__item width__item--active",
+    "Все"
+  );
   allWidthButton.dataset.widthValue = "all";
+
+  if (isMobile) {
+    const widthText = createTag("p", "filter__text", "Выберите толщину:");
+
+    filtersWidth.appendChild(widthText);
+  }
 
   filtersWidth.appendChild(allWidthButton);
 
   widthFilterValues.forEach((item) => {
-    const widthButton = document.createElement("button");
-    widthButton.className = "width__item";
-    widthButton.innerHTML = `${item} мм`;
+    const widthButton = createTag("button", "width__item", `${item} мм`);
     widthButton.dataset.widthValue = item;
 
     filtersWidth.appendChild(widthButton);
@@ -170,18 +198,25 @@ function createColorFilter() {
   const filterColor = document.querySelector(".filters__colors");
   const filterColorValues = Array.from(new Set(colorFilter));
 
-  const allColorsButton = document.createElement("button");
-  allColorsButton.className = "color__item color__item--active";
+  const allColorsButton = createTag(
+    "button",
+    "color__item color__item--active"
+  );
   allColorsButton.style.backgroundImage = `linear-gradient(to top, ${filterColorValues.join(
     ", "
   )})`;
   allColorsButton.dataset.colorValue = "all";
 
+  if (isMobile) {
+    const colorsText = createTag("p", "filter__text", "Выберите цвет:");
+
+    filterColor.appendChild(colorsText);
+  }
+
   filterColor.appendChild(allColorsButton);
 
   filterColorValues.forEach((item) => {
-    const colorButton = document.createElement("button");
-    colorButton.className = "color__item";
+    const colorButton = createTag("button", "color__item");
     colorButton.style.backgroundColor = item;
     colorButton.dataset.colorValue = item;
 
@@ -189,37 +224,16 @@ function createColorFilter() {
   });
 }
 
-function initHandlers(data) {
-  colors = document.querySelectorAll(".color__item");
-  widths = document.querySelectorAll(".width__item");
-  moreButton = document.querySelector(".articles__more-button") || null;
-
-  if (colors) {
-    colors.forEach((item) => {
-      item.onclick = () => colorsHandler(item, data);
-    });
-  }
-
-  if (widths) {
-    widths.forEach((item) => {
-      item.onclick = () => widthHandler(item, data);
-    });
-  }
-
-  if (moreButton) {
-    moreButton.onclick = () => moreArticlesHandler();
-  }
-}
-
 function createMoreButton() {
   const container = document.querySelector(".articles__more-container");
 
-  const button = document.createElement("div");
-  button.className = "articles__more-button";
+  const button = createTag("div", "articles__more-button");
 
-  const buttonText = document.createElement("p");
-  buttonText.className = "articles__more-text";
-  buttonText.innerHTML = "развернуть коллекцию";
+  const buttonText = createTag(
+    "p",
+    "articles__more-text",
+    "развернуть коллекцию"
+  );
   button.appendChild(buttonText);
 
   // TODO: допилить иконку стрелки
@@ -240,7 +254,9 @@ function main() {
     createColorFilter();
   }
 
-  if (data.articles.length > 5) {
+  const numberOfArticles = isMobile ? 6 : 5;
+
+  if (data.articles.length > numberOfArticles) {
     createMoreButton(data);
   }
 

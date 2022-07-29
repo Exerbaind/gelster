@@ -19,10 +19,24 @@
 .articles__filters {
     margin-top: 20px;
     @include flex(space-between);
+
+    @media screen and (max-width: $mobile) {
+        @include flex(flex-start, flex-start, column, wrap);
+    }
 }
 
 .filters__colors {
     @include flex(flex-start);
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        @include flex(flex-start, center, row, wrap)
+    }
+}
+
+.filter__text {
+    font-size: 16px;
+    color: $green;
+    margin: 0 15px 15px 0;
 }
 
 .color__item {
@@ -63,10 +77,20 @@
     &:first-child {
         margin-left: 0;
     }
+
+    @media screen and (max-width: $mobile) {
+        margin: 0 15px 15px 0;
+        height: 35px;
+        width: 35px;
+    }
 }
 
 .filters__width {
     @include flex(flex-start);
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        @include flex(flex-start, center, row, wrap)
+    }
 }
 
 .width__item {
@@ -89,6 +113,28 @@
             opacity: 1;
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        margin: 0 10px 10px 0;
+        padding: 8px 0;
+        width: 65px;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 1px solid #CBCBCB;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &--active {
+            border: 1px solid $primary;
+            color: #403533;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .articles__list {
@@ -103,7 +149,21 @@
     transition: $transition;
 
     &--active {
-        max-height: 20000px;
+        max-height: 30000px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: repeat(3, 4fr);
+        min-height: 480px;
+        max-height: 480px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        grid-template-columns: repeat(2, 6fr);
+        min-height: 620px;
+        max-height: 620px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
 }
 
@@ -119,9 +179,13 @@
             bottom: -70px;
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        height: 200px;
+    }
 }
 
-.item__hishslide {
+.item__highslide {
     position: absolute;
     top: 0;
     left: 0;
