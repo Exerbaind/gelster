@@ -1,0 +1,70 @@
+.about {
+    order: 2;
+    @include flex(flex-start, center, column, wrap);
+    width: 50%;
+
+}
+
+.about__container {
+    max-height:300px;
+    transition: $transition;
+    overflow: hidden;
+    width: 100%;
+}
+
+.about__title {
+    font-family: "PTSerif";
+    font-style: italic;
+    font-size: 24px;
+    color: $primary;
+    font-weight: lighter;
+}
+
+.about__content {
+    margin-top: 20px;
+    p {
+        font-size: 16px;
+        color: $green;
+        margin-top: 10px;
+        line-height: 24px;
+    }
+}
+
+.about__more {
+    width: 100%;
+    @include flex(flex-end, center, row, nowrap);
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover, &:active {
+        .about__more-text {
+            color: $primary;
+        }
+
+        .about__more-icon {
+            svg {
+                fill: $primary;
+            }
+        }
+    }
+}
+
+.about__more-text {
+    font-size: 16px;
+    color: #d8d8d8;
+    margin-right: 10px;
+    transition: $transition;
+}
+
+.about__more-icon {
+    transform: rotate(180deg);
+    transition: $transition;
+    svg {
+        fill: #d8d8d8;
+        transition: $transition;
+    }
+
+    &--active {
+        transform: rotate(0deg);
+    }
+}

@@ -23,8 +23,13 @@
     <link rel="stylesheet" href="highslide/highslide.css" />
   </head>
   <body>
-    @@include("../blocks/modules/collection/articles/articles.html")
-    @@include("../blocks/modules/footer/footer.html")
+    <main class="main">
+      <div class="main__container">
+        @@include("../blocks/modules/collection/about/about.html")
+        @@include("../blocks/modules/collection/articles/articles.html")
+      </div>
+      @@include("../blocks/modules/footer/footer.html")
+    </main>
     <script defer src="js/main.js"></script>
     <script defer src="highslide/highslide.js"></script>
   </body>

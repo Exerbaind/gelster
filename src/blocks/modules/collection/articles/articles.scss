@@ -1,5 +1,6 @@
 
 .articles {
+    order: 4;
     @include flex(flex-start, center, column, wrap);
     width: 100%;
     transition: $transition;
@@ -63,7 +64,7 @@
 }
 
 .articles__container {
-    @include commonContainer();
+    width: 100%;
 }
 
 .articles__title {

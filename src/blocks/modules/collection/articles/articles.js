@@ -106,16 +106,6 @@ function sectionHandler() {
 let widthFilter = [];
 let colorFilter = [];
 
-function checkCollection() {
-  const collectionPath = document.location.pathname;
-  const collection = collectionPath
-    .replace(".htm", "")
-    .replace(".html", "")
-    .replace("/new", "");
-  const data = require(`../../../../database${collection}.json`);
-  return data;
-}
-
 function createTitle(data) {
   const { name } = data;
   const title = document.querySelector(".articles__title");
@@ -261,8 +251,7 @@ function createMoreButton() {
   return container.appendChild(button);
 }
 
-function main() {
-  const data = checkCollection();
+function articlesSection(data) {
   createTitle(data);
   createArticlesList(data, colorFilterValue, widthFilterValue);
 
@@ -283,4 +272,4 @@ function main() {
   initHandlers(data);
 }
 
-main();
+export default articlesSection;
