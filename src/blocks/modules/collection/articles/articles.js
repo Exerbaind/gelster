@@ -1,3 +1,4 @@
+import collapseContent from "../../../../js/utils/collapseContent";
 import createTag from "../../../../js/utils/createTag";
 
 // screenType
@@ -17,8 +18,9 @@ let colors = null;
 let widths = null;
 let colorFilterValue = "all";
 let widthFilterValue = "all";
-let listIsOpened = false;
 let isSectionActive = true;
+
+let articlesListDefaultHeight = 0;
 
 function initHandlers(data) {
   colors = document.querySelectorAll(".color__item");
@@ -38,9 +40,17 @@ function initHandlers(data) {
   }
 
   if (moreButton) {
-    moreButton.onclick = () => moreArticlesHandler();
+    let listIsOpened = false;
+    moreButton.onclick = () => {
+      listIsOpened = collapseContent(
+        articlesContainer,
+        listIsOpened,
+        articlesListDefaultHeight
+      );
+    };
   }
 
+  // TODO: Переписать на collapseContent
   if (sectionHandlerButton) {
     sectionHandlerButton.onclick = () => sectionHandler();
   }
@@ -79,17 +89,17 @@ function widthHandler(item, data) {
   createArticlesList(data, colorFilterValue, widthFilterValue);
 }
 
-function moreArticlesHandler() {
-  const moreButtonText = document.querySelector(".articles__more-text") || null;
-  listIsOpened = !listIsOpened;
+// function moreArticlesHandler() {
+//   const moreButtonText = document.querySelector(".articles__more-text") || null;
+//   listIsOpened = !listIsOpened;
 
-  if (listIsOpened) {
-    moreButtonText.innerHTML = "скрыть";
-    return articlesContainer.classList.add("articles__list--active");
-  }
-  moreButtonText.innerHTML = "раскрыть коллекцию";
-  return articlesContainer.classList.remove("articles__list--active");
-}
+//   if (listIsOpened) {
+//     moreButtonText.innerHTML = "скрыть";
+//     return articlesContainer.classList.add("articles__list--active");
+//   }
+//   moreButtonText.innerHTML = "раскрыть коллекцию";
+//   return articlesContainer.classList.remove("articles__list--active");
+// }
 
 function sectionHandler() {
   isSectionActive = !isSectionActive;
@@ -267,6 +277,10 @@ function articlesSection(data) {
 
   if (data.articles.length > numberOfArticles) {
     createMoreButton(data);
+  }
+
+  if (!articlesListDefaultHeight) {
+    articlesListDefaultHeight = articlesContainer.offsetHeight;
   }
 
   initHandlers(data);

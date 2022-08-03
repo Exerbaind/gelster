@@ -4,10 +4,12 @@ function collapseContent(element, toggler, defaultHeight) {
   if (toggler) {
     element.style.maxHeight = element.scrollHeight + "px";
   } else {
-    element.style.maxHeight = defaultHeight;
+    element.style.maxHeight = defaultHeight + "px";
   }
 
   return toggler;
 }
 
 export default collapseContent;
+
+// TODO: Добить добавление классов, изменение текста и прочие фишки/анимации

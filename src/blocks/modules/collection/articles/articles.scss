@@ -1,9 +1,11 @@
 
 .articles {
+    margin-top: 20px;
     order: 4;
-    @include flex(flex-start, center, column, wrap);
+    @include flex(flex-start, center, row, wrap);
     width: 100%;
     transition: $transition;
+    overflow: hidden;
     @media screen and (max-width: $mobile) {
         max-height: 50px;
 
@@ -65,6 +67,10 @@
 
 .articles__container {
     width: 100%;
+
+    @media screen and (max-width: $mobile) {
+        padding: 16px;
+    }
 }
 
 .articles__title {
@@ -87,7 +93,9 @@
 
 .filters__colors {
     @include flex(flex-start);
+    margin-left: 5px;
     @media screen and (max-width: $mobile) {
+        margin-left: 0;
         width: 100%;
         @include flex(flex-start, center, row, wrap)
     }
@@ -203,24 +211,17 @@
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     margin-top: 20px;
-    min-height: 230px;
     max-height: 230px;
     overflow: hidden;
     transition: $transition;
 
-    &--active {
-        max-height: 30000px;
-    }
-
     @media screen and (max-width: $tablet) {
         grid-template-columns: repeat(3, 4fr);
-        min-height: 480px;
         max-height: 480px;
     }
 
     @media screen and (max-width: $mobile) {
         grid-template-columns: repeat(2, 6fr);
-        min-height: 620px;
         max-height: 620px;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
