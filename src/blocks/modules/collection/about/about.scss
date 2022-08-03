@@ -11,7 +11,7 @@
 }
 
 .about__container {
-    max-height: 300px;
+    max-height: 350px;
     transition: $transition;
     overflow: hidden;
     width: 100%;
@@ -93,9 +93,11 @@
         color: $green;
         margin-top: 10px;
         line-height: 24px;
+        padding-right: 50px;
+        text-align: justify;
 
         @media screen and (max-width: $mobile) {
-            text-align: justify;
+            padding-right: 0;
         }
     }
 }
@@ -104,6 +106,7 @@
     width: 100%;
     @include flex(flex-end, center, row, nowrap);
     cursor: pointer;
+    margin-right: 80px;
 
     &:hover, &:active {
         .about__more-text {
@@ -139,5 +142,20 @@
 
     &--active {
         transform: rotate(0deg);
+    }
+}
+
+.about__vertical-text {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 24px;
+    color: $primary;
+
+    @media screen and (max-width: $mobile) {
+        display: none;
     }
 }

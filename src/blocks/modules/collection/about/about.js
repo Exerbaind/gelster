@@ -57,7 +57,7 @@ function aboutSection(data) {
   createText(about);
 
   moreHandler.onclick = () => {
-    isTextCollapsed = collapseContent(aboutContainer, isTextCollapsed, 300);
+    isTextCollapsed = collapseContent(aboutContainer, isTextCollapsed, 350);
     textShadow.classList.toggle("about__text-shadow--active");
     moreButtonText.innerHTML = isTextCollapsed ? "скрыть" : "читать далее";
     moreButtonIcon.classList.toggle("about__more-icon--active");
