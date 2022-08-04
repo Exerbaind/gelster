@@ -146,8 +146,7 @@ function tableSection(data) {
         mainTable,
         0,
         tableSectionHandlerButtonIcon,
-        "table__handler-icon--active",
-        true
+        "table__handler-icon--active"
       );
     };
   }

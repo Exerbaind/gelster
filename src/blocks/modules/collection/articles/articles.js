@@ -1,5 +1,6 @@
 import collapseContent from "../../../../js/utils/collapseContent";
 import createTag from "../../../../js/utils/createTag";
+import sectionHandler from "../../../../js/utils/sectionHandler";
 
 // screenType
 
@@ -7,10 +8,23 @@ const isMobile = document.documentElement.clientWidth <= 700;
 
 // globl variables
 
+const mainArticles = document.querySelector(".articles__container");
 const articlesContainer = document.querySelector(".articles__list");
 const articlesSectionHandlerButton =
   document.querySelector(".articles__handler") || null;
-const mainContainer = document.querySelector(".articles");
+const articlesSectionHandlerButtonIcon =
+  document.querySelector(".articles__handler-icon") || null;
+const moreArticlesContainer =
+  document.querySelector(".articles__more-container") || null;
+let moreArticlesButton =
+  document.querySelector(".articles__more-button") || null;
+let moreArticlesButtonText =
+  document.querySelector(".articles__more-text") || null;
+let moreArticlesButtonIcon =
+  document.querySelector(".articles__more-icon") || null;
+let articlesOnPage = document.querySelectorAll(".articles__item") || 0;
+
+const neededNumberOfArticles = isMobile ? 6 : 5;
 
 // Handlers
 
@@ -25,7 +39,11 @@ let articlesListDefaultHeight = 0;
 function initHandlers(data) {
   colors = document.querySelectorAll(".color__item");
   widths = document.querySelectorAll(".width__item");
-  const moreButton = document.querySelector(".articles__more-button") || null;
+  moreArticlesButton = document.querySelector(".articles__more-button") || null;
+  moreArticlesButtonText =
+    document.querySelector(".articles__more-text") || null;
+  moreArticlesButtonIcon =
+    document.querySelector(".articles__more-icon") || null;
 
   if (colors) {
     colors.forEach((item) => {
@@ -39,20 +57,33 @@ function initHandlers(data) {
     });
   }
 
-  if (moreButton) {
+  if (moreArticlesButton) {
     let listIsOpened = false;
-    moreButton.onclick = () => {
+    moreArticlesButton.onclick = () => {
       listIsOpened = collapseContent(
         articlesContainer,
         listIsOpened,
-        articlesListDefaultHeight
+        articlesListDefaultHeight,
+        mainArticles
       );
+      moreArticlesButtonText.innerHTML = listIsOpened
+        ? "скрыть"
+        : "развернуть коллекцию";
+      moreArticlesButtonIcon.classList.toggle("articles__more-icon--active");
     };
   }
 
   // TODO: Переписать на collapseContent
   if (articlesSectionHandlerButton) {
-    articlesSectionHandlerButton.onclick = () => articlesSectionHandler();
+    articlesSectionHandlerButton.onclick = () => {
+      isArticlesSectionActive = sectionHandler(
+        isArticlesSectionActive,
+        mainArticles,
+        0,
+        articlesSectionHandlerButtonIcon,
+        "articles__handler-icon--active"
+      );
+    };
   }
 }
 
@@ -75,6 +106,16 @@ function colorsHandler(item, data) {
     element.removeChild(element.firstChild);
   }
   createArticlesList(data, colorFilterValue, widthFilterValue);
+
+  articlesOnPage = document.querySelectorAll(".articles__item") || null;
+
+  if (articlesOnPage && articlesOnPage.length <= neededNumberOfArticles) {
+    moreArticlesContainer.classList.add("articles__more-container--disabled");
+  } else {
+    moreArticlesContainer.classList.remove(
+      "articles__more-container--disabled"
+    );
+  }
 }
 
 function widthHandler(item, data) {
@@ -87,28 +128,16 @@ function widthHandler(item, data) {
     element.removeChild(element.firstChild);
   }
   createArticlesList(data, colorFilterValue, widthFilterValue);
-}
 
-// function moreArticlesHandler() {
-//   const moreButtonText = document.querySelector(".articles__more-text") || null;
-//   listIsOpened = !listIsOpened;
+  articlesOnPage = document.querySelectorAll(".articles__item") || null;
 
-//   if (listIsOpened) {
-//     moreButtonText.innerHTML = "скрыть";
-//     return articlesContainer.classList.add("articles__list--active");
-//   }
-//   moreButtonText.innerHTML = "раскрыть коллекцию";
-//   return articlesContainer.classList.remove("articles__list--active");
-// }
-
-function articlesSectionHandler() {
-  isArticlesSectionActive = !isArticlesSectionActive;
-
-  if (isArticlesSectionActive) {
-    return mainContainer.classList.add("articles--active");
+  if (articlesOnPage && articlesOnPage.length <= neededNumberOfArticles) {
+    moreArticlesContainer.classList.add("articles__more-container--disabled");
+  } else {
+    moreArticlesContainer.classList.remove(
+      "articles__more-container--disabled"
+    );
   }
-
-  return mainContainer.classList.remove("articles--active");
 }
 
 //
@@ -244,7 +273,7 @@ function createColorFilter() {
   });
 }
 
-function createMoreButton() {
+function createmoreArticlesButton() {
   const container = document.querySelector(".articles__more-container");
 
   const button = createTag("div", "articles__more-button");
@@ -254,11 +283,19 @@ function createMoreButton() {
     "articles__more-text",
     "развернуть коллекцию"
   );
+
+  const buttonIcon =
+    '<svg width="19" height="11" viewBox="0 0 19 11" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 9.17939e-07L0.406732 10.5L18.5933 10.5L9.5 9.17939e-07Z"/></svg>';
+  const buttonIconContainer = createTag(
+    "div",
+    "articles__more-icon",
+    buttonIcon
+  );
+
   button.appendChild(buttonText);
+  button.appendChild(buttonIconContainer);
 
-  // TODO: допилить иконку стрелки
-
-  return container.appendChild(button);
+  container.appendChild(button);
 }
 
 function articlesSection(data) {
@@ -273,10 +310,8 @@ function articlesSection(data) {
     createColorFilter();
   }
 
-  const numberOfArticles = isMobile ? 6 : 5;
-
-  if (data.articles.length > numberOfArticles) {
-    createMoreButton(data);
+  if (data.articles.length > neededNumberOfArticles) {
+    createmoreArticlesButton(data);
   }
 
   if (!articlesListDefaultHeight) {

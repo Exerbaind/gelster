@@ -187,7 +187,7 @@
         {
             "name": "mist gray",
             "number": "3032",
-            "color": "ghostwhite",
+            "color": "grey",
             "width": ["2,0", "2,5", "3,2", "3,5", "4,0"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3032.jpg",
             "video": "null"     
@@ -203,7 +203,7 @@
         {
             "name": "himalaya",
             "number": "3141",
-            "color": "grey",
+            "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3141.jpg",
             "video": "null"     
@@ -211,7 +211,7 @@
         {
             "name": "horse roan",
             "number": "3232",
-            "color": "grey",
+            "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3232.jpg",
             "video": "null"     
@@ -347,7 +347,7 @@
         {
             "name": "spa",
             "number": "3219",
-            "color": "green",
+            "color": "blue",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3219.jpg",
             "video": "null"     
@@ -355,7 +355,7 @@
         {
             "name": "fresco blue",
             "number": "3055",
-            "color": "grey",
+            "color": "blue",
             "width": ["2,0", "2,5", "3,2", "3,5", "4,0"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3055.jpg",
             "video": "null"     
