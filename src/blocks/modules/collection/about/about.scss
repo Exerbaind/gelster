@@ -1,7 +1,7 @@
 .about {
     order: 2;
     @include flex(flex-start, center, column, wrap);
-    width: 50%;
+    width: calc(50% - 5px);
 
     @media screen and (max-width: $mobile) {
         width: 100%;
@@ -25,7 +25,7 @@
 .about__text-shadow {
     display: none;
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 0;
     background-color: white;
     width: 100%;
@@ -37,13 +37,17 @@
     }
 }
 .about__header {
-    @include flex(space-between, center, row, nowrap);
+    @include flex(space-between, flex-start, row, nowrap);
+    @media screen and (max-width: $mobile) {
+        @include flex();
+    }
 }
 
 .about__to-articles {
     @include flex(center, center, row, nowrap);
     background-color: $primary;
-    padding: 10px 20px;
+    padding: 0px 20px;
+    height: 55px;
     max-width: 150px;
     cursor: pointer;
     transition: $transition;
@@ -55,6 +59,10 @@
     &:active {
         opacity: 0.9;
     }
+
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
 }
 
 .about__to-articles-text {
@@ -64,8 +72,8 @@
 
 .about__to-articles-icon {
     transform: rotate(90deg);
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 
     svg {
         fill: white;
@@ -80,6 +88,7 @@
     font-size: 24px;
     color: $primary;
     font-weight: lighter;
+    margin: 0;
 
     @media screen and (max-width: $mobile) {
         text-align: center;
@@ -106,7 +115,8 @@
     width: 100%;
     @include flex(flex-end, center, row, nowrap);
     cursor: pointer;
-    margin-right: 80px;
+    padding-right: 50px;
+    margin-top: 30px;
 
     &:hover, &:active {
         .about__more-text {
@@ -122,6 +132,8 @@
 
     @media screen and (max-width: $mobile) {
         @include flex(center, center, row, nowrap);
+        margin: 10px 0 20px 0;
+        padding-right: 0;
     }
 }
 

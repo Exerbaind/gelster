@@ -8,6 +8,7 @@
     overflow: hidden;
     @media screen and (max-width: $mobile) {
         max-height: 50px;
+        margin-top: 0;
 
         &--active {
             max-height: 35000px;
@@ -95,7 +96,6 @@
     @include flex(flex-start);
     margin-left: 5px;
     @media screen and (max-width: $mobile) {
-        margin-left: 0;
         width: 100%;
         @include flex(flex-start, center, row, wrap)
     }
@@ -284,6 +284,10 @@
     display: flex;
     margin-top: 10px;
     @include flex(flex-end, center);
+
+    @media screen and (max-width: $mobile) {
+        margin: 10px 0 20px 0;
+    }
 }
 
 .articles__more-button {

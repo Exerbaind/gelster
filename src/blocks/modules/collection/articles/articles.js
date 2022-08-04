@@ -8,7 +8,7 @@ const isMobile = document.documentElement.clientWidth <= 700;
 // globl variables
 
 const articlesContainer = document.querySelector(".articles__list");
-const sectionHandlerButton =
+const articlesSectionHandlerButton =
   document.querySelector(".articles__handler") || null;
 const mainContainer = document.querySelector(".articles");
 
@@ -18,7 +18,7 @@ let colors = null;
 let widths = null;
 let colorFilterValue = "all";
 let widthFilterValue = "all";
-let isSectionActive = true;
+let isArticlesSectionActive = true;
 
 let articlesListDefaultHeight = 0;
 
@@ -51,8 +51,8 @@ function initHandlers(data) {
   }
 
   // TODO: Переписать на collapseContent
-  if (sectionHandlerButton) {
-    sectionHandlerButton.onclick = () => sectionHandler();
+  if (articlesSectionHandlerButton) {
+    articlesSectionHandlerButton.onclick = () => articlesSectionHandler();
   }
 }
 
@@ -101,10 +101,10 @@ function widthHandler(item, data) {
 //   return articlesContainer.classList.remove("articles__list--active");
 // }
 
-function sectionHandler() {
-  isSectionActive = !isSectionActive;
+function articlesSectionHandler() {
+  isArticlesSectionActive = !isArticlesSectionActive;
 
-  if (isSectionActive) {
+  if (isArticlesSectionActive) {
     return mainContainer.classList.add("articles--active");
   }
 

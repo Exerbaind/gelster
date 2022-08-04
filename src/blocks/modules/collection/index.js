@@ -1,5 +1,6 @@
 import aboutSection from "./about/about";
 import articlesSection from "./articles/articles";
+import tableSection from "./table/table";
 
 function checkCollection() {
   const collectionPath = document.location.pathname;
@@ -15,6 +16,7 @@ function main() {
   const data = checkCollection();
   articlesSection(data);
   aboutSection(data);
+  tableSection(data);
 }
 
 main();
