@@ -288,12 +288,8 @@
 
 .articles__more-container {
     display: flex;
-    margin-top: 10px;
-    @include flex(flex-end, center);
-
-    @media screen and (max-width: $mobile) {
-        margin: 10px 0 20px 0;
-    }
+    margin: 10px 0 20px 0;
+    @include flex(flex-end, center);        
 
     &--disabled {
         display: none;
