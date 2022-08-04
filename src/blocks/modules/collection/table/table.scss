@@ -122,7 +122,35 @@
     background-color: $greyExtraLight;
     height: 55px;
     width: 100%;
+    transition: $transition;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+
+        .table__headerValueIconContainer {
+            svg {
+                fill: white;
+            }
+        }
+    }
     
+}
+
+.table__headerValueIconContainer {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: rotate(180deg) translateX(50%);
+    height: 8px;
+    width: 20px;
+
+    svg {
+        fill: $green;
+        height: 100%;
+        width: 100%;
+        transition: $transition;
+    }
 }
 
 .table__headerValueList {
@@ -141,6 +169,13 @@
     background-color: $greyExtraLight;
     height: 55px;
     width: 100%;
+    transition: $transition;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+        opacity: 0.7;
+    }
 }
 
 .table__body {

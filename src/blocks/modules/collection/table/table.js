@@ -52,10 +52,17 @@ function createTableHeader(item, index, data) {
   widthValue = valueData;
   const headerValue = createTag("p", "table__headerValue", valueData);
 
-  if (index === 1 && value.length > 1) {
+  if (value.length > 1 && index === 1) {
     // логика для смены толщины
     headerValue.classList.add("table__headerValue--hover");
     const headerValueList = createTag("div", "table__headerValueList");
+    const headerValueIcon =
+      '<svg width="19" height="11" viewBox="0 0 19 11" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 9.17939e-07L0.406732 10.5L18.5933 10.5L9.5 9.17939e-07Z"/></svg>';
+    const headerValueIconContainer = createTag(
+      "div",
+      "table__headerValueIconContainer",
+      headerValueIcon
+    );
     value.forEach((item, index) => {
       if (item === widthValue) return null;
       const headerValueExtra = createTag(
@@ -75,6 +82,7 @@ function createTableHeader(item, index, data) {
       headerValueExtra.onclick = () => changeTable(item, index, data);
     });
 
+    headerValue.appendChild(headerValueIconContainer);
     headerValue.appendChild(headerValueList);
   }
 
