@@ -155,12 +155,14 @@ function createTitle(data) {
 }
 
 function createArticlesList(data, filterByColor, filterByWidth) {
-  const { articles } = data;
+  const { articles, type, name } = data;
 
-  articles.forEach((item) => createArticle(item, filterByColor, filterByWidth));
+  articles.forEach((item) =>
+    createArticle(item, filterByColor, filterByWidth, type, name)
+  );
 }
 
-function createArticle(item, filterByColor, filterByWidth) {
+function createArticle(item, filterByColor, filterByWidth, type, collection) {
   const { name, number, color, width, image, video } = item;
 
   if (filterByColor !== "all") {
@@ -195,7 +197,7 @@ function createArticle(item, filterByColor, filterByWidth) {
   );
 
   const itemImage = createTag("img", "item__image");
-  itemImage.setAttribute("alt", `${name}`);
+  itemImage.setAttribute("alt", `${type} ${collection} ${number} ${name}`);
   itemImage.src = image;
 
   highslideContainer.appendChild(itemImage);

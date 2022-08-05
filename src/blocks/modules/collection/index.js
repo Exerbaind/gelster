@@ -2,6 +2,7 @@ import aboutSection from "./about/about";
 import articlesSection from "./articles/articles";
 import tableSection from "./table/table";
 import willNeedSection from "./willNeed/willNeed";
+import imagesSection from "./images/images";
 
 function checkCollection() {
   const collectionPath = document.location.pathname;
@@ -19,6 +20,8 @@ function main() {
   aboutSection(data);
   tableSection(data);
   willNeedSection(data);
+  imagesSection(data);
+  // сделать редирект на 404 страницу
 }
 
 main();
