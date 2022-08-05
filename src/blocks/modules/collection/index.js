@@ -1,6 +1,7 @@
 import aboutSection from "./about/about";
 import articlesSection from "./articles/articles";
 import tableSection from "./table/table";
+import willNeedSection from "./willNeed/willNeed";
 
 function checkCollection() {
   const collectionPath = document.location.pathname;
@@ -17,6 +18,7 @@ function main() {
   articlesSection(data);
   aboutSection(data);
   tableSection(data);
+  willNeedSection(data);
 }
 
 main();

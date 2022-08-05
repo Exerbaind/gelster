@@ -1,6 +1,5 @@
 
 .articles {
-    margin-top: 20px;
     order: 4;
     @include flex(flex-start, center, row, wrap);
     width: 100%;
@@ -8,14 +7,6 @@
     overflow: hidden;
     @media screen and (max-width: $mobile) {
         margin-top: 0;
-
-        // &--active {
-        //     max-height: 35000px;
-
-        //     .articles__handler-icon {
-        //         transform: translateY(-50%) rotate(0deg);
-        //     }
-        // }
     }
 }
 
@@ -73,8 +64,10 @@
 .articles__container {
     width: 100%;
     transition: $transition;
+    margin-top: 20px;
 
     @media screen and (max-width: $mobile) {
+        margin-top: 0;
         padding: 0 16px;
         max-height: 5000px;
     }

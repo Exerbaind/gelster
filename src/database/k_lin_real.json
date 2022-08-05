@@ -103,6 +103,38 @@
             "tooltip": false
         }
     ],
+    "otherProducts": [
+        {
+            "name": "Клей",
+            "icon": "../img/sprites/ardex.svg",
+            "text": "Клей Ardex AF 785",
+            "link": "/ardex_af-785.html"
+        },
+        {
+            "name": "Шнур",
+            "icon": "../img/sprites/cord.svg",
+            "text": "Виды шнуров для сварки мармолеума",
+            "link": null
+        },
+        {
+            "name": "Очиститель",
+            "icon": "../img/sprites/cleaner.svg",
+            "text": "Форбо 888",
+            "link": "/himia_yhod.htm"
+        },
+        {
+            "name": "Плинтус",
+            "icon": "../img/sprites/plinth.svg",
+            "text": "Каталог плинтусов",
+            "link": "/plintus_Dollken.htm"
+        },
+        {
+            "name": "Настил",
+            "icon": "../img/sprites/nastil.svg",
+            "text": null,
+            "link": null
+        }
+    ],
     "articles": [
         {
             "name": "dove grey",
