@@ -27,7 +27,24 @@
                 "text": "скачать экспертное заключение",
                 "url": null
             }
-        ]
+        ],
+        "articles": [
+            {
+                "text": "ОБНОВЛЕНИЕ И ВОССТАНОВЛЕНИЕ<br/><span>натурального линолеума</span>",
+                "url": "/sovet_marm.htm",
+                "image": "./img/assets/common/article1.jpg"
+            },
+            {
+                "text": "КАК УХАЖИВАТЬ<br/><span>за натуральным линолеумом</span>",
+                "url": "/uhod_marmoleum.htm",
+                "image": "./img/assets/common/article2.jpg"
+            }
+        ],
+        "video": {
+            "text": "ОЧИСТКА И ВОССТАНОВЛЕНИЕ<br/><span>натурального линолеума</span>",
+            "video": null,
+            "image": "./img/assets/common/video.jpg"
+        }
     },
     "table": [
         {
@@ -129,31 +146,31 @@
     "otherProducts": [
         {
             "name": "Клей",
-            "icon": "../img/sprites/ardex.svg",
+            "icon": "./img/sprites/ardex.svg",
             "text": "Клей Ardex AF 785",
             "link": "/ardex_af-785.html"
         },
         {
             "name": "Шнур",
-            "icon": "../img/sprites/cord.svg",
+            "icon": "./img/sprites/cord.svg",
             "text": "Виды шнуров для сварки мармолеума",
             "link": null
         },
         {
             "name": "Очиститель",
-            "icon": "../img/sprites/cleaner.svg",
+            "icon": "./img/sprites/cleaner.svg",
             "text": "Форбо 888",
             "link": "/himia_yhod.htm"
         },
         {
             "name": "Плинтус",
-            "icon": "../img/sprites/plinth.svg",
+            "icon": "./img/sprites/plinth.svg",
             "text": "Каталог плинтусов",
             "link": "/plintus_Dollken.htm"
         },
         {
             "name": "Настил",
-            "icon": "../img/sprites/nastil.svg",
+            "icon": "./img/sprites/nastil.svg",
             "text": null,
             "link": null
         }
