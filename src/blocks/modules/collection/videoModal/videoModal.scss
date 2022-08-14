@@ -16,6 +16,15 @@
         z-index: 10;
         visibility: visible;
     }
+
+    iframe {
+        height: 395px;
+        width: 700px;
+
+        @media screen and (max-width: $mobile) {
+            width: 90%;
+        }
+    }
 }
 
 .videoMoval__video {

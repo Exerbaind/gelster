@@ -1,5 +1,6 @@
 import createTag from "../../../../js/utils/createTag";
 import sectionHandler from "../../../../js/utils/sectionHandler";
+import { openVideoModal } from "../videoModal/videoModal";
 
 const isMobile = document.documentElement.clientWidth <= 700;
 
@@ -90,6 +91,7 @@ function createArticlesBlock(parent, articles) {
 
     const block = createTag("a", "information__articleItem");
     block.style.backgroundImage = `url(${image})`;
+    block.setAttribute("href", url);
 
     const blockOpacity = createTag("div", "information__articleItemOpacity");
     const blockOpacityText = createTag(
@@ -124,43 +126,47 @@ function createVideoBlock(parent, data) {
   const block = createTag("div", "information__videoItem");
   block.style.backgroundImage = `url(${image})`;
 
-  const blockOpacity = createTag("div", "information__videoItemOpacity");
+  if (video) {
+    const blockOpacity = createTag("div", "information__videoItemOpacity");
 
-  const blockOpacityText = createTag(
-    "p",
-    "information__videoItemOpacityText",
-    text
-  );
+    const blockOpacityText = createTag(
+      "p",
+      "information__videoItemOpacityText",
+      text
+    );
 
-  const blockOpacityIconVideo = createTag(
-    "div",
-    "information__videoItemOpacityIconVideo",
-    videoIcon
-  );
+    const blockOpacityIconVideo = createTag(
+      "div",
+      "information__videoItemOpacityIconVideo",
+      videoIcon
+    );
 
-  const blockPlayContiner = createTag(
-    "div",
-    "information__videoItemPlayContainer"
-  );
-  const blockPlayContainerText = createTag(
-    "p",
-    "information__videoItemPlayContainerText",
-    "смотреть видео"
-  );
-  const blockPlayContainerIcon = createTag(
-    "div",
-    "information__videoItemPlayContainerIcon",
-    playIcon
-  );
+    const blockPlayContiner = createTag(
+      "div",
+      "information__videoItemPlayContainer"
+    );
+    const blockPlayContainerText = createTag(
+      "p",
+      "information__videoItemPlayContainerText",
+      "смотреть видео"
+    );
+    const blockPlayContainerIcon = createTag(
+      "div",
+      "information__videoItemPlayContainerIcon",
+      playIcon
+    );
 
-  blockOpacity.appendChild(blockOpacityText);
-  blockOpacity.appendChild(blockOpacityIconVideo);
+    blockOpacity.appendChild(blockOpacityText);
+    blockOpacity.appendChild(blockOpacityIconVideo);
 
-  blockPlayContiner.appendChild(blockPlayContainerIcon);
-  blockPlayContiner.appendChild(blockPlayContainerText);
+    blockPlayContiner.appendChild(blockPlayContainerIcon);
+    blockPlayContiner.appendChild(blockPlayContainerText);
 
-  block.appendChild(blockPlayContiner);
-  block.appendChild(blockOpacity);
+    block.appendChild(blockPlayContiner);
+    block.appendChild(blockOpacity);
+
+    block.onclick = () => openVideoModal(video, true);
+  }
 
   parent.appendChild(block);
 }

@@ -4,9 +4,15 @@
     "type": "Натуральный линолеум",
     "images": {
         "mainImage": "./img/assets/forbo/marmoleum/real/images/1.jpg",
-        "videoImage": "./img/assets/forbo/marmoleum/real/images/2.jpg",
+        "videoImage": {
+            "image": "./img/assets/forbo/marmoleum/real/images/2.jpg",
+            "video": "<iframe src='https://www.youtube.com/embed/dprmmR76NzM' title='Marmoleum Real' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+        },
         "formImage": "./img/assets/forbo/marmoleum/real/images/3.jpg",
-        "linkImage": "./img/assets/forbo/marmoleum/real/images/4.jpg"
+        "linkImage": {
+            "image" : "./img/assets/forbo/marmoleum/real/images/4.jpg",
+            "url": "/fotogal.htm"
+        }
     },
     "about": {
         "title": "Натуральный линолеум <br/>marmoleum real",
@@ -42,7 +48,7 @@
         ],
         "video": {
             "text": "ОЧИСТКА И ВОССТАНОВЛЕНИЕ<br/><span>натурального линолеума</span>",
-            "video": null,
+            "video": "<iframe src='https://www.youtube.com/embed/9wzbKD6c6eU' title='Очистка и восстановление натурального линолеума' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
             "image": "./img/assets/common/video.jpg"
         }
     },

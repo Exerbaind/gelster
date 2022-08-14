@@ -42,17 +42,16 @@ function prevSlideHandle(otherProductsLength) {
 
 function createWillNeedItem(item, otherProductsLength) {
   const { name, icon, link, text } = item;
+  const tag = link ? "a" : "div";
 
-  const itemContainer = createTag("a", "willNeed__contentItem");
-
-  if (!isMobile) {
-    itemContainer.style.width = 100 / otherProductsLength + "%";
-  }
+  const itemContainer = createTag(tag, "willNeed__contentItem");
 
   if (link) {
     itemContainer.setAttribute("href", link);
-  } else {
-    itemContainer.setAttribute("href", "");
+  }
+
+  if (!isMobile) {
+    itemContainer.style.width = 100 / otherProductsLength + "%";
   }
 
   const itemName = createTag("p", "willNeed__contentItemName", name);

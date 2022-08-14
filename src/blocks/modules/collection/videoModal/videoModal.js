@@ -5,20 +5,25 @@ const videoIcon =
 
 const videoContainer = document.querySelector(".videoModal");
 
-export function openVideoModal(video) {
-  const videoFrame = createTag("video", "videoMoval__video");
-  videoFrame.src = video;
-  videoFrame.setAttribute("controls", true);
-  videoFrame.setAttribute("muted", true);
-  videoFrame.setAttribute("loop", "loop");
-  videoFrame.setAttribute("preload", "metadata");
-  videoFrame.setAttribute("autoplay", true);
+export function openVideoModal(video, isYouTube = false) {
+  if (isYouTube) {
+    videoContainer.innerHTML = video;
+  } else {
+    const videoFrame = createTag("video", "videoMoval__video");
+    videoFrame.src = video;
+    videoFrame.setAttribute("controls", true);
+    videoFrame.setAttribute("muted", true);
+    videoFrame.setAttribute("loop", "loop");
+    videoFrame.setAttribute("preload", "metadata");
+    videoFrame.setAttribute("autoplay", true);
+
+    videoContainer.appendChild(videoFrame);
+  }
 
   const videoContainerIcon = createTag("div", "videoModal__icon", videoIcon);
   videoContainerIcon.onclick = () => closeVideoModal();
 
   videoContainer.appendChild(videoContainerIcon);
-  videoContainer.appendChild(videoFrame);
 
   videoContainer.classList.add("videoModal--active");
 }

@@ -19,6 +19,7 @@
         @include flex();
         border-top: 3px solid $green;
         border-bottom: 3px solid $green;
+        margin-top: -3px;
 
         &:active {
             border-top: 3px solid $primary;
