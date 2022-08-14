@@ -182,7 +182,7 @@
             "color": "grey",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/2621.jpg",
-            "video": "null"
+            "video": "./video/forbo/marmoleum/real/2621.mp4"
         },
         {
             "name": "blue",
@@ -190,7 +190,7 @@
             "color": "blue",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3030.jpg",
-            "video": "null"     
+            "video": "./video/forbo/marmoleum/real/3030.mp4"     
         },
         {
             "name": "chartreuse",
@@ -198,7 +198,7 @@
             "color": "green",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3224.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "dandelion",
@@ -206,7 +206,7 @@
             "color": "orange",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3225.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "bleeckerstreet",
@@ -214,7 +214,7 @@
             "color": "red",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3127.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "serene grey",
@@ -222,7 +222,7 @@
             "color": "grey",
             "width": ["2,0", "2,5", "3,2", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3146.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "eiger",
@@ -230,7 +230,7 @@
             "color": "grey",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/2629.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "slate gray",
@@ -238,7 +238,7 @@
             "color": "grey",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3137.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "graphite",
@@ -246,7 +246,7 @@
             "color": "grey",
             "width": ["2,0", "2,5", "3,2", "3,5", "4,0"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3048.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "dark bistre",
@@ -254,7 +254,7 @@
             "color": "brown",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3236.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "mist gray",
@@ -262,7 +262,7 @@
             "color": "grey",
             "width": ["2,0", "2,5", "3,2", "3,5", "4,0"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3032.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "carribean",
@@ -270,7 +270,7 @@
             "color": "beige",
             "width": ["2,0", "2,5", "3,2", "3,5", "4,0"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3038.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "himalaya",
@@ -278,7 +278,7 @@
             "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3141.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "horse roan",
@@ -286,7 +286,7 @@
             "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3232.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "shitake",
@@ -294,7 +294,7 @@
             "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3233.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "rust",
@@ -302,7 +302,7 @@
             "color": "orange",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/2767.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "concrete",
@@ -310,7 +310,7 @@
             "color": "ghostwhite",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3136.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "rosato",
@@ -318,7 +318,7 @@
             "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3120.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "shell",
@@ -326,7 +326,7 @@
             "color": "orange",
             "width": ["2,0", "2,5", "3,2", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3075.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "van gogh",
@@ -334,7 +334,7 @@
             "color": "orange",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3173.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "golden saffron",
@@ -342,7 +342,7 @@
             "color": "orange",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3847.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "sahara",
@@ -350,7 +350,7 @@
             "color": "orange",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3174.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "sand",
@@ -358,7 +358,7 @@
             "color": "beige",
             "width": ["2,0", "2,5","3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/2499.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "forest ground",
@@ -366,7 +366,7 @@
             "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3234.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "green wellness",
@@ -374,7 +374,7 @@
             "color": "green",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3881.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "calico",
@@ -382,7 +382,7 @@
             "color": "beige",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/2713.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "honey suckle",
@@ -390,7 +390,7 @@
             "color": "pink",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3268.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "plum",
@@ -398,7 +398,7 @@
             "color": "pink",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3272.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "dove blue",
@@ -406,7 +406,7 @@
             "color": "blue",
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3053.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "arabesque",
@@ -414,7 +414,7 @@
             "color": "blue",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3123.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "spa",
@@ -422,7 +422,7 @@
             "color": "blue",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3219.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "fresco blue",
@@ -430,7 +430,7 @@
             "color": "blue",
             "width": ["2,0", "2,5", "3,2", "3,5", "4,0"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3055.jpg",
-            "video": "null"     
+            "video": null     
         },
         {
             "name": "violet",
@@ -438,7 +438,7 @@
             "color": "purple",
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/3270.jpg",
-            "video": "null"     
+            "video": null     
         }
     ]
 }

@@ -1,0 +1,41 @@
+.videoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    @include flex();
+    background-color: rgba($color: black, $alpha: 0.5);
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: $transition;
+
+    &--active {
+        opacity: 1;
+        z-index: 10;
+        visibility: visible;
+    }
+}
+
+.videoMoval__video {
+    height: auto;
+    width: 700px;
+}
+
+.videoModal__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+    @include flex();
+    cursor: pointer;
+
+    svg {
+        fill: white;
+        height: 50px;
+        width: 50px;
+    }
+}
