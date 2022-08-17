@@ -1,7 +1,12 @@
+import clearPrerender from "../../../../js/utils/clearPrerender";
 import createTag from "../../../../js/utils/createTag";
 import { openVideoModal } from "../videoModal/videoModal";
 
-const imagesContainer = document.querySelector(".images__container");
+const imagesContainer = document.querySelector(
+  ".main__container .images__container"
+);
+
+let isRendered = false;
 
 function createMainImage(mainImage) {
   const image = createTag("div", "images__mainImage");
@@ -122,6 +127,9 @@ function createGroupImages(linkImage, formImage, name) {
 }
 
 function imagesSection(data) {
+  if (!isRendered) {
+    isRendered = clearPrerender("images");
+  }
   const {
     name,
     images: { mainImage, videoImage, linkImage, formImage },

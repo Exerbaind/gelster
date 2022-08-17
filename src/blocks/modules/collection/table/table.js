@@ -1,24 +1,32 @@
 import createTag from "../../../../js/utils/createTag";
 import collapseContent from "../../../../js/utils/collapseContent";
 import sectionHandler from "../../../../js/utils/sectionHandler";
+import clearPrerender from "../../../../js/utils/clearPrerender";
 
-const mainTable = document.querySelector(".table__wrapper");
+const mainTable = document.querySelector(".main__container .table__wrapper");
 const tableSectionHandlerButton =
-  document.querySelector(".table__handler") || null;
+  document.querySelector(".main__container .table__handler") || null;
 const tableSectionHandlerButtonIcon =
-  document.querySelector(".table__handler-icon") || null;
-const tableContainer = document.querySelector(".table__container");
-const tableHeader = document.querySelector(".table__header");
-const tableBody = document.querySelector(".table__body");
-const tableHandler = document.querySelector(".table__more");
-const tableButtonText = document.querySelector(".table__more-text");
-const tableButtonIcon = document.querySelector(".table__more-icon");
+  document.querySelector(".main__container .table__handler-icon") || null;
+const tableContainer = document.querySelector(
+  ".main__container .table__container"
+);
+const tableHeader = document.querySelector(".main__container .table__header");
+const tableBody = document.querySelector(".main__container .table__body");
+const tableHandler = document.querySelector(".main__container .table__more");
+const tableButtonText = document.querySelector(
+  ".main__container .table__more-text"
+);
+const tableButtonIcon = document.querySelector(
+  ".main__container .table__more-icon"
+);
 
 let widthIndex = 0;
 let widthValue = 0;
 let isExtraValuesOpened = false;
 let isTableCollapsed = false;
 let isTableSectionActive = false;
+let isRendered = false;
 
 function separateData(table) {
   const headerContent = table.slice(0, 3);
@@ -113,6 +121,9 @@ function createTableBody(item) {
 }
 
 function tableSection(data) {
+  if (!isRendered) {
+    isRendered = clearPrerender("table");
+  }
   const { table } = data;
   const { headerContent, bodyContent } = separateData(table);
 

@@ -27,7 +27,204 @@
     <link rel="stylesheet" href="highslide/highslide.css" />
   </head>
   <body>
+    @@include("../blocks/modules/preloader/preloader.html")
     <main class="main">
+      <!-- For prerender -->
+      <section class="images" id="images">
+        <div class="images__container">
+          <div
+            class="images__mainImage"
+            style="
+              background-image: url('./img/assets/forbo/marmoleum/real/images/1.jpg');
+            "
+          ></div>
+          <div
+            class="images__videoImage"
+            style="
+              background-image: url('./img/assets/forbo/marmoleum/real/images/2.jpg');
+            "
+          >
+            <div class="images__videoImageOpacity">
+              <div class="images__videoImageOpacityIcon">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="467.77px"
+                  height="303.871px"
+                  viewBox="0 0 467.77 303.871"
+                  enable-background="new 0 0 467.77 303.871"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M438.32,58.7c-0.95,0.36-1.438,0.46-1.818,0.7c-29.23,18.58-58.462,37.12-87.58,55.86c-1.382,0.89-2.33,3.49-2.342,5.29c-0.158,20.49,0,40.991-0.198,61.479c-0.03,3.75,0.988,5.932,4.26,7.979c26.09,16.382,52.03,32.972,78.02,49.49c3.04,1.931,6.092,3.84,9.66,6.09L438.32,58.7L438.32,58.7z M177.29,274.77v-0.021c44.979,0,89.96,0.021,134.948-0.011c10.83,0,13.87-3.079,13.87-14.038c0.021-72.48,0.01-144.951,0-217.421c0-11.19-2.97-14.12-14.29-14.12c-67.64,0-135.29,0-202.93,0c-22.82,0-45.648-0.03-68.47,0.05c-7.49,0.02-11.03,3.63-11.21,10.98c-0.05,2-0.03,4-0.03,6c0,71.64,0.01,143.28,0.01,214.92c0,10.57,3.03,13.648,13.65,13.66C87.65,274.77,132.47,274.77,177.29,274.77M346.48,211.74c0,16.82,0.04,32.6-0.03,48.381c-0.02,3.648,0.062,7.398-0.698,10.93c-3.132,14.58-15.33,24.24-30.682,24.27c-40.818,0.091-81.648,0.041-122.47,0.041c-50.148,0-100.3-0.01-150.45-0.021c-20.88,0-33.63-12.709-33.64-33.629C8.49,188.23,8.49,114.76,8.51,41.28C8.52,21.57,21.74,8.5,41.55,8.5c90.47-0.01,180.95,0,271.42,0.01c20.91,0.01,33.51,12.69,33.51,33.66c-0.01,15.99,0,31.99,0.021,47.98c0,0.33,0.118,0.65,0.35,1.76c1.83-1.09,3.479-2.01,5.06-3.02c29.65-18.85,59.312-37.67,88.9-56.6c4.17-2.67,8.27-4.45,13.02-1.89c4.802,2.58,5.44,7.06,5.44,11.98c-0.05,73.14-0.05,146.29,0,219.431c0,4.76-0.71,9.061-5.24,11.59c-4.688,2.629-8.85,1-13.04-1.68c-29.738-19.011-59.54-37.931-89.318-56.861C350.28,213.98,348.86,213.169,346.48,211.74 M438.32,58.7c-0.95,0.36-1.438,0.46-1.818,0.7c-29.23,18.58-58.462,37.12-87.58,55.86c-1.382,0.89-2.33,3.49-2.342,5.29c-0.158,20.49,0,40.991-0.198,61.479c-0.03,3.75,0.988,5.932,4.26,7.979c26.09,16.382,52.03,32.972,78.02,49.49c3.04,1.931,6.092,3.84,9.66,6.09L438.32,58.7L438.32,58.7z M177.29,274.77v-0.021c44.979,0,89.96,0.021,134.948-0.011c10.83,0,13.87-3.079,13.87-14.038c0.021-72.48,0.01-144.951,0-217.421c0-11.19-2.97-14.12-14.29-14.12c-67.64,0-135.29,0-202.93,0c-22.82,0-45.648-0.03-68.47,0.05c-7.49,0.02-11.03,3.63-11.21,10.98c-0.05,2-0.03,4-0.03,6c0,71.64,0.01,143.28,0.01,214.92c0,10.57,3.03,13.648,13.65,13.66C87.65,274.77,132.47,274.77,177.29,274.77z M346.48,211.74c0,16.82,0.04,32.6-0.03,48.381c-0.02,3.648,0.062,7.398-0.698,10.93c-3.132,14.58-15.33,24.24-30.682,24.27c-40.818,0.091-81.648,0.041-122.47,0.041c-50.148,0-100.3-0.01-150.45-0.021c-20.88,0-33.63-12.709-33.64-33.629C8.49,188.23,8.49,114.76,8.51,41.28C8.52,21.57,21.74,8.5,41.55,8.5c90.47-0.01,180.95,0,271.42,0.01c20.91,0.01,33.51,12.69,33.51,33.66c-0.01,15.99,0,31.99,0.021,47.98c0,0.33,0.118,0.65,0.35,1.76c1.83-1.09,3.479-2.01,5.06-3.02c29.65-18.85,59.312-37.67,88.9-56.6c4.17-2.67,8.27-4.45,13.02-1.89c4.802,2.58,5.44,7.06,5.44,11.98c-0.05,73.14-0.05,146.29,0,219.431c0,4.76-0.71,9.061-5.24,11.59c-4.688,2.629-8.85,1-13.04-1.68c-29.738-19.011-59.54-37.931-89.318-56.861C350.28,213.98,348.86,213.169,346.48,211.74z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="images__videdoImageOpacityText">
+                видео-обзор<br />КОЛЛЕКЦИИ
+              </p>
+            </div>
+          </div>
+          <div class="images__groupImages">
+            <div
+              class="images__formImage"
+              style="
+                background-image: url('./img/assets/forbo/marmoleum/real/images/3.jpg');
+              "
+            >
+              <div class="images__formImageOpacity">
+                <div class="images__formImageOpacityIcon">
+                  <svg
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  >
+                    <path
+                      d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="images__formImageOpacityText">
+                  ЗАКАЗАТЬ<br />ЭТОТ МАТЕРИАЛ
+                </p>
+              </div>
+            </div>
+            <a
+              class="images__linkImage"
+              href="/fotogal.htm"
+              style="
+                background-image: url('./img/assets/forbo/marmoleum/real/images/4.jpg');
+              "
+              ><div class="images__linkImageOpacity">
+                <div class="images__linkImageOpacityIcon">
+                  <svg
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  >
+                    <path
+                      d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="images__linkImageOpacityText">
+                  СМОТРЕТЬ ВСЕ<br />РЕАЛИЗОВАННЫЕ<br />ПРОЕКТЫ
+                </p>
+              </div></a
+            >
+            <div class="images__nameBlock">
+              <p class="images__nameBlockText">Marmoleum Real</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__container">
+          <div class="about__text-shadow about__text-shadow--active"></div>
+          <p class="about__vertical-text">Характеристики</p>
+          <div class="about__header">
+            <h1 class="about__title">
+              Натуральный линолеум <br />marmoleum real
+            </h1>
+            <a class="about__to-articles" href="#articles"
+              ><div class="about__to-articles-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="about__to-articles-text">Смотреть артикулы</span></a
+            >
+          </div>
+          <div class="about__content">
+            <p>
+              Marmoleum Real (Мармолеум Реал)&nbsp;— это одна из&nbsp;наиболее
+              популярных коллекций натурального линолеума в&nbsp;России. Рисунок
+              мрамора, которая состоит только из&nbsp;натуральных компонентов.
+            </p>
+            <p>
+              Благодаря своим техническим характеристикам и&nbsp;свойствам,
+              натуральный линолеум Мармолеум Реал Форбо станет чудесным решением
+              для дома, детских дошкольных учреждений, помещений учебных
+              заведений. Антибактериальные свойства гарантируют безопасность
+              материала для здоровья и&nbsp;окружающей среды, что позволяет
+              использовать натуральный линолеум Marmoleum Real в&nbsp;помещениях
+              медицинских учреждений, госпиталей и&nbsp;больниц.
+            </p>
+            <p>
+              Натуральный линолеум Мармолеум Реал под мрамор обладает широкой
+              цветовой гаммой и&nbsp;выпускается в&nbsp;33 цветовых оттенках,
+              от&nbsp;классических приглушенных до&nbsp;ярких и&nbsp;насыщенных,
+              которые позволяют сформировать оригинальный интерьер, сочетая
+              различные стили.
+            </p>
+            <p>
+              Натуральный линолеум Marmoleum Real под мрамор устойчив
+              к&nbsp;химическим веществам и&nbsp;средствам бытовой химии,
+              благодаря чему поверхность натурального напольного покрытия Форбо
+              легко содержать в&nbsp;чистоте, это позволяет продлить срок службы
+              покрытия и&nbsp;в&nbsp;течение многих лет сохранить его
+              безупречный внешний вид.
+            </p>
+            <p>
+              Натуральный линолеум Мармолеум Реал не&nbsp;теряет свой
+              первоначальный внешний вид от&nbsp;воздействия колесиков кресел,
+              а&nbsp;также ножек мебели.
+            </p>
+          </div>
+        </div>
+        <div class="about__more">
+          <p class="about__more-text">читать далее</p>
+          <div class="about__more-icon">
+            <svg
+              width="19"
+              height="11"
+              viewBox="0 0 19 11"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.5 9.17939e-07L0.406732 10.5L18.5933 10.5L9.5 9.17939e-07Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="table" id="table">
+        <div class="table__handler">
+          <p class="table__handler-text">Характеристики</p>
+          <div class="table__handler-icon">
+            <svg width="19" height="11" viewBox="0 0 19 11" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 9.17939e-07L0.406732 10.5L18.5933 10.5L9.5 9.17939e-07Z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="table__wrapper">
+          <div class="table__container">
+            <div class="table__header"><div class="table__headerItem"><p class="table__headerName">Ширина рулона</p><p class="table__headerValue">2,0 мм</p></div><div class="table__headerItem"><p class="table__headerName">Толщина покрытия</p><p class="table__headerValue table__headerValue--hover">2,0 мм<div class="table__headerValueIconContainer"><svg width="19" height="11" viewBox="0 0 19 11" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 9.17939e-07L0.406732 10.5L18.5933 10.5L9.5 9.17939e-07Z"></path></svg></div><div class="table__headerValueList"><p class="table__headerValueListItem">2,5 мм</p><p class="table__headerValueListItem">3,2 мм</p></div></p></div><div class="table__headerItem"><p class="table__headerName">Длина рулона</p><p class="table__headerValue">≤ 33 м</p></div></div>
+            <div class="table__body"><div class="table__bodyItem"><p class="table__bodyName">Класс применения</p><p class="table__bodyValue">34/43</p></div><div class="table__bodyItem"><p class="table__bodyName">Вес покрытия</p><p class="table__bodyValue">2300 г/м<sup>2</sup></p></div><div class="table__bodyItem"><p class="table__bodyName">Класс пожарной опасности</p><p class="table__bodyValue">КМ2</p></div><div class="table__bodyItem"><p class="table__bodyName">Коэффициент противоскольжения</p><p class="table__bodyValue">R9</p></div><div class="table__bodyItem"><p class="table__bodyName">Электрическое сопротивление</p><p class="table__bodyValue">≤ 2 кВ</p></div><div class="table__bodyItem"><p class="table__bodyName">Светоустойчивость</p><p class="table__bodyValue">6</p></div><div class="table__bodyItem"><p class="table__bodyName">Устойчивость к химическим соединениям</p><p class="table__bodyValue">устойчиво</p></div><div class="table__bodyItem"><p class="table__bodyName">Устойчивость к колесикам кресел</p><p class="table__bodyValue">устойчиво</p></div><div class="table__bodyItem"><p class="table__bodyName">Уровень звукопоглощения</p><p class="table__bodyValue">≤ 4 дБ</p></div><div class="table__bodyItem"><p class="table__bodyName">Абсолютная остаточная деформация</p><p class="table__bodyValue">≤ 0,015 (∼0,07) мм</p></div><div class="table__bodyItem"><p class="table__bodyName">Гибкость</p><p class="table__bodyValue">∅ 30 мм</p></div><div class="table__bodyItem"><p class="table__bodyName">Использование с теплыми полами</p><p class="table__bodyValue">да</p></div><div class="table__bodyItem"><p class="table__bodyName">Коэффициент теплопроводности</p><p class="table__bodyValue">0,17 Вт/(м*К)</p></div><div class="table__bodyItem"><p class="table__bodyName">Устойчивость к прожиганию</p><p class="table__bodyValue">да</p></div><div class="table__bodyItem"><p class="table__bodyName">Антибактериальные свойства</p><p class="table__bodyValue">да</p></div><div class="table__bodyItem"><p class="table__bodyName">Дополнительная обработка поверхности</p><p class="table__bodyValue">Topshield<sup>2</sup></p></div></div>
+          </div>
+          <div class="table__more">
+            <p class="table__more-text">развернуть характеристики</p>
+            <div class="table__more-icon">
+              <svg width="19" height="11" viewBox="0 0 19 11" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 9.17939e-07L0.406732 10.5L18.5933 10.5L9.5 9.17939e-07Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
       <div class="main__container">
         @@include("../blocks/modules/collection/images/images.html")
         @@include("../blocks/modules/collection/about/about.html")

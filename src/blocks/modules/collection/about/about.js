@@ -1,15 +1,25 @@
 import createTag from "../../../../js/utils/createTag";
 import collapseContent from "../../../../js/utils/collapseContent";
+import clearPrerender from "../../../../js/utils/clearPrerender";
 
-const aboutContainer = document.querySelector(".about__container");
-const aboutHeader = document.querySelector(".about__header");
-const moreHandler = document.querySelector(".about__more");
-const moreButtonText = document.querySelector(".about__more-text");
-const moreButtonIcon = document.querySelector(".about__more-icon");
-const textShadow = document.querySelector(".about__text-shadow");
+const aboutContainer = document.querySelector(
+  ".main__container .about__container"
+);
+const aboutHeader = document.querySelector(".main__container .about__header");
+const moreHandler = document.querySelector(".main__container .about__more");
+const moreButtonText = document.querySelector(
+  ".main__container .about__more-text"
+);
+const moreButtonIcon = document.querySelector(
+  ".main__container .about__more-icon"
+);
+const textShadow = document.querySelector(
+  ".main__container .about__text-shadow"
+);
 
 // variables
 let isTextCollapsed = false;
+let isRendered = false;
 //
 
 function createTitle(data) {
@@ -51,6 +61,10 @@ function createToArticlesBlock() {
 }
 
 function aboutSection(data) {
+  if (!isRendered) {
+    isRendered = clearPrerender("about");
+  }
+
   const { about } = data;
 
   createTitle(about);
