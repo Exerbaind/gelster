@@ -18,7 +18,7 @@ function checkCollection() {
 function main() {
   const data = checkCollection();
   articlesSection(data);
-  aboutSection();
+  aboutSection(data);
   tableSection(data);
   willNeedSection(data);
   imagesSection(data);
