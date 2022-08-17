@@ -100,8 +100,8 @@ function willNeedSection(data) {
         isWillNeedSectionActive,
         mainWillNeed,
         0,
-        willNeedSectionHandlerButtonIcon,
-        "willNeed__handler-icon--active"
+        willNeedSectionHandlerButton,
+        "willNeed__handler--active"
       );
     };
   }

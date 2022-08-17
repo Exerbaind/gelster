@@ -58,7 +58,7 @@ function createTableHeader(item, index, data) {
 
   const valueData = value[widthIndex] || value[0];
   widthValue = valueData;
-  const headerValue = createTag("p", "table__headerValue", valueData);
+  const headerValue = createTag("div", "table__headerValue", valueData);
 
   if (value.length > 1 && index === 1) {
     // логика для смены толщины
@@ -156,8 +156,8 @@ function tableSection(data) {
         isTableSectionActive,
         mainTable,
         0,
-        tableSectionHandlerButtonIcon,
-        "table__handler-icon--active"
+        tableSectionHandlerButton,
+        "table__handler--active"
       );
     };
   }

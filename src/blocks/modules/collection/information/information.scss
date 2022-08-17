@@ -21,7 +21,6 @@
         @include flex();
         border-top: 3px solid $green;
         border-bottom: 3px solid $green;
-        margin-top: -3px;
 
         &:active {
             border-top: 3px solid $primary;
@@ -36,6 +35,12 @@
                 svg {
                     fill: white;
                 }
+            }
+        }
+
+        &--active {
+            .information__handler-icon {
+                transform: translateY(-50%) rotate(0deg);
             }
         }
     }
@@ -56,10 +61,6 @@
         fill: $green;
         height: 20px;
         width: 20px;
-    }
-
-    &--active {
-        transform: translateY(-50%) rotate(0deg);
     }
 }
 

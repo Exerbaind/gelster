@@ -196,8 +196,8 @@ function informationSection(data) {
         isInformationSectionActive,
         mainInformation,
         0,
-        informationSectionHandlerButtonIcon,
-        "information__handler-icon--active"
+        informationSectionHandlerButton,
+        "information__handler--active"
       );
     };
   }

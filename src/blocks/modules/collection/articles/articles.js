@@ -1,6 +1,7 @@
 import collapseContent from "../../../../js/utils/collapseContent";
 import createTag from "../../../../js/utils/createTag";
 import sectionHandler from "../../../../js/utils/sectionHandler";
+import clearPrerender from "../../../../js/utils/clearPrerender";
 import { openVideoModal } from "../videoModal/videoModal";
 
 // screenType
@@ -9,21 +10,28 @@ const isMobile = document.documentElement.clientWidth <= 700;
 
 // globl variables
 
-const mainArticles = document.querySelector(".articles__container");
-const articlesContainer = document.querySelector(".articles__list");
+let isRendered = false;
+
+const mainArticles = document.querySelector(
+  ".main__container .articles__container"
+);
+const articlesContainer = document.querySelector(
+  ".main__container .articles__list"
+);
 const articlesSectionHandlerButton =
-  document.querySelector(".articles__handler") || null;
+  document.querySelector(".main__container .articles__handler") || null;
 const articlesSectionHandlerButtonIcon =
-  document.querySelector(".articles__handler-icon") || null;
+  document.querySelector(".main__container .articles__handler-icon") || null;
 const moreArticlesContainer =
-  document.querySelector(".articles__more-container") || null;
+  document.querySelector(".main__container .articles__more-container") || null;
 let moreArticlesButton =
-  document.querySelector(".articles__more-button") || null;
+  document.querySelector(".main__container .articles__more-button") || null;
 let moreArticlesButtonText =
-  document.querySelector(".articles__more-text") || null;
+  document.querySelector(".main__container .articles__more-text") || null;
 let moreArticlesButtonIcon =
-  document.querySelector(".articles__more-icon") || null;
-let articlesOnPage = document.querySelectorAll(".articles__item") || 0;
+  document.querySelector(".main__container .articles__more-icon") || null;
+let articlesOnPage =
+  document.querySelectorAll(".main__container .articles__item") || 0;
 
 const neededNumberOfArticles = isMobile ? 6 : 5;
 
@@ -83,8 +91,8 @@ function initHandlers(data) {
         isArticlesSectionActive,
         mainArticles,
         0,
-        articlesSectionHandlerButtonIcon,
-        "articles__handler-icon--active"
+        articlesSectionHandlerButton,
+        "articles__handler--active"
       );
     };
   }
@@ -311,6 +319,9 @@ function createmoreArticlesButton() {
 }
 
 function articlesSection(data) {
+  if (!isRendered) {
+    isRendered = clearPrerender("articlesPrerender");
+  }
   createTitle(data);
   createArticlesList(data, colorFilterValue, widthFilterValue);
 

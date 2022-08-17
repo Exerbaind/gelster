@@ -2,17 +2,17 @@ function sectionHandler(
   toggler,
   element,
   defaultHeight,
-  arrowElement,
-  arrowClass
+  handler,
+  handlerClass
 ) {
   toggler = !toggler;
 
   if (toggler) {
     element.style.maxHeight = element.scrollHeight + "px";
-    arrowElement.classList.add(arrowClass);
+    handler.classList.add(handlerClass);
   } else {
     element.style.maxHeight = defaultHeight + "px";
-    arrowElement.classList.remove(arrowClass);
+    handler.classList.remove(handlerClass);
   }
 
   return toggler;
