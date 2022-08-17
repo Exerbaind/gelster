@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /ardex_af-130.html
-Disallow: /ardex_af-155.html
-Disallow: /ardex_af-230.html
-Disallow: /ardex_af-785.html
-Disallow: /ardex_af-2270.html
-Sitemap: http://www.gelster.ru/sitemap.xml
