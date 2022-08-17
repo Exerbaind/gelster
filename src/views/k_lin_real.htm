@@ -14,6 +14,10 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <meta
+      name="ostrio-domain"
+      content="ZhOIxO5PnDi1javHchcyVqGShmLxMeiY15iOiZkyTV_"
+    />
     <link
       rel="shortcut icon"
       href="img/favicons/favicon.ico"
@@ -25,7 +29,77 @@
   <body>
     <main class="main">
       <div class="main__container">
-        @@include("../blocks/modules/collection/images/images.html")
+        <section class="images">
+          <div class="images__container">
+            <div
+              class="images__mainImage"
+              style="
+                background-image: url('./img/assets/forbo/marmoleum/real/images/1.jpg');
+              "
+            ></div>
+            <div
+              class="images__videoImage"
+              style="
+                background-image: url('./img/assets/forbo/marmoleum/real/images/2.jpg');
+              "
+            ></div>
+            <div class="images__groupImages">
+              <div
+                class="images__formImage"
+                style="
+                  background-image: url('./img/assets/forbo/marmoleum/real/images/3.jpg');
+                "
+              >
+                <div class="images__formImageOpacity">
+                  <div class="images__formImageOpacityIcon">
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    >
+                      <path
+                        d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="images__formImageOpacityText">
+                    ЗАКАЗАТЬ<br />ЭТОТ МАТЕРИАЛ
+                  </p>
+                </div>
+              </div>
+              <a
+                class="images__linkImage"
+                href="/fotogal.htm"
+                style="
+                  background-image: url('./img/assets/forbo/marmoleum/real/images/4.jpg');
+                "
+                ><div class="images__linkImageOpacity">
+                  <div class="images__linkImageOpacityIcon">
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    >
+                      <path
+                        d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="images__linkImageOpacityText">
+                    СМОТРЕТЬ ВСЕ<br />РЕАЛИЗОВАННЫЕ<br />ПРОЕКТЫ
+                  </p>
+                </div></a
+              >
+              <div class="images__nameBlock">
+                <p class="images__nameBlockText">Marmoleum Real</p>
+              </div>
+            </div>
+          </div>
+        </section>
         @@include("../blocks/modules/collection/about/about.html")
         @@include("../blocks/modules/collection/articles/articles.html")
         @@include("../blocks/modules/collection/table/table.html")
