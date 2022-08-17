@@ -2,6 +2,7 @@
     "link": "k_lin_real.htm",
     "name": "Marmoleum Real",
     "type": "Натуральный линолеум",
+    "menuType": "forboMarmoleum",
     "images": {
         "mainImage": "./img/assets/forbo/marmoleum/real/images/1.jpg",
         "videoImage": {

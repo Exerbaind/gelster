@@ -1,19 +1,26 @@
 import sectionHandler from "../../../../js/utils/sectionHandler";
 import createTag from "../../../../js/utils/createTag";
+import clearPrerender from "../../../../js/utils/clearPrerender";
 
 const isMobile = document.documentElement.clientWidth <= 700;
 
-const mainWillNeed = document.querySelector(".willNeed__container");
-const willNeedList = document.querySelector(".willNeed__contentList");
+let isRendered = false;
+
+const mainWillNeed = document.querySelector(
+  ".main__container .willNeed__container"
+);
+const willNeedList = document.querySelector(
+  ".main__container .willNeed__contentList"
+);
 const willNeedSectionHandlerButton =
-  document.querySelector(".willNeed__handler") || null;
-const willNeedSectionHandlerButtonIcon =
-  document.querySelector(".willNeed__handler-icon") || null;
+  document.querySelector(".main__container .willNeed__handler") || null;
 
 const willNeedNextSlide =
-  document.querySelector(".willNeed__blockArrow.next-slide") || null;
+  document.querySelector(".main__container .willNeed__blockArrow.next-slide") ||
+  null;
 const willNeedPrevSlide =
-  document.querySelector(".willNeed__blockArrow.prev-slide") || null;
+  document.querySelector(".main__container .willNeed__blockArrow.prev-slide") ||
+  null;
 
 let isWillNeedSectionActive = true;
 let listTranslateX = 0;
@@ -82,6 +89,9 @@ function createWillNeedItem(item, otherProductsLength) {
 }
 
 function willNeedSection(data) {
+  if (!isRendered) {
+    isRendered = clearPrerender("willNeed");
+  }
   const { otherProducts } = data;
   const otherProductsLength = otherProducts.length;
 

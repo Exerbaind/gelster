@@ -1,5 +1,6 @@
 import createTag from "../../../../js/utils/createTag";
 import sectionHandler from "../../../../js/utils/sectionHandler";
+import clearPrerender from "../../../../js/utils/clearPrerender";
 import { openVideoModal } from "../videoModal/videoModal";
 
 const isMobile = document.documentElement.clientWidth <= 700;
@@ -13,14 +14,17 @@ const videoIcon =
 const playIcon =
   '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 24v-24l20 12-20 12z"/></svg>';
 
-const informationContainer = document.querySelector(".information__container");
-const mainInformation = document.querySelector(".information__wrapper");
+const informationContainer = document.querySelector(
+  ".main__container .information__container"
+);
+const mainInformation = document.querySelector(
+  ".main__container .information__wrapper"
+);
 const informationSectionHandlerButton =
-  document.querySelector(".information__handler") || null;
-const informationSectionHandlerButtonIcon =
-  document.querySelector(".information__handler-icon") || null;
+  document.querySelector(".main__container .information__handler") || null;
 
 let isInformationSectionActive = false;
+let isRendered = false;
 
 function createSertificatesBlock(parent, sertificates) {
   const container = createTag("div", "information__sertificates");
@@ -183,6 +187,9 @@ function createRightColumn(articles, video, sertificates) {
 }
 
 function informationSection(data) {
+  if (!isRendered) {
+    isRendered = clearPrerender("information");
+  }
   const {
     information: { sale, sertificates, articles, video },
   } = data;
