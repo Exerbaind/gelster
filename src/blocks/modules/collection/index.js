@@ -15,18 +15,8 @@ function checkCollection() {
   return data;
 }
 
-function checkSidebarType(data) {
-  const { menuType } = data;
-  const sidebar = require(`../../../database/sideBars/${menuType}.json`);
-
-  return sidebar;
-}
-
 function main() {
   const data = checkCollection();
-  const sidebarData = checkSidebarType(data);
-  console.log(sidebarData);
-
   articlesSection(data);
   aboutSection(data);
   tableSection(data);

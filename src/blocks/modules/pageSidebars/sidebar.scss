@@ -1,0 +1,124 @@
+.sidebar {
+   position: fixed;
+   width: auto;
+   left: 0;
+   top: 140px;
+   height: 100%;
+   box-shadow: 2px 5px 5px 0px rgb(0 0 0 / 18%);
+   z-index: 30;
+   @include flex();
+}
+
+.sidebar__handler {
+    width: 70px;
+    background-color: white;
+    border-right: 2px solid $primary;
+    height: 100%;
+    @include flex(center, center);
+    cursor: pointer;
+    z-index: 25;
+}
+
+.sidebar__handlerText {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 20px;
+    color: #5d585c;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+.sidebar__container {
+    position: relative;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    margin-left: -350px;
+    transition: $transition;
+    padding: 40px 20px;
+    z-index: 20;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &--active {
+        margin-left: 0;
+    }
+}
+
+.sidebar__containerIcon {
+    position: absolute;
+    left: 85%;
+    top: 10px;
+    cursor: pointer;
+    transition: $transition;
+
+    svg {
+        fill: $primary;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.sidebar__contentTitleLink {
+    color: $primary;
+    font-size: 18px;
+    transition: $transition;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.sidebar__contentTitle {
+    color: $primary;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.sidebar__contentList {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.sidebar__contentListItem {
+    transition: $transition;
+    margin-top: 5px;
+
+    &:hover {
+        .sidebar__contentListItemLink {
+            color: $primary;
+
+            &:before {
+                width: 5px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.sidebar__contentListItemLink {
+    color: $green;
+    transition: $transition;
+    @include flex(flex-start, center);
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 20px;
+        width: 0px;
+        background-color: #f7f7f7;
+        margin-right: 0px;
+        transition: $transition;
+    }
+
+    &--active {
+        color: $primary;
+
+        &:before {
+            width: 5px;
+            margin-right: 10px;
+        }
+    }
+}
