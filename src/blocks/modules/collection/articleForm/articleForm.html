@@ -17,7 +17,13 @@
         </svg>
       </div>
     </div>
-    <form class="articleForm__form">
+    <!-- TODO: доделать (валидацию) антиспам -->
+    <form
+      class="articleForm__form"
+      action="./php/orderArticle.php"
+      method="POST"
+      target="_blank"
+    >
       <label class="articleForm__formLabel" for="name"
         >Введите Ваше имя:<sup>*</sup></label
       >
@@ -72,7 +78,7 @@
         placeholder="3360"
         required
       />
-      <input type="button" class="articleForm__formSubmit" value="Заказать" />
+      <input type="submit" class="articleForm__formSubmit" value="Заказать" />
     </form>
   </div>
 </div>

@@ -56,6 +56,11 @@ const requireDir = require("require-dir"),
       dist: "./dist/video/",
       watch: "./src/video/**/*.mp4",
     },
+    php: {
+      src: "./src/php/**/*.php",
+      dist: "./dist/php/",
+      watch: "./src/php/**/*.php",
+    },
   };
 
 requireDir("./gulp-tasks/");
@@ -73,6 +78,7 @@ export const development = gulp.series(
     "video",
     "sprites",
     "fonts",
+    "php",
     "favicons",
   ]),
   gulp.parallel("serve")
@@ -89,6 +95,7 @@ export const prod = gulp.series(
     "video",
     "sprites",
     "fonts",
+    "php",
     "favicons",
     "gzip",
   ])

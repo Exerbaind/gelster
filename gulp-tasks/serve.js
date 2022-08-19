@@ -18,5 +18,6 @@ gulp.task("serve", () => {
   gulp.watch(paths.images.watch, gulp.parallel("images"));
   gulp.watch(paths.fonts.watch, gulp.parallel("fonts"));
   gulp.watch(paths.database.watch, gulp.parallel("database"));
+  gulp.watch(paths.php.watch, gulp.parallel("php"));
   gulp.watch(paths.video.watch, gulp.parallel("video"));
 });
