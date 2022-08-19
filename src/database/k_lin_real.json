@@ -85,7 +85,10 @@
         {
             "name": "Класс пожарной опасности",
             "value": ["КМ2"],
-            "tooltip": null
+            "tooltip": {
+                "title": "Класс пожарной опасности",
+                "image": "./img/assets/common/tooltip_km.jpeg"
+            }
         },
         {
             "name": "Коэффициент противоскольжения",

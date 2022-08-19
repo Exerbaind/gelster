@@ -38,7 +38,6 @@ window.addEventListener("scroll", () => {
       sidebar.style.height = `calc(100% - ${
         footerHeight - (pageHeight - summaryScroll)
       }px)`;
-      console.log(sidebar.style.height);
     } else {
       sidebar.style.height = "100%";
     }

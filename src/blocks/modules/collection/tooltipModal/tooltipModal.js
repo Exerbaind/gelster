@@ -1,6 +1,9 @@
+import createTag from "../../../../js/utils/createTag";
+
 const tooltipModal = document.querySelector(".tooltipModal");
 const tooltipTitle = document.querySelector(".tooltipModal__headerTitle");
 const tooltipText = document.querySelector(".tooltipModal__text");
+const tooltipImage = document.querySelector(".tooltipModal__image");
 
 document.addEventListener(
   "click",
@@ -13,10 +16,19 @@ document.addEventListener(
 );
 
 export function openTooltip(tooltip) {
-  const { title, text } = tooltip;
+  const { title, text, image } = tooltip;
 
-  tooltipTitle.innerHTML = title;
-  tooltipText.innerHTML = text;
+  tooltipTitle.innerHTML = "";
+  tooltipText.innerHTML = "";
+  tooltipImage.innerHTML = "";
+
+  if (title) tooltipTitle.innerHTML = title;
+  if (text) tooltipText.innerHTML = text;
+  if (image) {
+    const imageBlock = createTag("img", "");
+    imageBlock.src = image;
+    tooltipImage.appendChild(imageBlock);
+  }
 
   tooltipModal.classList.add("tooltipModal--active");
 }
