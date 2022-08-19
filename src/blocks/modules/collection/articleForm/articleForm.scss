@@ -1,0 +1,123 @@
+.articleForm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    @include flex();
+    background-color: rgba($color: black, $alpha: 0.5);
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: $transition;
+
+    &--active {
+        opacity: 1;
+        z-index: 50;
+        visibility: visible;
+        .articleForm__container {
+            margin-top: 0;
+        }
+    }
+}
+
+.articleForm__container {
+    margin-top: 50px;
+    background-color: white;
+    height: auto;
+    width: 400px;
+    transition: $transition;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.articleForm__containerHeader {
+    background-color: $green;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.articleForm__containerHeaderTitle {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.articleForm__containerHeaderHandler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 28px;
+    width: 28px;
+    transition: $transition;
+    cursor: pointer;
+    svg {
+        fill: white;
+        width: 100%;
+        height: 100%;
+        transition: $transition;
+    }
+
+    &:hover {
+        svg {
+            fill: $primary;
+        }
+    }
+}
+
+.articleForm__form {
+    @include flex(flex-start, flex-start, column, wrap);
+    padding: 20px 30px;
+
+    @media screen and (max-width: $mobile) {
+        padding: 20px;
+    }
+}
+
+.articleForm__formLabel {
+    color: $green;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.articleForm__formInput {
+    margin-top: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $green;
+    padding: 5px 0;
+    outline: none;
+    transition: $transition;
+    &:focus {
+        border-bottom: 1px solid $primary;
+    }
+    &::placeholder {
+        font-style: italic;
+    }
+}
+
+.articleForm__formSubmit {
+    background-color: $green;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    transition: $transition;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary;
+    }
+}

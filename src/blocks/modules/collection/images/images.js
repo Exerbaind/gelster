@@ -1,5 +1,6 @@
 import clearPrerender from "../../../../js/utils/clearPrerender";
 import createTag from "../../../../js/utils/createTag";
+import { openArticleForm } from "../articleForm/articleForm";
 import { openVideoModal } from "../videoModal/videoModal";
 
 const imagesContainer = document.querySelector(
@@ -96,6 +97,8 @@ function createFormImage(formImage) {
     "images__formImageOpacityIcon",
     opacityIcon
   );
+
+  image.onclick = () => openArticleForm();
 
   imageOpacity.appendChild(imageOpacityIcon);
   imageOpacity.appendChild(imageOpacityText);
