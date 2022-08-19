@@ -57,97 +57,100 @@
         {
             "name": "Ширина рулона",
             "value": ["2,0 мм"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Толщина покрытия",
             "value": ["2,0 мм", "2,5 мм", "3,2 мм"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Длина рулона",
             "value": ["≤ 33 м"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Класс применения",
             "value": ["34/43"],
-            "tooltip": true
+            "tooltip": {
+                "title": "Класс применения",
+                "text": "<p>Каждому напольному покрытию присваивается класс применения, в зависимости от того, какие нагрузки это покрытие может выдержать. Классы делятся на бытовые (обозначаются цифрами в диапазоне 21-23), коммерческие (31-34) и промышленные (34-43).</p><p>Мармолеум имеет самый высокий класс применения 34/43.</p>"
+            }
         },
         {
             "name": "Вес покрытия",
             "value": ["2300 г/м<sup>2</sup>", "2900 г/м<sup>2</sup>", "3900 г/м<sup>2</sup>"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Класс пожарной опасности",
             "value": ["КМ2"],
-            "tooltip": true
+            "tooltip": null
         },
         {
             "name": "Коэффициент противоскольжения",
             "value": ["R9"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Электрическое сопротивление",
             "value": ["≤ 2 кВ"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Светоустойчивость",
             "value": ["6"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Устойчивость к химическим соединениям",
             "value": ["устойчиво"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Устойчивость к колесикам кресел",
             "value": ["устойчиво"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Уровень звукопоглощения",
             "value": ["≤ 4 дБ", "≤ 5 дБ", "≤ 6 дБ"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Абсолютная остаточная деформация",
             "value": ["≤ 0,015 (∼0,07) мм", "≤ 0,015 (∼0,08) мм", "≤ 0,015 (∼0,10) мм"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Гибкость",
             "value": ["∅ 30 мм", "∅ 40 мм", "∅ 40 мм"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Использование с теплыми полами",
             "value": ["да"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Коэффициент теплопроводности",
             "value": ["0,17 Вт/(м*К)"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Устойчивость к прожиганию",
             "value": ["да"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Антибактериальные свойства",
             "value": ["да"],
-            "tooltip": false
+            "tooltip": null
         },
         {
             "name": "Дополнительная обработка поверхности",
             "value": ["Topshield<sup>2</sup>"],
-            "tooltip": false
+            "tooltip": null
         }
     ],
     "otherProducts": [

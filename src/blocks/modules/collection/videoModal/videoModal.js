@@ -5,6 +5,16 @@ const videoIcon =
 
 const videoContainer = document.querySelector(".videoModal");
 
+document.addEventListener(
+  "click",
+  function (event) {
+    if (event.target.matches(".videoModal")) {
+      closeVideoModal();
+    }
+  },
+  false
+);
+
 export function openVideoModal(video, isYouTube = false) {
   if (isYouTube) {
     videoContainer.innerHTML = video;

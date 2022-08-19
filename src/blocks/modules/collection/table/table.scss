@@ -197,6 +197,13 @@
 .table__bodyName, .table__bodyValue {
     color: $green;
     font-size: 16px;
+    svg {
+        display: inline-block;
+        fill: $green;
+        height: 15px;
+        width: 15px;
+        cursor: pointer;
+    }
 }
 
 .table__more {
