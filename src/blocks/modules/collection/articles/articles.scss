@@ -329,6 +329,14 @@
             fill: $primary;
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 35px;
+        width: 35px;
+    }
 }
 
 .articles__more-container {

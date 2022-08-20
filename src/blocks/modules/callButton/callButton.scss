@@ -1,0 +1,21 @@
+.callButton {
+    position: fixed;
+    z-index: 15;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $primary;
+    border-radius: 30px;
+    padding: 10px 30px;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.callButton__text {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
