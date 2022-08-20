@@ -42,6 +42,16 @@ window.addEventListener("scroll", () => {
       sidebar.style.height = "100%";
     }
   }
+
+  if (isTablet) {
+    const windwoScrollY = window.pageYOffset;
+
+    if (windwoScrollY > 100) {
+      sidebarMobileHandler.classList.remove("sidebar__mobileHandler--hide");
+    } else {
+      sidebarMobileHandler.classList.add("sidebar__mobileHandler--hide");
+    }
+  }
 });
 
 function main() {

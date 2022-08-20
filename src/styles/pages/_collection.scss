@@ -5,4 +5,9 @@
 
 .main__container {
   @include commonContainer();
+  margin-top: 20px;
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 0;
+  }
 }

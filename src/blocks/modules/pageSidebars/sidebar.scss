@@ -9,6 +9,8 @@
     background-color: $primary;
     transition: $transition;
     @include flex(center, center);
+    opacity: 1;
+    visibility: visible;
 
     svg {
         fill: white;
@@ -22,6 +24,12 @@
 
     &--active {
         left: calc(100% - 66px);
+    }
+
+    &--hide {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
     }
 }
 
