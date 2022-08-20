@@ -164,6 +164,7 @@
     transition: $transition;
     max-height: 0;
     overflow: hidden;
+    z-index: 5;
 }
 
 .table__headerValueListItem {

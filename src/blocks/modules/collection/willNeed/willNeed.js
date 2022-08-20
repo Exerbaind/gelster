@@ -1,6 +1,7 @@
 import sectionHandler from "../../../../js/utils/sectionHandler";
 import createTag from "../../../../js/utils/createTag";
 import clearPrerender from "../../../../js/utils/clearPrerender";
+import { openForm } from "../forms/forms";
 
 const isMobile = document.documentElement.clientWidth <= 700;
 
@@ -78,6 +79,7 @@ function createWillNeedItem(item, otherProductsLength) {
       "willNeed__contentItemButton",
       "заказать"
     );
+    itemButton.onclick = () => openForm(null, "formService");
     itemContainer.appendChild(itemButton);
   }
 

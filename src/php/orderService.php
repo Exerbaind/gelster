@@ -53,9 +53,8 @@ $subject = 'Заказ услуг с сайта';
 $name = $_POST['name'];
 $tel = $_POST['telephone'];
 $city = $_POST['city'];
-$area = $_POST['area'];
-$article = $_POST['articleNumber'];
-$message = "Имя: ".$name."<br> Телефон: ".$tel."<br> Город: ".$city."<br> Площадь: ".$area."<br> Необходимый артикул: ".$article;
+$service = $_POST['service'];
+$message = "Имя: ".$name."<br> Телефон: ".$tel."<br> Город: ".$city."<br> Необходимая услуга: ".$service;
 
 
 // Для отправки HTML-письма должен быть установлен заголовок Content-type

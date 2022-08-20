@@ -142,14 +142,8 @@ document.querySelector(".hamburger").addEventListener("click", function () {
 });
 
 window.addEventListener("scroll", () => {
-  const windwoScrollY = window.pageYOffset;
-  if (windwoScrollY > 100) {
+  if (window.pageYOffset > 100) {
     headerDropdown.forEach((item) => item.classList.remove("drop-menu_open"));
-    for (let index = 0; index < headerDropdownHandler.length; index++) {
-      headerDropdownHandler[index].addEventListener("click", function () {
-        headerDropdown[index].classList.remove("mobile-drop-menu_show");
-      });
-    }
     document.querySelector(".menu_h").classList.remove("mobile-menu_show");
     document.querySelector(".hamburger").classList.remove("hamb-act");
   }
@@ -168,9 +162,13 @@ function main() {
     };
   } else {
     for (let index = 0; index < headerDropdownHandler.length; index++) {
-      headerDropdownHandler[index].addEventListener("click", function () {
-        headerDropdown[index].classList.toggle("mobile-drop-menu_show");
-      });
+      headerDropdownHandler[index].onclick = () => {
+        if (headerDropdown[index].classList.contains("mobile-drop-menu_show")) {
+          headerDropdown[index].classList.remove("mobile-drop-menu_show");
+        } else {
+          headerDropdown[index].classList.add("mobile-drop-menu_show");
+        }
+      };
     }
   }
 }

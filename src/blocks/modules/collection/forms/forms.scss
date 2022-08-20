@@ -1,4 +1,4 @@
-.articleForm {
+.orderForm {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,13 +15,13 @@
         opacity: 1;
         z-index: 50;
         visibility: visible;
-        .articleForm__container {
+        .orderForm__container {
             margin-top: 0;
         }
     }
 }
 
-.articleForm__container {
+.orderForm__container {
     margin-top: 50px;
     background-color: white;
     height: auto;
@@ -33,21 +33,21 @@
     }
 }
 
-.articleForm__containerHeader {
+.orderForm__containerHeader {
     background-color: $green;
     padding: 20px 0;
     position: relative;
     width: 100%;
 }
 
-.articleForm__containerHeaderTitle {
+.orderForm__containerHeaderTitle {
     text-align: center;
     color: white;
     font-size: 24px;
     text-transform: uppercase;
 }
 
-.articleForm__containerHeaderHandler {
+.orderForm__containerHeaderHandler {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -69,7 +69,7 @@
     }
 }
 
-.articleForm__form {
+.orderForm__form {
     @include flex(flex-start, flex-start, column, wrap);
     padding: 20px 30px;
 
@@ -78,7 +78,7 @@
     }
 }
 
-.articleForm__formLabel {
+.orderForm__formLabel {
     color: $green;
     font-size: 16px;
     margin-top: 20px;
@@ -89,7 +89,7 @@
     }
 }
 
-.articleForm__formInput {
+.orderForm__formInput {
     margin-top: 5px;
     width: 100%;
     border: none;
@@ -105,7 +105,7 @@
     }
 }
 
-.articleForm__formSubmit {
+.orderForm__formSubmit {
     background-color: $green;
     font-size: 20px;
     color: white;
