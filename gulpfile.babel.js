@@ -21,12 +21,12 @@ const requireDir = require("require-dir"),
     },
     images: {
       src: [
-        "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}",
-        "./src/img/assets/**/*.{jpg,jpeg,png,gif,tiff,svg}",
+        "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg,pdf}",
+        "./src/img/assets/**/*.{jpg,jpeg,png,gif,tiff,svg,pdf}",
         "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}",
       ],
       dist: "./dist/img/",
-      watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}",
+      watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff,pdf}",
     },
     sprites: {
       src: "./src/img/sprites/*.svg",

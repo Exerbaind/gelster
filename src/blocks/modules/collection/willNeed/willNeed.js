@@ -66,6 +66,7 @@ function createWillNeedItem(item, otherProductsLength) {
 
   const itemImage = createTag("img", "willNeed__contentItemImage");
   itemImage.src = icon;
+  itemImage.setAttribute("alt", `Гельстер услуга: ${name.toLowerCase()}`);
 
   itemContainer.appendChild(itemName);
   itemContainer.appendChild(itemImage);

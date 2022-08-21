@@ -228,7 +228,7 @@
 
     @media screen and (max-width: $mobile) {
         grid-template-columns: repeat(2, 6fr);
-        max-height: 620px;
+        max-height: 545px;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
@@ -248,7 +248,7 @@
     }
 
     @media screen and (max-width: $mobile) {
-        height: 200px;
+        height: 175px;
     }
 }
 
@@ -274,11 +274,19 @@
     background-color: rgba($color: #FFFFFF, $alpha: 0.6);
     @include flex(center, center, column, wrap);
     transition: $transition;
+
+    @media screen and (max-width: $mobile) {
+        height: 50px;
+    }
 }
 
 .item__number, .item__name {
     color: #403533;
     font-size: 18px;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 16px;
+    }
 }
 
 .item__name {
