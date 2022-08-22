@@ -8,8 +8,8 @@ import {
   openArticleOrderModal,
 } from "../articleOrderModal/articleOrderModal";
 
-const basketIcon =
-  '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13.5 18c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm-3.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm14-16.5l-.743 2h-1.929l-3.473 12h-13.239l-4.616-11h2.169l3.776 9h10.428l3.432-12h4.195zm-12 4h3v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/></svg>';
+const fullscreenIcon =
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 2h2v5h7v2h-9v-7zm9 13v2h-7v5h-2v-7h9zm-15 7h-2v-5h-7v-2h9v7zm-9-13v-2h7v-5h2v7h-9z"/></svg>';
 
 // screenType
 
@@ -207,12 +207,9 @@ function createArticle(item, filterByColor, filterByWidth, type, collection) {
     container.dataset.widthValue = itemWidth;
   }
 
-  const highslideContainer = createTag("a", "item__highslide");
-  highslideContainer.setAttribute("href", image);
-  highslideContainer.setAttribute(
-    "onclick",
-    "return hs.expand (this, { captionEval: 'this.thumb.alt' })"
-  );
+  const highslideContainer = createTag("div", "item__highslide");
+  highslideContainer.onclick = () =>
+    openArticleOrderModal(item, collection, type);
 
   const itemImage = createTag("img", "item__image");
   const alt = `${type} ${collection} ${number} ${name}`;
@@ -230,10 +227,21 @@ function createArticle(item, filterByColor, filterByWidth, type, collection) {
   const itemName = createTag("p", "item__name", name);
   itemInfo.appendChild(itemName);
 
-  const itemBasketIcon = createTag("div", "item__basketIcon", basketIcon);
-  itemBasketIcon.onclick = () => openArticleOrderModal(item, collection, type);
+  // fullscreen
+  const itemFullscreenIcon = createTag(
+    "a",
+    "item__fullscreenIcon",
+    fullscreenIcon
+  );
+  itemFullscreenIcon.setAttribute("href", image);
+  itemFullscreenIcon.onclick = () => {
+    return hs.expand(itemFullscreenIcon, {
+      captionEval: `${itemImage.alt}`,
+    });
+  };
+
   articleOrderModalHandler.onclick = () => closeArticleOrderModal();
-  container.appendChild(itemBasketIcon);
+  container.appendChild(itemFullscreenIcon);
 
   if (video && !isMobile) {
     const itemVideoIcon = createTag("div", "item__videoIcon", videoIcon);

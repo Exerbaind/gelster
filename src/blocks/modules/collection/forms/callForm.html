@@ -1,7 +1,7 @@
-<div class="orderForm" id="formArticle">
+<div class="orderForm" id="formCall">
   <div class="orderForm__container">
-    <div class="orderForm__containerHeader">
-      <p class="orderForm__containerHeaderTitle">Бланк заказа работ</p>
+    <div class="orderForm__containerHeader orange">
+      <p class="orderForm__containerHeaderTitle">Заказать звонок</p>
       <div class="orderForm__containerHeaderHandler">
         <svg
           clip-rule="evenodd"
@@ -20,8 +20,8 @@
     <!-- TODO: доделать (валидацию) антиспам -->
     <form
       class="orderForm__form"
-      action="./php/orderArticle.php"
       method="POST"
+      action="./php/orderArticle.php"
       target="_blank"
     >
       <label class="orderForm__formLabel" for="name"
@@ -42,33 +42,6 @@
         type="tel"
         name="telephone"
         placeholder="+7(___)___-__-__"
-        required
-      />
-      <label class="orderForm__formLabel" for="city"
-        >Укажите город:<sup>*</sup></label
-      >
-      <input
-        class="orderForm__formInput"
-        type="text"
-        name="city"
-        placeholder="Москва"
-        required
-      />
-      <label class="orderForm__formLabel" for="area">Площадь помещения:</label>
-      <input
-        class="orderForm__formInput"
-        type="number"
-        name="area"
-        placeholder="1000"
-      />
-      <label class="orderForm__formLabel" for="articleNumber"
-        >Требуемый артикул:<sup>*</sup></label
-      >
-      <input
-        class="orderForm__formInput"
-        type="number"
-        name="articleNumber"
-        placeholder="3360"
         required
       />
       <input type="submit" class="orderForm__formSubmit" value="Заказать" />

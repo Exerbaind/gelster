@@ -167,4 +167,9 @@
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        background-color: #BC8634;
+    }
 }

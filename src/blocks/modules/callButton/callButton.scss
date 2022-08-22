@@ -7,6 +7,11 @@
     background-color: $primary;
     border-radius: 30px;
     padding: 10px 30px;
+    transition: $transition;
+
+    &:hover {
+        background-color: #BC8634;
+    }
 
     @media screen and (min-width: $tablet) {
         display: none;
