@@ -26,7 +26,7 @@ const informationSectionHandlerButton =
 let isInformationSectionActive = false;
 let isRendered = false;
 
-function createSertificatesBlock(parent, sertificates) {
+export function createSertificatesBlock(parent, sertificates) {
   const container = createTag("div", "information__sertificates");
 
   sertificates.forEach((item) => {
@@ -175,13 +175,11 @@ function createVideoBlock(parent, data) {
   parent.appendChild(block);
 }
 
-function createRightColumn(articles, video, sertificates) {
+function createRightColumn(articles, video) {
   const column = createTag("div", "information__rightColumn");
 
   createArticlesBlock(column, articles);
   createVideoBlock(column, video);
-
-  if (isMobile) createSertificatesBlock(column, sertificates);
 
   informationContainer.appendChild(column);
 }
@@ -195,7 +193,7 @@ function informationSection(data) {
   } = data;
 
   createLeftColumn(sale, sertificates);
-  createRightColumn(articles, video, sertificates);
+  createRightColumn(articles, video);
 
   if (informationSectionHandlerButton) {
     informationSectionHandlerButton.onclick = () => {

@@ -4,6 +4,9 @@ import tableSection from "./table/table";
 import willNeedSection from "./willNeed/willNeed";
 import imagesSection from "./images/images";
 import informationSection from "./information/information";
+import { sertificatesSection } from "./sertificates/sertificates";
+
+const isMobile = document.documentElement.clientWidth <= 700;
 
 function checkCollection() {
   const collectionPath = document.location.pathname;
@@ -23,6 +26,7 @@ function main() {
   willNeedSection(data);
   imagesSection(data);
   informationSection(data);
+  if (isMobile) sertificatesSection(data);
   // сделать редирект на 404 страницу
 }
 
