@@ -15,6 +15,7 @@
         opacity: 1;
         z-index: 50;
         visibility: visible;
+
         .articleOrderModal__container {
             margin-top: 0;
         }
@@ -34,6 +35,7 @@
         width: 80%;
     }
 }
+
 .articleOrderModal__handler {
     height: 30px;
     width: 30px;
@@ -42,7 +44,7 @@
     right: 10px;
 
     svg {
-        fill:#e5e5e5;
+        fill: #e5e5e5;
         width: 100%;
         height: 100%;
         cursor: pointer;
@@ -56,8 +58,12 @@
 
 .articleOrderModal__images {
     width: 100%;
-    height: 180px;
+    height: 250px;
     position: relative;
+
+    @media screen and (max-width: $mobile) {
+        height: 180px;
+    }
 }
 
 .articleOrderModal__imagesItem {
@@ -112,6 +118,7 @@
         border: 1px solid $primary;
         height: 18px;
         width: 18px;
+
         &:before {
             background-color: $primary;
         }
