@@ -287,7 +287,7 @@ function createColorFilter() {
   const filterColorValues = Array.from(new Set(colorFilter));
 
   const allColorsButton = createTag("div", "color__item color__item--active");
-  allColorsButton.style.backgroundImage = `linear-gradient(to top, ${filterColorValues.join(
+  allColorsButton.style.backgroundImage = `linear-gradient(to left, ${filterColorValues.join(
     ", "
   )})`;
   allColorsButton.dataset.colorValue = "all";

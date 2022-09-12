@@ -23,7 +23,7 @@ const willNeedPrevSlide =
   document.querySelector(".main__container .willNeed__blockArrow.prev-slide") ||
   null;
 
-let isWillNeedSectionActive = true;
+let isWillNeedSectionActive = false;
 let listTranslateX = 0;
 
 function nextSlideHandle(otherProductsLength) {

@@ -31,6 +31,73 @@ document.addEventListener(
   false
 );
 
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+let xDown = null;
+
+function getTouches(evt) {
+  return evt.touches ||             // browser API
+    evt.originalEvent.touches; // jQuery
+}
+
+function handleTouchStart(evt) {
+  const firstTouch = getTouches(evt)[0];
+  xDown = firstTouch.clientX;
+};
+
+function handleTouchMove(evt) {
+  if (!xDown) {
+    return;
+  }
+
+  var xUp = evt.touches[0].clientX;
+
+  var xDiff = xDown - xUp;
+
+  if (xDiff > 0) {
+    articleOrderModalImages[imageIndex].classList.remove(
+      "articleOrderModal__imagesItem--active"
+    );
+    articleOrderModalImagesHandlerItems[imageIndex].classList.remove(
+      "articleOrderModal__imagesHandlerItem--active"
+    );
+    if (imageIndex === 1) {
+      imageIndex = 0;
+    } else {
+      imageIndex = imageIndex + 1;
+    }
+
+    articleOrderModalImages[imageIndex].classList.add(
+      "articleOrderModal__imagesItem--active"
+    );
+    articleOrderModalImagesHandlerItems[imageIndex].classList.add(
+      "articleOrderModal__imagesHandlerItem--active"
+    );
+  } else {
+    articleOrderModalImages[imageIndex].classList.remove(
+      "articleOrderModal__imagesItem--active"
+    );
+    articleOrderModalImagesHandlerItems[imageIndex].classList.remove(
+      "articleOrderModal__imagesHandlerItem--active"
+    );
+    if (imageIndex === 0) {
+      imageIndex = 1;
+    } else {
+      imageIndex = imageIndex - 1;
+    }
+
+    articleOrderModalImages[imageIndex].classList.add(
+      "articleOrderModal__imagesItem--active"
+    );
+    articleOrderModalImagesHandlerItems[imageIndex].classList.add(
+      "articleOrderModal__imagesHandlerItem--active"
+    );
+  }
+  /* reset values */
+  xDown = null;
+};
+
 export function openArticleOrderModal(article, collection, type) {
   const { image, modalImage, name, number, width } = article;
 
@@ -38,9 +105,8 @@ export function openArticleOrderModal(article, collection, type) {
   articleNumber = number;
 
   images.forEach((item, index) => {
-    const alt = `${type} ${collection} ${number} ${name} ${
-      index === 1 ? "в интерьере" : ""
-    }`;
+    const alt = `${type} ${collection} ${number} ${name} ${index === 1 ? "в интерьере" : ""
+      }`;
     articleOrderModalImages[index].src = item;
     articleOrderModalImages[index].setAttribute("alt", alt);
   });

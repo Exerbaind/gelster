@@ -31,7 +31,7 @@
     padding: 50px;
 
     @media screen and (max-width: $mobile) {
-        width: 100%;
+        width: 80%;
     }
 }
 .articleOrderModal__handler {
@@ -56,7 +56,7 @@
 
 .articleOrderModal__images {
     width: 100%;
-    height: 215px;
+    height: 180px;
     position: relative;
 }
 
@@ -79,6 +79,7 @@
 .articleOrderModal__imagesHandler {
     @include flex(center, center);
     margin-top: 10px;
+    min-height: 20px;
 }
 
 .articleOrderModal__imagesHandlerItem {
@@ -109,6 +110,8 @@
 
     &--active {
         border: 1px solid $primary;
+        height: 18px;
+        width: 18px;
         &:before {
             background-color: $primary;
         }

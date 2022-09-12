@@ -18,7 +18,7 @@
     @include flex(flex-start, center, row, nowrap);
     height: 430px;
     @media screen and (max-width: $mobile) {
-        height: 320px;
+        height: 220px;
     }
 }
 

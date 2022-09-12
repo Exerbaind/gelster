@@ -16,7 +16,7 @@
 
     @media screen and (max-width: $mobile) {
         position: relative;
-        height: 50px;
+        height: 60px;
         width: 100%;
         @include flex();
         border-top: 3px solid $green;
