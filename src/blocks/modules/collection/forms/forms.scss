@@ -128,4 +128,8 @@
     &:hover {
         background-color: #BC8634;
     }
+
+    &:disabled {
+        opacity: 0.3;
+    }
 }

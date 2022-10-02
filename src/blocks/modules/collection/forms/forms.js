@@ -9,6 +9,7 @@ let formCity;
 let formArea;
 let formArticleNumber;
 let formService;
+let validForm = false; 
 
 const formSubmit = document.querySelector(".orderForm__formSubmit");
 
@@ -52,6 +53,7 @@ export function openForm(number, type) {
   formCity.value = userData.city;
 
   if (type === "formArticle") {
+    userData.article = number || '';
     formArea.value = userData.area;
     formArticleNumber.value = number ? number : userData.article;
   }
@@ -60,30 +62,44 @@ export function openForm(number, type) {
     formArea.value = userData.service;
   }
 
-  formName.onchange = (event) => changeUserData(event);
-  formPhone.onchange = (event) => changeUserData(event);
-  formCity.onchange = (event) => changeUserData(event);
-  formArea.onchange = (event) => changeUserData(event);
-  formService.onchange = (event) => changeUserData(event);
+  formName.onchange = (event) => changeUserData(event, type);
+  formPhone.onchange = (event) => changeUserData(event, type);
+  formCity.onchange = (event) => changeUserData(event, type);
+  formArea.onchange = (event) => changeUserData(event, type);
+  formService.onchange = (event) => changeUserData(event, type);
 
   form.classList.add("orderForm--active");
 }
 
-export function closeForm(form) {
+export function closeForm() {
   form.classList.remove("orderForm--active");
 }
 
-function changeUserData(event) {
+function changeUserData(event, type) {
   const {
     target: { name, value },
   } = event;
 
   userData[name] = value;
+
+  if (type === "formArticle") {
+    validForm = Object.keys(userData).filter(item => item !== 'service').every((item) => userData[item].length);
+  }
+
+  if (type === "formService") {
+    validForm = Object.keys(userData).filter(item => item !== 'area' || item !== 'article').every((item) => userData[item].length);
+  }
+
+  if (validForm) {
+    formSubmit.removeAttribute('disabled', true);
+    formSubmit.onclick = () => closeForm();
+  } else {
+    formSubmit.setAttribute('disabled', false);
+  }
 }
 
 function main() {
-  formHandler.forEach((item) => (item.onclick = () => closeForm(form)));
-  formSubmit.onclick = () => closeForm(form);
+  formHandler.forEach((item) => (item.onclick = () => closeForm()));
 }
 
 main();

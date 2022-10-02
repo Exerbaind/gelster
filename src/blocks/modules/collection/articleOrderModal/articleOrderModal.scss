@@ -29,7 +29,7 @@
     margin-top: 50px;
     transition: $transition;
     position: relative;
-    padding: 50px;
+    padding: 50px 30px;
 
     @media screen and (max-width: $mobile) {
         width: 80%;
