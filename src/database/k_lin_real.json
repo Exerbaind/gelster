@@ -196,7 +196,7 @@
             "width": ["2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/262135.jpg",
             "video": "./video/forbo/marmoleum/real/2621.mp4",
-            "modalImage": "./img/assets/forbo/marmoleum/real/articles/modal262135.jpg"
+            "modalImage": "./img/assets/forbo/marmoleum/real/articles/modal262135.png"
         },
         {
             "name": "blue",
@@ -205,7 +205,7 @@
             "width": ["2,0", "2,5", "3,5"],
             "image": "./img/assets/forbo/marmoleum/real/articles/303035.jpg",
             "video": "./video/forbo/marmoleum/real/3030.mp4",
-            "modalImage": "./img/assets/forbo/marmoleum/real/articles/modal303035.jpg"     
+            "modalImage": "./img/assets/forbo/marmoleum/real/articles/modal303035.png"     
         },
         {
             "name": "chartreuse",

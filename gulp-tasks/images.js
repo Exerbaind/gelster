@@ -4,10 +4,10 @@ import { paths } from "../gulpfile.babel";
 import gulp from "gulp";
 import gulpif from "gulp-if";
 import imagemin from "gulp-imagemin";
-import imageminPngquant from "imagemin-pngquant";
 import imageminZopfli from "imagemin-zopfli";
-import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminGiflossy from "imagemin-giflossy";
+import imageminJpegtran from 'imagemin-jpegtran';
+// import imageminOptipng from 'imagemin-optipng';
 import newer from "gulp-newer";
 import debug from "gulp-debug";
 import browsersync from "browser-sync";
@@ -29,16 +29,12 @@ gulp.task("images", () => {
             optimize: 3,
             lossy: 2,
           }),
-          imageminPngquant({
-            speed: 5,
-            quality: [0.4, 0.6],
-          }),
+          // imageminOptipng({}),
           imageminZopfli({
             more: true,
           }),
-          imageminMozjpeg({
+          imageminJpegtran({
             progressive: true,
-            quality: 70,
           }),
           imagemin.svgo({
             plugins: [
